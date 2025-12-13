@@ -1,0 +1,284 @@
+[
+    {
+      "company_name": "Alloy",
+      "website": "https://www.alloy.com",
+      "linkedin": "https://www.linkedin.com/company/alloyinc/",
+      "hq_city": "New York",
+      "hq_country": "United States",
+      "category": "Identity & Fraud Prevention"
+    },
+    {
+      "company_name": "Arc",
+      "website": "https://www.arc.tech",
+      "linkedin": "https://www.linkedin.com/company/arc-technologies/",
+      "hq_city": "San Francisco",
+      "hq_country": "United States",
+      "category": "B2B Banking"
+    },
+    {
+      "company_name": "At-Bay",
+      "website": "https://www.at-bay.com",
+      "linkedin": "https://www.linkedin.com/company/at-bay/",
+      "hq_city": "San Francisco",
+      "hq_country": "United States",
+      "category": "Cyber Insurance"
+    },
+    {
+      "company_name": "Aven",
+      "website": "https://www.aven.com",
+      "linkedin": "https://www.linkedin.com/company/aven-financial/",
+      "hq_city": "Campbell",
+      "hq_country": "United States",
+      "category": "Consumer Credit"
+    },
+    {
+      "company_name": "Bilt Rewards",
+      "website": "https://www.biltrewards.com",
+      "linkedin": "https://www.linkedin.com/company/bilt-technologies/",
+      "hq_city": "New York",
+      "hq_country": "United States",
+      "category": "Personal Finance"
+    },
+    {
+      "company_name": "Brico",
+      "website": "https://www.brico.ai",
+      "linkedin": "https://www.linkedin.com/company/brico-ai/",
+      "hq_city": "San Francisco",
+      "hq_country": "United States",
+      "category": "Financial Operations"
+    },
+    {
+      "company_name": "Candex",
+      "website": "https://www.candex.com",
+      "linkedin": "https://www.linkedin.com/company/candex/",
+      "hq_city": "New York",
+      "hq_country": "United States",
+      "category": "B2B Payments"
+    },
+    {
+      "company_name": "Capitalize",
+      "website": "https://www.hicapitalize.com",
+      "linkedin": "https://www.linkedin.com/company/capitalize/",
+      "hq_city": "New York",
+      "hq_country": "United States",
+      "category": "Retirement"
+    },
+    {
+      "company_name": "Carry1st",
+      "website": "https://www.carry1st.com",
+      "linkedin": "https://www.linkedin.com/company/carry1st/",
+      "hq_city": "New York",
+      "hq_country": "United States",
+      "category": "Payments"
+    },
+    {
+      "company_name": "Chime",
+      "website": "https://www.chime.com",
+      "linkedin": "https://www.linkedin.com/company/chimefinancial/",
+      "hq_city": "San Francisco",
+      "hq_country": "United States",
+      "category": "Neobank"
+    },
+    {
+      "company_name": "Coalition",
+      "website": "https://www.coalitioninc.com",
+      "linkedin": "https://www.linkedin.com/company/coalitioninc/",
+      "hq_city": "San Francisco",
+      "hq_country": "United States",
+      "category": "Cyber Insurance"
+    },
+    {
+      "company_name": "Column",
+      "website": "https://www.column.com",
+      "linkedin": "https://www.linkedin.com/company/column-bank/",
+      "hq_city": "San Francisco",
+      "hq_country": "United States",
+      "category": "Banking Infrastructure"
+    },
+    {
+      "company_name": "DailyPay",
+      "website": "https://www.dailypay.com",
+      "linkedin": "https://www.linkedin.com/company/dailypay/",
+      "hq_city": "New York",
+      "hq_country": "United States",
+      "category": "Earned Wage Access"
+    },
+    {
+      "company_name": "DataSnipper",
+      "website": "https://www.datasnipper.com",
+      "linkedin": "https://www.linkedin.com/company/datasnipper/",
+      "hq_city": "Amsterdam",
+      "hq_country": "Netherlands",
+      "category": "Audit Automation"
+    },
+    {
+      "company_name": "DataVisor",
+      "website": "https://www.datavisor.com",
+      "linkedin": "https://www.linkedin.com/company/datavisor/",
+      "hq_city": "Mountain View",
+      "hq_country": "United States",
+      "category": "Fraud Detection"
+    },
+    {
+      "company_name": "Esusu",
+      "website": "https://www.esusu.org",
+      "linkedin": "https://www.linkedin.com/company/esusu-financial/",
+      "hq_city": "New York",
+      "hq_country": "United States",
+      "category": "Credit Building"
+    },
+    {
+      "company_name": "Ethos",
+      "website": "https://www.ethoslife.com",
+      "linkedin": "https://www.linkedin.com/company/ethos-life/",
+      "hq_city": "Austin",
+      "hq_country": "United States",
+      "category": "Life Insurance"
+    },
+    {
+      "company_name": "Figure",
+      "website": "https://www.figure.com",
+      "linkedin": "https://www.linkedin.com/company/figuretechnologies/",
+      "hq_city": "New York",
+      "hq_country": "United States",
+      "category": "Blockchain Finance"
+    },
+    {
+      "company_name": "Fireblocks",
+      "website": "https://www.fireblocks.com",
+      "linkedin": "https://www.linkedin.com/company/fireblocks/",
+      "hq_city": "New York",
+      "hq_country": "United States",
+      "category": "Crypto Infrastructure"
+    },
+    {
+      "company_name": "Found",
+      "website": "https://www.found.com",
+      "linkedin": "https://www.linkedin.com/company/found-banking/",
+      "hq_city": "San Francisco",
+      "hq_country": "United States",
+      "category": "Small Business Banking"
+    },
+  
+    {
+      "company_name": "Highnote",
+      "website": "https://www.highnote.com",
+      "linkedin": "https://www.linkedin.com/company/highnote/",
+      "hq_city": "San Francisco",
+      "hq_country": "United States",
+      "category": "Payments Infrastructure"
+    },
+    {
+      "company_name": "Imprint",
+      "website": "https://www.imprint.co",
+      "linkedin": "https://www.linkedin.com/company/imprint-financial/",
+      "hq_city": "New York",
+      "hq_country": "United States",
+      "category": "Card Issuing"
+    },
+    {
+      "company_name": "Increase",
+      "website": "https://www.increase.com",
+      "linkedin": "https://www.linkedin.com/company/increase/",
+      "hq_city": "Bend",
+      "hq_country": "United States",
+      "category": "Banking APIs"
+    },
+    {
+      "company_name": "Kin Insurance",
+      "website": "https://www.kin.com",
+      "linkedin": "https://www.linkedin.com/company/kin-insurance/",
+      "hq_city": "Chicago",
+      "hq_country": "United States",
+      "category": "Home Insurance"
+    },
+    {
+      "company_name": "Kudos",
+      "website": "https://www.joinkudos.com",
+      "linkedin": "https://www.linkedin.com/company/kudos-inc/",
+      "hq_city": "Los Angeles",
+      "hq_country": "United States",
+      "category": "Credit Optimization"
+    },
+    {
+      "company_name": "Lead Bank",
+      "website": "https://www.lead.bank",
+      "linkedin": "https://www.linkedin.com/company/lead-bank/",
+      "hq_city": "Kansas City",
+      "hq_country": "United States",
+      "category": "Banking"
+    },
+    {
+      "company_name": "Mercury",
+      "website": "https://www.mercury.com",
+      "linkedin": "https://www.linkedin.com/company/mercury/",
+      "hq_city": "San Francisco",
+      "hq_country": "United States",
+      "category": "Startup Banking"
+    },
+    {
+      "company_name": "Navan",
+      "website": "https://www.navan.com",
+      "linkedin": "https://www.linkedin.com/company/navan/",
+      "hq_city": "Palo Alto",
+      "hq_country": "United States",
+      "category": "Travel & Expense"
+    },
+    {
+      "company_name": "Nova Credit",
+      "website": "https://www.novacredit.com",
+      "linkedin": "https://www.linkedin.com/company/nova-credit/",
+      "hq_city": "San Francisco",
+      "hq_country": "United States",
+      "category": "Credit Infrastructure"
+    },
+    {
+      "company_name": "Parafin",
+      "website": "https://www.parafin.com",
+      "linkedin": "https://www.linkedin.com/company/parafin/",
+      "hq_city": "San Francisco",
+      "hq_country": "United States",
+      "category": "Embedded Finance"
+    },
+    {
+      "company_name": "Persona",
+      "website": "https://www.withpersona.com",
+      "linkedin": "https://www.linkedin.com/company/persona-id/",
+      "hq_city": "San Francisco",
+      "hq_country": "United States",
+      "category": "Identity Verification"
+    },
+    {
+      "company_name": "Plaid",
+      "website": "https://www.plaid.com",
+      "linkedin": "https://www.linkedin.com/company/plaid-/",
+      "hq_city": "San Francisco",
+      "hq_country": "United States",
+      "category": "Financial APIs"
+    },
+    {
+      "company_name": "Ramp",
+      "website": "https://www.ramp.com",
+      "linkedin": "https://www.linkedin.com/company/ramp-business/",
+      "hq_city": "New York",
+      "hq_country": "United States",
+      "category": "Corporate Spend"
+    },
+    {
+      "company_name": "Stripe",
+      "website": "https://www.stripe.com",
+      "linkedin": "https://www.linkedin.com/company/stripe/",
+      "hq_city": "San Francisco",
+      "hq_country": "United States",
+      "category": "Payments"
+    },
+    {
+      "company_name": "Wealthfront",
+      "website": "https://www.wealthfront.com",
+      "linkedin": "https://www.linkedin.com/company/wealthfront/",
+      "hq_city": "Palo Alto",
+      "hq_country": "United States",
+      "category": "Robo-Advisory"
+    }
+  ]
+  

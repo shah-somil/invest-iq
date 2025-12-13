@@ -2,10 +2,10 @@
   "company_id": "candex",
   "company_name": "Candex",
   "source_homepage": "https://www.candex.com",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/candex/initial",
-  "content_sha256": "0fb1126bb75211f3b15b1fb267641e634d29de3bc0d2a379bccb18d64942d7d6",
+  "content_sha256": "3bbf223b1ba3056aba645ca8dff0432addcfb4e6f741372bf36ebf71a1ca0f71",
   "content_length": 201,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

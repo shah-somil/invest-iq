@@ -1,13 +1,13 @@
 {
   "company_name": "Figure AI",
   "source_url": "https://www.figure.ai/news",
-  "crawled_at": "2025-12-13T21:03:44Z",
+  "crawled_at": "2025-12-13T23:05:48Z",
   "http_status": 200,
   "title": "News | Figure",
   "canonical": "https://www.figure.ai/news",
   "robots": "index,follow",
-  "content_sha256": "f6fe11bea6eb0936025749b068be8136b041c460160f82156d3d88b01cff2966",
-  "content_length": 42209,
+  "content_sha256": "acda3b01452d21a1e1ecf807be6f225a5dc8b32891b1a426ef0e2009cc59a7e1",
+  "content_length": 42213,
   "parser": "lxml",
   "version": 1
 }

@@ -2,24 +2,19 @@
   "company_id": "thinking-machine-labs",
   "company_name": "Thinking Machine Labs",
   "source_homepage": "https://thinkingmachines.ai",
-  "crawled_at": "2025-12-13T21:05:17Z",
+  "crawled_at": "2025-12-13T23:07:22Z",
   "run_type": "full-load",
-  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/thinking-machine-labs/initial",
-  "content_sha256": "dd460be311e7158427990dc5f465fb8e980480ee7623f69e32e2fc378f8438c0",
-  "content_length": 150396,
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/thinking-machine-labs/initial",
+  "content_sha256": "9137f2dc5bf9d90fc685ce4bebffc871f9cbf30aaacc76aa4debdd8b21362383",
+  "content_length": 442,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "thinking-machine-labs",
     "company_name": "Thinking Machine Labs",
-    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/thinking-machine-labs/initial/manifest.json",
-    "sections": {
-      "homepage": "https://thinkingmachines.ai",
-      "about": "https://thinkingmachines.ai/tinker",
-      "product": "https://thinkingmachines.ai/tinker",
-      "careers": "https://thinkingmachines.ai/#join-us",
-      "blog": "https://thinkingmachines.ai/blog"
-    },
-    "status": "success"
+    "status": "failed",
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://thinkingmachines.ai) -> robots.txt disallows fetching https://thinkingmachines.ai for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:07:22Z"
   }
 }

@@ -1,12 +1,12 @@
 {
   "company_name": "Windsurf",
   "source_url": "https://windsurf.com/blog",
-  "crawled_at": "2025-12-13T21:05:23Z",
+  "crawled_at": "2025-12-13T23:07:32Z",
   "http_status": 200,
   "title": "Blog | Windsurf",
   "canonical": "https://windsurf.com/blog",
   "robots": "",
-  "content_sha256": "9b16f1f64b50a1960a5599a1bf1da1ae353b18cd06d3b2dc4030d390eced3cad",
+  "content_sha256": "8a620c6ad9a512306c788c8e6c35c6da3366dd0ebb0abeea999916d08f466676",
   "content_length": 160485,
   "parser": "lxml",
   "version": 1

@@ -1,12 +1,12 @@
 {
   "company_name": "Sierra",
   "source_url": "https://sierra.ai/product",
-  "crawled_at": "2025-12-13T21:04:31Z",
+  "crawled_at": "2025-12-13T23:06:32Z",
   "http_status": 200,
   "title": "Product overview | Sierra",
   "canonical": "https://sierra.ai/product",
   "robots": "index",
-  "content_sha256": "a99329336a01f8e4aaa4423a4888a09ab5771a5547918254a8266f1610fa618f",
+  "content_sha256": "7785b757cef383a330b94f4df2f2ea207848633fdbdced20c05cd481389e0c46",
   "content_length": 203855,
   "parser": "lxml",
   "version": 1

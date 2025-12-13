@@ -1,12 +1,12 @@
 {
   "company_name": "Skild AI",
   "source_url": "https://www.skild.ai/blogs",
-  "crawled_at": "2025-12-13T21:04:35Z",
+  "crawled_at": "2025-12-13T23:06:35Z",
   "http_status": 200,
   "title": "Skild.ai",
   "canonical": "https://www.skild.ai/blogs",
   "robots": "",
-  "content_sha256": "0c2810ffd80689255f2135aa6e9dcf55f8261c4af3cddc92d0ce77bd211b8180",
+  "content_sha256": "032224d2d8b396d987c3ec185214f6cbd888b338ffb7186f09eaa3f034cd949a",
   "content_length": 20056,
   "parser": "lxml",
   "version": 1

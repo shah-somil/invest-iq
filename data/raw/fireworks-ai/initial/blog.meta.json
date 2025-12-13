@@ -1,13 +1,13 @@
 {
   "company_name": "Fireworks AI",
   "source_url": "https://fireworks.ai/blog",
-  "crawled_at": "2025-12-13T21:03:55Z",
+  "crawled_at": "2025-12-13T23:05:59Z",
   "http_status": 200,
   "title": "Fireworks - Blog",
   "canonical": "https://fireworks.ai/blog",
   "robots": "index",
-  "content_sha256": "d566ab04f48f27ca8b8f7abaa35d10af13ff6efc95a559ac5d5f2779b27eafeb",
-  "content_length": 968276,
+  "content_sha256": "9adc8d2b4a3d26b3298e899a55c93697b7eefeb47b4e523566931beb55a8a12a",
+  "content_length": 968269,
   "parser": "lxml",
   "version": 1
 }

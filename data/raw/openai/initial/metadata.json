@@ -2,24 +2,19 @@
   "company_id": "openai",
   "company_name": "OpenAI",
   "source_homepage": "https://openai.com/",
-  "crawled_at": "2025-12-13T21:04:14Z",
+  "crawled_at": "2025-12-13T23:06:13Z",
   "run_type": "full-load",
-  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/openai/initial",
-  "content_sha256": "77b56da5eb037b5bd3bb9ee8ec0ac93a842d78f661a9fd515e28a4209a976901",
-  "content_length": 1830599,
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/openai/initial",
+  "content_sha256": "12aed508ef2ef7443773571acd2a97d2e331c2c07ce8adaf09a9c8d4c998a537",
+  "content_length": 394,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "openai",
     "company_name": "OpenAI",
-    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/openai/initial/manifest.json",
-    "sections": {
-      "homepage": "https://openai.com",
-      "about": "https://openai.com/about",
-      "product": "https://openai.com/api",
-      "careers": "https://openai.com/careers",
-      "blog": "https://openai.com/news"
-    },
-    "status": "success"
+    "status": "failed",
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://openai.com) -> robots.txt disallows fetching https://openai.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:06:13Z"
   }
 }

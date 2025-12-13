@@ -1,12 +1,8 @@
 {
   "company_id": "notion",
   "company_name": "Notion",
-  "crawled_at": "2025-12-13T21:04:11Z",
-  "sections": {
-    "homepage": "https://www.notion.com",
-    "about": "https://www.notion.com/about",
-    "product": "https://www.notion.com/product",
-    "careers": "https://www.notion.com/careers",
-    "blog": "https://www.notion.com/blog"
-  }
+  "status": "failed",
+  "reason": "homepage_fetch_failed",
+  "message": "homepage fetch failed (https://www.notion.com) -> robots.txt disallows fetching https://www.notion.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+  "crawled_at": "2025-12-13T23:06:12Z"
 }

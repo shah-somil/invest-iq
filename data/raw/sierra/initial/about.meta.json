@@ -1,13 +1,13 @@
 {
   "company_name": "Sierra",
   "source_url": "https://sierra.ai/about",
-  "crawled_at": "2025-12-13T21:04:31Z",
+  "crawled_at": "2025-12-13T23:06:31Z",
   "http_status": 200,
   "title": "About Sierra | Sierra",
   "canonical": "https://sierra.ai/about",
   "robots": "index",
-  "content_sha256": "0efe1ac3d95d05e8a1b84eb4d944855be1dbc9a718db9d355c0aaff63235eb3e",
-  "content_length": 233466,
+  "content_sha256": "87c54fe32cc794814ab5099b4bbacc7405227eaebf5c2beafb3c2fa95ca75def",
+  "content_length": 233293,
   "parser": "lxml",
   "version": 1
 }

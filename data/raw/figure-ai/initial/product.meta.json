@@ -1,12 +1,12 @@
 {
   "company_name": "Figure AI",
   "source_url": "https://www.figure.ai/figure",
-  "crawled_at": "2025-12-13T21:03:43Z",
+  "crawled_at": "2025-12-13T23:05:48Z",
   "http_status": 200,
   "title": "Figure 03 | Figure",
   "canonical": "https://www.figure.ai/figure",
   "robots": "index,follow",
-  "content_sha256": "8d98253bb3a3c478bcab1942225f06de3238ce03cbc32112e970d7def92e7d6c",
+  "content_sha256": "9776413cbdeb118cc5933c3606199ac283405f9518211868c6cb4f152ecb4757",
   "content_length": 42040,
   "parser": "lxml",
   "version": 1

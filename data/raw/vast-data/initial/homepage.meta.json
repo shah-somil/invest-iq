@@ -1,13 +1,13 @@
 {
   "company_name": "VAST Data",
   "source_url": "https://www.vastdata.com",
-  "crawled_at": "2025-12-13T21:05:20Z",
+  "crawled_at": "2025-12-13T23:07:26Z",
   "http_status": 200,
   "title": "VAST AI Operating System: Powering the Agentic AI Revolution - VAST Data",
   "canonical": "https://www.vastdata.com",
   "robots": "",
-  "content_sha256": "69dd06a48b777e0c6b63e461795230cfe71e283494cc387a3ee485575693b24c",
-  "content_length": 358240,
+  "content_sha256": "3bb41c120944f4ff6daa374fe1685077b30a64870cc8b1fc663b024facf0d010",
+  "content_length": 358208,
   "parser": "lxml",
   "version": 1
 }

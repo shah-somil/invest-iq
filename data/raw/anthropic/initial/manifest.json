@@ -1,12 +1,8 @@
 {
   "company_id": "anthropic",
   "company_name": "Anthropic",
-  "crawled_at": "2025-12-13T21:02:44Z",
-  "sections": {
-    "homepage": "https://www.anthropic.com",
-    "about": "https://www.anthropic.com/company",
-    "product": "https://www.anthropic.com/research",
-    "careers": "https://www.anthropic.com/careers",
-    "blog": "https://www.anthropic.com/news"
-  }
+  "status": "failed",
+  "reason": "homepage_fetch_failed",
+  "message": "homepage fetch failed (https://www.anthropic.com) -> robots.txt disallows fetching https://www.anthropic.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+  "crawled_at": "2025-12-13T23:05:05Z"
 }

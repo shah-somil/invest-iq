@@ -2,10 +2,10 @@
   "company_id": "datavisor",
   "company_name": "DataVisor",
   "source_homepage": "https://www.datavisor.com",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/datavisor/initial",
-  "content_sha256": "dee035c727888dfcbd8e8d38d7a90921802707f0377a243e517c177496a4efba",
+  "content_sha256": "c9c456a4a6e5ddfe498886b5b029d87cda803aacf1cceb45d67236ccc1e58182",
   "content_length": 207,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

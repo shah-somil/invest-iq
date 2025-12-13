@@ -2,10 +2,10 @@
   "company_id": "wealthfront",
   "company_name": "Wealthfront",
   "source_homepage": "https://www.wealthfront.com",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/wealthfront/initial",
-  "content_sha256": "a02852f4b110c1364cc9a35a31b414e693049eebb93d66eb311d75d1766ba119",
+  "content_sha256": "77b160f34bad5b5ecdc9a99e345f4332dd842d48c367504010dc3fccc50c06c3",
   "content_length": 211,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

@@ -2,24 +2,19 @@
   "company_id": "mercor",
   "company_name": "Mercor",
   "source_homepage": "https://mercor.com",
-  "crawled_at": "2025-12-13T21:04:09Z",
+  "crawled_at": "2025-12-13T23:06:10Z",
   "run_type": "full-load",
-  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/mercor/initial",
-  "content_sha256": "637b3e293094e285eef43e7001f539294d3427ff242998a922044182c26093a8",
-  "content_length": 573485,
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/mercor/initial",
+  "content_sha256": "ab3ced7fdb12556527e65128782c269946898ebed63090be284b305387a56a33",
+  "content_length": 410,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "mercor",
     "company_name": "Mercor",
-    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/mercor/initial/manifest.json",
-    "sections": {
-      "homepage": "https://www.mercor.com:443",
-      "about": "https://www.mercor.com:443/apex",
-      "product": "https://www.mercor.com:443/apex",
-      "careers": "https://www.mercor.com:443/careers",
-      "blog": "https://www.mercor.com:443/blog"
-    },
-    "status": "success"
+    "status": "failed",
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://www.mercor.com:443) -> robots.txt disallows fetching https://www.mercor.com:443 for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:06:10Z"
   }
 }

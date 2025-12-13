@@ -2,10 +2,10 @@
   "company_id": "dailypay",
   "company_name": "DailyPay",
   "source_homepage": "https://www.dailypay.com",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/dailypay/initial",
-  "content_sha256": "2c7c6f375f263d541f69e2988f403489a5914229cd58085068e64851a6e8e5d8",
+  "content_sha256": "a68227d00b1dc66c832b41c7c6f474a80723a2d255c38eafdb0f20d572c3d668",
   "content_length": 205,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

@@ -1,0 +1,715 @@
+{
+  "timestamp": "2025-12-13T23:07:40Z",
+  "total_companies": 47,
+  "allowed": 38,
+  "disallowed": 9,
+  "partially_allowed": 0,
+  "errors": 0,
+  "decisions": [
+    {
+      "company_id": "abridge",
+      "company_name": "Abridge",
+      "status": "allowed",
+      "domain": "https://www.abridge.com",
+      "robots_url": "https://www.abridge.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.abridge.com/about": true,
+        "https://www.abridge.com/product": true,
+        "https://www.abridge.com/careers": true,
+        "https://www.abridge.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:05:03Z"
+    },
+    {
+      "company_id": "anthropic",
+      "company_name": "Anthropic",
+      "status": "disallowed",
+      "domain": "https://www.anthropic.com",
+      "robots_url": "https://www.anthropic.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.anthropic.com/about": false,
+        "https://www.anthropic.com/product": false,
+        "https://www.anthropic.com/careers": false,
+        "https://www.anthropic.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:05:05Z"
+    },
+    {
+      "company_id": "anysphere",
+      "company_name": "Anysphere",
+      "status": "allowed",
+      "domain": "https://anysphere.inc",
+      "robots_url": "https://anysphere.inc/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://anysphere.inc/about": true,
+        "https://anysphere.inc/product": true,
+        "https://anysphere.inc/careers": true,
+        "https://anysphere.inc/blog": true
+      },
+      "checked_at": "2025-12-13T23:05:05Z"
+    },
+    {
+      "company_id": "baseten",
+      "company_name": "Baseten",
+      "status": "allowed",
+      "domain": "https://www.baseten.com",
+      "robots_url": "https://www.baseten.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.baseten.com/about": true,
+        "https://www.baseten.com/product": true,
+        "https://www.baseten.com/careers": true,
+        "https://www.baseten.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:05:09Z"
+    },
+    {
+      "company_id": "captions",
+      "company_name": "Captions",
+      "status": "allowed",
+      "domain": "https://www.captions.ai",
+      "robots_url": "https://www.captions.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.captions.ai/about": true,
+        "https://www.captions.ai/product": true,
+        "https://www.captions.ai/careers": true,
+        "https://www.captions.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:05:13Z"
+    },
+    {
+      "company_id": "clay",
+      "company_name": "Clay",
+      "status": "allowed",
+      "domain": "https://www.clay.com",
+      "robots_url": "https://www.clay.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.clay.com/about": true,
+        "https://www.clay.com/product": true,
+        "https://www.clay.com/careers": true,
+        "https://www.clay.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:05:30Z"
+    },
+    {
+      "company_id": "coactive-ai",
+      "company_name": "Coactive AI",
+      "status": "allowed",
+      "domain": "https://www.coactive.ai",
+      "robots_url": "https://www.coactive.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.coactive.ai/about": true,
+        "https://www.coactive.ai/product": true,
+        "https://www.coactive.ai/careers": true,
+        "https://www.coactive.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:05:32Z"
+    },
+    {
+      "company_id": "cohere",
+      "company_name": "Cohere",
+      "status": "allowed",
+      "domain": "https://cohere.com",
+      "robots_url": "https://cohere.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://cohere.com/about": true,
+        "https://cohere.com/product": true,
+        "https://cohere.com/careers": true,
+        "https://cohere.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:05:34Z"
+    },
+    {
+      "company_id": "crusoe",
+      "company_name": "Crusoe",
+      "status": "allowed",
+      "domain": "https://www.crusoe.ai",
+      "robots_url": "https://www.crusoe.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.crusoe.ai/about": true,
+        "https://www.crusoe.ai/product": true,
+        "https://www.crusoe.ai/careers": true,
+        "https://www.crusoe.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:05:36Z"
+    },
+    {
+      "company_id": "databricks",
+      "company_name": "Databricks",
+      "status": "allowed",
+      "domain": "https://www.databricks.com",
+      "robots_url": "https://www.databricks.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.databricks.com/about": true,
+        "https://www.databricks.com/product": true,
+        "https://www.databricks.com/careers": true,
+        "https://www.databricks.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:05:39Z"
+    },
+    {
+      "company_id": "decagon",
+      "company_name": "Decagon",
+      "status": "allowed",
+      "domain": "https://decagon.ai",
+      "robots_url": "https://decagon.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://decagon.ai/about": true,
+        "https://decagon.ai/product": true,
+        "https://decagon.ai/careers": true,
+        "https://decagon.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:05:40Z"
+    },
+    {
+      "company_id": "deepl",
+      "company_name": "DeepL",
+      "status": "disallowed",
+      "domain": "https://www.deepl.com",
+      "robots_url": "https://www.deepl.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.deepl.com/about": false,
+        "https://www.deepl.com/product": false,
+        "https://www.deepl.com/careers": false,
+        "https://www.deepl.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:05:42Z"
+    },
+    {
+      "company_id": "elevenlabs",
+      "company_name": "ElevenLabs",
+      "status": "allowed",
+      "domain": "https://elevenlabs.io",
+      "robots_url": "https://elevenlabs.io/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://elevenlabs.io/about": true,
+        "https://elevenlabs.io/product": true,
+        "https://elevenlabs.io/careers": true,
+        "https://elevenlabs.io/blog": true
+      },
+      "checked_at": "2025-12-13T23:05:42Z"
+    },
+    {
+      "company_id": "figure-ai",
+      "company_name": "Figure AI",
+      "status": "allowed",
+      "domain": "https://www.figure.ai",
+      "robots_url": "https://www.figure.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.figure.ai/about": true,
+        "https://www.figure.ai/product": true,
+        "https://www.figure.ai/careers": true,
+        "https://www.figure.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:05:46Z"
+    },
+    {
+      "company_id": "fireworks-ai",
+      "company_name": "Fireworks AI",
+      "status": "allowed",
+      "domain": "https://fireworks.ai",
+      "robots_url": "https://fireworks.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://fireworks.ai/about": true,
+        "https://fireworks.ai/product": true,
+        "https://fireworks.ai/careers": true,
+        "https://fireworks.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:05:48Z"
+    },
+    {
+      "company_id": "glean",
+      "company_name": "Glean",
+      "status": "allowed",
+      "domain": "https://www.glean.com",
+      "robots_url": "https://www.glean.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.glean.com/about": true,
+        "https://www.glean.com/product": true,
+        "https://www.glean.com/careers": true,
+        "https://www.glean.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:05:59Z"
+    },
+    {
+      "company_id": "harvey",
+      "company_name": "Harvey",
+      "status": "allowed",
+      "domain": "https://www.harvey.ai",
+      "robots_url": "https://www.harvey.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.harvey.ai/about": true,
+        "https://www.harvey.ai/product": true,
+        "https://www.harvey.ai/careers": true,
+        "https://www.harvey.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:01Z"
+    },
+    {
+      "company_id": "lambda",
+      "company_name": "Lambda",
+      "status": "allowed",
+      "domain": "https://lambda.ai",
+      "robots_url": "https://lambda.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://lambda.ai/about": true,
+        "https://lambda.ai/product": true,
+        "https://lambda.ai/careers": true,
+        "https://lambda.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:02Z"
+    },
+    {
+      "company_id": "langchain",
+      "company_name": "LangChain",
+      "status": "allowed",
+      "domain": "https://www.langchain.com",
+      "robots_url": "https://www.langchain.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.langchain.com/about": true,
+        "https://www.langchain.com/product": true,
+        "https://www.langchain.com/careers": true,
+        "https://www.langchain.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:06Z"
+    },
+    {
+      "company_id": "luminance",
+      "company_name": "Luminance",
+      "status": "disallowed",
+      "domain": "https://www.luminance.com",
+      "robots_url": "https://www.luminance.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.luminance.com/about": false,
+        "https://www.luminance.com/product": false,
+        "https://www.luminance.com/careers": false,
+        "https://www.luminance.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:06:10Z"
+    },
+    {
+      "company_id": "mercor",
+      "company_name": "Mercor",
+      "status": "disallowed",
+      "domain": "https://www.mercor.com:443",
+      "robots_url": "https://www.mercor.com:443/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.mercor.com:443/about": false,
+        "https://www.mercor.com:443/product": false,
+        "https://www.mercor.com:443/careers": false,
+        "https://www.mercor.com:443/blog": false
+      },
+      "checked_at": "2025-12-13T23:06:10Z"
+    },
+    {
+      "company_id": "midjourney",
+      "company_name": "Midjourney",
+      "status": "disallowed",
+      "domain": "https://www.midjourney.com",
+      "robots_url": "https://www.midjourney.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.midjourney.com/about": false,
+        "https://www.midjourney.com/product": false,
+        "https://www.midjourney.com/careers": false,
+        "https://www.midjourney.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:06:10Z"
+    },
+    {
+      "company_id": "mistral-ai",
+      "company_name": "Mistral AI",
+      "status": "allowed",
+      "domain": "https://mistral.ai",
+      "robots_url": "https://mistral.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://mistral.ai/about": true,
+        "https://mistral.ai/product": true,
+        "https://mistral.ai/careers": true,
+        "https://mistral.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:10Z"
+    },
+    {
+      "company_id": "notion",
+      "company_name": "Notion",
+      "status": "disallowed",
+      "domain": "https://www.notion.com",
+      "robots_url": "https://www.notion.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.notion.com/about": false,
+        "https://www.notion.com/product": false,
+        "https://www.notion.com/careers": false,
+        "https://www.notion.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:06:12Z"
+    },
+    {
+      "company_id": "openai",
+      "company_name": "OpenAI",
+      "status": "disallowed",
+      "domain": "https://openai.com",
+      "robots_url": "https://openai.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://openai.com/about": false,
+        "https://openai.com/product": false,
+        "https://openai.com/careers": false,
+        "https://openai.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:06:13Z"
+    },
+    {
+      "company_id": "openevidence",
+      "company_name": "OpenEvidence",
+      "status": "allowed",
+      "domain": "https://www.openevidence.com",
+      "robots_url": "https://www.openevidence.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.openevidence.com/about": true,
+        "https://www.openevidence.com/product": true,
+        "https://www.openevidence.com/careers": true,
+        "https://www.openevidence.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:13Z"
+    },
+    {
+      "company_id": "perplexity-ai",
+      "company_name": "Perplexity AI",
+      "status": "allowed",
+      "domain": "https://www.perplexity.ai",
+      "robots_url": "https://www.perplexity.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.perplexity.ai/about": true,
+        "https://www.perplexity.ai/product": true,
+        "https://www.perplexity.ai/careers": true,
+        "https://www.perplexity.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:18Z"
+    },
+    {
+      "company_id": "photoroom",
+      "company_name": "Photoroom",
+      "status": "allowed",
+      "domain": "https://www.photoroom.com",
+      "robots_url": "https://www.photoroom.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.photoroom.com/about": true,
+        "https://www.photoroom.com/product": true,
+        "https://www.photoroom.com/careers": true,
+        "https://www.photoroom.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:18Z"
+    },
+    {
+      "company_id": "pika",
+      "company_name": "Pika",
+      "status": "allowed",
+      "domain": "https://pollo.ai",
+      "robots_url": "https://pollo.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://pollo.ai/about": true,
+        "https://pollo.ai/product": true,
+        "https://pollo.ai/careers": true,
+        "https://pollo.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:20Z"
+    },
+    {
+      "company_id": "runway",
+      "company_name": "Runway",
+      "status": "allowed",
+      "domain": "https://runway.com",
+      "robots_url": "https://runway.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://runway.com/about": true,
+        "https://runway.com/product": true,
+        "https://runway.com/careers": true,
+        "https://runway.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:25Z"
+    },
+    {
+      "company_id": "sakana-ai",
+      "company_name": "Sakana AI",
+      "status": "allowed",
+      "domain": "https://sakana.ai",
+      "robots_url": "https://sakana.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://sakana.ai/about": true,
+        "https://sakana.ai/product": true,
+        "https://sakana.ai/careers": true,
+        "https://sakana.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:27Z"
+    },
+    {
+      "company_id": "sambanova",
+      "company_name": "SambaNova",
+      "status": "allowed",
+      "domain": "https://sambanova.ai",
+      "robots_url": "https://sambanova.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://sambanova.ai/about": true,
+        "https://sambanova.ai/product": true,
+        "https://sambanova.ai/careers": true,
+        "https://sambanova.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:29Z"
+    },
+    {
+      "company_id": "sierra",
+      "company_name": "Sierra",
+      "status": "allowed",
+      "domain": "https://sierra.ai",
+      "robots_url": "https://sierra.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://sierra.ai/about": true,
+        "https://sierra.ai/product": true,
+        "https://sierra.ai/careers": true,
+        "https://sierra.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:31Z"
+    },
+    {
+      "company_id": "skild-ai",
+      "company_name": "Skild AI",
+      "status": "allowed",
+      "domain": "https://www.skild.ai",
+      "robots_url": "https://www.skild.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.skild.ai/about": true,
+        "https://www.skild.ai/product": true,
+        "https://www.skild.ai/careers": true,
+        "https://www.skild.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:33Z"
+    },
+    {
+      "company_id": "snorkel-ai",
+      "company_name": "Snorkel AI",
+      "status": "allowed",
+      "domain": "https://snorkel.ai",
+      "robots_url": "https://snorkel.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://snorkel.ai/about": true,
+        "https://snorkel.ai/product": true,
+        "https://snorkel.ai/careers": true,
+        "https://snorkel.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:36Z"
+    },
+    {
+      "company_id": "speak",
+      "company_name": "Speak",
+      "status": "allowed",
+      "domain": "https://www.speak.com",
+      "robots_url": "https://www.speak.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.speak.com/about": true,
+        "https://www.speak.com/product": true,
+        "https://www.speak.com/careers": true,
+        "https://www.speak.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:42Z"
+    },
+    {
+      "company_id": "stackblitz",
+      "company_name": "StackBlitz",
+      "status": "allowed",
+      "domain": "https://stackblitz.com",
+      "robots_url": "https://stackblitz.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://stackblitz.com/about": true,
+        "https://stackblitz.com/product": true,
+        "https://stackblitz.com/careers": true,
+        "https://stackblitz.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:44Z"
+    },
+    {
+      "company_id": "suno",
+      "company_name": "Suno",
+      "status": "allowed",
+      "domain": "https://suno.com",
+      "robots_url": "https://suno.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://suno.com/about": true,
+        "https://suno.com/product": true,
+        "https://suno.com/careers": true,
+        "https://suno.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:06:53Z"
+    },
+    {
+      "company_id": "synthesia",
+      "company_name": "Synthesia",
+      "status": "allowed",
+      "domain": "https://www.synthesia.com",
+      "robots_url": "https://www.synthesia.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.synthesia.com/about": true,
+        "https://www.synthesia.com/product": true,
+        "https://www.synthesia.com/careers": true,
+        "https://www.synthesia.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:07:00Z"
+    },
+    {
+      "company_id": "thinking-machine-labs",
+      "company_name": "Thinking Machine Labs",
+      "status": "disallowed",
+      "domain": "https://thinkingmachines.ai",
+      "robots_url": "https://thinkingmachines.ai/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://thinkingmachines.ai/about": false,
+        "https://thinkingmachines.ai/product": false,
+        "https://thinkingmachines.ai/careers": false,
+        "https://thinkingmachines.ai/blog": false
+      },
+      "checked_at": "2025-12-13T23:07:22Z"
+    },
+    {
+      "company_id": "together-ai",
+      "company_name": "Together AI",
+      "status": "allowed",
+      "domain": "https://www.together.ai",
+      "robots_url": "https://www.together.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.together.ai/about": true,
+        "https://www.together.ai/product": true,
+        "https://www.together.ai/careers": true,
+        "https://www.together.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:07:22Z"
+    },
+    {
+      "company_id": "vannevar-labs",
+      "company_name": "Vannevar Labs",
+      "status": "allowed",
+      "domain": "https://vannevarlabs.com",
+      "robots_url": "https://vannevarlabs.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://vannevarlabs.com/about": true,
+        "https://vannevarlabs.com/product": true,
+        "https://vannevarlabs.com/careers": true,
+        "https://vannevarlabs.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:07:23Z"
+    },
+    {
+      "company_id": "vast-data",
+      "company_name": "VAST Data",
+      "status": "allowed",
+      "domain": "https://www.vastdata.com",
+      "robots_url": "https://www.vastdata.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.vastdata.com/about": true,
+        "https://www.vastdata.com/product": true,
+        "https://www.vastdata.com/careers": true,
+        "https://www.vastdata.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:07:25Z"
+    },
+    {
+      "company_id": "windsurf",
+      "company_name": "Windsurf",
+      "status": "allowed",
+      "domain": "https://windsurf.com",
+      "robots_url": "https://windsurf.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://windsurf.com/about": true,
+        "https://windsurf.com/product": true,
+        "https://windsurf.com/careers": true,
+        "https://windsurf.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:07:30Z"
+    },
+    {
+      "company_id": "world-labs",
+      "company_name": "World Labs",
+      "status": "allowed",
+      "domain": "https://www.worldlabs.ai",
+      "robots_url": "https://www.worldlabs.ai/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.worldlabs.ai/about": true,
+        "https://www.worldlabs.ai/product": true,
+        "https://www.worldlabs.ai/careers": true,
+        "https://www.worldlabs.ai/blog": true
+      },
+      "checked_at": "2025-12-13T23:07:33Z"
+    },
+    {
+      "company_id": "writer",
+      "company_name": "Writer",
+      "status": "allowed",
+      "domain": "https://writer.com",
+      "robots_url": "https://writer.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://writer.com/about": true,
+        "https://writer.com/product": true,
+        "https://writer.com/careers": true,
+        "https://writer.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:07:36Z"
+    },
+    {
+      "company_id": "xai",
+      "company_name": "XAI",
+      "status": "disallowed",
+      "domain": "https://x.ai",
+      "robots_url": "https://x.ai/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://x.ai/about": false,
+        "https://x.ai/product": false,
+        "https://x.ai/careers": false,
+        "https://x.ai/blog": false
+      },
+      "checked_at": "2025-12-13T23:07:40Z"
+    }
+  ]
+}

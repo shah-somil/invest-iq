@@ -1,12 +1,8 @@
 {
   "company_id": "xai",
   "company_name": "XAI",
-  "crawled_at": "2025-12-13T21:05:31Z",
-  "sections": {
-    "homepage": "https://x.ai",
-    "about": "https://x.ai/company",
-    "product": "https://x.ai/grok",
-    "careers": "https://x.ai/careers",
-    "blog": "https://x.ai/news"
-  }
+  "status": "failed",
+  "reason": "homepage_fetch_failed",
+  "message": "homepage fetch failed (https://x.ai) -> robots.txt disallows fetching https://x.ai for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+  "crawled_at": "2025-12-13T23:07:40Z"
 }

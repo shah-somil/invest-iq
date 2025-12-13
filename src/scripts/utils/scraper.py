@@ -3,6 +3,25 @@
 """
 InvestIQ — Scrape & Store (robust, pattern-matching version)
 
+Data Sources:
+    - Company websites (publicly accessible pages only)
+    - Seed data from top AI and Fintech company lists
+    Citation: All scraped content is from publicly available company websites.
+    Used for research and analysis purposes only. See ETHICS.md for details.
+
+External Libraries:
+    - requests: https://requests.readthedocs.io/ (Apache 2.0 License)
+    - beautifulsoup4: https://www.crummy.com/software/BeautifulSoup/ (MIT License)
+    - lxml: https://lxml.de/ (BSD License)
+
+Ethical Considerations:
+    - Checks robots.txt before scraping to respect website policies
+    - Only scrapes publicly accessible, non-authenticated content
+    - Implements host blocking to avoid paywalled content
+    - Filters spam URLs and focuses on main content sections
+    - All data used for research/analysis, not commercial redistribution
+    - See ETHICS.md for comprehensive ethical guidelines
+
 Usage (examples)
 ---------------
 python3 -m src.lab1_scraper --limit 5
@@ -12,7 +31,7 @@ python3 -m src.lab1_scraper --overrides data/domain_overrides.json
 
 What it does
 ------------
-• Reads seed: data/forbes_ai50_seed.json  (list or {"companies":[...]})
+• Reads seed: data/seed/top_ai50_seed.json or data/seed/top_fintech50_seed.json  (list or {"companies":[...]})
   expects: company_id, company_name, website
 • Fetches and saves (per company):
     - homepage
@@ -32,7 +51,9 @@ What it does
 
 Guardrails & extras
 -------------------
+• Checks robots.txt before scraping any URL (respects website crawling policies)
 • Never crawls blocked hosts (forbes.com, buysub.com). If homepage resolves there → skip with warning.
+• Checks robots.txt before scraping to respect website crawling policies.
 • Optional per-company domain overrides: --overrides data/domain_overrides.json
   Format: { "cohere": "https://cohere.com", "baseten": "https://www.baseten.co", ... }
 • Section discovery: smart regex on anchor text + URL path, plus scoring and same-domain enforcement.
@@ -57,9 +78,10 @@ import re
 import sys
 import time
 from urllib.parse import urljoin, urlparse
+from urllib.robotparser import RobotFileParser
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[3]  # src/scripts/lib/scraper.py -> project root
-DEFAULT_SEED_PATH = REPO_ROOT / "data" / "seed" / "forbes_ai50_seed.json"
+DEFAULT_SEED_PATH = REPO_ROOT / "data" / "seed" / "top_ai50_seed.json"
 _SEED_INDEX = None
 
 import requests
@@ -84,6 +106,10 @@ TIMEOUT = 25
 # -------- Blocked hosts / spam --------
 BLOCKED_HOSTS = {"forbes.com", "www.forbes.com", "w1.buysub.com", "buysub.com"}
 SPAM_PATH = re.compile(r"(coupon|coupons|offer|deals|ref=|utm_)", re.I)
+
+# -------- robots.txt cache --------
+_ROBOTS_CACHE = {}  # domain -> RobotFileParser instance
+_ROBOTS_DECISIONS = {}  # company_id -> {"status": "allowed"/"disallowed"/"error", "domain": str, "robots_url": str, "checked_at": str}
 
 # -------- Section regex patterns --------
 PATTERNS = {
@@ -125,7 +151,7 @@ def read_json(path):
         return json.load(f)
 
 
-def read_seed(path="data/forbes_ai50_seed.json"):
+def read_seed(path="data/seed/top_ai50_seed.json"):
     data = read_json(path)
     rows = data.get("companies", data) if isinstance(data, dict) else data
     out = []
@@ -169,7 +195,26 @@ def is_html_ok(resp: requests.Response) -> bool:
     return resp.status_code == 200 and ("text/html" in ctype or "application/xhtml" in ctype)
 
 
-def fetch(url: str) -> requests.Response:
+def fetch(url: str, check_robots: bool = True) -> requests.Response:
+    """
+    Fetch a URL with optional robots.txt checking.
+    
+    Args:
+        url: URL to fetch
+        check_robots: If True, check robots.txt before fetching
+    
+    Returns:
+        requests.Response object
+    
+    Raises:
+        requests.RequestException if robots.txt disallows or fetch fails
+    """
+    if check_robots:
+        if not can_fetch(url):
+            raise requests.RequestException(
+                f"robots.txt disallows fetching {url} for user-agent: {UA}"
+            )
+    
     return requests.get(url, headers=HEADERS, timeout=TIMEOUT, allow_redirects=True)
 
 
@@ -220,6 +265,138 @@ def blocked(host: str) -> bool:
     return host in BLOCKED_HOSTS or any(host.endswith("." + b) for b in BLOCKED_HOSTS)
 
 
+def get_robots_parser(url: str) -> RobotFileParser:
+    """Get or create a RobotFileParser for the domain of the given URL."""
+    try:
+        parsed = urlparse(url)
+        domain = f"{parsed.scheme}://{parsed.netloc}"
+        
+        if domain not in _ROBOTS_CACHE:
+            rp = RobotFileParser()
+            robots_url = urljoin(domain, "/robots.txt")
+            rp.set_url(robots_url)
+            try:
+                rp.read()
+            except Exception as e:
+                # If robots.txt doesn't exist or is unreadable, allow all
+                # (per robots.txt spec, missing file means allow all)
+                print(f"  ⚠️  Could not read robots.txt for {domain}: {e}")
+                # Create a permissive parser
+                rp = RobotFileParser()
+                rp.set_url(robots_url)
+            _ROBOTS_CACHE[domain] = rp
+        
+        return _ROBOTS_CACHE[domain]
+    except Exception:
+        # On any error, return a permissive parser
+        rp = RobotFileParser()
+        rp.set_url("")
+        return rp
+
+
+def check_robots_for_company(company_id: str, company_name: str, base_url: str) -> dict:
+    """
+    Check robots.txt status for a company and track the decision.
+    
+    Returns:
+        dict with status, domain, robots_url, checked_at, and details
+    """
+    try:
+        parsed = urlparse(base_url)
+        domain = f"{parsed.scheme}://{parsed.netloc}"
+        robots_url = urljoin(domain, "/robots.txt")
+        
+        # Check if homepage is allowed
+        rp = get_robots_parser(base_url)
+        homepage_allowed = rp.can_fetch(UA, base_url)
+        
+        # Check a few common paths
+        test_paths = [
+            urljoin(base_url, "/about"),
+            urljoin(base_url, "/product"),
+            urljoin(base_url, "/careers"),
+            urljoin(base_url, "/blog"),
+        ]
+        paths_allowed = {}
+        for path in test_paths:
+            paths_allowed[path] = rp.can_fetch(UA, path)
+        
+        # Determine overall status
+        if homepage_allowed and any(paths_allowed.values()):
+            status = "allowed"
+        elif not homepage_allowed:
+            status = "disallowed"
+        else:
+            status = "partially_allowed"
+        
+        decision = {
+            "company_id": company_id,
+            "company_name": company_name,
+            "status": status,
+            "domain": domain,
+            "robots_url": robots_url,
+            "homepage_allowed": homepage_allowed,
+            "paths_allowed": paths_allowed,
+            "checked_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        }
+        
+        _ROBOTS_DECISIONS[company_id] = decision
+        return decision
+        
+    except Exception as e:
+        decision = {
+            "company_id": company_id,
+            "company_name": company_name,
+            "status": "error",
+            "domain": urlparse(base_url).netloc if base_url else "unknown",
+            "robots_url": None,
+            "error": str(e),
+            "checked_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        }
+        _ROBOTS_DECISIONS[company_id] = decision
+        return decision
+
+
+def save_robots_log(log_path: pathlib.Path):
+    """Save robots.txt decisions to a log file."""
+    ensure_dir(log_path.parent)
+    
+    log_data = {
+        "timestamp": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "total_companies": len(_ROBOTS_DECISIONS),
+        "allowed": len([d for d in _ROBOTS_DECISIONS.values() if d.get("status") == "allowed"]),
+        "disallowed": len([d for d in _ROBOTS_DECISIONS.values() if d.get("status") == "disallowed"]),
+        "partially_allowed": len([d for d in _ROBOTS_DECISIONS.values() if d.get("status") == "partially_allowed"]),
+        "errors": len([d for d in _ROBOTS_DECISIONS.values() if d.get("status") == "error"]),
+        "decisions": list(_ROBOTS_DECISIONS.values()),
+    }
+    
+    write_text(log_path, json.dumps(log_data, indent=2))
+    return log_path
+
+
+def can_fetch(url: str, user_agent: str = None) -> bool:
+    """
+    Check if a URL can be fetched according to robots.txt.
+    
+    Args:
+        url: The URL to check
+        user_agent: User agent string (defaults to UA from HEADERS)
+    
+    Returns:
+        True if allowed, False if disallowed
+    """
+    if user_agent is None:
+        user_agent = UA
+    
+    try:
+        rp = get_robots_parser(url)
+        return rp.can_fetch(user_agent, url)
+    except Exception:
+        # On error, default to allowing (permissive)
+        return True
+
+
 def discover_from_nav(base_url: str, homepage_html: str, section_key: str):
     """Collect candidate links from homepage anchors (same-domain), rank by regex on text+path."""
     s = soup(homepage_html)
@@ -231,6 +408,9 @@ def discover_from_nav(base_url: str, homepage_html: str, section_key: str):
         if not same_domain(url_abs, base_url):
             continue
         if SPAM_PATH.search(url_abs):
+            continue
+        # Check robots.txt before adding to candidates
+        if not can_fetch(url_abs):
             continue
         candidates.append((url_abs, text))
 
@@ -272,15 +452,19 @@ def try_section(base_url: str, homepage_html: str, section_key: str):
     tried = []
     for slug in CANDIDATE_SLUGS[section_key]:
         url = base_url if slug == "" else urljoin(base_url + "/", slug)
-        if url not in tried and not SPAM_PATH.search(url):
+        if url not in tried and not SPAM_PATH.search(url) and can_fetch(url):
             tried.append(url)
     tried.extend(u for u in discover_from_nav(base_url, homepage_html, section_key) if u not in tried)
 
     for u in tried:
         try:
-            r = fetch(u)
+            r = fetch(u, check_robots=True)
             if is_html_ok(r) and same_domain(r.url, base_url):
                 return r.url.rstrip("/"), r.text, r.status_code
+        except requests.RequestException as e:
+            if "robots.txt disallows" in str(e):
+                print(f"  ⚠️  robots.txt disallows: {u}")
+            continue
         except Exception:
             continue
     return None, None, None
@@ -397,6 +581,12 @@ def _scrape_company_to_dir(record: dict, out_dir: pathlib.Path) -> dict:
     if blocked(host):
         raise ScrapeCompanyError(cid, f"seed website blocked ({base_url})", reason="blocked_host")
 
+    # Check robots.txt status for this company
+    robots_decision = check_robots_for_company(cid, name, base_url)
+    if robots_decision.get("status") == "disallowed":
+        print(f"  ⚠️  robots.txt disallows scraping for {name} ({base_url})")
+        # Still try to scrape, but log the disallowance
+
     ensure_dir(out_dir)
 
     try:
@@ -489,7 +679,7 @@ def scrape_company(
 
 def main():
     ap = argparse.ArgumentParser(description="InvestIQ: Scrape & Store (robust)")
-    ap.add_argument("--seed", default="data/forbes_ai50_seed.json")
+    ap.add_argument("--seed", default="data/seed/top_ai50_seed.json")
     ap.add_argument("--overrides", help="JSON map: company_id -> official base URL")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--company")

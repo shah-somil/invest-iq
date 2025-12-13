@@ -1,13 +1,13 @@
 {
   "company_name": "Figure AI",
   "source_url": "https://www.figure.ai/company",
-  "crawled_at": "2025-12-13T21:03:42Z",
+  "crawled_at": "2025-12-13T23:05:47Z",
   "http_status": 200,
   "title": "Company | Figure",
   "canonical": "https://www.figure.ai/company",
   "robots": "index,follow",
-  "content_sha256": "a5e1da896f5f2dd0b9b09170fd82d8bf8f1b2168c6ea85ae45933971823f6688",
-  "content_length": 55934,
+  "content_sha256": "78dd6412d3b6fc0c263916d41f1c7ad8b7a1d498727f136351e416987df12bad",
+  "content_length": 55936,
   "parser": "lxml",
   "version": 1
 }

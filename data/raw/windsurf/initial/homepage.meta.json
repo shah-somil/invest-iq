@@ -1,12 +1,12 @@
 {
   "company_name": "Windsurf",
   "source_url": "https://windsurf.com",
-  "crawled_at": "2025-12-13T21:05:22Z",
+  "crawled_at": "2025-12-13T23:07:31Z",
   "http_status": 200,
   "title": "Windsurf - The best AI for Coding",
   "canonical": "https://windsurf.com",
   "robots": "",
-  "content_sha256": "d4d82964fedbb93a9212b9c8f09c90536146096e152c26112886c36981224495",
+  "content_sha256": "5cbe46d317186625f6953298efa03b8bda7e1bba9d90ab8de7c150057b485935",
   "content_length": 1714988,
   "parser": "lxml",
   "version": 1

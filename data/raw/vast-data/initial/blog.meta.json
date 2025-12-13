@@ -1,13 +1,13 @@
 {
   "company_name": "VAST Data",
   "source_url": "https://www.vastdata.com/blog",
-  "crawled_at": "2025-12-13T21:05:21Z",
+  "crawled_at": "2025-12-13T23:07:30Z",
   "http_status": 200,
   "title": "Blog - VAST Data",
   "canonical": "https://www.vastdata.com/blog",
   "robots": "",
-  "content_sha256": "de58a93d35004c7d40c37a6a63c170aa7b348e1abd29dfea6f5523d3d07cec6e",
-  "content_length": 173195,
+  "content_sha256": "39b4befd1d49cd2be0b086d6bfc911497765ede6ae5e2d875b2de21f67eaf82f",
+  "content_length": 173163,
   "parser": "lxml",
   "version": 1
 }

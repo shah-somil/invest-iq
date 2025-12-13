@@ -1,12 +1,12 @@
 {
   "company_name": "Sierra",
   "source_url": "https://sierra.ai/blog",
-  "crawled_at": "2025-12-13T21:04:32Z",
+  "crawled_at": "2025-12-13T23:06:32Z",
   "http_status": 200,
   "title": "Blog | Sierra",
   "canonical": "https://sierra.ai/blog",
   "robots": "index",
-  "content_sha256": "e8a84f2be7587256f8c624dbe6cef6b5aaa775481b8bfd0e94fb6a495a05137e",
+  "content_sha256": "e5a11ceacfd2d9167cd1296d19c5795bf5e45de474f94c6c27a04e6fdb2cece2",
   "content_length": 224568,
   "parser": "lxml",
   "version": 1

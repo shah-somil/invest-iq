@@ -2,10 +2,10 @@
   "company_id": "tala",
   "company_name": "Tala",
   "source_homepage": "https://www.tala.co",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/tala/initial",
-  "content_sha256": "9453744236a2f7d46d20e8428fba1e67db30d2eaf6ec8d16188884cca3ba2628",
+  "content_sha256": "db1d6bb6bb5b0b536b6a729d71895f2f86dcefa2a2bd412dda5118104484676b",
   "content_length": 197,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

@@ -2,19 +2,19 @@
   "company_id": "capitalize",
   "company_name": "Capitalize",
   "source_homepage": "https://www.hicapitalize.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:31:11Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/capitalize/initial",
-  "content_sha256": "d24f5fcb08770af5c73644d4523dcb1de79cd19a970ea3087df3f7b92a8cb8bd",
-  "content_length": 209,
+  "content_sha256": "75fe9a24b33fcd4bd512cbcd41a8d22127344622dd3b945eb1d48ad8ae36053c",
+  "content_length": 1092,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "capitalize",
-    "company_name": "capitalize",
+    "company_name": "Capitalize",
     "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://www.hicapitalize.com) -> robots.txt disallows fetching https://www.hicapitalize.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:31:11Z"
   }
 }

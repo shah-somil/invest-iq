@@ -1,0 +1,13 @@
+{
+  "company_name": "Found",
+  "source_url": "https://found.com/careers",
+  "crawled_at": "2025-12-13T23:34:43Z",
+  "http_status": 200,
+  "title": "Careers",
+  "canonical": "https://found.com/careers",
+  "robots": "",
+  "content_sha256": "b28471a96fc4ec0600e30cad41bf0972c881dbfd44d1ede21674430adadee652",
+  "content_length": 102540,
+  "parser": "lxml",
+  "version": 1
+}

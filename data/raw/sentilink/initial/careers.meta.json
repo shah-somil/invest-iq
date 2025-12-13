@@ -1,0 +1,13 @@
+{
+  "company_name": "SentiLink",
+  "source_url": "https://www.sentilink.com/careers",
+  "crawled_at": "2025-12-13T23:36:02Z",
+  "http_status": 200,
+  "title": "Join our team - SentiLink",
+  "canonical": "https://www.sentilink.com/careers/",
+  "robots": "index,follow",
+  "content_sha256": "5bce494a13425a516c8dae2fd38ed238bf27b74e0fcad58c79d1dc8a917c6a49",
+  "content_length": 72183,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "Figure",
+  "source_url": "https://www.figure.com/careers",
+  "crawled_at": "2025-12-13T23:34:36Z",
+  "http_status": 200,
+  "title": "Careers | Figure",
+  "canonical": "https://www.figure.com/careers/",
+  "robots": "",
+  "content_sha256": "6cbc73e70709dbec8878263d5a41788c20333dc46c978cb2ca81fd5840bbde63",
+  "content_length": 345654,
+  "parser": "lxml",
+  "version": 1
+}

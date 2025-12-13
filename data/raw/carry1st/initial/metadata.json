@@ -2,19 +2,24 @@
   "company_id": "carry1st",
   "company_name": "Carry1st",
   "source_homepage": "https://www.carry1st.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:31:15Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/carry1st/initial",
-  "content_sha256": "0cc3742bba0ea0a358346e61b9b6cde657594fcb3550421a786dc8aeb13d3824",
-  "content_length": 205,
+  "content_sha256": "3d05d5f3158387c167860c8a082c1d851ca507dd616d8ca1b0bbab51de78dbb3",
+  "content_length": 507712,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "carry1st",
-    "company_name": "carry1st",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Carry1st",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/carry1st/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.carry1st.com",
+      "about": "https://www.carry1st.com",
+      "product": "https://www.carry1st.com/games",
+      "careers": "https://www.carry1st.com/careers",
+      "blog": "https://www.carry1st.com/blog"
+    },
+    "status": "success"
   }
 }

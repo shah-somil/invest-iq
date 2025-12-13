@@ -1,0 +1,13 @@
+{
+  "company_name": "Figure",
+  "source_url": "https://www.figure.com/blog",
+  "crawled_at": "2025-12-13T23:34:38Z",
+  "http_status": 200,
+  "title": "Blog and Homeowner Resource Center | Figure",
+  "canonical": "https://www.figure.com/blog/",
+  "robots": "",
+  "content_sha256": "77c1680fbad7b6c317900435c1d9a994ec868acd400d83f05e1bc8c43403c72d",
+  "content_length": 39913739,
+  "parser": "lxml",
+  "version": 1
+}

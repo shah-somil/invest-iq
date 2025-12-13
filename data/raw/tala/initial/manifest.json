@@ -1,8 +1,12 @@
 {
   "company_id": "tala",
-  "company_name": "tala",
-  "status": "failed",
-  "reason": "missing_website",
-  "message": "cannot scrape without a website URL",
-  "crawled_at": "2025-12-13T23:07:40Z"
+  "company_name": "Tala",
+  "crawled_at": "2025-12-13T23:36:23Z",
+  "sections": {
+    "homepage": "https://tala.co",
+    "about": "https://tala.co/about",
+    "product": "https://tala.co/gt",
+    "careers": "https://tala.co/careers",
+    "blog": "https://tala.co/blog"
+  }
 }

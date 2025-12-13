@@ -1,0 +1,13 @@
+{
+  "company_name": "Arc",
+  "source_url": "https://www.joinarc.com",
+  "crawled_at": "2025-12-13T23:30:41Z",
+  "http_status": 200,
+  "title": "Arc",
+  "canonical": "https://www.joinarc.com",
+  "robots": "",
+  "content_sha256": "307b488967064b64ec45a72a3469f6d9d3a506350e7a74d95cffb7ed142e0745",
+  "content_length": 54137,
+  "parser": "lxml",
+  "version": 1
+}

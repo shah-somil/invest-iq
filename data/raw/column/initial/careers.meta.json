@@ -1,0 +1,13 @@
+{
+  "company_name": "Column",
+  "source_url": "https://column.com/careers",
+  "crawled_at": "2025-12-13T23:31:38Z",
+  "http_status": 200,
+  "title": "Careers \u00e2\u0080\u0094 Column",
+  "canonical": "https://column.com/careers/",
+  "robots": "",
+  "content_sha256": "0908ba10cc054319846b89ba86391e4e763cd2cc79a81f0d94b46e6e295fc94c",
+  "content_length": 357403,
+  "parser": "lxml",
+  "version": 1
+}

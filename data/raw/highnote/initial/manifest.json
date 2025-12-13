@@ -1,8 +1,12 @@
 {
   "company_id": "highnote",
-  "company_name": "highnote",
-  "status": "failed",
-  "reason": "missing_website",
-  "message": "cannot scrape without a website URL",
-  "crawled_at": "2025-12-13T23:07:40Z"
+  "company_name": "Highnote",
+  "crawled_at": "2025-12-13T23:34:45Z",
+  "sections": {
+    "homepage": "https://highnote.com",
+    "about": "https://highnote.com/about",
+    "product": null,
+    "careers": "https://highnote.com/careers",
+    "blog": "https://highnote.com/blog"
+  }
 }

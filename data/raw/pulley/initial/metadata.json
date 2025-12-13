@@ -2,19 +2,24 @@
   "company_id": "pulley",
   "company_name": "Pulley",
   "source_homepage": "https://www.pulley.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:35:44Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/pulley/initial",
-  "content_sha256": "be3a27265c1ea4ed09ceadc08716257c2441bfb83de324d82a14ec177c93cf1a",
-  "content_length": 201,
+  "content_sha256": "7977ba882fedeadfa7bb33a086b2be52ff347611a66476638ab48c3373b5e0de",
+  "content_length": 201009,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "pulley",
-    "company_name": "pulley",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Pulley",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/pulley/initial/manifest.json",
+    "sections": {
+      "homepage": "https://pulley.com",
+      "about": null,
+      "product": null,
+      "careers": null,
+      "blog": null
+    },
+    "status": "success"
   }
 }

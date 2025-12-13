@@ -2,19 +2,24 @@
   "company_id": "found",
   "company_name": "Found",
   "source_homepage": "https://www.found.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:34:43Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/found/initial",
-  "content_sha256": "bdd65769482116fb7a9c4d96d504c5141deb607eed86e8ea7dea62b8119c84fb",
-  "content_length": 199,
+  "content_sha256": "69621fb601d0d75ebd572cea2fb9872a13527b02f0b1e7f39a81408b4424bf66",
+  "content_length": 3680922,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "found",
-    "company_name": "found",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Found",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/found/initial/manifest.json",
+    "sections": {
+      "homepage": "https://found.com",
+      "about": "https://found.com/about",
+      "product": "https://found.com/features",
+      "careers": "https://found.com/careers",
+      "blog": "https://found.com/press"
+    },
+    "status": "success"
   }
 }

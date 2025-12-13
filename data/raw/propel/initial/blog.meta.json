@@ -1,0 +1,13 @@
+{
+  "company_name": "Propel",
+  "source_url": "https://www.propel.app/blog",
+  "crawled_at": "2025-12-13T23:35:42Z",
+  "http_status": 200,
+  "title": "The Propel blog",
+  "canonical": "https://www.propel.app/blog/",
+  "robots": "index, follow",
+  "content_sha256": "d063ee1af08527749e9051de0a522c3844167163d68efe6e88e7973741439f24",
+  "content_length": 67151,
+  "parser": "lxml",
+  "version": 1
+}

@@ -2,19 +2,19 @@
   "company_id": "nala",
   "company_name": "Nala",
   "source_homepage": "https://www.nala.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:35:20Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/nala/initial",
-  "content_sha256": "c8a861b779002b8b14f0872d383185cf2584c63993aba5b14c89050831263bcc",
-  "content_length": 197,
+  "content_sha256": "6c0ce1229ed02f8aff4cd3681686152c70cf48d7878a09e11114161fcacf1a08",
+  "content_length": 1026,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "nala",
-    "company_name": "nala",
+    "company_name": "Nala",
     "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://www.nala.com) -> robots.txt disallows fetching https://www.nala.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:35:20Z"
   }
 }

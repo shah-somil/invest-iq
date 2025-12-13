@@ -1,0 +1,13 @@
+{
+  "company_name": "Mercury",
+  "source_url": "https://mercury.com/about",
+  "crawled_at": "2025-12-13T23:35:16Z",
+  "http_status": 200,
+  "title": "About Mercury | The art of simplified finances",
+  "canonical": "https://mercury.com/about",
+  "robots": "",
+  "content_sha256": "c3b0a2867dbe4236e9afb2074d922c2511e9d7b3a8a829bd32787b6d81545236",
+  "content_length": 1091281,
+  "parser": "lxml",
+  "version": 1
+}

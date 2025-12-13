@@ -1,0 +1,13 @@
+{
+  "company_name": "At-Bay",
+  "source_url": "https://www.at-bay.com/media-kit/product-summaries",
+  "crawled_at": "2025-12-13T23:30:46Z",
+  "http_status": 200,
+  "title": "Product summaries | At-Bay",
+  "canonical": "https://www.at-bay.com/media-kit/product-summaries/",
+  "robots": "max-image-preview:large",
+  "content_sha256": "2cffbc492659a768b0bb690cbf0b45f2a7349626925e54f2db74165adfe2d021",
+  "content_length": 60619,
+  "parser": "lxml",
+  "version": 1
+}

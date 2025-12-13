@@ -1,0 +1,13 @@
+{
+  "company_name": "Kin Insurance",
+  "source_url": "https://www.kin.com/claims",
+  "crawled_at": "2025-12-13T23:35:07Z",
+  "http_status": 200,
+  "title": "Kin Insurance Claims Center | Help & support for your claim",
+  "canonical": "https://www.kin.com/claims/",
+  "robots": "",
+  "content_sha256": "ec0be10ed17d7e738ce7f40e2635051b7d7f377241a5a1bcfecaf428f633cfa6",
+  "content_length": 227701,
+  "parser": "lxml",
+  "version": 1
+}

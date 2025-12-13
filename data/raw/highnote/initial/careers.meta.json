@@ -1,0 +1,13 @@
+{
+  "company_name": "Highnote",
+  "source_url": "https://highnote.com/careers",
+  "crawled_at": "2025-12-13T23:34:46Z",
+  "http_status": 200,
+  "title": "Careers \u2013 Highnote",
+  "canonical": "https://highnote.com/careers",
+  "robots": "",
+  "content_sha256": "5d501228f9841780a6b6c8324d0a66337b12b6859b80b6a6d33837a608f55846",
+  "content_length": 51983,
+  "parser": "lxml",
+  "version": 1
+}

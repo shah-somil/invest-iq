@@ -1,0 +1,13 @@
+{
+  "company_name": "Mercury",
+  "source_url": "https://mercury.com/blog",
+  "crawled_at": "2025-12-13T23:35:19Z",
+  "http_status": 200,
+  "title": "Mercury Blog | Insights, Inside Mercury & Meridian",
+  "canonical": "https://mercury.com/blog",
+  "robots": "",
+  "content_sha256": "82c6f6219a56926ee1b7fa6b57f5ef14b603aeb35e2a95ecf2932688d77b24a3",
+  "content_length": 1570223,
+  "parser": "lxml",
+  "version": 1
+}

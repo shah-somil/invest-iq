@@ -1,0 +1,13 @@
+{
+  "company_name": "Aven",
+  "source_url": "https://www.aven.com/careers",
+  "crawled_at": "2025-12-13T23:30:53Z",
+  "http_status": 200,
+  "title": "Careers at Aven - Join the Machine Banking Revolution | Aven Card",
+  "canonical": "https://www.aven.com/careers",
+  "robots": "all",
+  "content_sha256": "15506af2fb94b773250e53ba131b909effe56941238a1c636f8d59dfa9dc210e",
+  "content_length": 63823,
+  "parser": "lxml",
+  "version": 1
+}

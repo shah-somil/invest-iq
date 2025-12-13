@@ -2,19 +2,24 @@
   "company_id": "esusu",
   "company_name": "Esusu",
   "source_homepage": "https://www.esusu.org",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:32:03Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/esusu/initial",
-  "content_sha256": "1a27227403d6dbae6ceb539707cab6f929fa1e2187f95f51d047e987643000ab",
-  "content_length": 199,
+  "content_sha256": "0120d422468716fe907c6148da4f0e315d9bc46f8b2650e2f7a57df33da3b56d",
+  "content_length": 480931,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "esusu",
-    "company_name": "esusu",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Esusu",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/esusu/initial/manifest.json",
+    "sections": {
+      "homepage": "https://esusurent.com",
+      "about": "https://esusurent.com/about",
+      "product": "https://esusurent.com/marketplace",
+      "careers": "https://esusurent.com/careers",
+      "blog": "https://esusurent.com/blog"
+    },
+    "status": "success"
   }
 }

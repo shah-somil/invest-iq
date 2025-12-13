@@ -1,0 +1,13 @@
+{
+  "company_name": "Relay",
+  "source_url": "https://www.relayfi.com",
+  "crawled_at": "2025-12-13T23:35:44Z",
+  "http_status": 200,
+  "title": "Relay | Online Business Banking | On The Money, All The Time",
+  "canonical": "https://relayfi.com/",
+  "robots": "",
+  "content_sha256": "4b23e1aa8211ae41ac260019276a8f98bcc6c5d3921ad27a8064b57f53418b62",
+  "content_length": 34330,
+  "parser": "lxml",
+  "version": 1
+}

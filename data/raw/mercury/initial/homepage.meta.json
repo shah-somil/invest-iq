@@ -1,0 +1,13 @@
+{
+  "company_name": "Mercury",
+  "source_url": "https://mercury.com",
+  "crawled_at": "2025-12-13T23:35:15Z",
+  "http_status": 200,
+  "title": "Online Business Banking For Startups & Small Businesses | Financial Workflows",
+  "canonical": "https://mercury.com",
+  "robots": "",
+  "content_sha256": "7f50d12c0971fc7cabd5e713b8168c8eb46a70a117b73f0decf3f275ebde8b9a",
+  "content_length": 1271771,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,8 +1,12 @@
 {
   "company_id": "pulley",
-  "company_name": "pulley",
-  "status": "failed",
-  "reason": "missing_website",
-  "message": "cannot scrape without a website URL",
-  "crawled_at": "2025-12-13T23:07:40Z"
+  "company_name": "Pulley",
+  "crawled_at": "2025-12-13T23:35:43Z",
+  "sections": {
+    "homepage": "https://pulley.com",
+    "about": null,
+    "product": null,
+    "careers": null,
+    "blog": null
+  }
 }

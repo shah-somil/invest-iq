@@ -1,0 +1,13 @@
+{
+  "company_name": "Candex",
+  "source_url": "https://www.candex.com",
+  "crawled_at": "2025-12-13T23:31:02Z",
+  "http_status": 200,
+  "title": "Candex | Technology-Based Master Vendor for Tail-Spend Procurement",
+  "canonical": "https://www.candex.com/",
+  "robots": "",
+  "content_sha256": "8d359a95c03fc3caeb39dc66027301a4b6c9d3194fb953f22cc5e821fa69252d",
+  "content_length": 29703,
+  "parser": "lxml",
+  "version": 1
+}

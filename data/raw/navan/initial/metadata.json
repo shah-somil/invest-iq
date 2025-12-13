@@ -2,19 +2,19 @@
   "company_id": "navan",
   "company_name": "Navan",
   "source_homepage": "https://www.navan.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:35:20Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/navan/initial",
-  "content_sha256": "3fa2888f798ca0a770cdd07c45d6f99b07429d94a22abe5d0f042805c545c8a6",
-  "content_length": 199,
+  "content_sha256": "f0e1187a8f41d02440f239e8ab08f7d5aa73dfe8b5879d024e8750461cc03ae3",
+  "content_length": 1036,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "navan",
-    "company_name": "navan",
+    "company_name": "Navan",
     "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://www.navan.com) -> robots.txt disallows fetching https://www.navan.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:35:20Z"
   }
 }

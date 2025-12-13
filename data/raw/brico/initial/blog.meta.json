@@ -1,0 +1,13 @@
+{
+  "company_name": "Brico",
+  "source_url": "https://www.brico.co/blog",
+  "crawled_at": "2025-12-13T23:31:01Z",
+  "http_status": 200,
+  "title": "",
+  "canonical": "https://www.brico.co/blog",
+  "robots": "",
+  "content_sha256": "6dc9c7fc93bb488bb0520a6c780a8d3c0fb5486a4711aca49b4c53fac7393023",
+  "content_length": 114,
+  "parser": "lxml",
+  "version": 1
+}

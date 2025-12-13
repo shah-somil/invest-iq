@@ -1,0 +1,13 @@
+{
+  "company_name": "Coalition",
+  "source_url": "https://www.coalitioninc.com/technology-errors-and-omissions-insurance",
+  "crawled_at": "2025-12-13T23:31:26Z",
+  "http_status": 200,
+  "title": "Tech E&O Insurance Coverage | Coalition",
+  "canonical": "https://www.coalitioninc.com/technology-errors-and-omissions-insurance",
+  "robots": "index,follow",
+  "content_sha256": "a9c4b1fbf6c467a9cc07673bef1c20103499ea89c6c25128c8f9c26134b9a848",
+  "content_length": 628060,
+  "parser": "lxml",
+  "version": 1
+}

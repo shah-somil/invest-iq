@@ -2,19 +2,24 @@
   "company_id": "true-link",
   "company_name": "True Link",
   "source_homepage": "https://www.truelinkfinancial.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:36:33Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/true-link/initial",
-  "content_sha256": "29d79f97c1204a60841badb62d5b47dea00ee9190ce4699cd84e052d6c00ca08",
-  "content_length": 207,
+  "content_sha256": "0acb4a69b93cbfbec1c927e6b6dc797e545ad8578d83efdb0a1e7fc1e29649cf",
+  "content_length": 353717,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "true-link",
-    "company_name": "true-link",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "True Link",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/true-link/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.truelinkfinancial.com",
+      "about": "https://www.truelinkfinancial.com/about-us",
+      "product": "https://www.truelinkfinancial.com/banks",
+      "careers": "https://www.truelinkfinancial.com/about-us/careers",
+      "blog": "https://www.truelinkfinancial.com/resource-center"
+    },
+    "status": "success"
   }
 }

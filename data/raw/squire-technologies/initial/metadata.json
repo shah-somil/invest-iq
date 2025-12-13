@@ -2,19 +2,19 @@
   "company_id": "squire-technologies",
   "company_name": "Squire Technologies",
   "source_homepage": "https://www.squirecard.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:36:04Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/squire-technologies/initial",
-  "content_sha256": "5a3e255229ebfb10a1c769ff30f5ff3cb6fc05a6e992eb3d0b5e6dbcc4ab54d5",
-  "content_length": 227,
+  "content_sha256": "9b3c2212ad415894b559a7c1c939befc29aa81db0668b844494401921ca83905",
+  "content_length": 1149,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "squire-technologies",
-    "company_name": "squire-technologies",
+    "company_name": "Squire Technologies",
     "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://www.squirecard.com) -> robots.txt disallows fetching https://www.squirecard.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:36:04Z"
   }
 }

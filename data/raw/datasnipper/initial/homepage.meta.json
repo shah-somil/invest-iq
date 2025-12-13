@@ -1,0 +1,13 @@
+{
+  "company_name": "DataSnipper",
+  "source_url": "https://www.datasnipper.com",
+  "crawled_at": "2025-12-13T23:31:40Z",
+  "http_status": 200,
+  "title": "DataSnipper - Intelligent Automation Platform",
+  "canonical": "https://www.datasnipper.com",
+  "robots": "",
+  "content_sha256": "c753d86a54da5acee7db2768421b3fb8440c5c5768dc561266f9bb4bc4dbf7c8",
+  "content_length": 162352,
+  "parser": "lxml",
+  "version": 1
+}

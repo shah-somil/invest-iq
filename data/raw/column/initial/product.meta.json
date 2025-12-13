@@ -1,0 +1,13 @@
+{
+  "company_name": "Column",
+  "source_url": "https://column.com/docs/guides#use-cases",
+  "crawled_at": "2025-12-13T23:31:37Z",
+  "http_status": 200,
+  "title": "Column Documentation \u00e2\u0080\u0094 Guides",
+  "canonical": "https://column.com/docs/guides/",
+  "robots": "",
+  "content_sha256": "041bd8c64993703448ad59bc501e02446f2433fef0242eb8d0352dcc313b9595",
+  "content_length": 369979,
+  "parser": "lxml",
+  "version": 1
+}

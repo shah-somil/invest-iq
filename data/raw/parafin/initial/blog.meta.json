@@ -1,0 +1,13 @@
+{
+  "company_name": "Parafin",
+  "source_url": "https://www.parafin.com/blog",
+  "crawled_at": "2025-12-13T23:35:26Z",
+  "http_status": 200,
+  "title": "Parafin Blog I Business financing and insights",
+  "canonical": "https://www.parafin.com/blog",
+  "robots": "",
+  "content_sha256": "0517c28ebf2f6073e850a9852f9b79c34fac94b4a94de42479b9bba70d14c6a1",
+  "content_length": 34874,
+  "parser": "lxml",
+  "version": 1
+}

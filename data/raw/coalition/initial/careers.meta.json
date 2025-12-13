@@ -1,0 +1,13 @@
+{
+  "company_name": "Coalition",
+  "source_url": "https://www.coalitioninc.com/careers",
+  "crawled_at": "2025-12-13T23:31:27Z",
+  "http_status": 200,
+  "title": "Coalition Inc. Careers | Help us bring security to all",
+  "canonical": "https://www.coalitioninc.com/careers",
+  "robots": "index,follow",
+  "content_sha256": "0c874e46df70d18b72fbe6240b0482aaa754f66d3c1452edeaf88e81bce5049d",
+  "content_length": 690341,
+  "parser": "lxml",
+  "version": 1
+}

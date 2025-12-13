@@ -1,0 +1,13 @@
+{
+  "company_name": "SentiLink",
+  "source_url": "https://www.sentilink.com/insights",
+  "crawled_at": "2025-12-13T23:36:04Z",
+  "http_status": 200,
+  "title": "Real-time signals for manual review - SentiLink",
+  "canonical": "https://www.sentilink.com/insights/",
+  "robots": "index,follow",
+  "content_sha256": "0c766e181092eaf90b0308920fe71ff5b5bfec4ea5ac055bcc2ba68ad84069e0",
+  "content_length": 68018,
+  "parser": "lxml",
+  "version": 1
+}

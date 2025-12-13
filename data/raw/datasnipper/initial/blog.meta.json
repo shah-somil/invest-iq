@@ -1,0 +1,13 @@
+{
+  "company_name": "DataSnipper",
+  "source_url": "https://www.datasnipper.com/resources",
+  "crawled_at": "2025-12-13T23:31:53Z",
+  "http_status": 200,
+  "title": "DataSnipper Resource Center",
+  "canonical": "https://www.datasnipper.com/resources",
+  "robots": "",
+  "content_sha256": "5efe249c27065c3f1d7d375030f68599c2239dba0b989e4d9dba9b9699638f22",
+  "content_length": 326824,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "Found",
+  "source_url": "https://found.com/press",
+  "crawled_at": "2025-12-13T23:34:43Z",
+  "http_status": 200,
+  "title": "Press",
+  "canonical": "https://found.com/press",
+  "robots": "index",
+  "content_sha256": "c5fef52ee48a5a835d03d8d22826f873b84689f267775aa6c33f0e8fdac6ef52",
+  "content_length": 118271,
+  "parser": "lxml",
+  "version": 1
+}

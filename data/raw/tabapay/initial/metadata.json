@@ -2,19 +2,24 @@
   "company_id": "tabapay",
   "company_name": "TabaPay",
   "source_homepage": "https://www.tabapay.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:36:22Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/tabapay/initial",
-  "content_sha256": "528a78f82c398b01f494727b69cf9e26be0149b484874816b0a56b0c99e88a22",
-  "content_length": 203,
+  "content_sha256": "e066167486634e91e1be4154a6cf49d64ff718ce7bf30c4571805675905f1d3d",
+  "content_length": 262409,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "tabapay",
-    "company_name": "tabapay",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "TabaPay",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/tabapay/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.tabapay.com",
+      "about": "https://www.tabapay.com/about.html",
+      "product": "https://www.tabapay.com/features.html",
+      "careers": "https://www.tabapay.com/careers.html",
+      "blog": "https://www.tabapay.com/payout.html"
+    },
+    "status": "success"
   }
 }

@@ -1,0 +1,13 @@
+{
+  "company_name": "Nova Credit",
+  "source_url": "https://www.novacredit.com/company",
+  "crawled_at": "2025-12-13T23:35:21Z",
+  "http_status": 200,
+  "title": "Company | Nova Credit",
+  "canonical": "https://www.novacredit.com/company",
+  "robots": "",
+  "content_sha256": "eea2d26e2d5eed51b564a4cc6b1ebc23be61b677adf96251ec3d92a86b652450",
+  "content_length": 133588,
+  "parser": "lxml",
+  "version": 1
+}

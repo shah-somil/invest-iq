@@ -2,19 +2,24 @@
   "company_id": "tala",
   "company_name": "Tala",
   "source_homepage": "https://www.tala.co",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:36:30Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/tala/initial",
-  "content_sha256": "db1d6bb6bb5b0b536b6a729d71895f2f86dcefa2a2bd412dda5118104484676b",
-  "content_length": 197,
+  "content_sha256": "e4b770f68d602c21ea05eea40efd0456b1d1a6bd60b92209c284849f37af8be2",
+  "content_length": 742103,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "tala",
-    "company_name": "tala",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Tala",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/tala/initial/manifest.json",
+    "sections": {
+      "homepage": "https://tala.co",
+      "about": "https://tala.co/about",
+      "product": "https://tala.co/gt",
+      "careers": "https://tala.co/careers",
+      "blog": "https://tala.co/blog"
+    },
+    "status": "success"
   }
 }

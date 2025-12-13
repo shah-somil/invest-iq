@@ -1,0 +1,13 @@
+{
+  "company_name": "Column",
+  "source_url": "https://column.com",
+  "crawled_at": "2025-12-13T23:31:29Z",
+  "http_status": 200,
+  "title": "Column \u00e2\u0080\u0094 The platform bank built for scale",
+  "canonical": "https://column.com/",
+  "robots": "",
+  "content_sha256": "309360d33de77bff659d2d5607d55b37fc6217271962f2abcb9b12d93f832f98",
+  "content_length": 1170673,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "Tala",
+  "source_url": "https://tala.co/careers",
+  "crawled_at": "2025-12-13T23:36:29Z",
+  "http_status": 200,
+  "title": "Careers - Tala",
+  "canonical": "https://tala.co/careers/",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "content_sha256": "dc767057bca9d595e8b2ac470d70107c5a5099ec94d48c6a38e5e0b83eece337",
+  "content_length": 161367,
+  "parser": "lxml",
+  "version": 1
+}

@@ -2,19 +2,24 @@
   "company_id": "nova-credit",
   "company_name": "Nova Credit",
   "source_homepage": "https://www.novacredit.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:35:24Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/nova-credit/initial",
-  "content_sha256": "986c954cd804492b3593d1e921aa8cbb583312ae7cb69388c06c5923990493f0",
-  "content_length": 211,
+  "content_sha256": "debaf4ade842b5dbad808b0d7bcdc4c04c9405d6f21713971fa5ad58a599ee26",
+  "content_length": 821574,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "nova-credit",
-    "company_name": "nova-credit",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Nova Credit",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/nova-credit/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.novacredit.com",
+      "about": "https://www.novacredit.com/company",
+      "product": "https://www.novacredit.com/platform",
+      "careers": "https://www.novacredit.com/careers",
+      "blog": "https://www.novacredit.com/corporate-blog"
+    },
+    "status": "success"
   }
 }

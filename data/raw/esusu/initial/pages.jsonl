@@ -1,0 +1,5 @@
+{"company_name": "Esusu", "section": "homepage", "source_url": "https://esusurent.com", "crawled_at": "2025-12-13T23:32:00Z", "status": 200, "bytes": 123991}
+{"company_name": "Esusu", "section": "about", "source_url": "https://esusurent.com/about", "crawled_at": "2025-12-13T23:32:01Z", "status": 200, "bytes": 86985}
+{"company_name": "Esusu", "section": "product", "source_url": "https://esusurent.com/marketplace", "crawled_at": "2025-12-13T23:32:02Z", "status": 200, "bytes": 83669}
+{"company_name": "Esusu", "section": "careers", "source_url": "https://esusurent.com/careers", "crawled_at": "2025-12-13T23:32:03Z", "status": 200, "bytes": 75667}
+{"company_name": "Esusu", "section": "blog", "source_url": "https://esusurent.com/blog", "crawled_at": "2025-12-13T23:32:03Z", "status": 200, "bytes": 90163}

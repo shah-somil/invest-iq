@@ -1,0 +1,5 @@
+{"company_name": "Arc", "section": "homepage", "source_url": "https://www.joinarc.com", "crawled_at": "2025-12-13T23:30:41Z", "status": 200, "bytes": 54137}
+{"company_name": "Arc", "section": "about", "source_url": "https://www.joinarc.com/about", "crawled_at": "2025-12-13T23:30:42Z", "status": 200, "bytes": 56920}
+{"company_name": "Arc", "section": "product", "source_url": "https://www.joinarc.com/pricing", "crawled_at": "2025-12-13T23:30:43Z", "status": 200, "bytes": 54159}
+{"company_name": "Arc", "section": "careers", "source_url": "https://www.joinarc.com/careers", "crawled_at": "2025-12-13T23:30:43Z", "status": 200, "bytes": 63255}
+{"company_name": "Arc", "section": "blog", "source_url": "https://www.joinarc.com/blog", "crawled_at": "2025-12-13T23:30:44Z", "status": 200, "bytes": 178677}

@@ -1,0 +1,13 @@
+{
+  "company_name": "True Link",
+  "source_url": "https://www.truelinkfinancial.com/banks",
+  "crawled_at": "2025-12-13T23:36:32Z",
+  "http_status": 200,
+  "title": "White-Label Family Banking Solution - True Link",
+  "canonical": "https://www.truelinkfinancial.com/banks",
+  "robots": "",
+  "content_sha256": "bd084a0e4de06329af50b43690b44bfc18cbd5f0a2c39e9a4bd78d1b1bac185d",
+  "content_length": 53517,
+  "parser": "lxml",
+  "version": 1
+}

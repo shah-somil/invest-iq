@@ -1,0 +1,13 @@
+{
+  "company_name": "Esusu",
+  "source_url": "https://esusurent.com/marketplace",
+  "crawled_at": "2025-12-13T23:32:02Z",
+  "http_status": 200,
+  "title": "Financial Marketplace | Credit, Insurance & Savings Deals with Esusu",
+  "canonical": "https://esusurent.com/marketplace",
+  "robots": "",
+  "content_sha256": "3c3c2249ef231d8a44e005b90b0606cc9889ed7369f247c86a6d26ee32cfa2db",
+  "content_length": 83669,
+  "parser": "lxml",
+  "version": 1
+}

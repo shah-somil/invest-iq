@@ -2,19 +2,24 @@
   "company_id": "kudos-technologies",
   "company_name": "Kudos Technologies",
   "source_homepage": "https://www.joinkudos.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:35:12Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/kudos-technologies/initial",
-  "content_sha256": "2c2ff57d0b3878d1edba292b51ad9afe72417854f36449d03f9879b2c5a280c0",
-  "content_length": 225,
+  "content_sha256": "af433608b5512b2b7c83558069e159b782f9062ba3b6d1082856b847dcbd026f",
+  "content_length": 198778,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "kudos-technologies",
-    "company_name": "kudos-technologies",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Kudos Technologies",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/kudos-technologies/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.joinkudos.com",
+      "about": "https://www.joinkudos.com",
+      "product": "https://www.joinkudos.com/product",
+      "careers": "https://www.joinkudos.com/careers",
+      "blog": "https://www.joinkudos.com/blog"
+    },
+    "status": "success"
   }
 }

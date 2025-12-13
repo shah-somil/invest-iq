@@ -1,0 +1,13 @@
+{
+  "company_name": "Increase",
+  "source_url": "https://www.increase.com",
+  "crawled_at": "2025-12-13T23:34:50Z",
+  "http_status": 200,
+  "title": "Increase \u00e2\u0080\u0094 Enterprise-grade Banking APIs",
+  "canonical": "https://www.increase.com",
+  "robots": "",
+  "content_sha256": "2451b1a2f47758b3633bf438556c5213e3757926f2cade82b66ea4c4bb679470",
+  "content_length": 92594,
+  "parser": "lxml",
+  "version": 1
+}

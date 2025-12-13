@@ -1,0 +1,13 @@
+{
+  "company_name": "SentiLink",
+  "source_url": "https://www.sentilink.com/about",
+  "crawled_at": "2025-12-13T23:35:50Z",
+  "http_status": 200,
+  "title": "About our company - SentiLink",
+  "canonical": "https://www.sentilink.com/about/",
+  "robots": "index,follow",
+  "content_sha256": "b51f4a37855bbbe1f6d68d3dc5074596cbe3f9904fda0f7c7f3ff0cece1515f9",
+  "content_length": 86578,
+  "parser": "lxml",
+  "version": 1
+}

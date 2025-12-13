@@ -1,0 +1,13 @@
+{
+  "company_name": "Persona",
+  "source_url": "https://withpersona.com/blog/detect-more-ai-based-face-spoofs-persona",
+  "crawled_at": "2025-12-13T23:35:33Z",
+  "http_status": 200,
+  "title": "How Persona Helps Businesses Detect AI-Based Face Spoofs",
+  "canonical": "https://withpersona.com/blog/detect-more-ai-based-face-spoofs-persona/",
+  "robots": "index, follow",
+  "content_sha256": "fa705938103e73f7d87f538a29fcd9a980bd06150e6d620c320f6a8d04f1584c",
+  "content_length": 88418,
+  "parser": "lxml",
+  "version": 1
+}

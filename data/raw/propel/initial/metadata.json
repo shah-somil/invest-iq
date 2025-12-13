@@ -2,19 +2,24 @@
   "company_id": "propel",
   "company_name": "Propel",
   "source_homepage": "https://www.propel.app",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:35:42Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/propel/initial",
-  "content_sha256": "4518e5dcfc204ade360d31e19f3feb8323a3d779274534b234c5fd40383b0d1d",
-  "content_length": 201,
+  "content_sha256": "6b77fbcb0ae6f265f5995e2783da459352d565e96209f09033308d70a00811fa",
+  "content_length": 468416,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "propel",
-    "company_name": "propel",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Propel",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/propel/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.propel.app",
+      "about": "https://www.propel.app/about-us",
+      "product": "https://www.propel.app/ad-solutions",
+      "careers": "https://www.propel.app/careers",
+      "blog": "https://www.propel.app/blog"
+    },
+    "status": "success"
   }
 }

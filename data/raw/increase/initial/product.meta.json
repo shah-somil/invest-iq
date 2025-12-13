@@ -1,0 +1,13 @@
+{
+  "company_name": "Increase",
+  "source_url": "https://www.increase.com/customers/capitalos",
+  "crawled_at": "2025-12-13T23:34:53Z",
+  "http_status": 200,
+  "title": "How CapitalOS built their spend management platform on Increase \u00e2\u0080\u0094 Increase",
+  "canonical": "https://www.increase.com/customers/capitalos",
+  "robots": "",
+  "content_sha256": "f2f9d0fede3f7565452a9a10666a046012fa7912f7dd22742742302bc232411f",
+  "content_length": 30308,
+  "parser": "lxml",
+  "version": 1
+}

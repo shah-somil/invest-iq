@@ -1,0 +1,13 @@
+{
+  "company_name": "Coalition",
+  "source_url": "https://www.coalitioninc.com",
+  "crawled_at": "2025-12-13T23:31:16Z",
+  "http_status": 200,
+  "title": "Cyber Insurance | Active Insurance & Cybersecurity | Coalition",
+  "canonical": "https://www.coalitioninc.com/",
+  "robots": "index,follow",
+  "content_sha256": "05e74ee693709d83470a4846df24d00bf18fd393076c57ef087e04337ec43a82",
+  "content_length": 820910,
+  "parser": "lxml",
+  "version": 1
+}

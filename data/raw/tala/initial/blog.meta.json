@@ -1,0 +1,13 @@
+{
+  "company_name": "Tala",
+  "source_url": "https://tala.co/blog",
+  "crawled_at": "2025-12-13T23:36:30Z",
+  "http_status": 200,
+  "title": "Blog - Tala",
+  "canonical": "https://tala.co/blog/",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "content_sha256": "0d6d49466291dcc004e61c6348b42d2be11b2334f8af79da01665321b1decfda",
+  "content_length": 86033,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "Lead Bank",
+  "source_url": "https://www.lead.bank/explore-lead",
+  "crawled_at": "2025-12-13T23:35:13Z",
+  "http_status": 200,
+  "title": "Explore Lead",
+  "canonical": "https://www.lead.bank/explore-lead",
+  "robots": "",
+  "content_sha256": "a2e97a5d4fd447379567f95cfcbf4a53d76c75b081671144d05d226c68c34244",
+  "content_length": 84647,
+  "parser": "lxml",
+  "version": 1
+}

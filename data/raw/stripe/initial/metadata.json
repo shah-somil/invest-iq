@@ -2,19 +2,24 @@
   "company_id": "stripe",
   "company_name": "Stripe",
   "source_homepage": "https://www.stripe.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:36:12Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/stripe/initial",
-  "content_sha256": "4a3b553753e258c9f50866d3241b4da026e873b82cbb5d87a8cc096f109f72b4",
-  "content_length": 201,
+  "content_sha256": "9db2772b6ab4032b77b8fde9736ce5b163b9aed9074f0868e8d9f690bf90a13a",
+  "content_length": 6932513,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "stripe",
-    "company_name": "stripe",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Stripe",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/stripe/initial/manifest.json",
+    "sections": {
+      "homepage": "https://stripe.com",
+      "about": "https://stripe.com",
+      "product": "https://stripe.com/payments",
+      "careers": "https://stripe.com/jobs",
+      "blog": "https://stripe.com/blog"
+    },
+    "status": "success"
   }
 }

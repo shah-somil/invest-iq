@@ -1,0 +1,13 @@
+{
+  "company_name": "Pulley",
+  "source_url": "https://pulley.com",
+  "crawled_at": "2025-12-13T23:35:43Z",
+  "http_status": 200,
+  "title": "Pulley | Cap table management for founders and finance leaders",
+  "canonical": "https://pulley.com",
+  "robots": "",
+  "content_sha256": "eac664459c6933b5fd11b23bdaa767517428a1e830fdcdbf5ba57668a81806dc",
+  "content_length": 192255,
+  "parser": "lxml",
+  "version": 1
+}

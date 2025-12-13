@@ -2,19 +2,24 @@
   "company_id": "brico",
   "company_name": "Brico",
   "source_homepage": "https://www.brico.co",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:31:01Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/brico/initial",
-  "content_sha256": "3d4409703b051955d370c2e7ba2a7916e5177a7442f584fe7b97e19065b97cad",
-  "content_length": 199,
+  "content_sha256": "856d0845a905caf0e49672fa60c780b806f77d1dc2c2d02bd2744c9bd48f08d9",
+  "content_length": 4131,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "brico",
-    "company_name": "brico",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Brico",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/brico/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.brico.co",
+      "about": "https://www.brico.co/about",
+      "product": "https://www.brico.co/product",
+      "careers": "https://www.brico.co/careers",
+      "blog": "https://www.brico.co/blog"
+    },
+    "status": "success"
   }
 }

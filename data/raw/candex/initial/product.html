@@ -1,0 +1,692 @@
+<!doctype html>
+<!--[if lt IE 8]>    <html class="no-js isIe ie7 oldie" lang="en"> <![endif]-->
+<!--[if gte IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+    How Candex Works | Purchase-to-Payment Flow"
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="See how Candex streamlines vendor requisitions, purchase approvals and invoice payments into one frictionless flow for both buyers and suppliers." />
+
+    
+        <link rel="canonical" href="https://www.candex.com/HowItWorks" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <meta name="application-name" content="Candex" />
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+
+<script>
+    window.isIE = false || !!document.documentMode;
+    if (window.isIE)
+    {
+        document.documentElement.className += ' isIe ie' + document.documentMode; //
+        
+        
+        "function" != typeof Object.assign && Object.defineProperty(Object, "assign", { value: function (e, t) { "use strict"; if (null == e) throw new TypeError("Cannot convert undefined or null to object"); for (var n = Object(e), r = 1; r < arguments.length; r++){ var o = arguments[r]; if (null != o) for (var c in o) Object.prototype.hasOwnProperty.call(o, c) && (n[c] = o[c]) } return n }, writable: !0, configurable: !0 });
+        //Disable IE
+        //window.location = "/SupportedPlatforms"; 
+    }
+</script>
+
+<script>
+    
+ if (window.isIE === true) {
+  var imgtag = document.createElement("img");
+  imgtag.height = "1";
+  imgtag.width = "1";
+  
+  imgtag.alt = "";
+        imgtag.src = "/Images/Close.gif?IEver=" + document.documentMode + "&Id=" + "anonymous" + "&d=" + (new Date()).getTime();
+ }
+</script>
+
+ 
+
+
+
+
+    
+    <meta property="og:title" content="How Candex Works | Purchase-to-Payment Flow" />
+  
+    
+    <meta property="og:description" content="See how Candex streamlines vendor requisitions, purchase approvals and invoice payments into one frictionless flow for both buyers and suppliers." />
+
+    
+        <meta name="description" content="Stop working your tail off!  Candex makes it simple, fast, and compliant to pay small and one-time suppliers fast!  Empower business users without sacrificing P2P." />
+    
+    
+        <meta property="og:site_name" content="Candex" />
+
+    
+    <meta property="og:type" content="website" />
+
+    
+
+    
+<link href="/CSS/siteNew.css?v=4.2.8.7" rel="stylesheet" type="text/css" />    
+    
+    
+
+    <script src="/Scripts/lib/modernizr-2.8.3.custom.min.js" type="text/javascript"></script>
+    
+</head>
+<body class=" howItWorks   en ">
+
+<span id="cookiesPolicyMsg" style="display:none;" class="cookiesAndNotificationsCont">
+    <div class="topActions">
+        <span class="before-with-icon icon-cross close"></span>
+        <a href="#" bypass="true" class="lnkAcceptCookies lnkAllow">Allow</a>
+    </div>
+    <div class="largeText">
+        Candex Uses Cookies
+    </div>
+    <div class="smallText">To improve experience</div>
+    <div class="actionCont">
+        <a href="#" bypass="true" class="lnkAcceptCookies GenericBtnBlue">Allow</a>
+        <a bypass="true" class="lnkLearnMore&#32;GenericBtnBlue" href="/SignIn/Cookies" target="_blank">Learn More</a>
+    </div>
+</span>
+
+<div id="loginBox" class="fRegular loginBox inSamlMode">
+    <form id="formTopLogin" method="post" autocomplete="off" action="/SignIn/LogOnTopForm">
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8IsaSE1164dFvLE-NEE8omktD8eObLPZcza10dNUhZb2a-NyDsg1VuOH4h810MxqPsvclvrYUpFl4D0Zx3RWoIIucPojw3YhkZaFblixBP5gkvC3Z7lY90jDPoTaiVk8DZcTSA3bMrZ3nm7Pl9nbVSA1" /> 
+        <div class="row">
+            <label for="topUserName">Email</label>
+            <input autocomplete="email" class="txbEmail&#32;txbRoundCorners" id="topUserName" maxlength="150" name="UserName" type="text" value="" />
+        </div>
+        <div class="row hidden loginUsingPassword">
+            <label for="topPassword">Password</label>
+            <input autocomplete="off" class="txbPass&#32;txbRoundCorners" id="topPassword" maxlength="150" name="Password" type="password" />
+        </div>
+        <div class="customPopup customTopActions hidden loginUsingPassword">
+            <input checked="checked" class="chkTopRememberMe" id="chkTopRememberMe" name="RememberMe" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />
+            <label class="lblRememberMe labelFix" for="chkTopRememberMe">Stay signed In</label>
+        </div>
+        <input id="btnTopLogin" type="submit" class="btnTop btnLogin floatingBtnLogin hidden loginUsingPassword" value="Sign In" />
+        <a class="nav lnkForgotPass hidden loginUsingPassword" href="#"> Forgot your password?</a>
+        <button type="button" class="btnTop btnContinueSaml" hrefaction="/saml/IsSamlSupported">Continue</button>
+    </form>
+    <div class="forgotPasswordCont" style="display:none">
+        <div class="submitFields">
+            <div class="row">
+                <label for="topForgotEmail">Email</label>
+                <input autocomplete="email" class="txbEmail&#32;txbForgotEmail&#32;txbRoundCorners" id="topForgotEmail" maxlength="150" name="UserName" type="text" value="" />
+            </div>
+            <button class="btnRequestPassword btnTop" hrefaction="/SignIn/ForgotPassword">Request Password</button>
+        </div>
+        <div class="forgotPassMessageCont"><div class="msg" successMsg="Please check your email to reset password."></div></div>
+        <a class="nav lnkBackToLogin" href="#">Back to Login</a>
+    </div>
+</div>
+
+    
+    <div id="header" class="header">
+<div class="topMenuAndActions">
+    <div id="topMainMenu" class="topMainMenu fMedium ">
+        <i class="icon mobileMenuIcon">&#xE040;</i>
+        <a class="selected" href="/HowItWorks">How it Works</a>
+        <a class="" href="/ForBuyers">For Buyers</a>
+        <a class="" href="/ForSellers">For Sellers</a>
+        <div class="publicSiteMainMenuActions actionsMainDiv cxActions a-cond-up">
+            <div class="actionsDiv cxBtn ">
+                <span class="cxBtnTxt">About</span>
+                <span class="icon icon-arrow-down4 cxActionIcon"></span>
+            </div>
+            <div class="actionsGroup bottomGrayBorder cxActions">
+                <ul class="langListItemsCont actionsItems actionFont">
+                    <li><a class="" href="/AboutUs">About Us</a></li>
+                    <li><a class="" href="/Pricing">Pricing</a></li>
+                    <li><a class="" href="/careers">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+        <a href="#" id="lnkLogin" class="b-login topActionsLogin fMedium ellipsis">Sign In</a>
+        <a href="/SignIn/LogOn" class="b-loginMobile topActionsLogin fMedium ellipsis">Sign In</a>
+
+
+</div>
+        
+        
+            <a class="candexLogo" poweredByText="" title="Candex" href="/"></a>
+        <div class="cont">
+            
+    <h1 class="slogen">Candex is the trading partner</h1>
+    <h2 class="h-info">for both buyer and seller</h2>
+    <a class="demoRequestBtn" href="/DemoRequest">Get a Demo</a> 
+
+        </div>
+    </div>
+    <div id="main" class="main">
+        
+        <div class="  cx-background  ">
+            
+    <div class="section process-description-section buyerReqSection">
+        <div class="process-description-wrapper">
+            <div class="container">
+                <div class="text-container">
+                    <div class="large-text">Buyer Creates Req</div>
+                    <div class="small-text">Each order is authorized to Candex for the benefit of a specific seller</div>
+                </div>
+                <div class="image-container">
+                    <div class="image"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section process-description-section sellerEngagesSection">
+        <div class="process-description-wrapper">
+            <div class="container">
+                <div class="text-container">
+                    <div class="large-text">Seller Engages</div>
+                    <div class="small-text">Seller accepts purchasing terms then invoices Candex for goods &amp; services delivered</div>
+                </div>
+                <div class="image-container">
+                    <div class="image"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section process-description-section invoicesBuyerSection">
+        <div class="process-description-wrapper">
+            <div class="container">
+                <div class="text-container">
+                    <div class="large-text">Candex Invoices Buyer</div>
+                    <div class="small-text">Candex submits an invoice to buyer after verifications and compliance scans</div>
+                </div>
+                <div class="image-container">
+                    <div class="image"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section process-description-section paymentSettledSection">
+        <div class="process-description-wrapper">
+            <div class="container">
+                <div class="text-container">
+                    <div class="large-text">Payment is Settled</div>
+                    <div class="small-text">
+                        Buyer pays Candex and Candex pays the seller
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="image"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="section section-quote" style="display:none">
+    <div class="cxQuoteCarouselCont">
+        <div class="animatedRight icon"></div>
+        <div class="animatedLeft icon"></div>
+        <div class="quoteCarouselWrap"></div>
+        <div class="bottomNavigetor"><div class="bottomNavigetorWrap"></div></div>
+    </div>
+</div>
+<script type="text/javascript">
+    function startQuoteCarousel()
+    {
+        _.templateSettings = { 
+            interpolate: /\{%=(.+?)%\}/g, 
+            escape: /\{%-(.+?)%\}/g,  
+            evaluate: /\{%(.+?)%\}/g  
+        };
+
+    (function ($)
+        {
+            var _quotesList = [{"Key":"Akash Agarwal - Dell","Value":"With Candex, we streamlined our payment process and increased control and visibility on non-strategic spend. We were able to enhance our current P2P system by getting more transactions into it."},{"Key":"Gary Campbell - Sanofi","Value":"Easy to Use. Saves time and money"},{"Key":"Sara Fuls - Colgate","Value":"It was great! The materials Candex and CP put together were user-friendly and make the process very easy to use"},{"Key":"Luba Markoff - Keysight","Value":"I thought the process was simple and efficient. It is great to have this option for these types of vendors"},{"Key":"Jorge Esteve - PMI","Value":"Candex gives us the kind of control we’ve always wanted to have for small spend."},{"Key":"Suresh Parameshwar - Dell","Value":"With Candex, we reduced the number of new vendor setups by 22% within the first year."},{"Key":"Lucia Surinova - Dell","Value":"The payment process is smooth and the tool itself is very comprehensive (and very valued feature). And what I like the most about Candex is the service level and willingness to help and go the extra mile just to meet our business case requirements."}];
+                var _randomIndexsList = [];
+                var _ignoreAnimationOnClick = false;
+                var _ignoreAnimationOnHover = false;
+                var _workinhAnimation = false;
+                var _rightClickCount = 0;
+                var _leftClickCount = 0;
+                var _doAnimationTimer;
+                var _delay = 1500;
+                var _animationDuration = 1500;
+                var _loopDelay = 8000;
+            for (var i = 0; i < _quotesList.length;)//make roundom order
+            {
+                var randomInt = getRandomInt(0, _quotesList.length - 1);
+                if (_randomIndexsList.indexOf(randomInt) === -1)
+                {
+                    _randomIndexsList.push(randomInt);
+                    i++;
+                }
+        }
+            $(document).ready(function ()
+            {
+
+            var cxQuoteCarouselCont = $(".cxQuoteCarouselCont");
+            var quoteCarouselWrap = cxQuoteCarouselCont.find(".quoteCarouselWrap");
+            var bottomNavigetorWrap = cxQuoteCarouselCont.find(".bottomNavigetorWrap");
+            for (var j = 0; j < _randomIndexsList.length; j++)//create dom elements
+            {
+                var template = _.template($("#quoteCarouselTemplate").html());
+                quoteCarouselWrap.append(template(
+                        {
+                quote: _quotesList[_randomIndexsList[j]].Value,
+                            quoted: _quotesList[_randomIndexsList[j]].Key,
+                            animationClass: getFirstLoadAnimationClass(j, _randomIndexsList.length - 1),
+                            indexOrder: j
+                        }));
+            var navElem = $("<div>").addClass("bottomNavItem").attr("forIndex", j);
+            if (j === 0)
+            {
+                navElem.addClass("selected");
+            }
+            bottomNavigetorWrap.append(navElem);
+        }
+        setQuoteSectionHeight();
+        bottomNavigetorWrap.on("click", ".bottomNavItem", function ()
+                {
+            var $el = $(this);
+            if ($el.hasClass("selected"))
+                    {
+                return;
+            }
+            _ignoreAnimationOnClick = true;
+            bottomNavigetorWrap.find(".selected").removeClass("selected");
+            var quoteIndex = parseInt($el.attr("forIndex"), 10);
+            var $nextQuote = quoteCarouselWrap.find(".animatedQuoteCarousel[indexOrder='" + quoteIndex + "']");
+            quoteCarouselWrap.find(".targetElement").removeClass("targetElement");
+            if ($nextQuote.hasClass("nextRight"))
+                    {
+                quoteCarouselWrap.removeClass("fastAnimation");
+                animateRight();
+            } else if ($nextQuote.hasClass("nextLeft"))
+                    {
+                quoteCarouselWrap.removeClass("fastAnimation");
+                animateLeft();
+            } else
+            {
+                _leftClickCount = 0;
+                _rightClickCount = 0;
+                window.clearTimeout(_doAnimationTimer);
+                var $currentActive = quoteCarouselWrap.find(".active");
+                var currentActiveIndex = parseInt(quoteCarouselWrap.find(".active").attr("indexOrder"), 10);
+                var numberOfMovment = quoteIndex - currentActiveIndex;
+                var moveRight = numberOfMovment > 0;
+                var animationFunction = moveRight ? animateRight : animateLeft;
+                quoteCarouselWrap.addClass("fastAnimation");
+                numberOfMovment = Math.abs(numberOfMovment);
+                        $nextQuote.addClass(moveRight ? "targetElement startAnimationFromLeft" : "targetElement startAnimationFromRight");
+                        $currentActive.addClass("targetElement");
+                _delay = 0;
+                for (var i = 0; i < numberOfMovment; i++)
+                {
+                    animationFunction()
+                        }
+                doAnimation(quoteCarouselWrap);
+            }
+        });
+        quoteCarouselWrap.on("mouseover", function ()
+                {
+            if (quoteCarouselWrap.hasClass("fastAnimation")) { return; }
+            _ignoreAnimationOnHover = true;
+            _leftClickCount = 0;
+            _rightClickCount = 0;
+        })
+                quoteCarouselWrap.on("mouseout", function ()
+                {
+            _ignoreAnimationOnHover = false;
+        })
+                $(".animatedRight").on("click", function ()
+                {
+            quoteCarouselWrap.removeClass("fastAnimation");
+            _delay = _animationDuration;
+            animateRight();
+        });
+                $(".animatedLeft").on("click", function ()
+                {
+            quoteCarouselWrap.removeClass("fastAnimation");
+            _delay = _animationDuration;
+            animateLeft();
+        });
+        doAnimation(quoteCarouselWrap);
+        function setQuoteSectionHeight()
+        {
+            var maxHeight = -1;
+            quoteCarouselWrap.find(".animatedQuoteCarousel").each(function ()
+                    {
+                var h = this.clientHeight;
+                maxHeight = maxHeight > h ? maxHeight : h;
+
+            });
+        var sectionQuoteCont = cxQuoteCarouselCont.closest(".section-quote");
+        var paddingTop = parseInt(sectionQuoteCont.css("paddingTop"), 10);
+        var paddingBottom = parseInt(sectionQuoteCont.css("paddingBottom"), 10);
+        sectionQuoteCont.css({ height: maxHeight + paddingTop + paddingBottom + 10 });
+                }
+            });
+
+        function animateRight()
+        {
+            _leftClickCount = 0;
+            if (_workinhAnimation)
+            {
+                _rightClickCount++;
+                return;
+            }
+            _workinhAnimation = true;
+            _ignoreAnimationOnClick = true;
+
+            var bottomNavigetorWrap = $(".bottomNavigetorWrap");
+            var quoteCarouselWrap = $(".quoteCarouselWrap")
+
+                quoteCarouselWrap.removeClass("movingLeft");
+            quoteCarouselWrap.addClass("movingRight");
+
+            var currentActive = quoteCarouselWrap.find(".active");
+            var nextRight = quoteCarouselWrap.find(".nextRight");
+
+            bottomNavigetorWrap.find(".selected").removeClass("selected");
+            quoteCarouselWrap.find(".nextLeft").removeClass("nextLeft");
+            currentActive.attr("class", currentActive.hasClass("targetElement") ? "targetElement animatedQuoteCarousel nextLeft" :"animatedQuoteCarousel nextLeft");
+            nextRight.attr("class", nextRight.hasClass("targetElement") ? "targetElement animatedQuoteCarousel startAnimationFromLeft": "animatedQuoteCarousel startAnimationFromLeft");
+            nextRight.toggleClass("startAnimationFromLeft active");
+            var currentOrderIndex = parseInt(nextRight.attr("indexOrder"), 10);
+            var nextRightIndex = (currentOrderIndex + 1) === _randomIndexsList.length ? 0 : currentOrderIndex + 1;
+
+            bottomNavigetorWrap.find(".bottomNavItem[forIndex='" + currentOrderIndex + "']").addClass("selected");
+            var newNextRight = quoteCarouselWrap.find(".animatedQuoteCarousel[indexOrder='" + nextRightIndex + "']");
+            newNextRight.addClass("nextRight");
+
+            setTimeout(function ()
+                {
+                _workinhAnimation = false;
+                if (_rightClickCount)
+                {
+                    _rightClickCount--;
+                    animateRight();
+                } else if (_leftClickCount)
+                {
+                    _leftClickCount--;
+                    animateLeft();
+                }
+            }, nextRight.hasClass("targetElement") || newNextRight.hasClass("targetElement") ? 200 : _delay);
+            }
+
+            function animateLeft()
+        {
+            _rightClickCount = 0;
+            if (_workinhAnimation)
+            {
+                _leftClickCount++;
+                return;
+            }
+            _workinhAnimation = true;
+            _ignoreAnimationOnClick = true;
+
+            var bottomNavigetorWrap = $(".bottomNavigetorWrap");
+            var quoteCarouselWrap = $(".quoteCarouselWrap");
+
+            quoteCarouselWrap.find(".moveLeft").removeClass("moveLeft");
+            quoteCarouselWrap.removeClass("movingRight");
+            quoteCarouselWrap.addClass("movingLeft");
+
+            var currentActive = quoteCarouselWrap.find(".active");
+            var nextLeft = quoteCarouselWrap.find(".nextLeft");
+
+            bottomNavigetorWrap.find(".selected").removeClass("selected");
+            quoteCarouselWrap.find(".nextRight").removeClass("nextRight");
+            currentActive.attr("class", "animatedQuoteCarousel nextRight");
+            nextLeft.attr("class", nextLeft.hasClass("targetElement") ? "targetElement animatedQuoteCarousel startAnimationFromRight" : "animatedQuoteCarousel startAnimationFromRight");
+            nextLeft.toggleClass("startAnimationFromRight active");
+
+            var currentOrderIndex = parseInt(nextLeft.attr("indexOrder"), 10);
+            var nextLeftIndex = (currentOrderIndex - 1) < 0 ? _randomIndexsList.length - 1 : currentOrderIndex - 1;
+
+            bottomNavigetorWrap.find(".bottomNavItem[forIndex='" + currentOrderIndex + "']").addClass("selected");
+            quoteCarouselWrap.find(".animatedQuoteCarousel[indexOrder='" + nextLeftIndex + "']").addClass("nextLeft");
+
+            setTimeout(function ()
+                {
+                _workinhAnimation = false;
+                if (_leftClickCount)
+                {
+                    _leftClickCount--;
+                    animateLeft();
+                } else if (_rightClickCount)
+                {
+                    _rightClickCount--;
+                    animateRight();
+                }
+            }, _delay);
+            }
+
+            function getFirstLoadAnimationClass(index, lenght)
+        {
+            switch (index)
+            {
+                case 0: return "active";
+                case lenght: return "nextLeft";
+                case 1: return "nextRight";
+                default: return "";
+            }
+        }
+        function getRandomInt(min, max)
+        {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        function doAnimation(quoteCarouselWrap)
+        {
+            window.clearTimeout(_doAnimationTimer);
+            _doAnimationTimer = setTimeout(function ()
+                {
+                if (!_ignoreAnimationOnClick && !_ignoreAnimationOnHover)
+                {
+                    _delay = 3000;
+                    animateRight();
+                }
+                quoteCarouselWrap.removeClass("fastAnimation");
+                _ignoreAnimationOnClick = false;
+                doAnimation(quoteCarouselWrap);
+            }, _loopDelay);
+            }
+        })(jQuery);
+    }
+</script>
+<script type="text/html" id="quoteCarouselTemplate">
+    <div class="animatedQuoteCarousel {%=animationClass%}" indexOrder="{%=indexOrder%}">
+        <div class="quote-text">
+            <span class="quoteStart"></span>
+            {%=quote%}
+            <span class="quoteEnd"></span>
+        </div>
+        <div class="quoted">{%=quoted%}</div>
+    </div>
+</script>
+
+
+<div class="trustedByEnterprisesCont">
+    <div class="someClientsTitle">Trusted by global enterprises</div>
+    <div class="trustedByEnterprisesWrap">
+        <div class="enterpriseLogo dellTechnologies"></div>
+        <div class="enterpriseLogo sanofi"></div>
+        <div class="enterpriseLogo loreal"></div>
+        <div class="enterpriseLogo danone"></div>
+        <div class="enterpriseLogo roche"></div>
+        <div class="enterpriseLogo hsbc"></div>
+        <div class="enterpriseLogo eaton"></div>
+        <div class="enterpriseLogo colgate"></div>
+        <div class="enterpriseLogo pfizer"></div>
+        <div class="enterpriseLogo jpMorgan"></div>
+    </div>
+    
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+    
+    
+
+<div id="footer" class="footer">
+    <div class="cont footerCont">
+        <div class="footerLeft" dir="auto">
+            <div class="candexInfo">
+                On Candex, businesses can engage, collaborate and exchange payments in a compliant way without setup in each other&#8217;s financial systems.
+            </div>
+            <div class="allRightsReserved">&copy; 2025 Candex. All Rights Reserved.</div>
+        </div>
+        <div class="footerRigtht" dir="auto">
+            <ul class="product">
+                <li><div class="headerTest">Products</div></li>
+                <li><a href="/HowItWorks">How it Works</a></li>
+                <li><a href="/ForBuyers">For Buyers</a></li>
+                <li><a href="/ForSellers">For Sellers</a></li>
+                <li><a href="/Pricing">Pricing</a></li>
+            </ul>
+            <ul class="company">
+                <li><div class="headerTest capitalize">company</div></li>
+                <li><a href="/AboutUs">About</a></li>
+                <li><a href="/careers">Careers</a></li>
+                <li><a href="/Pricing#faqs">FAQs</a></li>
+                <li><a href="/Home/PrivacyPolicy">Privacy Policy</a></li>
+                <li><a href="/Home/TermsOfUse">Terms of Use</a></li>
+                <li><a href="/Topics/ESG">ESG Strategy</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+    
+    
+<script>
+
+ WebFontConfig = {
+     google: { families: ['Roboto:700,600,400,300:latin'] }//,
+   //custom: { families: ['PTSansRegular'], urls : ['/css/font/fontLoader.css']}
+ };
+    (function (d) {
+        var wf = d.createElement('script'), s = d.scripts[0];
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.async = true;
+        wf.integrity = "sha384-pvXSwSU09c+q9mPyY++ygUHWIYRoaxgnJ/JC5wcOzMb/NVVu+IDniiB9qWp3ZNWM";
+		wf.crossOrigin = "anonymous";
+        s.parentNode.insertBefore(wf, s);
+    })(document);
+
+</script>
+
+
+    
+
+<script src="/Scripts/lib/jquery_3_7_1/jquery-3.7.1.min.js"></script>
+<script src="/Scripts/lib/underscore_1_13_7/underscore-umd-min.js"></script>
+<script src="/Scripts/dist/cxCorejsPolyfillsBundle.js?v=4.2.8.7" ></script>
+<script src="/Scripts/dist/cxStoreBundle.js?v=4.2.8.7" ></script>
+<script>
+    window.CXLocalStore.InitLocalStoreWrapper();
+</script>
+<script src="/Scripts/lib/js.cookie-2.2.0.min.js?v=4.2.8.7" ></script>
+<script src="/Scripts/BindGlobalAjaxSettings.js?v=4.2.8.7" ></script>
+<script src="/Scripts/jquery.customInput.js?v=4.2.8.7" ></script>
+<script src="/Scripts/jquery.placeholder.js?v=4.2.8.7" ></script>
+
+
+    
+    <script src="/Scripts/tools.tooltip.min.js?v=4.2.8.7" ></script>
+    <script src="/Scripts/BindLogin.js?v=4.2.8.7" ></script>
+    <script src="/Scripts/mobileHelper.js?v=4.2.8.7" ></script>
+    
+<script src="/Scripts/CXActionsMenu.js?v=4.2.8.7" ></script>    
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                startQuoteCarousel();
+            });
+
+        })(jQuery);
+    </script>
+
+    
+        <script>
+            _.templateSettings = { /*<% --configure the underscore templating to work well in asp.net MVC-- %>*/
+                interpolate: /\{%=(.+?)%\}/g,	/*<% --//to print some value in template		 --%>*/
+                escape: /\{%-(.+?)%\}/g,		/*<% --//to print some values with HTML escaped --%>*/
+                evaluate: /\{%(.+?)%\}/g /*<% --//to execute some code					 --%>*/
+            };
+        </script>
+<script src="/Scripts/lib/jquery.validate_1_21_0/jquery.validate.min.js?v=4.2.8.7" ></script><script src="/Scripts/lib/MicrosoftMvcJQueryValidation.js?v=4.2.8.7" ></script><script src="/Scripts/jquery.form.min.js?v=4.2.8.7" ></script><script src="/Scripts/account.js?v=4.2.8.7" ></script><script src="/Scripts/tools.overlay.expose.min.js?v=4.2.8.7" ></script><script src="/Scripts/showMsg.js?v=4.2.8.7" ></script>        <div class="overlay msg demoRequestMsg" id="zMsg"><div class="closeBtn close icon">&#xE031;</div>
+<div class="msgOverlayTitle hidden"></div>
+<br />
+<div class="alertMsg"></div>
+<div class="alertMsgBtn">
+    <button type="button" class="yesNo msgCloseBtn close GenericBtnBlue g-btn" btnDefaultText="Close">Close</button>
+    <button type="button" class="yesNo msgYesBtn GenericBtnBlue g-btn hidden" btnDefaultText="Yes"> Yes</button>
+    <button type="button" class="yesNo msgNoBtn GenericBtnWhite g-btn hidden" btnDefaultText="No">No</button>
+</div>
+</div> 
+        <div class="overlayText" id="MsgDemoModal">Thank you for your interest in Candex.  Someone will be in touch with you to schedule a demonstration.</div>
+        <div class="overlay msg msgInline rightSideInlineMsg" id="zMsgInlineRight"></div>
+
+    
+
+
+
+<script>
+    if (!isIE) {
+        
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+        });
+    }
+</script>
+
+
+
+
+
+
+
+<!-- Google Tag Manager -->
+<script>
+    if (!isIE) {
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://s.candex.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NMQ2XDV');
+    }
+</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://s.candex.com/ns.html?id=GTM-NMQ2XDV" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=14&cb=1782759327" async></script></body>
+</html>

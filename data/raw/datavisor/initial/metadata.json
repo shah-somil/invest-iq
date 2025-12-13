@@ -2,19 +2,24 @@
   "company_id": "datavisor",
   "company_name": "DataVisor",
   "source_homepage": "https://www.datavisor.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:32:00Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/datavisor/initial",
-  "content_sha256": "c9c456a4a6e5ddfe498886b5b029d87cda803aacf1cceb45d67236ccc1e58182",
-  "content_length": 207,
+  "content_sha256": "5597a331bde0051dfde972986b3f40456b30e9299853dc317235008765e86ba4",
+  "content_length": 1043362,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "datavisor",
-    "company_name": "datavisor",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "DataVisor",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/datavisor/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.datavisor.com",
+      "about": "https://www.datavisor.com/about",
+      "product": "https://www.datavisor.com/products/fraud-platform",
+      "careers": "https://www.datavisor.com/about/careers",
+      "blog": "https://www.datavisor.com/blog"
+    },
+    "status": "success"
   }
 }

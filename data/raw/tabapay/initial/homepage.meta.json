@@ -1,0 +1,13 @@
+{
+  "company_name": "TabaPay",
+  "source_url": "https://www.tabapay.com",
+  "crawled_at": "2025-12-13T23:36:13Z",
+  "http_status": 200,
+  "title": "TabaPay | Instant Money Movement For Fintech Innovators",
+  "canonical": "https://tabapay.com/",
+  "robots": "",
+  "content_sha256": "68f369eff41cefeae134c282de5c6be16220c8f359d686775886a8002ea6781f",
+  "content_length": 45584,
+  "parser": "lxml",
+  "version": 1
+}

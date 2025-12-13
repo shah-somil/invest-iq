@@ -1,0 +1,5 @@
+{"company_name": "Mercury", "section": "homepage", "source_url": "https://mercury.com", "crawled_at": "2025-12-13T23:35:15Z", "status": 200, "bytes": 1271771}
+{"company_name": "Mercury", "section": "about", "source_url": "https://mercury.com/about", "crawled_at": "2025-12-13T23:35:16Z", "status": 200, "bytes": 1091281}
+{"company_name": "Mercury", "section": "product", "source_url": "https://mercury.com/personal-banking", "crawled_at": "2025-12-13T23:35:18Z", "status": 200, "bytes": 1276725}
+{"company_name": "Mercury", "section": "careers", "source_url": "https://mercury.com/jobs", "crawled_at": "2025-12-13T23:35:19Z", "status": 200, "bytes": 1513851}
+{"company_name": "Mercury", "section": "blog", "source_url": "https://mercury.com/blog", "crawled_at": "2025-12-13T23:35:19Z", "status": 200, "bytes": 1570223}

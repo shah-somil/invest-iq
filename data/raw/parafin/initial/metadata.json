@@ -2,19 +2,24 @@
   "company_id": "parafin",
   "company_name": "Parafin",
   "source_homepage": "https://www.parafin.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:35:26Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/parafin/initial",
-  "content_sha256": "8a4948d253ece5210279be3fef1466db7325aea4e7982e81060269d8209fb133",
-  "content_length": 203,
+  "content_sha256": "c8a683b15ec99fc21c1221ce60819912a68526c6a9db64b3716ac7686618a701",
+  "content_length": 204890,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "parafin",
-    "company_name": "parafin",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Parafin",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/parafin/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.parafin.com",
+      "about": "https://www.parafin.com/about",
+      "product": "https://www.parafin.com/platforms",
+      "careers": "https://www.parafin.com/careers",
+      "blog": "https://www.parafin.com/blog"
+    },
+    "status": "success"
   }
 }

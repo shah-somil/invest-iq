@@ -1,0 +1,13 @@
+{
+  "company_name": "Propel",
+  "source_url": "https://www.propel.app/ad-solutions",
+  "crawled_at": "2025-12-13T23:35:42Z",
+  "http_status": 200,
+  "title": "Ad solutions",
+  "canonical": "https://www.propel.app/ad-solutions/",
+  "robots": "index, follow",
+  "content_sha256": "b92f08b12081765cc2936d0a045157febbcb631bbb8ea933ad0fa2238ba999c5",
+  "content_length": 83883,
+  "parser": "lxml",
+  "version": 1
+}

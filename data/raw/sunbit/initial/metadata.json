@@ -2,19 +2,19 @@
   "company_id": "sunbit",
   "company_name": "Sunbit",
   "source_homepage": "https://www.sunbit.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:36:12Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/sunbit/initial",
-  "content_sha256": "e2ba0eb10c37922f7d1a25176e6de28415818ae4e2300d3b220a699922501e82",
-  "content_length": 201,
+  "content_sha256": "f6a9356318cd1a165994cac3aade4c59afc8306caf49bd6806f459c269992444",
+  "content_length": 1046,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "sunbit",
-    "company_name": "sunbit",
+    "company_name": "Sunbit",
     "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://www.sunbit.com) -> robots.txt disallows fetching https://www.sunbit.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:36:12Z"
   }
 }

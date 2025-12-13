@@ -1,8 +1,12 @@
 {
   "company_id": "sentilink",
-  "company_name": "sentilink",
-  "status": "failed",
-  "reason": "missing_website",
-  "message": "cannot scrape without a website URL",
-  "crawled_at": "2025-12-13T23:07:40Z"
+  "company_name": "SentiLink",
+  "crawled_at": "2025-12-13T23:35:50Z",
+  "sections": {
+    "homepage": "https://www.sentilink.com",
+    "about": "https://www.sentilink.com/about",
+    "product": "https://www.sentilink.com/product-overview",
+    "careers": "https://www.sentilink.com/careers",
+    "blog": "https://www.sentilink.com/insights"
+  }
 }

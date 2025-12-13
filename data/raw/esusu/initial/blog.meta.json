@@ -1,0 +1,13 @@
+{
+  "company_name": "Esusu",
+  "source_url": "https://esusurent.com/blog",
+  "crawled_at": "2025-12-13T23:32:03Z",
+  "http_status": 200,
+  "title": "Esusu Blog | Credit, Rent & Property Management Tech",
+  "canonical": "https://esusurent.com/blog",
+  "robots": "",
+  "content_sha256": "37bed74b9581bf9a1e93f0c5be003460ba809e6baef6246572a2b63ee64ca52a",
+  "content_length": 90163,
+  "parser": "lxml",
+  "version": 1
+}

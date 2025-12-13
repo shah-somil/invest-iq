@@ -2,19 +2,24 @@
   "company_id": "mercury",
   "company_name": "Mercury",
   "source_homepage": "https://www.mercury.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:35:19Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/mercury/initial",
-  "content_sha256": "c390e9862677f0d709b78a5bb2b3cd306a95947adf18edc5868790cd21f23d36",
-  "content_length": 203,
+  "content_sha256": "76cfba5a751117b1ab9a2d04ed8cd66cbbb7ca542666003b1bfa3b9a3a0a22bc",
+  "content_length": 6757488,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "mercury",
-    "company_name": "mercury",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Mercury",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/mercury/initial/manifest.json",
+    "sections": {
+      "homepage": "https://mercury.com",
+      "about": "https://mercury.com/about",
+      "product": "https://mercury.com/personal-banking",
+      "careers": "https://mercury.com/jobs",
+      "blog": "https://mercury.com/blog"
+    },
+    "status": "success"
   }
 }

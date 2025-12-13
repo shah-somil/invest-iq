@@ -1,0 +1,13 @@
+{
+  "company_name": "Stripe",
+  "source_url": "https://stripe.com/payments",
+  "crawled_at": "2025-12-13T23:36:10Z",
+  "http_status": 200,
+  "title": "Stripe Payments | Global Payment Processing Platform",
+  "canonical": "https://stripe.com/payments",
+  "robots": "",
+  "content_sha256": "c96dff867169c1076a0892ea9474ccf5b24ba5c1e92b61366092d7c96a93675f",
+  "content_length": 1330373,
+  "parser": "lxml",
+  "version": 1
+}

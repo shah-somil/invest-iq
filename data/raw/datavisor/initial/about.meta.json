@@ -1,0 +1,13 @@
+{
+  "company_name": "DataVisor",
+  "source_url": "https://www.datavisor.com/about",
+  "crawled_at": "2025-12-13T23:31:54Z",
+  "http_status": 200,
+  "title": "About DataVisor , the Most Sophisticated AI-Powered Fraud Platform",
+  "canonical": "https://www.datavisor.com/about",
+  "robots": "",
+  "content_sha256": "0e03f64cbc9a8f846eec6e503866d2d91e1e53c291699ed6082384d4551eb446",
+  "content_length": 108831,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "Propel",
+  "source_url": "https://www.propel.app/about-us",
+  "crawled_at": "2025-12-13T23:35:39Z",
+  "http_status": 200,
+  "title": "About us",
+  "canonical": "https://www.propel.app/about-us/",
+  "robots": "index, follow",
+  "content_sha256": "c71044a3c8af78711c5062ce0340a43308190eaf2f2eeff1f72accd20b30aa7c",
+  "content_length": 89895,
+  "parser": "lxml",
+  "version": 1
+}

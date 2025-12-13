@@ -1,0 +1,13 @@
+{
+  "company_name": "Bilt Rewards",
+  "source_url": "https://www.biltrewards.com",
+  "crawled_at": "2025-12-13T23:30:55Z",
+  "http_status": 200,
+  "title": "Bilt \u00e2\u0080\u0093 Earn rewards on rent.",
+  "canonical": "https://www.biltrewards.com",
+  "robots": "max-image-preview:large",
+  "content_sha256": "1ee5718f2027ee55fcd823740345749a5d51540bece20389f0999748cab24e7a",
+  "content_length": 5224646,
+  "parser": "lxml",
+  "version": 1
+}

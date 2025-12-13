@@ -1,0 +1,13 @@
+{
+  "company_name": "TabaPay",
+  "source_url": "https://www.tabapay.com/features.html",
+  "crawled_at": "2025-12-13T23:36:17Z",
+  "http_status": 200,
+  "title": "Integrated Features to Improve Payments and Payouts | TabaPay",
+  "canonical": "https://tabapay.com/features.html",
+  "robots": "",
+  "content_sha256": "627b866a8df97121f0c99e8deffd4c8859d73cc10b2398a7c86ebeae6314b83a",
+  "content_length": 51343,
+  "parser": "lxml",
+  "version": 1
+}

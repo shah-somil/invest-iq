@@ -1,0 +1,13 @@
+{
+  "company_name": "Column",
+  "source_url": "https://column.com/blog",
+  "crawled_at": "2025-12-13T23:31:39Z",
+  "http_status": 200,
+  "title": "Blog \u00e2\u0080\u0094 Column",
+  "canonical": "https://column.com/blog/",
+  "robots": "",
+  "content_sha256": "060eb0a317e65f890e09fde473d326c245946ad5ef253233592b5eff3bdb49cd",
+  "content_length": 362020,
+  "parser": "lxml",
+  "version": 1
+}

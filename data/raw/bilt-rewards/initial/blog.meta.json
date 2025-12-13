@@ -1,0 +1,13 @@
+{
+  "company_name": "Bilt Rewards",
+  "source_url": "https://www.biltrewards.com/card",
+  "crawled_at": "2025-12-13T23:31:00Z",
+  "http_status": 200,
+  "title": "Bilt Card 2.0 | Be the first to hear about it - Bilt Rewards",
+  "canonical": "https://www.biltrewards.com/card",
+  "robots": "",
+  "content_sha256": "cce27423d449240552c4d0c42d09fe97d54befc26bfe2c164d3a878ce66d7f56",
+  "content_length": 113540,
+  "parser": "lxml",
+  "version": 1
+}

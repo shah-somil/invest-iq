@@ -1,8 +1,12 @@
 {
   "company_id": "kin-insurance",
-  "company_name": "kin-insurance",
-  "status": "failed",
-  "reason": "missing_website",
-  "message": "cannot scrape without a website URL",
-  "crawled_at": "2025-12-13T23:07:40Z"
+  "company_name": "Kin Insurance",
+  "crawled_at": "2025-12-13T23:34:57Z",
+  "sections": {
+    "homepage": "https://www.kin.com",
+    "about": "https://www.kin.com/about",
+    "product": "https://www.kin.com/claims",
+    "careers": "https://www.kin.com/careers",
+    "blog": "https://www.kin.com/blog"
+  }
 }

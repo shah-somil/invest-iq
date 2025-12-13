@@ -1,0 +1,13 @@
+{
+  "company_name": "Candex",
+  "source_url": "https://www.candex.com/careers",
+  "crawled_at": "2025-12-13T23:31:08Z",
+  "http_status": 200,
+  "title": "Careers at Candex | Join Our Global Team",
+  "canonical": "https://www.candex.com/careers",
+  "robots": "",
+  "content_sha256": "15818014d7f19c37fbda841ff48d1054e308356b87585198312ff88d910845c1",
+  "content_length": 23990,
+  "parser": "lxml",
+  "version": 1
+}

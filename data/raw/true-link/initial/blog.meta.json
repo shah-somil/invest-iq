@@ -1,0 +1,13 @@
+{
+  "company_name": "True Link",
+  "source_url": "https://www.truelinkfinancial.com/resource-center",
+  "crawled_at": "2025-12-13T23:36:33Z",
+  "http_status": 200,
+  "title": "True Link Financial Resource Center",
+  "canonical": "https://www.truelinkfinancial.com/resource-center",
+  "robots": "",
+  "content_sha256": "b75d55e1946357e058c45a8f7683c241f6f467c5ddb6b70c6040528d96736495",
+  "content_length": 66808,
+  "parser": "lxml",
+  "version": 1
+}

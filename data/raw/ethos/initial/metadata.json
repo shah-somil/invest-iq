@@ -2,19 +2,19 @@
   "company_id": "ethos",
   "company_name": "Ethos",
   "source_homepage": "https://www.ethoslife.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:32:03Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/ethos/initial",
-  "content_sha256": "5851c2970061ff7c31dd24d9eb5efa59ac636bd5174cda09f8f65876f798b330",
-  "content_length": 199,
+  "content_sha256": "ad0e2b4ddea9237034a8bf97eda2fc99a6e0fce9ada72ed1601ba1c22c98e6de",
+  "content_length": 1048,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "ethos",
-    "company_name": "ethos",
+    "company_name": "Ethos",
     "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://www.ethoslife.com) -> robots.txt disallows fetching https://www.ethoslife.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:32:03Z"
   }
 }

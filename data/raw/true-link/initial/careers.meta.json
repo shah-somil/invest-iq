@@ -1,0 +1,13 @@
+{
+  "company_name": "True Link",
+  "source_url": "https://www.truelinkfinancial.com/about-us/careers",
+  "crawled_at": "2025-12-13T23:36:33Z",
+  "http_status": 200,
+  "title": "Careers at True Link",
+  "canonical": "https://www.truelinkfinancial.com/about-us/careers",
+  "robots": "",
+  "content_sha256": "78e759de07b281f012532fd7fc8b59b9502e4bef481352e422a248fdfc7b172f",
+  "content_length": 51002,
+  "parser": "lxml",
+  "version": 1
+}

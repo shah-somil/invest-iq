@@ -2,19 +2,19 @@
   "company_id": "valon",
   "company_name": "Valon",
   "source_homepage": "https://www.valon.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:36:33Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/valon/initial",
-  "content_sha256": "dd87508cfedc946cd7389420c99b00c92980fa19faff08a4e2d6b5ba02d40ffd",
-  "content_length": 199,
+  "content_sha256": "40499e4e6a762aeea6e22e1c0c2ddaead885634012d2e2a29c64e2163df41a82",
+  "content_length": 1036,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "valon",
-    "company_name": "valon",
+    "company_name": "Valon",
     "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://www.valon.com) -> robots.txt disallows fetching https://www.valon.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:36:33Z"
   }
 }

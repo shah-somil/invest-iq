@@ -1,0 +1,13 @@
+{
+  "company_name": "Plaid",
+  "source_url": "https://plaid.com",
+  "crawled_at": "2025-12-13T23:35:35Z",
+  "http_status": 200,
+  "title": "Plaid: Enabling all companies to build fintech solutions",
+  "canonical": "https://plaid.com/",
+  "robots": "",
+  "content_sha256": "f338dd3c42d0250999ec117d919f96785c53b9560756a9a1109fd3a96eb8bcd1",
+  "content_length": 254143,
+  "parser": "lxml",
+  "version": 1
+}

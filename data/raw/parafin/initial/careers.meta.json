@@ -1,0 +1,13 @@
+{
+  "company_name": "Parafin",
+  "source_url": "https://www.parafin.com/careers",
+  "crawled_at": "2025-12-13T23:35:26Z",
+  "http_status": 200,
+  "title": "Careers at Parafin | Join our team",
+  "canonical": "https://www.parafin.com/careers",
+  "robots": "",
+  "content_sha256": "d7695beb9b89bd69223a76be70897e97d93bcda2f57f4447bc0eeb2b1fc082af",
+  "content_length": 37497,
+  "parser": "lxml",
+  "version": 1
+}

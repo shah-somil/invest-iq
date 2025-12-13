@@ -1,0 +1,13 @@
+{
+  "company_name": "Kin Insurance",
+  "source_url": "https://www.kin.com/careers",
+  "crawled_at": "2025-12-13T23:35:07Z",
+  "http_status": 200,
+  "title": "Career Opportunities with Kin Insurance",
+  "canonical": "https://www.kin.com/careers/",
+  "robots": "",
+  "content_sha256": "959a463ca147d2310bf46c5aa8f2a5916664a5dc7675de76a1f18328ef9057ff",
+  "content_length": 239170,
+  "parser": "lxml",
+  "version": 1
+}

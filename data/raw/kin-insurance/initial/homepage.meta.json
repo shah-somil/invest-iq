@@ -1,0 +1,13 @@
+{
+  "company_name": "Kin Insurance",
+  "source_url": "https://www.kin.com",
+  "crawled_at": "2025-12-13T23:34:57Z",
+  "http_status": 200,
+  "title": "Kin - Affordable home insurance made easy",
+  "canonical": "https://www.kin.com/",
+  "robots": "",
+  "content_sha256": "cf98ea28056c29ff484e751424c0dea19e7f94a1b004afd1551a76731a38635b",
+  "content_length": 335690,
+  "parser": "lxml",
+  "version": 1
+}

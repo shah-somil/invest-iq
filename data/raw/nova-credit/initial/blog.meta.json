@@ -1,0 +1,13 @@
+{
+  "company_name": "Nova Credit",
+  "source_url": "https://www.novacredit.com/corporate-blog",
+  "crawled_at": "2025-12-13T23:35:24Z",
+  "http_status": 200,
+  "title": "Corporate Blog | Nova Credit",
+  "canonical": "https://www.novacredit.com/corporate-blog",
+  "robots": "",
+  "content_sha256": "e176ed7e72640e874509aad7c7055991fe8a4826d83f66707e101440e2a2eff1",
+  "content_length": 257556,
+  "parser": "lxml",
+  "version": 1
+}

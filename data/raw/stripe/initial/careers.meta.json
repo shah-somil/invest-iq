@@ -1,0 +1,13 @@
+{
+  "company_name": "Stripe",
+  "source_url": "https://stripe.com/jobs",
+  "crawled_at": "2025-12-13T23:36:11Z",
+  "http_status": 200,
+  "title": "Stripe: Jobs",
+  "canonical": "https://stripe.com/jobs",
+  "robots": "",
+  "content_sha256": "df0f36296ba4539daeffc935931295ee03b2648faabeac6b5a2ce80660da7052",
+  "content_length": 395558,
+  "parser": "lxml",
+  "version": 1
+}

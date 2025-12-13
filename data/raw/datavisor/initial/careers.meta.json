@@ -1,0 +1,13 @@
+{
+  "company_name": "DataVisor",
+  "source_url": "https://www.datavisor.com/about/careers",
+  "crawled_at": "2025-12-13T23:31:59Z",
+  "http_status": 200,
+  "title": "Careers - DataVisor",
+  "canonical": "https://www.datavisor.com/about/careers",
+  "robots": "",
+  "content_sha256": "f3c034cadb5fb6dcbc57e67cb03a729897f9cef6fa353e071d28bde85fae4f3b",
+  "content_length": 98386,
+  "parser": "lxml",
+  "version": 1
+}

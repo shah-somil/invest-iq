@@ -1,0 +1,13 @@
+{
+  "company_name": "Wealthfront",
+  "source_url": "https://www.wealthfront.com/careers",
+  "crawled_at": "2025-12-13T23:36:38Z",
+  "http_status": 200,
+  "title": "Careers - Wealthfront",
+  "canonical": "https://www.wealthfront.com/careers",
+  "robots": "",
+  "content_sha256": "ca11cb97ffd62e42d3c318a69d6d0ab5bbc10875adc1274565c5535b26565e92",
+  "content_length": 58087,
+  "parser": "lxml",
+  "version": 1
+}

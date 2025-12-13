@@ -1,0 +1,13 @@
+{
+  "company_name": "Carry1st",
+  "source_url": "https://www.carry1st.com",
+  "crawled_at": "2025-12-13T23:31:12Z",
+  "http_status": 200,
+  "title": "Carry1st | Africa's Leading Mobile Games Publisher",
+  "canonical": "https://www.carry1st.com",
+  "robots": "",
+  "content_sha256": "cbfd1bc6d2bd3b639e2602c2bca3c53aa496a2332cd4fb7c8a96859525a4ea04",
+  "content_length": 104600,
+  "parser": "lxml",
+  "version": 1
+}

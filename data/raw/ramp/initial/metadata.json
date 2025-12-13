@@ -2,19 +2,19 @@
   "company_id": "ramp",
   "company_name": "Ramp",
   "source_homepage": "https://www.ramp.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:35:44Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/ramp/initial",
-  "content_sha256": "607b6d86322f26059dc787a1b06cf4358885473b11297d4da1b004ae0d98b1f5",
-  "content_length": 197,
+  "content_sha256": "3094cb0425aaad487fd669dbf7c13c4ffb26c08324eb3d9766c83bdfdadbbe39",
+  "content_length": 1026,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "ramp",
-    "company_name": "ramp",
+    "company_name": "Ramp",
     "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://www.ramp.com) -> robots.txt disallows fetching https://www.ramp.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:35:44Z"
   }
 }

@@ -1,0 +1,13 @@
+{
+  "company_name": "Wealthfront",
+  "source_url": "https://www.wealthfront.com",
+  "crawled_at": "2025-12-13T23:36:34Z",
+  "http_status": 200,
+  "title": "Money works better here | Wealthfront",
+  "canonical": "https://www.wealthfront.com/",
+  "robots": "",
+  "content_sha256": "6c6312a2cbca4ea46cad69dc5762ebf2016194db76c01f570ae10818b29410f8",
+  "content_length": 204631,
+  "parser": "lxml",
+  "version": 1
+}

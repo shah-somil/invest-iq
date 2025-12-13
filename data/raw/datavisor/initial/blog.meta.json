@@ -1,0 +1,13 @@
+{
+  "company_name": "DataVisor",
+  "source_url": "https://www.datavisor.com/blog",
+  "crawled_at": "2025-12-13T23:32:00Z",
+  "http_status": 200,
+  "title": "Blog - DataVisor",
+  "canonical": "https://www.datavisor.com/blog",
+  "robots": "",
+  "content_sha256": "93862f0859182814d81c59f9e5cdec44d06dd37588bb1f6ee2f381348687f30f",
+  "content_length": 380186,
+  "parser": "lxml",
+  "version": 1
+}

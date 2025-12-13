@@ -1,0 +1,13 @@
+{
+  "company_name": "Highnote",
+  "source_url": "https://highnote.com",
+  "crawled_at": "2025-12-13T23:34:45Z",
+  "http_status": 200,
+  "title": "Highnote | The Unified Platform for Embedded Finance",
+  "canonical": "https://highnote.com",
+  "robots": "",
+  "content_sha256": "ce9cc4c214bcf982a07dbae04a41136d9e9c365388657fccb14a3ab1e6c107f3",
+  "content_length": 12631,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "Persona",
+  "source_url": "https://withpersona.com",
+  "crawled_at": "2025-12-13T23:35:27Z",
+  "http_status": 200,
+  "title": "Secure Identity Verification Solutions | Persona",
+  "canonical": "https://withpersona.com/",
+  "robots": "index, follow",
+  "content_sha256": "d8f3b15fabf70c6026ddb58c22ec6a76bbf6674eb25da99883fa11a630613756",
+  "content_length": 131497,
+  "parser": "lxml",
+  "version": 1
+}

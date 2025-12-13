@@ -1,0 +1,5 @@
+{"company_name": "DeepL", "section": "homepage", "source_url": "https://www.deepl.com/en/translator", "crawled_at": "2025-12-13T21:03:22Z", "status": 200, "bytes": 498769}
+{"company_name": "DeepL", "section": "about", "source_url": "https://www.deepl.com/en/about-us", "crawled_at": "2025-12-13T21:03:26Z", "status": 200, "bytes": 489091}
+{"company_name": "DeepL", "section": "product", "source_url": "https://www.deepl.com/en/features", "crawled_at": "2025-12-13T21:03:30Z", "status": 200, "bytes": 503211}
+{"company_name": "DeepL", "section": "careers", "source_url": "https://www.deepl.com/en/careers?source=DeepLFooter", "crawled_at": "2025-12-13T21:03:33Z", "status": 200, "bytes": 487743}
+{"company_name": "DeepL", "section": "blog", "source_url": "https://www.deepl.com/en/customer-stories", "crawled_at": "2025-12-13T21:03:37Z", "status": 200, "bytes": 623250}

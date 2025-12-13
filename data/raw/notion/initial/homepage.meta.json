@@ -1,0 +1,13 @@
+{
+  "company_name": "Notion",
+  "source_url": "https://www.notion.com",
+  "crawled_at": "2025-12-13T21:04:11Z",
+  "http_status": 200,
+  "title": "The AI workspace that works for you. | Notion",
+  "canonical": "https://www.notion.com/",
+  "robots": "",
+  "content_sha256": "e8873b0e9b117f0288f55c0322469cc7fb64d371f99320dc8a8692f8d2d5f4db",
+  "content_length": 172037,
+  "parser": "lxml",
+  "version": 1
+}

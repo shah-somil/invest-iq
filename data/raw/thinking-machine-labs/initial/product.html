@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <meta name="author" content="">
+
+  
+  
+  <meta name="description" content="Tinker is a training API for researchers and developers.">
+  
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+  
+  
+  
+  <link rel="preload" href="/fonts/iowan-old-style/iowan-old-style_regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" fetchpriority="high">
+  <link rel="preload" href="/fonts/iowan-old-style/iowan-old-style_bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/iowan-old-style/iowan-old-style_italic.woff2" as="font" type="font/woff2" crossorigin="anonymous" fetchpriority="high">
+  
+  
+  <link rel="preload" href="/fonts/gt-america/GT-America-Standard-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/gt-america/GT-America-Standard-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/gt-america/GT-America-Standard-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/chakra-petch/chakra-petch-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/chakra-petch/chakra-petch-v12-latin-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/chakra-petch/chakra-petch-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+  
+  
+  <meta name="keywords" content='thinky thinkingmachines machine learning deep learning ai'>
+  
+
+  
+  
+  
+
+<script>
+  
+  (function() {
+    function pageHasMath() {
+      try {
+        const text = document.body ? document.body.textContent : '';
+        if (!text) return false;
+        
+        const block = /\$\$[\s\S]*?\$\$/;
+        const paren = /\\\([\s\S]*?\\\)/;
+        const bracket = /\\\[[\s\S]*?\\\]/;
+        const inline = /(^|\s)\$(?!\$)[^\n]+?\$(?=\s|[\.,;:!?)]|$)/;
+        return block.test(text) || paren.test(text) || bracket.test(text) || inline.test(text);
+      } catch (e) {
+        return true; 
+      }
+    }
+
+    function loadStyle(href) {
+      var preload = document.createElement('link');
+      preload.rel = 'preload';
+      preload.as = 'style';
+      preload.href = href;
+      document.head.appendChild(preload);
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = href;
+      link.media = 'print';
+      link.onload = function(){ this.media = 'all'; };
+      document.head.appendChild(link);
+
+      var noscript = document.createElement('noscript');
+      noscript.innerHTML = '<link rel="stylesheet" href="' + href + '">';
+      document.head.appendChild(noscript);
+    }
+
+    function loadScript(src) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = src;
+        s.defer = true;
+        s.onload = resolve;
+        s.onerror = reject;
+        document.head.appendChild(s);
+      });
+    }
+
+    function renderAllMath(root) {
+      if (!window.renderMathInElement) return;
+      window.renderMathInElement(root || document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ],
+        throwOnError: false,
+        
+        ignoredTags: ['script','noscript','style','textarea','pre','code'],
+      });
+    }
+
+    function init() {
+      if (!pageHasMath()) return;
+      var base = '\/katex\/';
+      var cssHref = base + 'katex.min.css?v=1765566087';
+      var katexJs = base + 'katex.min.js?v=1765566087';
+      var autorenderJs = base + 'contrib/auto-render.min.js?v=1765566087';
+
+      loadStyle(cssHref);
+      loadScript(katexJs)
+        .then(function(){ return loadScript(autorenderJs); })
+        .then(function(){
+          
+          renderAllMath(document.body);
+          
+          setTimeout(function(){ renderAllMath(document.body); }, 0);
+          
+          try {
+            var observer = new MutationObserver(function(mutations){
+              for (var i=0; i<mutations.length; i++) {
+                var m = mutations[i];
+                if (m.addedNodes && m.addedNodes.length) {
+                  for (var j=0; j<m.addedNodes.length; j++) {
+                    var node = m.addedNodes[j];
+                    if (node.nodeType === 1) {
+                      renderAllMath(node);
+                    }
+                  }
+                }
+              }
+            });
+            observer.observe(document.body, { childList: true, subtree: true });
+          } catch (e) {   }
+        })
+        .catch(function(){   });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>
+
+
+  
+
+  
+  
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+
+  
+  <link rel="canonical" href="https://thinkingmachines.ai/tinker/">
+
+  
+  
+  
+  <meta itemprop="name" content="Tinker">
+  <meta itemprop="description" content="Tinker is a training API for researchers and developers.">
+  <meta itemprop="datePublished" content="2025-09-16T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-09-16T00:00:00+00:00">
+  <meta itemprop="wordCount" content="623">
+
+
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/common.css?v=1765566087" fetchpriority="high">
+  
+  <link rel="stylesheet" href="https://thinkingmachines.ai/css/ui.css?v=1765566087">
+  
+  <link rel="preload" as="style" href="/css/typography.css?v=1765566087">
+  <link rel="stylesheet" href="/css/typography.css?v=1765566087" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/typography.css?v=1765566087"></noscript>
+  
+  <link rel="preload" as="style" href="/css/fonts.css?v=1765566087">
+  <link rel="stylesheet" href="/css/fonts.css?v=1765566087" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/fonts.css?v=1765566087"></noscript>
+  <link rel="preload" as="style" href="/css/syntax.css?v=1765566087">
+  <link rel="stylesheet" href="/css/syntax.css?v=1765566087" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/syntax.css?v=1765566087"></noscript>
+
+  
+  
+  <title>Tinker - Thinking Machines Lab</title>
+  
+
+  
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+  
+
+  
+  <meta property="og:title" content="Tinker">
+  <meta property="og:description" content="Tinker is a training API for researchers and developers.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://thinkingmachines.ai/tinker/">
+  <meta property="og:site_name" content="Thinking Machines Lab">
+  <meta property="og:image" content="https://thinkingmachines.ai/blog/announcing-tinker/images/tinker-cover-social.png">
+  
+  
+  <meta property="og:image:alt" content="Tinker">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tinker">
+  <meta name="twitter:description" content="Tinker is a training API for researchers and developers.">
+  <meta name="twitter:image" content="https://thinkingmachines.ai/blog/announcing-tinker/images/tinker-cover-social.png">
+  
+  
+  <meta name="twitter:image:alt" content="Tinker">
+
+  
+
+
+
+
+
+<link rel="preload" as="style" href="https://thinkingmachines.ai/css/tinker.css?v=0f523d6871e2c2b6ded167f2429cd8a4">
+<link rel="stylesheet" href="https://thinkingmachines.ai/css/tinker.css?v=0f523d6871e2c2b6ded167f2429cd8a4" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://thinkingmachines.ai/css/tinker.css?v=0f523d6871e2c2b6ded167f2429cd8a4"></noscript>
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+    
+
+
+
+
+
+
+<header id="header">
+  
+  <div id="site-header" class="site-header">
+    
+    
+    <div class="navbar-logo">
+      <a href="/">THINKING MACHINES</a>
+    </div>
+    
+
+    
+    <div class="nav-group">
+      
+      <nav class="top-nav">
+        
+        <a href="/tinker/">Tinker</a>
+        
+        <a href="/blog/">Blog</a>
+        <a href="/#join-us">Join us</a>
+      </nav>
+
+      
+      <button id="menu-toggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+    </div>
+  </div>
+  
+  
+  <div id="mobile-menu" class="mobile-menu-overlay" aria-hidden="true">
+    <nav class="mobile-menu-nav" role="navigation" aria-label="Mobile">
+      <a href="/">Home</a>
+        
+        <a href="/tinker/">Tinker</a>
+        
+      <a href="/blog/">Blog</a>
+      <a href="/#join-us">Join us</a>
+    </nav>
+  </div>
+  
+  
+</header>
+
+
+
+    
+<main id="main" class="content">
+  
+  
+  
+  
+  
+  
+  
+  <article class="content ">
+    
+      <div id="tinker-hero-section" class="tinker-hero-section">
+<section class="tinker-hero">
+  <!-- <div class="tinker-beta-announcement home-announcement" aria-hidden="false">
+    <span class="pill">BETA</span>
+  </div> -->
+  <div class="tinker-cover-image">
+    <div class="tinker-cover-desktop">
+      <img src="/tinker/svgs/tinkertoy-cover.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt="">
+    </div>
+    <div class="tinker-cover-mobile">
+      <img src="/tinker/svgs/tinkertoy-cover-mobile.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt="">
+    </div>
+    <p class="tinker-cover-caption"><a href="https://www.computerhistory.org/collections/catalog/X39.81/" target="_blank" rel="noopener">TinkerToy Computer</a> invented by <a href="https://en.wikipedia.org/wiki/Danny_Hillis" target="_blank" rel="noopener">Daniel Hillis</a> and <a href="https://en.wikipedia.org/wiki/Brian_Silverman" target="_blank" rel="noopener">Brian Silverman</a></p>
+  </div>
+  <h1 class="tinker-title">Tinker is a training API for <span class="tinker-rotate" aria-live="polite">researchers</span></h1>
+  <p class="tinker-subtitle">
+    Control every aspect of model training and fine-tuning while we handle the infrastructure.
+  </p>
+  <div class="tinker-cta-row">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a class="btn primary lg" href="https://auth.thinkingmachines.ai/sign-up" target="_blank">Sign up</a>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a class="btn plain lg btn-with-chevron" href="https://auth.thinkingmachines.ai/">Sign in<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.56701 3.34347C6.78189 3.14201 7.1194 3.1529 7.32086 3.36779L11.3208 7.63446C11.5131 7.8396 11.5131 8.15884 11.3208 8.36399L7.32086 12.6306C7.1194 12.8456 6.78189 12.8565 6.56701 12.655C6.35212 12.4535 6.34123 12.116 6.54269 11.9011L10.2007 7.99922L6.54269 4.09733C6.34123 3.88244 6.35212 3.54492 6.56701 3.34347Z" fill="currentColor"/></svg></a>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a class="btn plain lg btn-with-chevron" href="https://tinker-docs.thinkingmachines.ai/" target="_blank">Docs<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.56701 3.34347C6.78189 3.14201 7.1194 3.1529 7.32086 3.36779L11.3208 7.63446C11.5131 7.8396 11.5131 8.15884 11.3208 8.36399L7.32086 12.6306C7.1194 12.8456 6.78189 12.8565 6.56701 12.655C6.35212 12.4535 6.34123 12.116 6.54269 11.9011L10.2007 7.99922L6.54269 4.09733C6.34123 3.88244 6.35212 3.54492 6.56701 3.34347Z" fill="currentColor"/></svg></a>
+
+
+
+
+
+
+
+  </div>
+</section>
+</div>
+<section class="tinker-section">
+  <h2 class="tinker-h2">Your ideas in four functions</h2>
+  <div class="tinker-features">
+    <article class="tinker-feature-card">
+      <div class="tinker-feature-icon" aria-hidden="true"><img src="svgs/icons/arrow-left-right.svg" alt="Bidirectional arrow icon" /></div>
+      <h3 class="tinker-feature-title">forward_backward</h3>
+      <p class="tinker-feature-body">Perform a forward pass and a backward pass, accumulating the gradient.</p>
+    </article>
+        <article class="tinker-feature-card">
+      <div class="tinker-feature-icon" aria-hidden="true"><img src="svgs/icons/line-chart.svg" alt="Chart icon" /></div>
+      <h3 class="tinker-feature-title">optim_step</h3>
+      <p class="tinker-feature-body">Update weights based on the accumulated gradient.</p>
+    </article>
+    <article class="tinker-feature-card">
+      <div class="tinker-feature-icon" aria-hidden="true"><img src="svgs/icons/zap.svg" alt="Lightning icon" /></div>
+      <h3 class="tinker-feature-title">sample</h3>
+      <p class="tinker-feature-body">Generate tokens for interaction, evaluation, or RL actions.</p>
+    </article>
+    <article class="tinker-feature-card">
+      <div class="tinker-feature-icon" aria-hidden="true"><img src="svgs/icons/arrow-down-circle.svg" alt="Save icon" /></div>
+      <h3 class="tinker-feature-title">save_state</h3>
+      <p class="tinker-feature-body">Save training progress for resumption.</p>
+    </article>
+  </div>
+</section>
+<section class="tinker-section">
+  <h2 class="tinker-h2">Supported models</h2>
+  <div class="tinker-models">
+    <div class="tinker-model-card">
+      <a href="https://huggingface.co/Qwen" target="_blank" rel="noopener" class="tinker-model-header">
+        <span class="tinker-model-logo" role="img" aria-label="Qwen logo"><img src="/tinker/svgs/qwen.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span>
+        <h3 class="tinker-model-title">QWEN</h3>
+      </a>
+      <div class="tinker-model-list">
+        <a href="https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Qwen3-4B-Instruct-2507</span>
+          <span class="tinker-model-type">Dense</span>
+        </a>
+        <a href="https://huggingface.co/Qwen/Qwen3-8B-Base" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Qwen3-8B-Base</span>
+          <span class="tinker-model-type">Dense</span>
+        </a>
+        <a href="https://huggingface.co/Qwen/Qwen3-8B" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Qwen3-8B</span>
+          <span class="tinker-model-type">Dense</span>
+        </a>
+        <a href="https://huggingface.co/Qwen/Qwen3-30B-A3B-Base" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Qwen3-30B-A3B-Base</span>
+          <span class="tinker-model-type">MoE</span>
+        </a>
+        <a href="https://huggingface.co/Qwen/Qwen3-30B-A3B" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Qwen3-30B-A3B</span>
+          <span class="tinker-model-type">MoE</span>
+        </a>
+        <a href="https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Qwen3-30B-A3B-Instruct-2507</span>
+          <span class="tinker-model-type">MoE</span>
+        </a>
+        <a href="https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Qwen3-VL-30B-A3B-Instruct</span>
+          <span class="tinker-model-type">MoE</span>
+        </a>
+        <a href="https://huggingface.co/Qwen/Qwen3-32B" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Qwen3-32B</span>
+          <span class="tinker-model-type">Dense</span>
+        </a>
+        <a href="https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Qwen3-235B-A22B-Instruct-2507</span>
+          <span class="tinker-model-type">MoE</span>
+        </a>
+        <a href="https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Qwen3-VL-235B-A22B-Instruct</span>
+          <span class="tinker-model-type">MoE</span>
+        </a>
+      </div>
+    </div>
+    <div class="tinker-model-card">
+      <a href="https://huggingface.co/meta-llama" target="_blank" rel="noopener" class="tinker-model-header">
+        <span class="tinker-model-logo" role="img" aria-label="Meta logo"><img src="/tinker/svgs/meta.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span>
+        <h3 class="tinker-model-title">LLAMA</h3>
+      </a>
+      <div class="tinker-model-list">
+        <a href="https://huggingface.co/meta-llama/Llama-3.2-1B" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Llama-3.2-1B</span>
+          <span class="tinker-model-type">Dense</span>
+        </a>
+        <a href="https://huggingface.co/meta-llama/Llama-3.2-3B" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Llama-3.2-3B</span>
+          <span class="tinker-model-type">Dense</span>
+        </a>
+        <a href="https://huggingface.co/meta-llama/Llama-3.1-8B" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Llama-3.1-8B</span>
+          <span class="tinker-model-type">Dense</span>
+        </a>
+        <a href="https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Llama-3.1-8B-Instruct</span>
+          <span class="tinker-model-type">Dense</span>
+        </a>
+        <a href="https://huggingface.co/meta-llama/Llama-3.1-70B" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Llama-3.1-70B</span>
+          <span class="tinker-model-type">Dense</span>
+        </a>
+        <a href="https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Llama-3.3-70B-Instruct</span>
+          <span class="tinker-model-type">Dense</span>
+        </a>
+      </div>
+    </div>
+    <div class="tinker-model-card">
+      <a href="https://huggingface.co/collections/openai/gpt-oss" target="_blank" rel="noopener" class="tinker-model-header">
+        <span class="tinker-model-logo" role="img" aria-label="GPT-OSS logo"><img src="/tinker/svgs/gpt-oss.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span>
+        <h3 class="tinker-model-title">GPT-OSS</h3>
+      </a>
+      <div class="tinker-model-list">
+        <a href="https://huggingface.co/openai/gpt-oss-120b" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">GPT-OSS-120B</span>
+          <span class="tinker-model-type">MoE</span>
+        </a>
+        <a href="https://huggingface.co/openai/gpt-oss-20b" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">GPT-OSS-20B</span>
+          <span class="tinker-model-type">MoE</span>
+        </a>
+      </div>
+    </div>
+    <div class="tinker-model-card">
+      <a href="https://huggingface.co/deepseek-ai" target="_blank" rel="noopener" class="tinker-model-header">
+        <span class="tinker-model-logo" role="img" aria-label="DeepSeek logo"><img src="/tinker/svgs/deepseek.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span>
+        <h3 class="tinker-model-title">DEEPSEEK</h3>
+      </a>
+      <div class="tinker-model-list">
+        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">DeepSeek-V3.1</span>
+          <span class="tinker-model-type">MoE</span>
+        </a>
+        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Base" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">DeepSeek-V3.1-Base</span>
+          <span class="tinker-model-type">MoE</span>
+        </a>
+      </div>
+    </div>
+    <div class="tinker-model-card">
+      <a href="https://huggingface.co/moonshotai" target="_blank" rel="noopener" class="tinker-model-header">
+        <span class="tinker-model-logo" role="img" aria-label="Kimi logo"><img src="/tinker/svgs/moonshot.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span>
+        <h3 class="tinker-model-title">MOONSHOT</h3>
+      </a>
+      <div class="tinker-model-list">
+        <a href="https://huggingface.co/moonshotai/Kimi-K2-Thinking" target="_blank" rel="noopener" class="tinker-model-item">
+          <span class="tinker-model-name">Kimi-K2-Thinking</span>
+          <span class="tinker-model-type">MoE</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="tinker-section">
+  <div class="tinker-lora">
+    <div class="tinker-lora-card">
+      <div class="tinker-lora-content">
+        <h2 class="tinker-h2" style="text-align: left; margin-bottom: 0.6rem !important;">Tinker uses LoRA</h2>
+        <p class="tinker-lora-description">LoRA fine-tunes models by training a small add-on instead of changing all the original weights.</p>
+        <a href="/blog/lora/" class="tinker-lora-link">Read blog post</a>
+      </div>
+      <div class="tinker-lora-visual">
+        <img src="/tinker/svgs/icons/lora-site.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="tinker-section tinker-divider-section">
+  <div class="tinker-divider"></div>
+</section>
+<section class="tinker-section">
+  <div class="tinker-stories">
+    <article class="tinker-story-card">
+      <a href="https://sky.cs.berkeley.edu/project/skyrl/" target="_blank" rel="noopener" class="tinker-story-logo-link">
+        <img src="svgs/berkeley.svg" alt="Berkeley logo" class="tinker-story-logo" />
+      </a>
+      <p class="tinker-story-quote">Tinker lets researchers focus on datasets, algorithms, and environments without the complexities of compute and infrastructure.</p>
+      <p class="tinker-story-person">Tyler Griggs</p>
+    </article>
+    <article class="tinker-story-card">
+      <a href="https://blog.goedel-prover.com/" target="_blank" rel="noopener" class="tinker-story-logo-link">
+        <img src="svgs/princeton.svg" alt="Princeton University logo" class="tinker-story-logo" />
+      </a>
+      <p class="tinker-story-quote">Tinker lets us focus on the research, rather than spending time on engineering overhead. That's something no amount of raw GPU credits can substitute.</p>
+      <p class="tinker-story-person">Ziran Yang, Yong Lin, Chi Jin</p>
+    </article>
+    <article class="tinker-story-card">
+      <a href="https://statmech.stanford.edu/" target="_blank" rel="noopener" class="tinker-story-logo-link">
+        <img src="svgs/stanford.svg" alt="Stanford University logo" class="tinker-story-logo" />
+      </a>
+      <p class="tinker-story-quote">The training infrastructure has been abstracted away, which makes focusing on our data and evals far easier. Tinker has made it easy to jump into RL work.</p>
+      <p class="tinker-story-person">Jason Liu</p>
+    </article>
+    <article class="tinker-story-card">
+      <a href="https://www.redwoodresearch.org/" target="_blank" rel="noopener" class="tinker-story-logo-link">
+        <img src="svgs/redwood.png" alt="Redwood logo" class="tinker-story-logo" />
+      </a>
+      <p class="tinker-story-quote">Tinker has been reliable for quickly iterating without worrying about hardware or infrastructure.</p>
+      <p class="tinker-story-person">Eric Gan</p>
+    </article>
+  </div>
+</section>
+<section class="tinker-section tinker-divider-section">
+  <div class="tinker-divider"></div>
+</section>
+<section class="tinker-section">
+  <h2 class="tinker-h2">FAQs</h2>
+  <div class="tinker-faq">
+    <div class="tinker-faq-item">
+      <input id="faq1" type="checkbox" class="tinker-faq-toggle" hidden>
+      <label for="faq1" class="tinker-faq-question">How do I access Tinker?</label>
+      <div class="tinker-faq-answer"><div class="tinker-faq-answer-inner">Join <a href="https://auth.thinkingmachines.ai/sign-up" target="_blank" rel="noopener">here</a>. If you're a university or organization looking for wide scale access, contact <a href="/cdn-cgi/l/email-protection#d4a0bdbabfb1a694a0bcbdbabfbdbab3b9b5b7bcbdbab1a7fab5bd"><span class="__cf_email__" data-cfemail="26524f484d435466524e4f484d4f48414b47454e4f48435508474f">[email&#160;protected]</span></a>.</div></div>
+    </div>
+    <div class="tinker-faq-item">
+      <input id="faq2" type="checkbox" class="tinker-faq-toggle" hidden>
+      <label for="faq2" class="tinker-faq-question">What is Tinker and who is it for?</label>
+      <div class="tinker-faq-answer"><div class="tinker-faq-answer-inner">Tinker is a flexible API for efficiently fine-tuning open source models with LoRA. It's designed for researchers and developers who want flexibility and full control of their data and algorithms without worrying about infrastructure management.</div></div>
+    </div>
+    <div class="tinker-faq-item">
+      <input id="faq3" type="checkbox" class="tinker-faq-toggle" hidden>
+      <label for="faq3" class="tinker-faq-question">What is LoRA and why does Tinker use it?</label>
+      <div class="tinker-faq-answer"><div class="tinker-faq-answer-inner">LoRA is an efficient approach to fine-tuning that trains a streamlined adapter instead of updating all base model weights. Our <a href="/blog/lora/">research</a> demonstrates that with the right setup, LoRA matches the learning performance of full fine-tuning while providing more flexibility and requiring less compute.</div></div>
+    </div>
+    <div class="tinker-faq-item">
+      <input id="faq4" type="checkbox" class="tinker-faq-toggle" hidden>
+      <label for="faq4" class="tinker-faq-question">Do I need to manage training infrastructure?</label>
+      <div class="tinker-faq-answer"><div class="tinker-faq-answer-inner">Tinker handles scheduling, tuning, resource management, and infrastructure reliability so you can focus on the training data and algorithms. Behind the scenes, Tinker orchestrates distributed training on powerful GPU clusters for efficient utilization.</div></div>
+    </div>
+    <div class="tinker-faq-item">
+      <input id="faq5" type="checkbox" class="tinker-faq-toggle" hidden>
+      <label for="faq5" class="tinker-faq-question">What do I need to start training?</label>
+      <div class="tinker-faq-answer"><div class="tinker-faq-answer-inner">A dataset of supervised learning examples or reinforcement learning environments. After picking a base model to train on, the Tinker API provides simple functions to compute gradients, update the weights, and sample outputs from the trained model. See our cookbook for examples to get started.</div></div>
+    </div>
+    <div class="tinker-faq-item">
+      <input id="faq6" type="checkbox" class="tinker-faq-toggle" hidden>
+      <label for="faq6" class="tinker-faq-question">What models can I train with Tinker?</label>
+      <div class="tinker-faq-answer"><div class="tinker-faq-answer-inner">Tinker is currently available for a broad selection of open-source models, ranging from compact models like Llama-3.2-1B to large MoEs like Qwen3-235B-A22B-Instruct. We plan to expand our model lineup with even more choices soon.</div></div>
+    </div>
+    <div class="tinker-faq-item">
+      <input id="faq7" type="checkbox" class="tinker-faq-toggle" hidden>
+      <label for="faq7" class="tinker-faq-question">How do you handle my training data?</label>
+      <div class="tinker-faq-answer"><div class="tinker-faq-answer-inner">Your data is used solely to fine-tune your models. We do not use your data to train our own models.</div></div>
+    </div>
+    <div class="tinker-faq-item">
+      <input id="faq8" type="checkbox" class="tinker-faq-toggle" hidden>
+      <label for="faq8" class="tinker-faq-question">Can I download my model weights?</label>
+      <div class="tinker-faq-answer"><div class="tinker-faq-answer-inner">Yes, we have an API endpoint that lets you download any checkpoint you've saved.</div></div>
+    </div>
+    <div class="tinker-faq-item">
+      <input id="faq9" type="checkbox" class="tinker-faq-toggle" hidden>
+      <label for="faq9" class="tinker-faq-question">How much do I have to pay to use Tinker?</label>
+      <div class="tinker-faq-answer"><div class="tinker-faq-answer-inner">
+        <p>Tinker uses a pricing plan that reflects compute usage. All prices are in USD per million tokens.</p>
+        <div class="tinker-pricing-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Prefill</th>
+                <th>Sample</th>
+                <th>Train</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="tinker-pricing-logo"><img src="/tinker/svgs/qwen.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span> Qwen3-4B-Instruct-2507</td>
+                <td>$0.07</td>
+                <td>$0.22</td>
+                <td>$0.22</td>
+              </tr>
+              <tr>
+                <td><span class="tinker-pricing-logo"><img src="/tinker/svgs/qwen.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span> Qwen3-8B</td>
+                <td>$0.13</td>
+                <td>$0.40</td>
+                <td>$0.40</td>
+              </tr>
+              <tr>
+                <td><span class="tinker-pricing-logo"><img src="/tinker/svgs/qwen.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span> Qwen3-30B-A3B</td>
+                <td>$0.12</td>
+                <td>$0.30</td>
+                <td>$0.36</td>
+              </tr>
+              <tr>
+                <td><span class="tinker-pricing-logo"><img src="/tinker/svgs/qwen.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span> Qwen3-VL-30B-A3B-Instruct</td>
+                <td>$0.18</td>
+                <td>$0.44</td>
+                <td>$0.53</td>
+              </tr>
+              <tr>
+                <td><span class="tinker-pricing-logo"><img src="/tinker/svgs/qwen.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span> Qwen3-32B</td>
+                <td>$0.49</td>
+                <td>$1.47</td>
+                <td>$1.47</td>
+              </tr>
+              <tr>
+                <td><span class="tinker-pricing-logo"><img src="/tinker/svgs/qwen.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span> Qwen3-235B-Instruct-2507</td>
+                <td>$0.68</td>
+                <td>$1.70</td>
+                <td>$2.04</td>
+              </tr>
+              <tr>
+                <td><span class="tinker-pricing-logo"><img src="/tinker/svgs/qwen.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span> Qwen3-VL-235B-A22B-Instruct</td>
+                <td>$1.02</td>
+                <td>$2.56</td>
+                <td>$3.07</td>
+              </tr>
+              <tr>
+                <td><span class="tinker-pricing-logo"><img src="/tinker/svgs/meta.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span> Llama-3.2-1B</td>
+                <td>$0.03</td>
+                <td>$0.09</td>
+                <td>$0.09</td>
+              </tr>
+              <tr>
+                <td><span class="tinker-pricing-logo"><img src="/tinker/svgs/meta.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span> Llama-3.2-3B</td>
+                <td>$0.06</td>
+                <td>$0.18</td>
+                <td>$0.18</td>
+              </tr>
+              <tr>
+                <td><span class="tinker-pricing-logo"><img src="/tinker/svgs/meta.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span> Llama-3.1-8B</td>
+                <td>$0.13</td>
+                <td>$0.40</td>
+                <td>$0.40</td>
+              </tr>
+              <tr>
+                <td><span class="tinker-pricing-logo"><img src="/tinker/svgs/meta.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span> Llama-3.1-70B</td>
+                <td>$1.05</td>
+                <td>$3.16</td>
+                <td>$3.16</td>
+              </tr>
+              <tr>
+                <td><span class="tinker-pricing-logo"><img src="/tinker/svgs/deepseek.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span> DeepSeek-V3.1</td>
+                <td>$1.13</td>
+                <td>$2.81</td>
+                <td>$3.38</td>
+              </tr>
+              <tr>
+                <td><span class="tinker-pricing-logo"><img src="/tinker/svgs/gpt-oss.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span> GPT-OSS-120B</td>
+                <td>$0.18</td>
+                <td>$0.44</td>
+                <td>$0.52</td>
+              </tr>
+              <tr>
+                <td><span class="tinker-pricing-logo"><img src="/tinker/svgs/gpt-oss.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span> GPT-OSS-20B</td>
+                <td>$0.12</td>
+                <td>$0.30</td>
+                <td>$0.36</td>
+              </tr>
+              <tr>
+                <td><span class="tinker-pricing-logo"><img src="/tinker/svgs/moonshot.svg" style="display: block; width: 100%; max-width: 800px; height: auto; margin: 0 auto;" loading="lazy" alt=""></span> Kimi-K2-Thinking</td>
+                <td>$0.98</td>
+                <td>$2.44</td>
+                <td>$2.93</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+    
+  </article>
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    (function(){
+      
+      const observerOptions = {
+        threshold: 0.05,
+        rootMargin: '0px 0px -5px 0px'
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      
+      
+      function isInViewportOnLoad(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top < window.innerHeight &&
+          rect.bottom > 0
+        );
+      }
+      
+      
+      document.querySelectorAll('.tinker-section').forEach(section => {
+        section.classList.add('scroll-fade');
+        
+        
+        if (isInViewportOnLoad(section)) {
+          section.classList.add('in-viewport-on-load');
+          
+          setTimeout(() => {
+            section.classList.add('is-visible');
+          }, 50);
+        }
+        
+        observer.observe(section);
+      });
+      
+      function init(){
+        var el = document.querySelector('.tinker-title .tinker-rotate');
+        if (!el) return;
+        var words = ['researchers','developers','builders'];
+        var index = 0;
+        var intervalMs = 3200;
+        var sparkleCount = 220; 
+
+        function spawnSparkles(container){
+          var rect = el.getBoundingClientRect();
+          var width = rect.width || 1;
+          var height = rect.height || 1;
+          
+          for (var i = 0; i < sparkleCount; i++) {
+            var dot = document.createElement('span');
+            dot.className = 'tinker-sparkle-dot';
+            
+            var rx = Math.random();
+            var ry = (0.40 + Math.random() * 0.5); 
+            dot.style.left = (rx * 100) + '%';
+            dot.style.top = (ry * 100) + '%';
+            
+            var delay = Math.floor(Math.random() * 60); 
+            var scaleStart = 0.4 + Math.random() * 0.5;
+            var scaleEnd = 0.9 + Math.random() * 0.9;
+            var dx = (Math.random() - 0.5) * 14; 
+            var dy = -8 - Math.random() * 10;   
+            dot.style.animationDelay = delay + 'ms';
+            dot.style.setProperty('--scaleStart', scaleStart.toFixed(2));
+            dot.style.setProperty('--scaleEnd', scaleEnd.toFixed(2));
+            dot.style.setProperty('--dx', dx.toFixed(1) + 'px');
+            dot.style.setProperty('--dy', dy.toFixed(1) + 'px');
+            container.appendChild(dot);
+          }
+          
+        }
+
+        function rotate(){
+          var next = (index + 1) % words.length;
+          var container = document.createElement('span');
+          container.className = 'tinker-sparkle-container';
+          el.appendChild(container);
+          spawnSparkles(container);
+          
+          var blurDuration = 340; 
+          var swapDelay = 170;    
+          el.classList.add('is-blurring');
+          setTimeout(function(){
+            el.textContent = words[next];
+            el.appendChild(container);
+            index = next;
+          }, swapDelay);
+          setTimeout(function(){
+            el.classList.remove('is-blurring');
+          }, blurDuration);
+          setTimeout(function(){
+            if (container && container.parentNode) container.parentNode.removeChild(container);
+          }, 950);
+          setTimeout(rotate, intervalMs);
+        }
+
+        
+        setTimeout(rotate, 1900);
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+  
+  
+</main>
+
+
+<script type="module">
+  import mediumZoom from "https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.1.0/medium-zoom.esm.min.js";
+
+  mediumZoom('[data-zoomable]');
+</script>
+
+    <footer id="footer">
+  <div>
+    <span><a href="/">Thinking Machines Lab</a> © 2025</span><span class="footer-separator" id="first-footer-separator">·</span><span><a href="/legal/terms">Terms of service</a></span><span class="footer-separator">·</span><span><a href="/legal/privacy">Privacy notice</a></span>
+  </div>
+</footer>
+  </div>
+
+  
+  
+  <script src="/js/script.min.79e48178e979316afbc4c9f91d600813a61c813b60e590037a1328c8c94ea91a.js" integrity="sha256-eeSBeOl5MWr7xMn5HWAIE6YcgTtg5ZADehMoyMlOqRo=" defer></script>
+
+  
+  
+
+  
+  
+
+  
+  
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9ad86b2d2be9121b","version":"2025.9.1","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"cda777236064450ebb47f38aeb8df789","b":1}' crossorigin="anonymous"></script>
+</body>
+
+</html>

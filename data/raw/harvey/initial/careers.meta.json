@@ -1,0 +1,13 @@
+{
+  "company_name": "Harvey",
+  "source_url": "https://www.harvey.ai/company#company-careers",
+  "crawled_at": "2025-12-13T21:03:58Z",
+  "http_status": 200,
+  "title": "Harvey \u2013 Company",
+  "canonical": "https://www.harvey.ai/company",
+  "robots": "index, follow",
+  "content_sha256": "75eb56d0033da5519365825034c38c897b13a57a1711cf9b89b823d251b2a884",
+  "content_length": 1809088,
+  "parser": "lxml",
+  "version": 1
+}

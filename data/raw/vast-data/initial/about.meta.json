@@ -1,0 +1,13 @@
+{
+  "company_name": "VAST Data",
+  "source_url": "https://www.vastdata.com/about",
+  "crawled_at": "2025-12-13T21:05:20Z",
+  "http_status": 200,
+  "title": "About VAST Data - Revolutionary Data Platform - VAST Data",
+  "canonical": "https://www.vastdata.com/about",
+  "robots": "",
+  "content_sha256": "f0ab0638a5ce9d5b57c889e33c76150fab2f2ad715c3d8becb7971c61c6e2e30",
+  "content_length": 382095,
+  "parser": "lxml",
+  "version": 1
+}

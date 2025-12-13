@@ -1,0 +1,25 @@
+{
+  "company_id": "anthropic",
+  "company_name": "Anthropic",
+  "source_homepage": "https://www.anthropic.com",
+  "crawled_at": "2025-12-13T21:02:47Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/anthropic/initial",
+  "content_sha256": "6f661a33f26c7255ff43dd64f12c0937c1ed2080763c19e6921441cf2a6f207b",
+  "content_length": 1167515,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "anthropic",
+    "company_name": "Anthropic",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/anthropic/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.anthropic.com",
+      "about": "https://www.anthropic.com/company",
+      "product": "https://www.anthropic.com/research",
+      "careers": "https://www.anthropic.com/careers",
+      "blog": "https://www.anthropic.com/news"
+    },
+    "status": "success"
+  }
+}

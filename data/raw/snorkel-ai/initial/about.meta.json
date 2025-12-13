@@ -1,0 +1,13 @@
+{
+  "company_name": "Snorkel AI",
+  "source_url": "https://snorkel.ai/company",
+  "crawled_at": "2025-12-13T21:04:36Z",
+  "http_status": 200,
+  "title": "About us | Our mission, founders, and more! | Snorkel AI",
+  "canonical": "https://snorkel.ai/company/",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "content_sha256": "81f5e9419724c7fc3de9ab2ca1ad49546cb3fb5ccad9af38c4f83b1dfeed7305",
+  "content_length": 234193,
+  "parser": "lxml",
+  "version": 1
+}

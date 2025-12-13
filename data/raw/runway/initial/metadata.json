@@ -1,0 +1,25 @@
+{
+  "company_id": "runway",
+  "company_name": "Runway",
+  "source_homepage": "https://runway.com",
+  "crawled_at": "2025-12-13T21:04:27Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/runway/initial",
+  "content_sha256": "d624696a793007a91a7b58c25d9d9ca5397ab81ab8304528d1c9bfd17d257e9e",
+  "content_length": 558931,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "runway",
+    "company_name": "Runway",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/runway/initial/manifest.json",
+    "sections": {
+      "homepage": "https://runway.com",
+      "about": "https://runway.com/about",
+      "product": "https://runway.com/product-updates",
+      "careers": "https://runway.com/careers",
+      "blog": "https://runway.com/blog"
+    },
+    "status": "success"
+  }
+}

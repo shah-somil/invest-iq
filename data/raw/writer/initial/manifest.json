@@ -1,0 +1,12 @@
+{
+  "company_id": "writer",
+  "company_name": "Writer",
+  "crawled_at": "2025-12-13T21:05:26Z",
+  "sections": {
+    "homepage": "https://writer.com",
+    "about": "https://writer.com/company/about",
+    "product": "https://writer.com",
+    "careers": "https://writer.com/company/careers",
+    "blog": "https://writer.com/blog"
+  }
+}

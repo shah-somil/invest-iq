@@ -1,0 +1,13 @@
+{
+  "company_name": "SambaNova",
+  "source_url": "https://sambanova.ai/company/about",
+  "crawled_at": "2025-12-13T21:04:29Z",
+  "http_status": 200,
+  "title": "About Us | SambaNova",
+  "canonical": "https://sambanova.ai/company/about",
+  "robots": "",
+  "content_sha256": "58a294f80265a25c23c84bc569970502ecbb2b44e998ad7eae5dc961f03e98e6",
+  "content_length": 129697,
+  "parser": "lxml",
+  "version": 1
+}

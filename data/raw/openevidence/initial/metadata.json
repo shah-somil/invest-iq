@@ -1,0 +1,25 @@
+{
+  "company_id": "openevidence",
+  "company_name": "OpenEvidence",
+  "source_homepage": "https://openevidence.com",
+  "crawled_at": "2025-12-13T21:04:19Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/openevidence/initial",
+  "content_sha256": "a49685a2ae5ff0c2989a0574b2677f3a4e0bd14943105c31d77dc4a1d69335dd",
+  "content_length": 1265752,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "openevidence",
+    "company_name": "OpenEvidence",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/openevidence/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.openevidence.com",
+      "about": "https://www.openevidence.com/about",
+      "product": "https://www.openevidence.com/about",
+      "careers": "https://www.openevidence.com/about",
+      "blog": "https://www.openevidence.com/news"
+    },
+    "status": "success"
+  }
+}

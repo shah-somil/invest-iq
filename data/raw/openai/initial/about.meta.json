@@ -1,0 +1,13 @@
+{
+  "company_name": "OpenAI",
+  "source_url": "https://openai.com/about",
+  "crawled_at": "2025-12-13T21:04:13Z",
+  "http_status": 200,
+  "title": "About | OpenAI",
+  "canonical": "https://openai.com/about/",
+  "robots": "index, follow",
+  "content_sha256": "ddc8257fe4e1631a9c2aa70358d08d3a9e099e5e06aff3e13b168d2e8586902b",
+  "content_length": 324024,
+  "parser": "lxml",
+  "version": 1
+}

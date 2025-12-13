@@ -1,0 +1,13 @@
+{
+  "company_name": "VAST Data",
+  "source_url": "https://www.vastdata.com/product",
+  "crawled_at": "2025-12-13T21:05:21Z",
+  "http_status": 200,
+  "title": "VAST Data",
+  "canonical": "https://www.vastdata.com/product",
+  "robots": "",
+  "content_sha256": "0841f83f610d6c2e7abcd0b5cdc28161fc1383fb14d35aa1ab3179c10682642b",
+  "content_length": 816377,
+  "parser": "lxml",
+  "version": 1
+}

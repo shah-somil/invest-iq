@@ -1,0 +1,13 @@
+{
+  "company_name": "VAST Data",
+  "source_url": "https://www.vastdata.com/careers",
+  "crawled_at": "2025-12-13T21:05:21Z",
+  "http_status": 200,
+  "title": "Careers - Explore Job Openings - VAST Data",
+  "canonical": "https://www.vastdata.com/careers",
+  "robots": "",
+  "content_sha256": "94e9c36db1c4278db79dff4d8740dac078ebafc2c4eeb09efbbc503d5ed9e3f4",
+  "content_length": 1042558,
+  "parser": "lxml",
+  "version": 1
+}

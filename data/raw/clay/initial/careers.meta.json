@@ -1,0 +1,13 @@
+{
+  "company_name": "Clay",
+  "source_url": "https://www.clay.com/careers",
+  "crawled_at": "2025-12-13T21:03:12Z",
+  "http_status": 200,
+  "title": "Join the Clay crew | Clay.com",
+  "canonical": "https://www.clay.com/careers",
+  "robots": "",
+  "content_sha256": "812b91364633d5733bd1beae256f7afc7d756428b493af81082bbf9d49d4e783",
+  "content_length": 183006,
+  "parser": "lxml",
+  "version": 1
+}

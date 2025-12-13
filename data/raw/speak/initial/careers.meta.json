@@ -1,0 +1,13 @@
+{
+  "company_name": "Speak",
+  "source_url": "https://www.speak.com/careers",
+  "crawled_at": "2025-12-13T21:04:40Z",
+  "http_status": 200,
+  "title": "Careers - Speak",
+  "canonical": "https://www.speak.com/careers",
+  "robots": "",
+  "content_sha256": "c0890edaddd6554e10afc88181e45ad1938b77d5c9d4c53dddc2a945524a0fbe",
+  "content_length": 97486,
+  "parser": "lxml",
+  "version": 1
+}

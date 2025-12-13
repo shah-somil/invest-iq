@@ -1,0 +1,13 @@
+{
+  "company_name": "Mistral AI",
+  "source_url": "https://mistral.ai/careers",
+  "crawled_at": "2025-12-13T21:04:11Z",
+  "http_status": 200,
+  "title": "Careers - build the future | Mistral AI",
+  "canonical": "https://mistral.ai/careers",
+  "robots": "index, follow",
+  "content_sha256": "1bc18ba1e20ca650a47720fdb6e7519ef9beeb75c6b8fcbf2667b9a856b6bcc2",
+  "content_length": 403385,
+  "parser": "lxml",
+  "version": 1
+}

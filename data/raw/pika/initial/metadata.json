@@ -1,0 +1,25 @@
+{
+  "company_id": "pika",
+  "company_name": "Pika",
+  "source_homepage": "https://pollo.ai/",
+  "crawled_at": "2025-12-13T21:04:26Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/pika/initial",
+  "content_sha256": "33077e3847e45923dfdcafffc0024f8782b64a0bd07dee484e042396aeaf3845",
+  "content_length": 1946461,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "pika",
+    "company_name": "Pika",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/pika/initial/manifest.json",
+    "sections": {
+      "homepage": "https://pollo.ai",
+      "about": "https://pollo.ai/about-us",
+      "product": "https://pollo.ai/ai-product-avatar",
+      "careers": "https://pollo.ai/home",
+      "blog": "https://pollo.ai/hub"
+    },
+    "status": "success"
+  }
+}

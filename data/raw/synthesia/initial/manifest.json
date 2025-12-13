@@ -1,0 +1,12 @@
+{
+  "company_id": "synthesia",
+  "company_name": "Synthesia",
+  "crawled_at": "2025-12-13T21:04:55Z",
+  "sections": {
+    "homepage": "https://www.synthesia.com",
+    "about": "https://www.synthesia.com/sobre-synthesia",
+    "product": "https://www.synthesia.com/productos",
+    "careers": "https://www.synthesia.com/en",
+    "blog": "https://www.synthesia.com/noticias"
+  }
+}

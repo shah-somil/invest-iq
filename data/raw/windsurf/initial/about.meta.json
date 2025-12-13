@@ -1,0 +1,13 @@
+{
+  "company_name": "Windsurf",
+  "source_url": "https://windsurf.com/about",
+  "crawled_at": "2025-12-13T21:05:22Z",
+  "http_status": 200,
+  "title": "About | Windsurf",
+  "canonical": "https://windsurf.com/about",
+  "robots": "",
+  "content_sha256": "257ee5148e1ab75e6d196a5ee1ecc45fce5e1b69f40f22183290df5d5939175c",
+  "content_length": 155824,
+  "parser": "lxml",
+  "version": 1
+}

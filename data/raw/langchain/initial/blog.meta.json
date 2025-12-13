@@ -1,0 +1,13 @@
+{
+  "company_name": "LangChain",
+  "source_url": "https://www.langchain.com/resources",
+  "crawled_at": "2025-12-13T21:04:04Z",
+  "http_status": 200,
+  "title": "Resources",
+  "canonical": "https://www.langchain.com/resources",
+  "robots": "",
+  "content_sha256": "6f536d9a3684b16e02b192712f43c0d35bdf603c2ab688cfdc891c091f933009",
+  "content_length": 58534,
+  "parser": "lxml",
+  "version": 1
+}

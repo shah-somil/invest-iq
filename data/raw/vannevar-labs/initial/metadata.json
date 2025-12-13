@@ -1,0 +1,25 @@
+{
+  "company_id": "vannevar-labs",
+  "company_name": "Vannevar Labs",
+  "source_homepage": "https://vannevarlabs.com",
+  "crawled_at": "2025-12-13T21:05:20Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/vannevar-labs/initial",
+  "content_sha256": "d870ab5fd0b8e5264f889a1b734ff7f05029e34413b8310ef38ff5ba6f154248",
+  "content_length": 88788,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "vannevar-labs",
+    "company_name": "Vannevar Labs",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/vannevar-labs/initial/manifest.json",
+    "sections": {
+      "homepage": "https://vannevarlabs.com",
+      "about": "https://vannevarlabs.com/company",
+      "product": "https://vannevarlabs.com/blog",
+      "careers": "https://vannevarlabs.com/careers",
+      "blog": "https://vannevarlabs.com/blog"
+    },
+    "status": "success"
+  }
+}

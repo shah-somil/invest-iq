@@ -1,0 +1,13 @@
+{
+  "company_name": "Runway",
+  "source_url": "https://runway.com/product-updates",
+  "crawled_at": "2025-12-13T21:04:27Z",
+  "http_status": 200,
+  "title": "Runway Product Updates",
+  "canonical": "https://runway.com/product-updates",
+  "robots": "",
+  "content_sha256": "daef546f1022338eea7be2cc82dbf16e55874b51f40b9f4157ad71dfc3aedcc4",
+  "content_length": 95567,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,25 @@
+{
+  "company_id": "sakana-ai",
+  "company_name": "Sakana AI",
+  "source_homepage": "https://sakana.ai/",
+  "crawled_at": "2025-12-13T21:04:28Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/sakana-ai/initial",
+  "content_sha256": "19a1c8f5eb8b84fac97919992e27c84712e2755b62e435c5656061c6b1c19bb7",
+  "content_length": 205704,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "sakana-ai",
+    "company_name": "Sakana AI",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/sakana-ai/initial/manifest.json",
+    "sections": {
+      "homepage": "https://sakana.ai",
+      "about": "https://sakana.ai/company-info",
+      "product": "https://sakana.ai/blog",
+      "careers": "https://sakana.ai/careers",
+      "blog": "https://sakana.ai/blog"
+    },
+    "status": "success"
+  }
+}

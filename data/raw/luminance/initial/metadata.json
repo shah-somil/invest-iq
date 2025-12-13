@@ -1,0 +1,25 @@
+{
+  "company_id": "luminance",
+  "company_name": "Luminance",
+  "source_homepage": "https://luminance.com",
+  "crawled_at": "2025-12-13T21:04:06Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/luminance/initial",
+  "content_sha256": "eeca0957de348eaddea92bb9d9402481cd746c8806072ca7ba9a553847ce8c95",
+  "content_length": 520523,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "luminance",
+    "company_name": "Luminance",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/luminance/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.luminance.com",
+      "about": "https://www.luminance.com/about",
+      "product": "https://www.luminance.com/resources/blog/product-feature-spotlight-accelerate-negotiations-with-luminance%c2%92s-ai-powered-checklists",
+      "careers": "https://www.luminance.com/careers",
+      "blog": "https://www.luminance.com/resources/blog"
+    },
+    "status": "success"
+  }
+}

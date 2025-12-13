@@ -1,0 +1,13 @@
+{
+  "company_name": "Baseten",
+  "source_url": "https://www.baseten.com",
+  "crawled_at": "2025-12-13T21:02:50Z",
+  "http_status": 200,
+  "title": "Inference Platform: Deploy AI models in production | Baseten",
+  "canonical": "https://www.baseten.co/",
+  "robots": "",
+  "content_sha256": "cbbcb3563e4bd5bea59f951c1bf70016f9245c3b2eecf13d894a3b667b8a503c",
+  "content_length": 436149,
+  "parser": "lxml",
+  "version": 1
+}

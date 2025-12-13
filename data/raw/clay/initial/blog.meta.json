@@ -1,0 +1,13 @@
+{
+  "company_name": "Clay",
+  "source_url": "https://www.clay.com/blog",
+  "crawled_at": "2025-12-13T21:03:13Z",
+  "http_status": 200,
+  "title": "The GTM with Clay Blog | Clay.com",
+  "canonical": "https://www.clay.com/blog",
+  "robots": "",
+  "content_sha256": "3a902c7bdcd920acda17a079085e2c0319c3e64ab9ed32a344ced434a9b12723",
+  "content_length": 794306,
+  "parser": "lxml",
+  "version": 1
+}

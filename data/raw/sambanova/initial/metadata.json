@@ -1,0 +1,25 @@
+{
+  "company_id": "sambanova",
+  "company_name": "SambaNova",
+  "source_homepage": "https://sambanova.ai",
+  "crawled_at": "2025-12-13T21:04:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/sambanova/initial",
+  "content_sha256": "cd80b370b800739995d200c235db3835daf63923c24e156152f9c596d5ee39a6",
+  "content_length": 708118,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "sambanova",
+    "company_name": "SambaNova",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/sambanova/initial/manifest.json",
+    "sections": {
+      "homepage": "https://sambanova.ai",
+      "about": "https://sambanova.ai/company/about",
+      "product": "https://sambanova.ai/products/sambastack",
+      "careers": "https://sambanova.ai/company/careers",
+      "blog": "https://sambanova.ai/resources/tag/blog"
+    },
+    "status": "success"
+  }
+}

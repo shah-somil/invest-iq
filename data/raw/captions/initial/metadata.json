@@ -1,0 +1,25 @@
+{
+  "company_id": "captions",
+  "company_name": "Captions",
+  "source_homepage": "https://captions.ai",
+  "crawled_at": "2025-12-13T21:03:11Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/captions/initial",
+  "content_sha256": "4c8949566173aaf6a1f7ce7b653354b09acc8797775a797faa5f75f05e4b75f2",
+  "content_length": 924232,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "captions",
+    "company_name": "Captions",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/captions/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.captions.ai",
+      "about": "https://www.captions.ai",
+      "product": "https://www.captions.ai",
+      "careers": "https://www.captions.ai",
+      "blog": "https://www.captions.ai"
+    },
+    "status": "success"
+  }
+}

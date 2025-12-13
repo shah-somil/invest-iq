@@ -1,0 +1,13 @@
+{
+  "company_name": "Synthesia",
+  "source_url": "https://www.synthesia.com/en",
+  "crawled_at": "2025-12-13T21:05:10Z",
+  "http_status": 200,
+  "title": "Synthesia Technology: leader in polyurethane systems, polyester polyols and specialties",
+  "canonical": "https://www.synthesia.com/en/",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "content_sha256": "55a06af94a4cf5dd2104b16aac2489b4d08a33715a2af91ba54bc1c942689dd9",
+  "content_length": 127476,
+  "parser": "lxml",
+  "version": 1
+}

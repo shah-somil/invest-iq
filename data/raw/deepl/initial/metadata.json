@@ -1,0 +1,25 @@
+{
+  "company_id": "deepl",
+  "company_name": "DeepL",
+  "source_homepage": "https://deepl.com",
+  "crawled_at": "2025-12-13T21:03:37Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/deepl/initial",
+  "content_sha256": "f1f7e9e438c319b94624a0281399333bc875fc9fe7dc27324d702ccc9ad9c0d8",
+  "content_length": 2627594,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "deepl",
+    "company_name": "DeepL",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/deepl/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.deepl.com/en/translator",
+      "about": "https://www.deepl.com/en/about-us",
+      "product": "https://www.deepl.com/en/features",
+      "careers": "https://www.deepl.com/en/careers?source=DeepLFooter",
+      "blog": "https://www.deepl.com/en/customer-stories"
+    },
+    "status": "success"
+  }
+}

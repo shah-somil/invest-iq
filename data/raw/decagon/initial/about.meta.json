@@ -1,0 +1,13 @@
+{
+  "company_name": "Decagon",
+  "source_url": "https://decagon.ai/about",
+  "crawled_at": "2025-12-13T21:03:21Z",
+  "http_status": 200,
+  "title": "About | Decagon | Conversational AI for CX",
+  "canonical": "https://decagon.ai/about",
+  "robots": "",
+  "content_sha256": "b1f555f8c22634ac39ceb8f17a20e736e4881d0e918ff46851fdfe23c1a3f0dc",
+  "content_length": 162139,
+  "parser": "lxml",
+  "version": 1
+}

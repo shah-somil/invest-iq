@@ -1,0 +1,13 @@
+{
+  "company_name": "OpenEvidence",
+  "source_url": "https://www.openevidence.com/about",
+  "crawled_at": "2025-12-13T21:04:19Z",
+  "http_status": 200,
+  "title": "About | OpenEvidence",
+  "canonical": "https://www.openevidence.com/about",
+  "robots": "index,follow",
+  "content_sha256": "8d7336108839dd533d95ac3702fe05c7e55b5484789159d65e7a53d98db91b29",
+  "content_length": 271407,
+  "parser": "lxml",
+  "version": 1
+}

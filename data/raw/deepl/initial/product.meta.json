@@ -1,0 +1,13 @@
+{
+  "company_name": "DeepL",
+  "source_url": "https://www.deepl.com/en/features",
+  "crawled_at": "2025-12-13T21:03:30Z",
+  "http_status": 200,
+  "title": "DeepL features to help elevate your language",
+  "canonical": "https://www.deepl.com/en/features",
+  "robots": "index",
+  "content_sha256": "5138910b0c0d5e0519e01b2230d06bd3167499c180c2f7780604fcb0fe790050",
+  "content_length": 503211,
+  "parser": "lxml",
+  "version": 1
+}

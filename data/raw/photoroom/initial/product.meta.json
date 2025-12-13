@@ -1,0 +1,13 @@
+{
+  "company_name": "Photoroom",
+  "source_url": "https://www.photoroom.com/solutions",
+  "crawled_at": "2025-12-13T21:04:20Z",
+  "http_status": 200,
+  "title": "AI Image Editing Solutions for your Business | Photoroom",
+  "canonical": "https://www.photoroom.com/solutions",
+  "robots": "index,follow",
+  "content_sha256": "af7ae07a61d14ddcd416ce4a9c15c29a65ecfb997a812842c251ce85fdc18d43",
+  "content_length": 226591,
+  "parser": "lxml",
+  "version": 1
+}

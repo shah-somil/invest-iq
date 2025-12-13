@@ -1,0 +1,12 @@
+{
+  "company_id": "langchain",
+  "company_name": "LangChain",
+  "crawled_at": "2025-12-13T21:04:02Z",
+  "sections": {
+    "homepage": "https://www.langchain.com",
+    "about": "https://www.langchain.com/about",
+    "product": "https://www.langchain.com/langsmith/deployment",
+    "careers": "https://www.langchain.com/careers",
+    "blog": "https://www.langchain.com/resources"
+  }
+}

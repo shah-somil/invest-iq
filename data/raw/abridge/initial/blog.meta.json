@@ -1,0 +1,13 @@
+{
+  "company_name": "Abridge",
+  "source_url": "https://www.abridge.com/blog",
+  "crawled_at": "2025-12-13T21:02:43Z",
+  "http_status": 200,
+  "title": "Insights and Innovations in AI for Healthcare | Abridge Blog",
+  "canonical": "https://www.abridge.com/blog",
+  "robots": "",
+  "content_sha256": "c2e15ff90ee394b0874b346caec6d3bb917737c83e94478f7367b2971491f6d7",
+  "content_length": 39090,
+  "parser": "lxml",
+  "version": 1
+}

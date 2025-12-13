@@ -1,0 +1,13 @@
+{
+  "company_name": "World Labs",
+  "source_url": "https://www.worldlabs.ai/blog",
+  "crawled_at": "2025-12-13T21:05:26Z",
+  "http_status": 200,
+  "title": "Research & Insights | World Labs",
+  "canonical": "https://www.worldlabs.ai/blog",
+  "robots": "",
+  "content_sha256": "a329cdb5a88320016a775ed82308dd01acb580a594d29294bbacacd13b831b72",
+  "content_length": 72348,
+  "parser": "lxml",
+  "version": 1
+}

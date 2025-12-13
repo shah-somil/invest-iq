@@ -1,0 +1,13 @@
+{
+  "company_name": "Synthesia",
+  "source_url": "https://www.synthesia.com",
+  "crawled_at": "2025-12-13T21:04:55Z",
+  "http_status": 200,
+  "title": "Synthesia Technology: Sistemas de poliuretano, poli\u00e9ster polioles y especialidades",
+  "canonical": "https://www.synthesia.com/",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "content_sha256": "d1e4e6a1262d01f895d398b47d11b56731b8a89f9637e047e404e4b27e780ca5",
+  "content_length": 127344,
+  "parser": "lxml",
+  "version": 1
+}

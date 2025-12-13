@@ -1,0 +1,12 @@
+{
+  "company_id": "coactive-ai",
+  "company_name": "Coactive AI",
+  "crawled_at": "2025-12-13T21:03:13Z",
+  "sections": {
+    "homepage": "https://www.coactive.ai",
+    "about": "https://www.coactive.ai/company",
+    "product": "https://www.coactive.ai/product/platform",
+    "careers": "https://www.coactive.ai/careers",
+    "blog": "https://www.coactive.ai/blog"
+  }
+}

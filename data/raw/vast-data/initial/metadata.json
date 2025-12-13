@@ -1,0 +1,25 @@
+{
+  "company_id": "vast-data",
+  "company_name": "VAST Data",
+  "source_homepage": "https://vastdata.com",
+  "crawled_at": "2025-12-13T21:05:21Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/vast-data/initial",
+  "content_sha256": "83832901e61672c05de194e6d62335bed3f3eec5e9e7be93f89f54d67f677f52",
+  "content_length": 2789074,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "vast-data",
+    "company_name": "VAST Data",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/vast-data/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.vastdata.com",
+      "about": "https://www.vastdata.com/about",
+      "product": "https://www.vastdata.com/product",
+      "careers": "https://www.vastdata.com/careers",
+      "blog": "https://www.vastdata.com/blog"
+    },
+    "status": "success"
+  }
+}

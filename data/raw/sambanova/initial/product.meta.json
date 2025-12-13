@@ -1,0 +1,13 @@
+{
+  "company_name": "SambaNova",
+  "source_url": "https://sambanova.ai/products/sambastack",
+  "crawled_at": "2025-12-13T21:04:30Z",
+  "http_status": 200,
+  "title": "SambaStack | Full-Stack Enterprise AI Platform",
+  "canonical": "https://sambanova.ai/products/sambastack",
+  "robots": "",
+  "content_sha256": "0606a0979e621824637f0cb9f25933263105381717430c3c0bde73fa06df1ea5",
+  "content_length": 120598,
+  "parser": "lxml",
+  "version": 1
+}

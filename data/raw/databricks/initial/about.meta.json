@@ -1,0 +1,13 @@
+{
+  "company_name": "Databricks",
+  "source_url": "https://www.databricks.com/company/about-us",
+  "crawled_at": "2025-12-13T21:03:19Z",
+  "http_status": 200,
+  "title": "About Databricks: The data and AI company | Databricks",
+  "canonical": "https://www.databricks.com/company/about-us",
+  "robots": "index, follow",
+  "content_sha256": "4585ca46ccf9bf81f1f47b5e02a3e5362bce2fd87217791e122d97db611aee89",
+  "content_length": 731600,
+  "parser": "lxml",
+  "version": 1
+}

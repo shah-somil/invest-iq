@@ -1,0 +1,13 @@
+{
+  "company_name": "Photoroom",
+  "source_url": "https://www.photoroom.com/about",
+  "crawled_at": "2025-12-13T21:04:19Z",
+  "http_status": 200,
+  "title": "About Photoroom | Photoroom",
+  "canonical": "https://www.photoroom.com/about",
+  "robots": "index,follow",
+  "content_sha256": "9c45af92181526b63fdcf1a975f5fd13450f9055c5114d2bc2880e0f799031a3",
+  "content_length": 247706,
+  "parser": "lxml",
+  "version": 1
+}

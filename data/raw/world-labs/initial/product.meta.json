@@ -1,0 +1,13 @@
+{
+  "company_name": "World Labs",
+  "source_url": "https://www.worldlabs.ai/labs#marble-labs-visualize",
+  "crawled_at": "2025-12-13T21:05:25Z",
+  "http_status": 200,
+  "title": "Marble Labs | World Labs",
+  "canonical": "https://www.worldlabs.ai/labs#marble-labs-visualize",
+  "robots": "",
+  "content_sha256": "9380e0313198b0af1821d5db790b5615717081d5757044fdd808c9e3dab63645",
+  "content_length": 124847,
+  "parser": "lxml",
+  "version": 1
+}

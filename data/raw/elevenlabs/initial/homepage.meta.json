@@ -1,0 +1,13 @@
+{
+  "company_name": "ElevenLabs",
+  "source_url": "https://elevenlabs.io",
+  "crawled_at": "2025-12-13T21:03:37Z",
+  "http_status": 200,
+  "title": "Free AI Voice Generator & Voice Agents Platform | ElevenLabs",
+  "canonical": "https://elevenlabs.io",
+  "robots": "",
+  "content_sha256": "7950826dcf1e9e65b5371e1028309a64e7f0dd7c57ad53d1356a4e3030641956",
+  "content_length": 1327602,
+  "parser": "lxml",
+  "version": 1
+}

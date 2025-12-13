@@ -1,0 +1,13 @@
+{
+  "company_name": "Skild AI",
+  "source_url": "https://www.skild.ai/blogs",
+  "crawled_at": "2025-12-13T21:04:33Z",
+  "http_status": 200,
+  "title": "Skild.ai",
+  "canonical": "https://www.skild.ai/blogs",
+  "robots": "",
+  "content_sha256": "8f28bd237811efee541193396e27758d9c4be197dfa3cb21a9b5ed69bb497976",
+  "content_length": 20056,
+  "parser": "lxml",
+  "version": 1
+}

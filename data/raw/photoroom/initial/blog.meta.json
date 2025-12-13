@@ -1,0 +1,13 @@
+{
+  "company_name": "Photoroom",
+  "source_url": "https://www.photoroom.com/blog",
+  "crawled_at": "2025-12-13T21:04:21Z",
+  "http_status": 200,
+  "title": "AI Product Photo & Visual Editing Tips & Tutorials | Photoroom",
+  "canonical": "https://www.photoroom.com/blog",
+  "robots": "index,follow",
+  "content_sha256": "5f439166ceba1cab52dfbabb708deacf9c1ef07cd8ded4c0e18b5d8444fd0c00",
+  "content_length": 629459,
+  "parser": "lxml",
+  "version": 1
+}

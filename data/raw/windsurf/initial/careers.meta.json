@@ -1,0 +1,13 @@
+{
+  "company_name": "Windsurf",
+  "source_url": "https://windsurf.com/career",
+  "crawled_at": "2025-12-13T21:05:23Z",
+  "http_status": 200,
+  "title": "Page Not Found | Windsurf",
+  "canonical": "https://windsurf.com/not-found",
+  "robots": "",
+  "content_sha256": "c15c30390c150570bd6d99af375073dc85923da979065ac37e54eb2929503d99",
+  "content_length": 64321,
+  "parser": "lxml",
+  "version": 1
+}

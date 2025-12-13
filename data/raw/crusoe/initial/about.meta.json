@@ -1,0 +1,13 @@
+{
+  "company_name": "Crusoe",
+  "source_url": "https://www.crusoe.ai/about/company",
+  "crawled_at": "2025-12-13T21:03:17Z",
+  "http_status": 200,
+  "title": "About Crusoe | Accelerating the abundance of energy and intelligence",
+  "canonical": "https://www.crusoe.ai/about/company",
+  "robots": "",
+  "content_sha256": "0d7d697f0627cb6c86f1abfdc6206751f177ff2bf0d4245ec5005305cc44bde7",
+  "content_length": 166371,
+  "parser": "lxml",
+  "version": 1
+}

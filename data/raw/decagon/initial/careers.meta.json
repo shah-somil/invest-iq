@@ -1,0 +1,13 @@
+{
+  "company_name": "Decagon",
+  "source_url": "https://decagon.ai/careers",
+  "crawled_at": "2025-12-13T21:03:21Z",
+  "http_status": 200,
+  "title": "Careers | Decagon",
+  "canonical": "https://decagon.ai/careers",
+  "robots": "",
+  "content_sha256": "ca1929a6d76332cf395c80faeabde192c7d41ebf2ff46693c4a4df574f0dc3f4",
+  "content_length": 158681,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "Anysphere",
+  "source_url": "https://anysphere.inc",
+  "crawled_at": "2025-12-13T21:02:47Z",
+  "http_status": 200,
+  "title": "Anysphere",
+  "canonical": "https://anysphere.inc",
+  "robots": "",
+  "content_sha256": "b47533ec5f8dd925142d9b3cacf525f1f3d49b0d0d61bb6d58661b78eb05b5ae",
+  "content_length": 12227,
+  "parser": "lxml",
+  "version": 1
+}

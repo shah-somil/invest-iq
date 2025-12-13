@@ -1,0 +1,13 @@
+{
+  "company_name": "Sierra",
+  "source_url": "https://sierra.ai/careers",
+  "crawled_at": "2025-12-13T21:04:32Z",
+  "http_status": 200,
+  "title": "Careers | Sierra",
+  "canonical": "https://sierra.ai/careers",
+  "robots": "index",
+  "content_sha256": "4d869d7e9e059745c2880a515b8b0c8adbdb8e70267a81f8de8e87366335f12e",
+  "content_length": 2266618,
+  "parser": "lxml",
+  "version": 1
+}

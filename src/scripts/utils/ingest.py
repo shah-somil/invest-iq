@@ -158,7 +158,7 @@ def _load_seed(seed_path: Path, limit: int | None = None) -> List[Dict[str, Any]
 
 def _parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Run full-load ingestion for InvestIQ.")
-    p.add_argument("--seed", default=str(DATA_DIR / "forbes_ai50_seed.json"),
+    p.add_argument("--seed", default=str(DATA_DIR / "seed" / "top_ai50_seed.json"),
                    help="Path to the AI50 seed JSON.")
     p.add_argument("--limit", type=int, default=None, help="Limit companies for a dry run.")
     p.add_argument("--out", default=str(RAW_DIR), help="Base output dir (default: data/raw).")

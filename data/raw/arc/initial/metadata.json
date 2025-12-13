@@ -2,10 +2,10 @@
   "company_id": "arc",
   "company_name": "Arc",
   "source_homepage": "https://www.arc.tech",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/arc/initial",
-  "content_sha256": "becc90752cef57820868a137746f3d8fe0cbe7d988167cea559e3e8d2a7cd809",
+  "content_sha256": "c4b61da0c5bf78893b061c080e359eba60f7584addee43a677ebbd2715a79b24",
   "content_length": 195,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

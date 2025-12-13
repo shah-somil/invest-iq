@@ -1,13 +1,13 @@
 {
   "company_name": "ElevenLabs",
   "source_url": "https://elevenlabs.io/careers",
-  "crawled_at": "2025-12-13T21:03:41Z",
+  "crawled_at": "2025-12-13T23:05:45Z",
   "http_status": 200,
   "title": "ElevenLabs Careers: Pioneer the Future of Audio AI | Join Us",
   "canonical": "https://elevenlabs.io/careers",
   "robots": "",
-  "content_sha256": "a332af898824820b9f4bc38a496050488fe9fbaebafcae94c45b3935424c204c",
-  "content_length": 1128322,
+  "content_sha256": "8f9b7e26264f0500390ba98863115c5e5944d3a32ca9ec9a8fc714fecf88e4e8",
+  "content_length": 1128457,
   "parser": "lxml",
   "version": 1
 }

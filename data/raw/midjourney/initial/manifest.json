@@ -2,7 +2,7 @@
   "company_id": "midjourney",
   "company_name": "Midjourney",
   "status": "failed",
-  "reason": "homepage_http_error",
-  "message": "homepage not HTML/200 (https://www.midjourney.com/home) status=403",
-  "crawled_at": "2025-12-13T21:04:09Z"
+  "reason": "homepage_fetch_failed",
+  "message": "homepage fetch failed (https://www.midjourney.com/home) -> robots.txt disallows fetching https://www.midjourney.com/home for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+  "crawled_at": "2025-12-13T23:06:10Z"
 }

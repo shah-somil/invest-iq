@@ -2,10 +2,10 @@
   "company_id": "brico",
   "company_name": "Brico",
   "source_homepage": "https://www.brico.co",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/brico/initial",
-  "content_sha256": "6692db17b92ccc0871481cfec61704a393adab8521b37206c0ea795e8fb3cd50",
+  "content_sha256": "3d4409703b051955d370c2e7ba2a7916e5177a7442f584fe7b97e19065b97cad",
   "content_length": 199,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

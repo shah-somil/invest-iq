@@ -2,10 +2,10 @@
   "company_id": "highnote",
   "company_name": "Highnote",
   "source_homepage": "https://www.highnote.com",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/highnote/initial",
-  "content_sha256": "fe66e49b2132b7d58dceb438bc6b3540a79153c49b06e365ae017c5f327eea42",
+  "content_sha256": "7602e64065f2c0823394341e575202115c75aa6d6c4512cb30dbf1e4583a3af8",
   "content_length": 205,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

@@ -2,24 +2,19 @@
   "company_id": "xai",
   "company_name": "XAI",
   "source_homepage": "https://x.ai",
-  "crawled_at": "2025-12-13T21:05:32Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
-  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/xai/initial",
-  "content_sha256": "2ba986ab95d4c2102d8799a9e49dabd1829d76871f9ca81d5464386ed453a6ce",
-  "content_length": 547436,
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/xai/initial",
+  "content_sha256": "aca5606e60e3c5f132b463da1a7aeaa27ebc8091f900a31c9257e2c61b51879f",
+  "content_length": 376,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "xai",
     "company_name": "XAI",
-    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/xai/initial/manifest.json",
-    "sections": {
-      "homepage": "https://x.ai",
-      "about": "https://x.ai/company",
-      "product": "https://x.ai/grok",
-      "careers": "https://x.ai/careers",
-      "blog": "https://x.ai/news"
-    },
-    "status": "success"
+    "status": "failed",
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://x.ai) -> robots.txt disallows fetching https://x.ai for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

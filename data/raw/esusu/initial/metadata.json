@@ -2,10 +2,10 @@
   "company_id": "esusu",
   "company_name": "Esusu",
   "source_homepage": "https://www.esusu.org",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/esusu/initial",
-  "content_sha256": "d7ef236f99078915cee50283e575da05d7456fc630203ff244fed98339b3a7bf",
+  "content_sha256": "1a27227403d6dbae6ceb539707cab6f929fa1e2187f95f51d047e987643000ab",
   "content_length": 199,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

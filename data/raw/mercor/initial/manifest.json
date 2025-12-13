@@ -1,12 +1,8 @@
 {
   "company_id": "mercor",
   "company_name": "Mercor",
-  "crawled_at": "2025-12-13T21:04:07Z",
-  "sections": {
-    "homepage": "https://www.mercor.com:443",
-    "about": "https://www.mercor.com:443/apex",
-    "product": "https://www.mercor.com:443/apex",
-    "careers": "https://www.mercor.com:443/careers",
-    "blog": "https://www.mercor.com:443/blog"
-  }
+  "status": "failed",
+  "reason": "homepage_fetch_failed",
+  "message": "homepage fetch failed (https://www.mercor.com:443) -> robots.txt disallows fetching https://www.mercor.com:443 for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+  "crawled_at": "2025-12-13T23:06:10Z"
 }

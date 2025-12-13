@@ -2,10 +2,10 @@
   "company_id": "figure",
   "company_name": "Figure",
   "source_homepage": "https://www.figure.com",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/figure/initial",
-  "content_sha256": "060a6495d0ede0bd94515645e8c1cf639e5d63f329b9f1420cbcdf4f1ad977a6",
+  "content_sha256": "27717c3fad80298af9a7ebb044d22285fa8832ff35fede29e8b9fc8eb2519b53",
   "content_length": 201,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

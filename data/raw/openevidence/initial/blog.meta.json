@@ -1,13 +1,13 @@
 {
   "company_name": "OpenEvidence",
   "source_url": "https://www.openevidence.com/news",
-  "crawled_at": "2025-12-13T21:04:19Z",
+  "crawled_at": "2025-12-13T23:06:18Z",
   "http_status": 200,
   "title": "News | OpenEvidence",
   "canonical": "https://www.openevidence.com/news",
   "robots": "index,follow",
-  "content_sha256": "c9936e199327edaab5abf34105c0d272110affbf2179036feac56152bc1d1d02",
-  "content_length": 136871,
+  "content_sha256": "dadecf8888c44c6a86be3e87f52e60468980505a29ab858a6a3278a4ecb48f63",
+  "content_length": 136870,
   "parser": "lxml",
   "version": 1
 }

@@ -1,13 +1,13 @@
 {
   "company_name": "OpenEvidence",
   "source_url": "https://www.openevidence.com/about",
-  "crawled_at": "2025-12-13T21:04:17Z",
+  "crawled_at": "2025-12-13T23:06:15Z",
   "http_status": 200,
   "title": "About | OpenEvidence",
   "canonical": "https://www.openevidence.com/about",
   "robots": "index,follow",
-  "content_sha256": "9b3aebdab5dd4c5ace3d9e7ab6184ed38ed05d931916562ad2c5bb06a47d22be",
-  "content_length": 271407,
+  "content_sha256": "1f947ed70ef66e6fcd2fadc4092f7b1dc53d007e93fbebd9a64e3d8e993eb277",
+  "content_length": 271408,
   "parser": "lxml",
   "version": 1
 }

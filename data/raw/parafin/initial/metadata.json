@@ -2,10 +2,10 @@
   "company_id": "parafin",
   "company_name": "Parafin",
   "source_homepage": "https://www.parafin.com",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/parafin/initial",
-  "content_sha256": "4a15383ea3364e2d7d45553eb92548d1e7320ee516b83c5f465e6d7bbafc64bd",
+  "content_sha256": "8a4948d253ece5210279be3fef1466db7325aea4e7982e81060269d8209fb133",
   "content_length": 203,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

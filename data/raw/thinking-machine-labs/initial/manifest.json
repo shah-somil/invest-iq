@@ -1,12 +1,8 @@
 {
   "company_id": "thinking-machine-labs",
   "company_name": "Thinking Machine Labs",
-  "crawled_at": "2025-12-13T21:05:14Z",
-  "sections": {
-    "homepage": "https://thinkingmachines.ai",
-    "about": "https://thinkingmachines.ai/tinker",
-    "product": "https://thinkingmachines.ai/tinker",
-    "careers": "https://thinkingmachines.ai/#join-us",
-    "blog": "https://thinkingmachines.ai/blog"
-  }
+  "status": "failed",
+  "reason": "homepage_fetch_failed",
+  "message": "homepage fetch failed (https://thinkingmachines.ai) -> robots.txt disallows fetching https://thinkingmachines.ai for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+  "crawled_at": "2025-12-13T23:07:22Z"
 }

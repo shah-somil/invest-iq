@@ -2,10 +2,10 @@
   "company_id": "coalition",
   "company_name": "Coalition",
   "source_homepage": "https://www.coalitioninc.com",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/coalition/initial",
-  "content_sha256": "7ca48f90ececaee1046f125b3651c9a316a9965413f8c784b005a681db01d2c3",
+  "content_sha256": "949dce7bce6b16af2eaedf4b7fe652e276c49c2530b77684dcb750d2f7270d07",
   "content_length": 207,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

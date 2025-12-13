@@ -2,10 +2,10 @@
   "company_id": "nala",
   "company_name": "Nala",
   "source_homepage": "https://www.nala.com",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/nala/initial",
-  "content_sha256": "6cbf363dc4283f359eac16287a55fe868c331f6f34f201e002315eb4a5bb9b22",
+  "content_sha256": "c8a861b779002b8b14f0872d383185cf2584c63993aba5b14c89050831263bcc",
   "content_length": 197,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

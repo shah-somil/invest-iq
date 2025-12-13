@@ -2,10 +2,10 @@
   "company_id": "perplexity-ai",
   "company_name": "Perplexity AI",
   "source_homepage": "https://www.perplexity.ai/",
-  "crawled_at": "2025-12-13T21:04:19Z",
+  "crawled_at": "2025-12-13T23:06:18Z",
   "run_type": "full-load",
-  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/perplexity-ai/initial",
-  "content_sha256": "0549948a2ba8b2b179fcc1475b31fde0faf119f1881e647bfa88e136e3351dee",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/perplexity-ai/initial",
+  "content_sha256": "ec663272252ebe1139d65870f3f5fc3fe3b4144a721dda3f4db9be1fea025f2e",
   "content_length": 244,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "homepage_http_error",
     "message": "homepage not HTML/200 (https://www.perplexity.ai) status=403",
-    "crawled_at": "2025-12-13T21:04:19Z"
+    "crawled_at": "2025-12-13T23:06:18Z"
   }
 }

@@ -1,13 +1,13 @@
 {
   "company_name": "ElevenLabs",
   "source_url": "https://elevenlabs.io/about",
-  "crawled_at": "2025-12-13T21:03:38Z",
+  "crawled_at": "2025-12-13T23:05:43Z",
   "http_status": 200,
   "title": "AI audio research and product deployment",
   "canonical": "https://elevenlabs.io/about",
   "robots": "",
-  "content_sha256": "c292af5e589912ac4e451f2604eaec4b5c77d6de7400029d883bb5939a38723c",
-  "content_length": 1155190,
+  "content_sha256": "35f5640e1d9b24d1e287a457ae0e4150bd87efb5a3bb8a4ad804be785d8dbfa6",
+  "content_length": 1155314,
   "parser": "lxml",
   "version": 1
 }

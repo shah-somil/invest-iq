@@ -2,10 +2,10 @@
   "company_id": "navan",
   "company_name": "Navan",
   "source_homepage": "https://www.navan.com",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/navan/initial",
-  "content_sha256": "094008581c79911c7f836ebfa804b7bb06921c1019f2c3745e90f061697e00fe",
+  "content_sha256": "3fa2888f798ca0a770cdd07c45d6f99b07429d94a22abe5d0f042805c545c8a6",
   "content_length": 199,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

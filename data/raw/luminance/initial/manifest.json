@@ -1,12 +1,8 @@
 {
   "company_id": "luminance",
   "company_name": "Luminance",
-  "crawled_at": "2025-12-13T21:04:04Z",
-  "sections": {
-    "homepage": "https://www.luminance.com",
-    "about": "https://www.luminance.com/about",
-    "product": "https://www.luminance.com/resources/blog/product-feature-spotlight-accelerate-negotiations-with-luminance%c2%92s-ai-powered-checklists",
-    "careers": "https://www.luminance.com/careers",
-    "blog": "https://www.luminance.com/resources/blog"
-  }
+  "status": "failed",
+  "reason": "homepage_fetch_failed",
+  "message": "homepage fetch failed (https://www.luminance.com) -> robots.txt disallows fetching https://www.luminance.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+  "crawled_at": "2025-12-13T23:06:10Z"
 }

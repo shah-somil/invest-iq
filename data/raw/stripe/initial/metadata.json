@@ -2,10 +2,10 @@
   "company_id": "stripe",
   "company_name": "Stripe",
   "source_homepage": "https://www.stripe.com",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/stripe/initial",
-  "content_sha256": "494045deaa256334664bd8029be3e22d1c1d96d1babdc764a63f831b6ea4f217",
+  "content_sha256": "4a3b553753e258c9f50866d3241b4da026e873b82cbb5d87a8cc096f109f72b4",
   "content_length": 201,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

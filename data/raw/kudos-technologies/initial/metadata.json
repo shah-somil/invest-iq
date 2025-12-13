@@ -2,10 +2,10 @@
   "company_id": "kudos-technologies",
   "company_name": "Kudos Technologies",
   "source_homepage": "https://www.joinkudos.com",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/kudos-technologies/initial",
-  "content_sha256": "f400e8867ce5819a64129bc9128c8085ab4cf6ff69e7ceebeadaa033b30dc48f",
+  "content_sha256": "2c2ff57d0b3878d1edba292b51ad9afe72417854f36449d03f9879b2c5a280c0",
   "content_length": 225,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

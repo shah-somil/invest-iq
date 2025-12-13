@@ -2,10 +2,10 @@
   "company_id": "column",
   "company_name": "Column",
   "source_homepage": "https://www.column.com",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/column/initial",
-  "content_sha256": "d3fc9a6dc42f7f97a5b5cce2e733d9de27c9168db5ec893355e3a0264b48c6fa",
+  "content_sha256": "33f9589a7577f2ec426455c9f5041053749860a6a82a5aaffbc84e09247c53f0",
   "content_length": 201,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

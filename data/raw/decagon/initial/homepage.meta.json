@@ -1,12 +1,12 @@
 {
   "company_name": "Decagon",
   "source_url": "https://decagon.ai",
-  "crawled_at": "2025-12-13T21:03:20Z",
+  "crawled_at": "2025-12-13T23:05:41Z",
   "http_status": 200,
   "title": "Decagon | Conversational AI for Customer Experience",
   "canonical": "https://decagon.ai",
   "robots": "",
-  "content_sha256": "4ac96e104c4f2c84f25b3ce1031a7dadb0ee73e20c1bcdc1fe5ec4a2c2fe2a69",
+  "content_sha256": "5b6518bc624f0e0cb8a5cfb50a3bb82d9a5f4805dbbc76aea46122b128c6d651",
   "content_length": 238838,
   "parser": "lxml",
   "version": 1

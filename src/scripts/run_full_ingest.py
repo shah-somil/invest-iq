@@ -3,6 +3,11 @@
 InvestIQ - Full Ingestion Script
 Replaces: dags/ai50_full_ingest_dag.py
 
+Data Sources:
+    - Seed JSON files (top_ai50_seed.json, top_fintech50_seed.json)
+    - Company websites (publicly accessible pages)
+    See README.md and ETHICS.md for full data source documentation and citations.
+
 This script does the SAME thing as the Airflow DAG but as a simple Python script:
 1. Reads company list from seed JSON
 2. Creates folder structure for each company
@@ -27,6 +32,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.scripts.utils.ingest import run_full_load_one
+from src.scripts.utils.scraper import save_robots_log
 
 
 def load_company_list(seed_path: Path) -> List[Dict[str, Any]]:
@@ -178,6 +184,14 @@ def main():
     # Save combined summary
     summary = save_run_summary(all_results, output_path)
     
+    # Save robots.txt decisions log
+    robots_log_path = PROJECT_ROOT / "data" / "logs" / f"robots_txt_decisions_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+    try:
+        save_robots_log(robots_log_path)
+        print(f"\n📋 Robots.txt decisions log saved to: {robots_log_path}")
+    except Exception as e:
+        print(f"\n⚠️  Could not save robots.txt log: {e}")
+    
     # Print final summary
     print("\n" + "=" * 70)
     print("📊 FINAL SUMMARY")
@@ -188,7 +202,7 @@ def main():
     
     if summary['failed'] > 0:
         print("\n❌ Failed companies:")
-        for r in results:
+        for r in all_results:
             if r.get('status') == 'failed':
                 print(f"  - {r.get('company_name', r['company_id'])}: {r.get('error', 'Unknown error')}")
     

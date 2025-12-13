@@ -2,10 +2,10 @@
   "company_id": "securitize",
   "company_name": "Securitize",
   "source_homepage": "https://www.securitize.io",
-  "crawled_at": "2025-12-13T22:13:30Z",
+  "crawled_at": "2025-12-13T23:07:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/securitize/initial",
-  "content_sha256": "62b1fd56d5a885d81423c4de09f9062f685122b20e77187aabe99056394fc9b0",
+  "content_sha256": "b4cffb91f780b27a39a5e179c5ae9e72fc1731105bd1c0118108eea74414207d",
   "content_length": 209,
   "parser": "lab1_scraper",
   "version": 1,
@@ -15,6 +15,6 @@
     "status": "failed",
     "reason": "missing_website",
     "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T22:13:30Z"
+    "crawled_at": "2025-12-13T23:07:40Z"
   }
 }

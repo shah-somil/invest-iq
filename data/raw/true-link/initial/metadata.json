@@ -1,0 +1,20 @@
+{
+  "company_id": "true-link",
+  "company_name": "True Link",
+  "source_homepage": "https://www.truelinkfinancial.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/true-link/initial",
+  "content_sha256": "6aa2a61e8715ce0673ee40bcdd3529d1f71a7280fb0ca34cc8593be0b37dc7d9",
+  "content_length": 207,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "true-link",
+    "company_name": "true-link",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

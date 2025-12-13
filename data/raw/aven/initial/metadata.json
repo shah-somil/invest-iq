@@ -1,0 +1,20 @@
+{
+  "company_id": "aven",
+  "company_name": "Aven",
+  "source_homepage": "https://www.aven.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/aven/initial",
+  "content_sha256": "fd672ccdd560822845f0c09196a92f11d056e7d68906b62840911473e0b8e131",
+  "content_length": 197,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "aven",
+    "company_name": "aven",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "company_id": "increase",
+  "company_name": "Increase",
+  "source_homepage": "https://www.increase.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/increase/initial",
+  "content_sha256": "40bd0ff53532e5baa1e1721dd5ee5b6d683a0a13b100d9f1a726b408dff4d9d8",
+  "content_length": 205,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "increase",
+    "company_name": "increase",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

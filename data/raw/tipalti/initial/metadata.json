@@ -1,0 +1,20 @@
+{
+  "company_id": "tipalti",
+  "company_name": "Tipalti",
+  "source_homepage": "https://www.tipalti.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/tipalti/initial",
+  "content_sha256": "015650016ea2f802712be51ed317c9147aa8fa919829c3e55f90729672ebb087",
+  "content_length": 203,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "tipalti",
+    "company_name": "tipalti",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

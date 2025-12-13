@@ -1,0 +1,20 @@
+{
+  "company_id": "fireblocks",
+  "company_name": "Fireblocks",
+  "source_homepage": "https://www.fireblocks.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/fireblocks/initial",
+  "content_sha256": "bf0e1cd918b8e40d4e3c5d967088875b404f2a4e8ee7fce50f4033299932551d",
+  "content_length": 209,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "fireblocks",
+    "company_name": "fireblocks",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

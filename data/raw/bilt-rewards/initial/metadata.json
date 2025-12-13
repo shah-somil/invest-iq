@@ -1,0 +1,20 @@
+{
+  "company_id": "bilt-rewards",
+  "company_name": "Bilt Rewards",
+  "source_homepage": "https://www.biltrewards.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/bilt-rewards/initial",
+  "content_sha256": "887d7deb0d264dbd59274404e59d17d015b70e851f1d98e981053b124dbff18f",
+  "content_length": 213,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "bilt-rewards",
+    "company_name": "bilt-rewards",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

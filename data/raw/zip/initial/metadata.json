@@ -1,0 +1,20 @@
+{
+  "company_id": "zip",
+  "company_name": "Zip",
+  "source_homepage": "https://www.zip.co",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/zip/initial",
+  "content_sha256": "96195fbadbb4fcf62a42926995b90d5e688b97dea6d72587a796687434e758d9",
+  "content_length": 195,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "zip",
+    "company_name": "zip",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

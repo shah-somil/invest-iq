@@ -1,0 +1,20 @@
+{
+  "company_id": "found",
+  "company_name": "Found",
+  "source_homepage": "https://www.found.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/found/initial",
+  "content_sha256": "5bd917bd61a5ca72e75b3c810ab1b8b2bd8f6c7b90611d8a028fcb4cbc5ecd61",
+  "content_length": 199,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "found",
+    "company_name": "found",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

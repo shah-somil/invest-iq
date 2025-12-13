@@ -1,0 +1,20 @@
+{
+  "company_id": "relay",
+  "company_name": "Relay",
+  "source_homepage": "https://www.relayfi.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/relay/initial",
+  "content_sha256": "4ad80b91be724f6c6676a9a0e8a1e9a4374f039a6d9775568f0c02918e237c72",
+  "content_length": 199,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "relay",
+    "company_name": "relay",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

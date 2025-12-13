@@ -1,0 +1,20 @@
+{
+  "company_id": "sunbit",
+  "company_name": "Sunbit",
+  "source_homepage": "https://www.sunbit.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/sunbit/initial",
+  "content_sha256": "229ebec8c5652d22811e24f7742fbc0c5d2c2dc045ce3b89dd404665cfdb6e43",
+  "content_length": 201,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "sunbit",
+    "company_name": "sunbit",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

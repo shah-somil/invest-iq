@@ -1,0 +1,20 @@
+{
+  "company_id": "ethos",
+  "company_name": "Ethos",
+  "source_homepage": "https://www.ethoslife.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/ethos/initial",
+  "content_sha256": "c6f87b4059f0bbe8a7d94368f00e8cfa2657707ed93fbc47c39b6cca1ec121ef",
+  "content_length": 199,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "ethos",
+    "company_name": "ethos",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

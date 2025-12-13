@@ -1,0 +1,20 @@
+{
+  "company_id": "imprint",
+  "company_name": "Imprint",
+  "source_homepage": "https://www.imprint.co",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/imprint/initial",
+  "content_sha256": "5e6e2de73e2a6da7dc53055dd12959bb1043f5a4f3a030489d4fe0098ae263dc",
+  "content_length": 203,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "imprint",
+    "company_name": "imprint",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

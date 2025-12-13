@@ -1,0 +1,20 @@
+{
+  "company_id": "kin-insurance",
+  "company_name": "Kin Insurance",
+  "source_homepage": "https://www.kin.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/kin-insurance/initial",
+  "content_sha256": "c43779e83e0018c1000d29bf4fb25b77a9b65b2c192400e93c0356f936276171",
+  "content_length": 215,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "kin-insurance",
+    "company_name": "kin-insurance",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

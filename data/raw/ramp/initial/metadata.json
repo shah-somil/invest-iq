@@ -1,0 +1,20 @@
+{
+  "company_id": "ramp",
+  "company_name": "Ramp",
+  "source_homepage": "https://www.ramp.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/ramp/initial",
+  "content_sha256": "c461a9d8ca2e3058488df0994954aaa1fdbebb6ace99ef3996900edbb8b69454",
+  "content_length": 197,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "ramp",
+    "company_name": "ramp",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

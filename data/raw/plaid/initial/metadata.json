@@ -1,0 +1,20 @@
+{
+  "company_id": "plaid",
+  "company_name": "Plaid",
+  "source_homepage": "https://www.plaid.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/plaid/initial",
+  "content_sha256": "93c46b66a9ad4f494629dc72cceaee43e0172ebfdbcd4fbbb82637f28fac0436",
+  "content_length": 199,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "plaid",
+    "company_name": "plaid",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

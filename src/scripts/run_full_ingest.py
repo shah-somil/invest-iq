@@ -97,14 +97,20 @@ def main():
     parser.add_argument("--data-dir", default="data", help="Data directory")
     parser.add_argument("--limit", type=int, help="Limit to N companies per seed file (for testing)")
     parser.add_argument("--company", help="Scrape single company by name/ID")
-    parser.add_argument("--output", default="data/logs/full_ingest_summary.json", 
-                       help="Path to save run summary")
+    parser.add_argument("--output", default=None, 
+                       help="Path to save run summary (default: data/logs/full_ingest_summary_YYYYMMDD_HHMMSS.json)")
     
     args = parser.parse_args()
     
     # Setup paths
     data_dir = PROJECT_ROOT / args.data_dir
-    output_path = PROJECT_ROOT / args.output
+    
+    # Generate output path with datetime if not specified
+    if args.output is None:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        output_path = PROJECT_ROOT / "data" / "logs" / f"full_ingest_summary_{timestamp}.json"
+    else:
+        output_path = PROJECT_ROOT / args.output
     
     # Determine which seed files to process
     seed_files = []

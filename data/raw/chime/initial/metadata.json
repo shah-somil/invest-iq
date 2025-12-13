@@ -1,0 +1,20 @@
+{
+  "company_id": "chime",
+  "company_name": "Chime",
+  "source_homepage": "https://www.chime.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/chime/initial",
+  "content_sha256": "0fc139aac9dff80ff82a0f6515bb61b696542c55e82509b176fd4b2ed7439fb7",
+  "content_length": 199,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "chime",
+    "company_name": "chime",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

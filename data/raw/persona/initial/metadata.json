@@ -1,0 +1,20 @@
+{
+  "company_id": "persona",
+  "company_name": "Persona",
+  "source_homepage": "https://www.withpersona.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/persona/initial",
+  "content_sha256": "25b699850061846133e34b0c056fa0ac1a3ae33119287dc4aad3ef08fda9d04f",
+  "content_length": 203,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "persona",
+    "company_name": "persona",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

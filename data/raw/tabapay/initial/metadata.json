@@ -1,0 +1,20 @@
+{
+  "company_id": "tabapay",
+  "company_name": "TabaPay",
+  "source_homepage": "https://www.tabapay.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/tabapay/initial",
+  "content_sha256": "4032d1d037668d16eb2ef65b69042095ee5653a65b14f6d173e96605443de92b",
+  "content_length": 203,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "tabapay",
+    "company_name": "tabapay",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "company_id": "mercury",
+  "company_name": "Mercury",
+  "source_homepage": "https://www.mercury.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/mercury/initial",
+  "content_sha256": "e052959e42c17ba471114e278f7c0e2f7f981167a96be9075dbc084b853e7dec",
+  "content_length": 203,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "mercury",
+    "company_name": "mercury",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "company_id": "trumid",
+  "company_name": "Trumid",
+  "source_homepage": "https://www.trumid.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/trumid/initial",
+  "content_sha256": "ea96a4ef6fc8a770b938ebd0581a6d6d64f083fb0bb054263daa4c4dead083f3",
+  "content_length": 201,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "trumid",
+    "company_name": "trumid",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

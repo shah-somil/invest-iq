@@ -1,0 +1,20 @@
+{
+  "company_id": "alloy",
+  "company_name": "Alloy",
+  "source_homepage": "https://www.alloy.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/alloy/initial",
+  "content_sha256": "ab416aac40f7e30990d9738045fe3dfca4b1fe3ded7323035423b655b09a6014",
+  "content_length": 199,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "alloy",
+    "company_name": "alloy",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

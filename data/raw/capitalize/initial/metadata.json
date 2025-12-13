@@ -1,0 +1,20 @@
+{
+  "company_id": "capitalize",
+  "company_name": "Capitalize",
+  "source_homepage": "https://www.hicapitalize.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/capitalize/initial",
+  "content_sha256": "456f4b8273c58bd03b30527b7d132643480fdc526b4b143a81f66f067804a5d0",
+  "content_length": 209,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "capitalize",
+    "company_name": "capitalize",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

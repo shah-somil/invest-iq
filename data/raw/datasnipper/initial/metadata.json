@@ -1,0 +1,20 @@
+{
+  "company_id": "datasnipper",
+  "company_name": "DataSnipper",
+  "source_homepage": "https://www.datasnipper.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/datasnipper/initial",
+  "content_sha256": "ce6ad368eff319bd2d7441b9fdcb759eb335752b58ea09e685717f2116a548a8",
+  "content_length": 211,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "datasnipper",
+    "company_name": "datasnipper",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

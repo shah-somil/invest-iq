@@ -1,0 +1,20 @@
+{
+  "company_id": "squire-technologies",
+  "company_name": "Squire Technologies",
+  "source_homepage": "https://www.squirecard.com",
+  "crawled_at": "2025-12-13T22:13:30Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/squire-technologies/initial",
+  "content_sha256": "1f4d01eea415d8f6e44c715ee02139b1ed308087470d2167ff51fbf491d5d2d5",
+  "content_length": 227,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "squire-technologies",
+    "company_name": "squire-technologies",
+    "status": "failed",
+    "reason": "missing_website",
+    "message": "cannot scrape without a website URL",
+    "crawled_at": "2025-12-13T22:13:30Z"
+  }
+}

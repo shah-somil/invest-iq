@@ -1,0 +1,13 @@
+{
+  "company_name": "Tala",
+  "source_url": "https://tala.co",
+  "crawled_at": "2025-12-13T23:36:23Z",
+  "http_status": 200,
+  "title": "Tala | Digital Financial Services, Credit, Savings and More",
+  "canonical": "https://tala.co/",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "content_sha256": "1e6a547ac4e4048d9c2553b0ec10da53d6feadf02eb47cc8c8345505e3f0791c",
+  "content_length": 132212,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,760 @@
+{
+  "timestamp": "2025-12-13T23:36:39Z",
+  "total_companies": 50,
+  "allowed": 35,
+  "disallowed": 15,
+  "partially_allowed": 0,
+  "errors": 0,
+  "decisions": [
+    {
+      "company_id": "alloy",
+      "company_name": "Alloy",
+      "status": "disallowed",
+      "domain": "https://www.alloy.com",
+      "robots_url": "https://www.alloy.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.alloy.com/about": false,
+        "https://www.alloy.com/product": false,
+        "https://www.alloy.com/careers": false,
+        "https://www.alloy.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:30:40Z"
+    },
+    {
+      "company_id": "arc",
+      "company_name": "Arc",
+      "status": "allowed",
+      "domain": "https://www.arc.tech",
+      "robots_url": "https://www.arc.tech/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.arc.tech/about": true,
+        "https://www.arc.tech/product": true,
+        "https://www.arc.tech/careers": true,
+        "https://www.arc.tech/blog": true
+      },
+      "checked_at": "2025-12-13T23:30:41Z"
+    },
+    {
+      "company_id": "at-bay",
+      "company_name": "At-Bay",
+      "status": "allowed",
+      "domain": "https://www.at-bay.com",
+      "robots_url": "https://www.at-bay.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.at-bay.com/about": true,
+        "https://www.at-bay.com/product": true,
+        "https://www.at-bay.com/careers": true,
+        "https://www.at-bay.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:30:44Z"
+    },
+    {
+      "company_id": "aven",
+      "company_name": "Aven",
+      "status": "allowed",
+      "domain": "https://www.aven.com",
+      "robots_url": "https://www.aven.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.aven.com/about": true,
+        "https://www.aven.com/product": true,
+        "https://www.aven.com/careers": true,
+        "https://www.aven.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:30:52Z"
+    },
+    {
+      "company_id": "bilt-rewards",
+      "company_name": "Bilt Rewards",
+      "status": "allowed",
+      "domain": "https://www.biltrewards.com",
+      "robots_url": "https://www.biltrewards.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.biltrewards.com/about": true,
+        "https://www.biltrewards.com/product": true,
+        "https://www.biltrewards.com/careers": true,
+        "https://www.biltrewards.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:30:54Z"
+    },
+    {
+      "company_id": "brico",
+      "company_name": "Brico",
+      "status": "allowed",
+      "domain": "https://www.brico.co",
+      "robots_url": "https://www.brico.co/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.brico.co/about": true,
+        "https://www.brico.co/product": true,
+        "https://www.brico.co/careers": true,
+        "https://www.brico.co/blog": true
+      },
+      "checked_at": "2025-12-13T23:31:00Z"
+    },
+    {
+      "company_id": "candex",
+      "company_name": "Candex",
+      "status": "allowed",
+      "domain": "https://www.candex.com",
+      "robots_url": "https://www.candex.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.candex.com/about": true,
+        "https://www.candex.com/product": true,
+        "https://www.candex.com/careers": true,
+        "https://www.candex.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:31:02Z"
+    },
+    {
+      "company_id": "capitalize",
+      "company_name": "Capitalize",
+      "status": "disallowed",
+      "domain": "https://www.hicapitalize.com",
+      "robots_url": "https://www.hicapitalize.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.hicapitalize.com/about": false,
+        "https://www.hicapitalize.com/product": false,
+        "https://www.hicapitalize.com/careers": false,
+        "https://www.hicapitalize.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:31:11Z"
+    },
+    {
+      "company_id": "carry1st",
+      "company_name": "Carry1st",
+      "status": "allowed",
+      "domain": "https://www.carry1st.com",
+      "robots_url": "https://www.carry1st.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.carry1st.com/about": true,
+        "https://www.carry1st.com/product": true,
+        "https://www.carry1st.com/careers": true,
+        "https://www.carry1st.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:31:11Z"
+    },
+    {
+      "company_id": "chime",
+      "company_name": "Chime",
+      "status": "disallowed",
+      "domain": "https://www.chime.com",
+      "robots_url": "https://www.chime.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.chime.com/about": false,
+        "https://www.chime.com/product": false,
+        "https://www.chime.com/careers": false,
+        "https://www.chime.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:31:15Z"
+    },
+    {
+      "company_id": "coalition",
+      "company_name": "Coalition",
+      "status": "allowed",
+      "domain": "https://www.coalitioninc.com",
+      "robots_url": "https://www.coalitioninc.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.coalitioninc.com/about": true,
+        "https://www.coalitioninc.com/product": true,
+        "https://www.coalitioninc.com/careers": true,
+        "https://www.coalitioninc.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:31:16Z"
+    },
+    {
+      "company_id": "column",
+      "company_name": "Column",
+      "status": "allowed",
+      "domain": "https://www.column.com",
+      "robots_url": "https://www.column.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.column.com/about": true,
+        "https://www.column.com/product": true,
+        "https://www.column.com/careers": true,
+        "https://www.column.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:31:28Z"
+    },
+    {
+      "company_id": "dailypay",
+      "company_name": "DailyPay",
+      "status": "disallowed",
+      "domain": "https://www.dailypay.com",
+      "robots_url": "https://www.dailypay.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.dailypay.com/about": false,
+        "https://www.dailypay.com/product": false,
+        "https://www.dailypay.com/careers": false,
+        "https://www.dailypay.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:31:39Z"
+    },
+    {
+      "company_id": "datasnipper",
+      "company_name": "DataSnipper",
+      "status": "allowed",
+      "domain": "https://www.datasnipper.com",
+      "robots_url": "https://www.datasnipper.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.datasnipper.com/about": true,
+        "https://www.datasnipper.com/product": true,
+        "https://www.datasnipper.com/careers": true,
+        "https://www.datasnipper.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:31:40Z"
+    },
+    {
+      "company_id": "datavisor",
+      "company_name": "DataVisor",
+      "status": "allowed",
+      "domain": "https://www.datavisor.com",
+      "robots_url": "https://www.datavisor.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.datavisor.com/about": true,
+        "https://www.datavisor.com/product": true,
+        "https://www.datavisor.com/careers": true,
+        "https://www.datavisor.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:31:54Z"
+    },
+    {
+      "company_id": "esusu",
+      "company_name": "Esusu",
+      "status": "allowed",
+      "domain": "https://www.esusu.org",
+      "robots_url": "https://www.esusu.org/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.esusu.org/about": true,
+        "https://www.esusu.org/product": true,
+        "https://www.esusu.org/careers": true,
+        "https://www.esusu.org/blog": true
+      },
+      "checked_at": "2025-12-13T23:32:00Z"
+    },
+    {
+      "company_id": "ethos",
+      "company_name": "Ethos",
+      "status": "disallowed",
+      "domain": "https://www.ethoslife.com",
+      "robots_url": "https://www.ethoslife.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.ethoslife.com/about": false,
+        "https://www.ethoslife.com/product": false,
+        "https://www.ethoslife.com/careers": false,
+        "https://www.ethoslife.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:32:03Z"
+    },
+    {
+      "company_id": "figure",
+      "company_name": "Figure",
+      "status": "allowed",
+      "domain": "https://www.figure.com",
+      "robots_url": "https://www.figure.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.figure.com/about": true,
+        "https://www.figure.com/product": true,
+        "https://www.figure.com/careers": true,
+        "https://www.figure.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:32:03Z"
+    },
+    {
+      "company_id": "fireblocks",
+      "company_name": "Fireblocks",
+      "status": "disallowed",
+      "domain": "https://www.fireblocks.com",
+      "robots_url": "https://www.fireblocks.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.fireblocks.com/about": false,
+        "https://www.fireblocks.com/product": false,
+        "https://www.fireblocks.com/careers": false,
+        "https://www.fireblocks.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:34:38Z"
+    },
+    {
+      "company_id": "found",
+      "company_name": "Found",
+      "status": "allowed",
+      "domain": "https://www.found.com",
+      "robots_url": "https://www.found.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.found.com/about": true,
+        "https://www.found.com/product": true,
+        "https://www.found.com/careers": true,
+        "https://www.found.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:34:39Z"
+    },
+    {
+      "company_id": "highnote",
+      "company_name": "Highnote",
+      "status": "allowed",
+      "domain": "https://www.highnote.com",
+      "robots_url": "https://www.highnote.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.highnote.com/about": true,
+        "https://www.highnote.com/product": true,
+        "https://www.highnote.com/careers": true,
+        "https://www.highnote.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:34:44Z"
+    },
+    {
+      "company_id": "imprint",
+      "company_name": "Imprint",
+      "status": "allowed",
+      "domain": "https://www.imprint.co",
+      "robots_url": "https://www.imprint.co/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.imprint.co/about": true,
+        "https://www.imprint.co/product": true,
+        "https://www.imprint.co/careers": true,
+        "https://www.imprint.co/blog": true
+      },
+      "checked_at": "2025-12-13T23:34:47Z"
+    },
+    {
+      "company_id": "increase",
+      "company_name": "Increase",
+      "status": "allowed",
+      "domain": "https://www.increase.com",
+      "robots_url": "https://www.increase.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.increase.com/about": true,
+        "https://www.increase.com/product": true,
+        "https://www.increase.com/careers": true,
+        "https://www.increase.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:34:50Z"
+    },
+    {
+      "company_id": "kin-insurance",
+      "company_name": "Kin Insurance",
+      "status": "allowed",
+      "domain": "https://www.kin.com",
+      "robots_url": "https://www.kin.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.kin.com/about": true,
+        "https://www.kin.com/product": true,
+        "https://www.kin.com/careers": true,
+        "https://www.kin.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:34:56Z"
+    },
+    {
+      "company_id": "kudos-technologies",
+      "company_name": "Kudos Technologies",
+      "status": "allowed",
+      "domain": "https://www.joinkudos.com",
+      "robots_url": "https://www.joinkudos.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.joinkudos.com/about": true,
+        "https://www.joinkudos.com/product": true,
+        "https://www.joinkudos.com/careers": true,
+        "https://www.joinkudos.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:35:11Z"
+    },
+    {
+      "company_id": "lead-bank",
+      "company_name": "Lead Bank",
+      "status": "allowed",
+      "domain": "https://www.lead.bank",
+      "robots_url": "https://www.lead.bank/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.lead.bank/about": true,
+        "https://www.lead.bank/product": true,
+        "https://www.lead.bank/careers": true,
+        "https://www.lead.bank/blog": true
+      },
+      "checked_at": "2025-12-13T23:35:12Z"
+    },
+    {
+      "company_id": "mercury",
+      "company_name": "Mercury",
+      "status": "allowed",
+      "domain": "https://www.mercury.com",
+      "robots_url": "https://www.mercury.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.mercury.com/about": true,
+        "https://www.mercury.com/product": true,
+        "https://www.mercury.com/careers": true,
+        "https://www.mercury.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:35:15Z"
+    },
+    {
+      "company_id": "nala",
+      "company_name": "Nala",
+      "status": "disallowed",
+      "domain": "https://www.nala.com",
+      "robots_url": "https://www.nala.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.nala.com/about": false,
+        "https://www.nala.com/product": false,
+        "https://www.nala.com/careers": false,
+        "https://www.nala.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:35:20Z"
+    },
+    {
+      "company_id": "navan",
+      "company_name": "Navan",
+      "status": "disallowed",
+      "domain": "https://www.navan.com",
+      "robots_url": "https://www.navan.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.navan.com/about": false,
+        "https://www.navan.com/product": false,
+        "https://www.navan.com/careers": false,
+        "https://www.navan.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:35:20Z"
+    },
+    {
+      "company_id": "nova-credit",
+      "company_name": "Nova Credit",
+      "status": "allowed",
+      "domain": "https://www.novacredit.com",
+      "robots_url": "https://www.novacredit.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.novacredit.com/about": true,
+        "https://www.novacredit.com/product": true,
+        "https://www.novacredit.com/careers": true,
+        "https://www.novacredit.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:35:20Z"
+    },
+    {
+      "company_id": "parafin",
+      "company_name": "Parafin",
+      "status": "allowed",
+      "domain": "https://www.parafin.com",
+      "robots_url": "https://www.parafin.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.parafin.com/about": true,
+        "https://www.parafin.com/product": true,
+        "https://www.parafin.com/careers": true,
+        "https://www.parafin.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:35:24Z"
+    },
+    {
+      "company_id": "persona",
+      "company_name": "Persona",
+      "status": "allowed",
+      "domain": "https://www.withpersona.com",
+      "robots_url": "https://www.withpersona.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.withpersona.com/about": true,
+        "https://www.withpersona.com/product": true,
+        "https://www.withpersona.com/careers": true,
+        "https://www.withpersona.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:35:27Z"
+    },
+    {
+      "company_id": "plaid",
+      "company_name": "Plaid",
+      "status": "allowed",
+      "domain": "https://www.plaid.com",
+      "robots_url": "https://www.plaid.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.plaid.com/about": true,
+        "https://www.plaid.com/product": true,
+        "https://www.plaid.com/careers": true,
+        "https://www.plaid.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:35:34Z"
+    },
+    {
+      "company_id": "propel",
+      "company_name": "Propel",
+      "status": "allowed",
+      "domain": "https://www.propel.app",
+      "robots_url": "https://www.propel.app/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.propel.app/about": true,
+        "https://www.propel.app/product": true,
+        "https://www.propel.app/careers": true,
+        "https://www.propel.app/blog": true
+      },
+      "checked_at": "2025-12-13T23:35:38Z"
+    },
+    {
+      "company_id": "pulley",
+      "company_name": "Pulley",
+      "status": "allowed",
+      "domain": "https://www.pulley.com",
+      "robots_url": "https://www.pulley.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.pulley.com/about": true,
+        "https://www.pulley.com/product": true,
+        "https://www.pulley.com/careers": true,
+        "https://www.pulley.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:35:43Z"
+    },
+    {
+      "company_id": "ramp",
+      "company_name": "Ramp",
+      "status": "disallowed",
+      "domain": "https://www.ramp.com",
+      "robots_url": "https://www.ramp.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.ramp.com/about": false,
+        "https://www.ramp.com/product": false,
+        "https://www.ramp.com/careers": false,
+        "https://www.ramp.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:35:44Z"
+    },
+    {
+      "company_id": "relay",
+      "company_name": "Relay",
+      "status": "allowed",
+      "domain": "https://www.relayfi.com",
+      "robots_url": "https://www.relayfi.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.relayfi.com/about": true,
+        "https://www.relayfi.com/product": true,
+        "https://www.relayfi.com/careers": true,
+        "https://www.relayfi.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:35:44Z"
+    },
+    {
+      "company_id": "securitize",
+      "company_name": "Securitize",
+      "status": "allowed",
+      "domain": "https://www.securitize.io",
+      "robots_url": "https://www.securitize.io/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.securitize.io/about": true,
+        "https://www.securitize.io/product": true,
+        "https://www.securitize.io/careers": true,
+        "https://www.securitize.io/blog": true
+      },
+      "checked_at": "2025-12-13T23:35:47Z"
+    },
+    {
+      "company_id": "sentilink",
+      "company_name": "SentiLink",
+      "status": "allowed",
+      "domain": "https://www.sentilink.com",
+      "robots_url": "https://www.sentilink.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.sentilink.com/about": true,
+        "https://www.sentilink.com/product": true,
+        "https://www.sentilink.com/careers": true,
+        "https://www.sentilink.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:35:49Z"
+    },
+    {
+      "company_id": "squire-technologies",
+      "company_name": "Squire Technologies",
+      "status": "disallowed",
+      "domain": "https://www.squirecard.com",
+      "robots_url": "https://www.squirecard.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.squirecard.com/about": false,
+        "https://www.squirecard.com/product": false,
+        "https://www.squirecard.com/careers": false,
+        "https://www.squirecard.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:36:04Z"
+    },
+    {
+      "company_id": "stripe",
+      "company_name": "Stripe",
+      "status": "allowed",
+      "domain": "https://www.stripe.com",
+      "robots_url": "https://www.stripe.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.stripe.com/about": true,
+        "https://www.stripe.com/product": true,
+        "https://www.stripe.com/careers": true,
+        "https://www.stripe.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:36:05Z"
+    },
+    {
+      "company_id": "sunbit",
+      "company_name": "Sunbit",
+      "status": "disallowed",
+      "domain": "https://www.sunbit.com",
+      "robots_url": "https://www.sunbit.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.sunbit.com/about": false,
+        "https://www.sunbit.com/product": false,
+        "https://www.sunbit.com/careers": false,
+        "https://www.sunbit.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:36:12Z"
+    },
+    {
+      "company_id": "tabapay",
+      "company_name": "TabaPay",
+      "status": "allowed",
+      "domain": "https://www.tabapay.com",
+      "robots_url": "https://www.tabapay.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.tabapay.com/about": true,
+        "https://www.tabapay.com/product": true,
+        "https://www.tabapay.com/careers": true,
+        "https://www.tabapay.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:36:12Z"
+    },
+    {
+      "company_id": "tala",
+      "company_name": "Tala",
+      "status": "allowed",
+      "domain": "https://www.tala.co",
+      "robots_url": "https://www.tala.co/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.tala.co/about": true,
+        "https://www.tala.co/product": true,
+        "https://www.tala.co/careers": true,
+        "https://www.tala.co/blog": true
+      },
+      "checked_at": "2025-12-13T23:36:23Z"
+    },
+    {
+      "company_id": "tipalti",
+      "company_name": "Tipalti",
+      "status": "disallowed",
+      "domain": "https://www.tipalti.com",
+      "robots_url": "https://www.tipalti.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.tipalti.com/about": false,
+        "https://www.tipalti.com/product": false,
+        "https://www.tipalti.com/careers": false,
+        "https://www.tipalti.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:36:30Z"
+    },
+    {
+      "company_id": "true-link",
+      "company_name": "True Link",
+      "status": "allowed",
+      "domain": "https://www.truelinkfinancial.com",
+      "robots_url": "https://www.truelinkfinancial.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.truelinkfinancial.com/about": true,
+        "https://www.truelinkfinancial.com/product": true,
+        "https://www.truelinkfinancial.com/careers": true,
+        "https://www.truelinkfinancial.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:36:30Z"
+    },
+    {
+      "company_id": "trumid",
+      "company_name": "Trumid",
+      "status": "disallowed",
+      "domain": "https://www.trumid.com",
+      "robots_url": "https://www.trumid.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.trumid.com/about": false,
+        "https://www.trumid.com/product": false,
+        "https://www.trumid.com/careers": false,
+        "https://www.trumid.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:36:33Z"
+    },
+    {
+      "company_id": "valon",
+      "company_name": "Valon",
+      "status": "disallowed",
+      "domain": "https://www.valon.com",
+      "robots_url": "https://www.valon.com/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.valon.com/about": false,
+        "https://www.valon.com/product": false,
+        "https://www.valon.com/careers": false,
+        "https://www.valon.com/blog": false
+      },
+      "checked_at": "2025-12-13T23:36:33Z"
+    },
+    {
+      "company_id": "wealthfront",
+      "company_name": "Wealthfront",
+      "status": "allowed",
+      "domain": "https://www.wealthfront.com",
+      "robots_url": "https://www.wealthfront.com/robots.txt",
+      "homepage_allowed": true,
+      "paths_allowed": {
+        "https://www.wealthfront.com/about": true,
+        "https://www.wealthfront.com/product": true,
+        "https://www.wealthfront.com/careers": true,
+        "https://www.wealthfront.com/blog": true
+      },
+      "checked_at": "2025-12-13T23:36:34Z"
+    },
+    {
+      "company_id": "zip",
+      "company_name": "Zip",
+      "status": "disallowed",
+      "domain": "https://www.zip.co",
+      "robots_url": "https://www.zip.co/robots.txt",
+      "homepage_allowed": false,
+      "paths_allowed": {
+        "https://www.zip.co/about": false,
+        "https://www.zip.co/product": false,
+        "https://www.zip.co/careers": false,
+        "https://www.zip.co/blog": false
+      },
+      "checked_at": "2025-12-13T23:36:39Z"
+    }
+  ]
+}

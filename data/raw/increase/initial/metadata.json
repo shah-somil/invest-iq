@@ -2,19 +2,24 @@
   "company_id": "increase",
   "company_name": "Increase",
   "source_homepage": "https://www.increase.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:34:56Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/increase/initial",
-  "content_sha256": "1aa93116117e9e3a3003c56ee49708c8d56269548d3604362e6c944f5fa5f92e",
-  "content_length": 205,
+  "content_sha256": "c6752a297cd48030d11d2fb928672beb89da4bc7e87baa3b888a8bf4733fc69a",
+  "content_length": 327981,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "increase",
-    "company_name": "increase",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Increase",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/increase/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.increase.com",
+      "about": "https://www.increase.com/fees",
+      "product": "https://www.increase.com/customers/capitalos",
+      "careers": "https://www.increase.com/fees",
+      "blog": "https://www.increase.com/updates"
+    },
+    "status": "success"
   }
 }

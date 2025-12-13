@@ -2,19 +2,19 @@
   "company_id": "fireblocks",
   "company_name": "Fireblocks",
   "source_homepage": "https://www.fireblocks.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:34:38Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/fireblocks/initial",
-  "content_sha256": "021f77b18930dc361786986febe0d59053dd119e88fc55ee84c70c92f6d9b29d",
-  "content_length": 209,
+  "content_sha256": "72f90f864eb4078c34a599ff0d40845636b4a217b072c07001c70bbed453a886",
+  "content_length": 1086,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "fireblocks",
-    "company_name": "fireblocks",
+    "company_name": "Fireblocks",
     "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://www.fireblocks.com) -> robots.txt disallows fetching https://www.fireblocks.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:34:38Z"
   }
 }

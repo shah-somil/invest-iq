@@ -1,0 +1,13 @@
+{
+  "company_name": "Figure",
+  "source_url": "https://www.figure.com/about",
+  "crawled_at": "2025-12-13T23:32:04Z",
+  "http_status": 200,
+  "title": "About Us | Figure",
+  "canonical": "https://www.figure.com/about/",
+  "robots": "",
+  "content_sha256": "c4f4506064b4f7f7a97603e7bf43bf1e27aa55c60726453031c9bf675f13a2ee",
+  "content_length": 437929,
+  "parser": "lxml",
+  "version": 1
+}

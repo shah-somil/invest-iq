@@ -1,0 +1,13 @@
+{
+  "company_name": "Nova Credit",
+  "source_url": "https://www.novacredit.com/careers",
+  "crawled_at": "2025-12-13T23:35:22Z",
+  "http_status": 200,
+  "title": "Careers | Nova Credit",
+  "canonical": "https://www.novacredit.com/careers",
+  "robots": "",
+  "content_sha256": "a7b6d248a1d70f0a9999a59d35688bd5df7cd1903d38441f3a74120be7ec4ca8",
+  "content_length": 128874,
+  "parser": "lxml",
+  "version": 1
+}

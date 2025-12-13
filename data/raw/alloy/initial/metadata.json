@@ -2,19 +2,19 @@
   "company_id": "alloy",
   "company_name": "Alloy",
   "source_homepage": "https://www.alloy.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:30:40Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/alloy/initial",
-  "content_sha256": "611cbfb55d80b0dac5734c2be7f8ffbbfeb6198d18d1469c5dc20cb13ffbf7c4",
-  "content_length": 199,
+  "content_sha256": "ccf5502b717862ae1964aa87f9b06228e444096cda8556603a123364db675050",
+  "content_length": 1036,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "alloy",
-    "company_name": "alloy",
+    "company_name": "Alloy",
     "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://www.alloy.com) -> robots.txt disallows fetching https://www.alloy.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:30:40Z"
   }
 }

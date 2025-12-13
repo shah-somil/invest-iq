@@ -1,0 +1,13 @@
+{
+  "company_name": "Increase",
+  "source_url": "https://www.increase.com/fees",
+  "crawled_at": "2025-12-13T23:34:52Z",
+  "http_status": 200,
+  "title": "Fees \u00e2\u0080\u0094 Increase",
+  "canonical": "https://www.increase.com/fees",
+  "robots": "",
+  "content_sha256": "466fd9b3f29e112ff09e66a3eed5c5f04e990df891affd96e4e9a5420d861b72",
+  "content_length": 43479,
+  "parser": "lxml",
+  "version": 1
+}

@@ -2,19 +2,24 @@
   "company_id": "kin-insurance",
   "company_name": "Kin Insurance",
   "source_homepage": "https://www.kin.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:35:10Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/kin-insurance/initial",
-  "content_sha256": "bd6ee2d3af04a08c5b11c47e1f7bd66dac4accb1895ceed063274674b4758164",
-  "content_length": 215,
+  "content_sha256": "5388e3fa6b8854978eceb26b68606a9b567ed7c60f657ae6aa13e7c5ce367b0f",
+  "content_length": 1313811,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "kin-insurance",
-    "company_name": "kin-insurance",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Kin Insurance",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/kin-insurance/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.kin.com",
+      "about": "https://www.kin.com/about",
+      "product": "https://www.kin.com/claims",
+      "careers": "https://www.kin.com/careers",
+      "blog": "https://www.kin.com/blog"
+    },
+    "status": "success"
   }
 }

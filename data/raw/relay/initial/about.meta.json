@@ -1,0 +1,13 @@
+{
+  "company_name": "Relay",
+  "source_url": "https://www.relayfi.com/about",
+  "crawled_at": "2025-12-13T23:35:45Z",
+  "http_status": 200,
+  "title": "Business Banking That Empowers Small Businesses | Relay",
+  "canonical": "https://relayfi.com/about/",
+  "robots": "",
+  "content_sha256": "3f2fd9910bea3efee2dd544e8c046e5b8aa8d3279c9f40265739cfeca5f2847c",
+  "content_length": 33273,
+  "parser": "lxml",
+  "version": 1
+}

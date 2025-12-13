@@ -1,0 +1,13 @@
+{
+  "company_name": "Stripe",
+  "source_url": "https://stripe.com/blog",
+  "crawled_at": "2025-12-13T23:36:12Z",
+  "http_status": 200,
+  "title": "Stripe Blog: Online Payment Solutions Blog",
+  "canonical": "https://stripe.com/blog",
+  "robots": "",
+  "content_sha256": "d02180dfa2916b588f45c9951cacbd2f3ff117762695673f7658229615c17ef7",
+  "content_length": 713008,
+  "parser": "lxml",
+  "version": 1
+}

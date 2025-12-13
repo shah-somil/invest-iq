@@ -2,19 +2,24 @@
   "company_id": "arc",
   "company_name": "Arc",
   "source_homepage": "https://www.arc.tech",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:30:44Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/arc/initial",
-  "content_sha256": "c4b61da0c5bf78893b061c080e359eba60f7584addee43a677ebbd2715a79b24",
-  "content_length": 195,
+  "content_sha256": "a04b741312ceeccbebfa39c07277083fd1110000716ec7c005254c15a8abe46e",
+  "content_length": 435067,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "arc",
-    "company_name": "arc",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Arc",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/arc/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.joinarc.com",
+      "about": "https://www.joinarc.com/about",
+      "product": "https://www.joinarc.com/pricing",
+      "careers": "https://www.joinarc.com/careers",
+      "blog": "https://www.joinarc.com/blog"
+    },
+    "status": "success"
   }
 }

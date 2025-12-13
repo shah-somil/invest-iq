@@ -1,0 +1,13 @@
+{
+  "company_name": "Figure",
+  "source_url": "https://www.figure.com",
+  "crawled_at": "2025-12-13T23:32:04Z",
+  "http_status": 200,
+  "title": "Figure - America's #1 Non-Bank HELOC Lender",
+  "canonical": "https://www.figure.com/",
+  "robots": "",
+  "content_sha256": "94cafad8e4f57095b0e0e7a128a81e4c029962c0c4aba92e036a0cbad57bad7f",
+  "content_length": 320561,
+  "parser": "lxml",
+  "version": 1
+}

@@ -2,19 +2,24 @@
   "company_id": "securitize",
   "company_name": "Securitize",
   "source_homepage": "https://www.securitize.io",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:35:48Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/securitize/initial",
-  "content_sha256": "b4cffb91f780b27a39a5e179c5ae9e72fc1731105bd1c0118108eea74414207d",
-  "content_length": 209,
+  "content_sha256": "ca91278ad192b3a78c50d4a8e2165f9cb90982efcc34ee912433db70405e2934",
+  "content_length": 12191,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "securitize",
-    "company_name": "securitize",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Securitize",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/securitize/initial/manifest.json",
+    "sections": {
+      "homepage": "https://securitize.io",
+      "about": "https://securitize.io/about",
+      "product": "https://securitize.io/product",
+      "careers": "https://securitize.io/careers",
+      "blog": "https://securitize.io/blog"
+    },
+    "status": "success"
   }
 }

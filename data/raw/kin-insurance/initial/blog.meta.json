@@ -1,0 +1,13 @@
+{
+  "company_name": "Kin Insurance",
+  "source_url": "https://www.kin.com/blog",
+  "crawled_at": "2025-12-13T23:35:10Z",
+  "http_status": 200,
+  "title": "Home insurance demystified | The Kin Insurance blog",
+  "canonical": "https://www.kin.com/blog/",
+  "robots": "",
+  "content_sha256": "20265cbb792364d5113b8f9214f9f9e7f038d3b8f779d843de967e5ba8ddda56",
+  "content_length": 242882,
+  "parser": "lxml",
+  "version": 1
+}

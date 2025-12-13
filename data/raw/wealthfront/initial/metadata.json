@@ -2,19 +2,24 @@
   "company_id": "wealthfront",
   "company_name": "Wealthfront",
   "source_homepage": "https://www.wealthfront.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:36:38Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/wealthfront/initial",
-  "content_sha256": "77b160f34bad5b5ecdc9a99e345f4332dd842d48c367504010dc3fccc50c06c3",
-  "content_length": 211,
+  "content_sha256": "1b84d4879b69fa26367be9ff7143d2527b53ee8392e950d171ccb5a48f586f60",
+  "content_length": 551992,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "wealthfront",
-    "company_name": "wealthfront",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Wealthfront",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/wealthfront/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.wealthfront.com",
+      "about": "https://www.wealthfront.com",
+      "product": "https://www.wealthfront.com/cash",
+      "careers": "https://www.wealthfront.com/careers",
+      "blog": "https://www.wealthfront.com/blog"
+    },
+    "status": "success"
   }
 }

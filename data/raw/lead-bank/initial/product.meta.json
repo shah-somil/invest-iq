@@ -1,0 +1,13 @@
+{
+  "company_name": "Lead Bank",
+  "source_url": "https://www.lead.bank/baas-solutions",
+  "crawled_at": "2025-12-13T23:35:14Z",
+  "http_status": 200,
+  "title": "BaaS Solutions",
+  "canonical": "https://www.lead.bank/baas-solutions",
+  "robots": "",
+  "content_sha256": "97c3c61c459407fb3c09343dc79b312bf90fda1ff25784ee843832c721476689",
+  "content_length": 80374,
+  "parser": "lxml",
+  "version": 1
+}

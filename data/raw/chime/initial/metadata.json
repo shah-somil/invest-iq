@@ -2,19 +2,19 @@
   "company_id": "chime",
   "company_name": "Chime",
   "source_homepage": "https://www.chime.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:31:15Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/chime/initial",
-  "content_sha256": "b3ad4ed335ceb0bba678b42c810554c3dc50da588f06596a16f6553e07e3dea3",
-  "content_length": 199,
+  "content_sha256": "bb89199cc69d4e0eae6b100719ab7bffe1ab358d6a4edb613a3ebcb6e05cf0a6",
+  "content_length": 1036,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "chime",
-    "company_name": "chime",
+    "company_name": "Chime",
     "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://www.chime.com) -> robots.txt disallows fetching https://www.chime.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:31:15Z"
   }
 }

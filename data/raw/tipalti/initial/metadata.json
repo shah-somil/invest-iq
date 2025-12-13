@@ -2,19 +2,19 @@
   "company_id": "tipalti",
   "company_name": "Tipalti",
   "source_homepage": "https://www.tipalti.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:36:30Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/tipalti/initial",
-  "content_sha256": "fb0c3866bb321f00493a85aec227c771e10c37bd1b12f6a42f52ffb43395fe4f",
-  "content_length": 203,
+  "content_sha256": "bd7830cc549a469d82c97dab8ada8fa3e4c12a18d205646b7475f4e46cd3b2e8",
+  "content_length": 1056,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "tipalti",
-    "company_name": "tipalti",
+    "company_name": "Tipalti",
     "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://www.tipalti.com) -> robots.txt disallows fetching https://www.tipalti.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:36:30Z"
   }
 }

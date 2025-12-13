@@ -1,0 +1,13 @@
+{
+  "company_name": "SentiLink",
+  "source_url": "https://www.sentilink.com/product-overview",
+  "crawled_at": "2025-12-13T23:36:02Z",
+  "http_status": 200,
+  "title": "SentiLink | Fraud and identity solutions for financial institutions",
+  "canonical": "https://www.sentilink.com/product-overview/",
+  "robots": "index,follow",
+  "content_sha256": "8902c256ef627984ede2584694f49c5d4ae414faa0f3ad29d79673d39e1fa112",
+  "content_length": 89443,
+  "parser": "lxml",
+  "version": 1
+}

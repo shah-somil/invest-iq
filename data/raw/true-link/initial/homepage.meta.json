@@ -1,0 +1,13 @@
+{
+  "company_name": "True Link",
+  "source_url": "https://www.truelinkfinancial.com",
+  "crawled_at": "2025-12-13T23:36:30Z",
+  "http_status": 200,
+  "title": "True Link Financial",
+  "canonical": "https://www.truelinkfinancial.com",
+  "robots": "",
+  "content_sha256": "94aa0278f39def872ec30e300368a747ec6475f9431d1301ce24b4104245a7db",
+  "content_length": 83692,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "Wealthfront",
+  "source_url": "https://www.wealthfront.com/cash",
+  "crawled_at": "2025-12-13T23:36:38Z",
+  "http_status": 200,
+  "title": "Earn 3.50% APY with Free 24/7 Instant Withdrawals | Wealthfront Cash",
+  "canonical": "https://www.wealthfront.com/cash",
+  "robots": "",
+  "content_sha256": "6a14b8598fc4f82d225f08c46e251660a27ac3a3e8dc28daf32a5924b0e82b3b",
+  "content_length": 69634,
+  "parser": "lxml",
+  "version": 1
+}

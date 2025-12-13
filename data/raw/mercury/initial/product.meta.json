@@ -1,0 +1,13 @@
+{
+  "company_name": "Mercury",
+  "source_url": "https://mercury.com/personal-banking",
+  "crawled_at": "2025-12-13T23:35:18Z",
+  "http_status": 200,
+  "title": "Personal Banking | Smarter Checking & High-Yield Savings | Mercury",
+  "canonical": "https://mercury.com/personal-banking",
+  "robots": "",
+  "content_sha256": "ee32099a60d9dbc53bdb8f0e9848b3c7b28c7f1db77dfd1845f7046ae860c8eb",
+  "content_length": 1276725,
+  "parser": "lxml",
+  "version": 1
+}

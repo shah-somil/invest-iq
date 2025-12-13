@@ -1,0 +1,13 @@
+{
+  "company_name": "Nova Credit",
+  "source_url": "https://www.novacredit.com/platform",
+  "crawled_at": "2025-12-13T23:35:22Z",
+  "http_status": 200,
+  "title": "Platform | Nova Credit",
+  "canonical": "https://www.novacredit.com/platform",
+  "robots": "",
+  "content_sha256": "c1f75fe4c479d41eb30d67f7d8299d977b967f7474910d71846e4ca0e1ca185b",
+  "content_length": 119501,
+  "parser": "lxml",
+  "version": 1
+}

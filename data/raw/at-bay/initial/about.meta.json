@@ -1,0 +1,13 @@
+{
+  "company_name": "At-Bay",
+  "source_url": "https://www.at-bay.com/about",
+  "crawled_at": "2025-12-13T23:30:46Z",
+  "http_status": 200,
+  "title": "About Us | At-Bay",
+  "canonical": "https://www.at-bay.com/about/",
+  "robots": "max-image-preview:large",
+  "content_sha256": "79191a64b542bf12525966930ceb260291f625b744302916b0c768ee8932c618",
+  "content_length": 96721,
+  "parser": "lxml",
+  "version": 1
+}

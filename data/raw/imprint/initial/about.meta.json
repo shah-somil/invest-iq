@@ -1,0 +1,13 @@
+{
+  "company_name": "Imprint",
+  "source_url": "https://imprint.co/about",
+  "crawled_at": "2025-12-13T23:34:48Z",
+  "http_status": 200,
+  "title": "Imprint - Modern co-branded credit cards",
+  "canonical": "https://imprint.co/about",
+  "robots": "max-image-preview:large",
+  "content_sha256": "099b6b2284907a2087b74be585caa486e02b82984fce2d66aebdf0e2ab05dd7c",
+  "content_length": 557935,
+  "parser": "lxml",
+  "version": 1
+}

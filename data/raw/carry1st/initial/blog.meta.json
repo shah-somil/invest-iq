@@ -1,0 +1,13 @@
+{
+  "company_name": "Carry1st",
+  "source_url": "https://www.carry1st.com/blog",
+  "crawled_at": "2025-12-13T23:31:15Z",
+  "http_status": 200,
+  "title": "Gaming | Publishing | Blog | Carry1st",
+  "canonical": "https://www.carry1st.com/blog",
+  "robots": "",
+  "content_sha256": "57ca4da84dd7172af00295e1be1dcaa20c666669cc9e984d01d6ca228f37d14b",
+  "content_length": 156218,
+  "parser": "lxml",
+  "version": 1
+}

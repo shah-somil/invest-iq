@@ -90,16 +90,20 @@ def run_full_load_one(company: Dict[str, Any], out_dir: str) -> str:
     _ensure_dir(out_path)
 
     # --- Adapter: call your Lab1 scraper regardless of its exact signature ----
-    # We try keyword-first (company_id/out_dir), then positional, then the original (company/output_dir).
+    # We try with company dict first (best), then company_id/out_dir, then positional.
     scraper_result = None
     try:
-        scraper_result = scrape_company(company_id=company_id, out_dir=str(out_path))  # type: ignore
+        # Best: pass full company dict so website and other fields are available
+        scraper_result = scrape_company(company=company, output_dir=str(out_path))  # type: ignore
     except TypeError:
         try:
-            scraper_result = scrape_company(company_id, str(out_path))  # type: ignore[arg-type]
+            scraper_result = scrape_company(company_id=company_id, out_dir=str(out_path))  # type: ignore
         except TypeError:
-            # Fall back to the original style used earlier in your DAG
-            scraper_result = scrape_company(company=company, output_dir=str(out_path))  # type: ignore
+            try:
+                scraper_result = scrape_company(company_id, str(out_path))  # type: ignore[arg-type]
+            except TypeError:
+                # Last resort: try with just output_dir
+                scraper_result = scrape_company(output_dir=str(out_path))  # type: ignore
 
     # Compute lightweight content provenance of the output directory
     content_sha256, content_length = _dir_sha256_and_size(out_path)

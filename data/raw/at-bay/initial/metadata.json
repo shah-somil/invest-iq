@@ -2,19 +2,24 @@
   "company_id": "at-bay",
   "company_name": "At-Bay",
   "source_homepage": "https://www.at-bay.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:30:51Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/at-bay/initial",
-  "content_sha256": "87d4c15e23f9759aab0eb9448a00f45cb0a9ffaebe58990c257c986e29b7b833",
-  "content_length": 201,
+  "content_sha256": "1a1caef484db7cfaf51e282c199ed63cc1fff4fcf5e44eeeace1ba729041b414",
+  "content_length": 1372192,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "at-bay",
-    "company_name": "at-bay",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "At-Bay",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/at-bay/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.at-bay.com",
+      "about": "https://www.at-bay.com/about",
+      "product": "https://www.at-bay.com/media-kit/product-summaries",
+      "careers": "https://www.at-bay.com/about/careers",
+      "blog": "https://www.at-bay.com/brokers/resources"
+    },
+    "status": "success"
   }
 }

@@ -1,8 +1,12 @@
 {
   "company_id": "relay",
-  "company_name": "relay",
-  "status": "failed",
-  "reason": "missing_website",
-  "message": "cannot scrape without a website URL",
-  "crawled_at": "2025-12-13T23:07:40Z"
+  "company_name": "Relay",
+  "crawled_at": "2025-12-13T23:35:44Z",
+  "sections": {
+    "homepage": "https://www.relayfi.com",
+    "about": "https://www.relayfi.com/about",
+    "product": "https://www.relayfi.com/product",
+    "careers": "https://www.relayfi.com/careers",
+    "blog": "https://www.relayfi.com/blog"
+  }
 }

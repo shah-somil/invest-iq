@@ -1,0 +1,13 @@
+{
+  "company_name": "Arc",
+  "source_url": "https://www.joinarc.com/pricing",
+  "crawled_at": "2025-12-13T23:30:43Z",
+  "http_status": 200,
+  "title": "Details on Arc Capital & Cash Management Pricing",
+  "canonical": "https://www.joinarc.com/pricing",
+  "robots": "",
+  "content_sha256": "5a23212bcaaa0811120d6dc017b90cbdfd3fac22020658d86afd4ca9cd94a1a6",
+  "content_length": 54159,
+  "parser": "lxml",
+  "version": 1
+}

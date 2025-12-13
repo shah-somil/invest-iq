@@ -1,0 +1,13 @@
+{
+  "company_name": "Securitize",
+  "source_url": "https://securitize.io/product",
+  "crawled_at": "2025-12-13T23:35:48Z",
+  "http_status": 200,
+  "title": "Securitize",
+  "canonical": "https://securitize.io/product",
+  "robots": "all",
+  "content_sha256": "b73881bb76a3b2a5542f3727a9527677c449ac74ea812db723ac47ae7e495a5d",
+  "content_length": 1679,
+  "parser": "lxml",
+  "version": 1
+}

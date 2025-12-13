@@ -1,0 +1,13 @@
+{
+  "company_name": "Relay",
+  "source_url": "https://www.relayfi.com/careers",
+  "crawled_at": "2025-12-13T23:35:45Z",
+  "http_status": 200,
+  "title": "Careers, Internships and Jobs at Relay",
+  "canonical": "https://relayfi.com/careers/",
+  "robots": "",
+  "content_sha256": "2f2f502374a0441bc7e7ccb33c70945e42dcdd23c198540d1847dbe1c67cc746",
+  "content_length": 54486,
+  "parser": "lxml",
+  "version": 1
+}

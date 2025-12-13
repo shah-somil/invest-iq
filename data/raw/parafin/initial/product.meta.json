@@ -1,0 +1,13 @@
+{
+  "company_name": "Parafin",
+  "source_url": "https://www.parafin.com/platforms",
+  "crawled_at": "2025-12-13T23:35:26Z",
+  "http_status": 200,
+  "title": "End-to-end embedded financing solutions for platforms",
+  "canonical": "https://www.parafin.com/platforms",
+  "robots": "",
+  "content_sha256": "5c380d7b5621dbf585f2ff12cb52fdab8fe92721e08c760a49af05d3e5ff46ac",
+  "content_length": 37642,
+  "parser": "lxml",
+  "version": 1
+}

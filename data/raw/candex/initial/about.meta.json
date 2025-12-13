@@ -1,0 +1,13 @@
+{
+  "company_name": "Candex",
+  "source_url": "https://www.candex.com/AboutUs",
+  "crawled_at": "2025-12-13T23:31:05Z",
+  "http_status": 200,
+  "title": "About Candex | Mission, Story & Leadership",
+  "canonical": "https://www.candex.com/AboutUs",
+  "robots": "",
+  "content_sha256": "7ff0bd6ff55855cfb631fda35336e70ea3ee48e42f005b2a0edd0c47f60cf299",
+  "content_length": 20805,
+  "parser": "lxml",
+  "version": 1
+}

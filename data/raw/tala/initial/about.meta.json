@@ -1,0 +1,13 @@
+{
+  "company_name": "Tala",
+  "source_url": "https://tala.co/about",
+  "crawled_at": "2025-12-13T23:36:24Z",
+  "http_status": 200,
+  "title": "About - Tala",
+  "canonical": "https://tala.co/about/",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "content_sha256": "5ff0c8fc28fd71e723ae33bc5ca4cc802418aaee4d162b74b8dc44b07091961c",
+  "content_length": 259911,
+  "parser": "lxml",
+  "version": 1
+}

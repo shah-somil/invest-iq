@@ -1,0 +1,13 @@
+{
+  "company_name": "Carry1st",
+  "source_url": "https://www.carry1st.com/careers",
+  "crawled_at": "2025-12-13T23:31:15Z",
+  "http_status": 200,
+  "title": "Careers",
+  "canonical": "https://www.carry1st.com/careers",
+  "robots": "",
+  "content_sha256": "4c9d2e7def96a51da3a93b3e2b5bb6daa29f3df402c63ebefa186cdea0f8977b",
+  "content_length": 59838,
+  "parser": "lxml",
+  "version": 1
+}

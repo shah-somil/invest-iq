@@ -1,0 +1,13 @@
+{
+  "company_name": "Coalition",
+  "source_url": "https://www.coalitioninc.com/blog",
+  "crawled_at": "2025-12-13T23:31:27Z",
+  "http_status": 200,
+  "title": "Security for All | Coalition Blog",
+  "canonical": "https://www.coalitioninc.com/blog",
+  "robots": "index,follow",
+  "content_sha256": "9f822ee01f50b7182b0076eb04ab01e7d3b22dd4895050612320118f287753f5",
+  "content_length": 814836,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "Mercury",
+  "source_url": "https://mercury.com/jobs",
+  "crawled_at": "2025-12-13T23:35:19Z",
+  "http_status": 200,
+  "title": "Shape your career at Mercury | Job opportunities in Fintech",
+  "canonical": "https://mercury.com/jobs",
+  "robots": "",
+  "content_sha256": "6a320f866a10c92270cec21ec2450172816c5eac8abed0c4c12f176ea4d49419",
+  "content_length": 1513851,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "Arc",
+  "source_url": "https://www.joinarc.com/careers",
+  "crawled_at": "2025-12-13T23:30:43Z",
+  "http_status": 200,
+  "title": "Arc | Careers: Join us in Reinventing the Future of Finance for Startups",
+  "canonical": "https://www.joinarc.com/careers",
+  "robots": "",
+  "content_sha256": "ecb348898c27218598eb00df7523cede12c142e2f034a2d9ccd4dae6ea8e242f",
+  "content_length": 63255,
+  "parser": "lxml",
+  "version": 1
+}

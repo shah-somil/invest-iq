@@ -1,0 +1,13 @@
+{
+  "company_name": "DataVisor",
+  "source_url": "https://www.datavisor.com/products/fraud-platform",
+  "crawled_at": "2025-12-13T23:31:57Z",
+  "http_status": 200,
+  "title": "DataVisor Fraud Detection and Risk Platform",
+  "canonical": "https://www.datavisor.com/products/fraud-platform",
+  "robots": "",
+  "content_sha256": "015db5662cc2793d3cf53da24744559efdd6d98a5fd6f52c9df51f70e30ab4a0",
+  "content_length": 231123,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "DataVisor",
+  "source_url": "https://www.datavisor.com",
+  "crawled_at": "2025-12-13T23:31:54Z",
+  "http_status": 200,
+  "title": "AI Powered Fraud Platform for Enterprise",
+  "canonical": "https://www.datavisor.com",
+  "robots": "",
+  "content_sha256": "9c280e5fe02dda09f5daa00c637f9cee385c8b777b76c13b2b179fbe76b65504",
+  "content_length": 181564,
+  "parser": "lxml",
+  "version": 1
+}

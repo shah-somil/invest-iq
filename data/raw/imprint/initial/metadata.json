@@ -2,19 +2,24 @@
   "company_id": "imprint",
   "company_name": "Imprint",
   "source_homepage": "https://www.imprint.co",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:34:50Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/imprint/initial",
-  "content_sha256": "389eeeceb0bc42bc14ebf95e5c65a82b504bb0e4beb3d883090adbe4d674cb66",
-  "content_length": 203,
+  "content_sha256": "e81be42d19917f4d3f6010ab465dcca20d43f1365a7463f593a6903054be104b",
+  "content_length": 2344049,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "imprint",
-    "company_name": "imprint",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Imprint",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/imprint/initial/manifest.json",
+    "sections": {
+      "homepage": "https://imprint.co",
+      "about": "https://imprint.co/about",
+      "product": "https://imprint.co/products",
+      "careers": "https://imprint.co/careers",
+      "blog": "https://imprint.co/about#news-and-press"
+    },
+    "status": "success"
   }
 }

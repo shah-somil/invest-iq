@@ -1,8 +1,12 @@
 {
   "company_id": "parafin",
-  "company_name": "parafin",
-  "status": "failed",
-  "reason": "missing_website",
-  "message": "cannot scrape without a website URL",
-  "crawled_at": "2025-12-13T23:07:40Z"
+  "company_name": "Parafin",
+  "crawled_at": "2025-12-13T23:35:24Z",
+  "sections": {
+    "homepage": "https://www.parafin.com",
+    "about": "https://www.parafin.com/about",
+    "product": "https://www.parafin.com/platforms",
+    "careers": "https://www.parafin.com/careers",
+    "blog": "https://www.parafin.com/blog"
+  }
 }

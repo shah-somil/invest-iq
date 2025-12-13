@@ -1,0 +1,13 @@
+{
+  "company_name": "Arc",
+  "source_url": "https://www.joinarc.com/about",
+  "crawled_at": "2025-12-13T23:30:42Z",
+  "http_status": 200,
+  "title": "Cash management and capital markets platform for technology companies & Startups",
+  "canonical": "https://www.joinarc.com/about",
+  "robots": "",
+  "content_sha256": "61799d35c0f2ce2dd6f359f3d7b6523e074e9c247aa8c8c1224333ab728749de",
+  "content_length": 56920,
+  "parser": "lxml",
+  "version": 1
+}

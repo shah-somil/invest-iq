@@ -1,0 +1,13 @@
+{
+  "company_name": "Stripe",
+  "source_url": "https://stripe.com",
+  "crawled_at": "2025-12-13T23:36:07Z",
+  "http_status": 200,
+  "title": "Stripe | Financial Infrastructure to Grow Your Revenue",
+  "canonical": "https://stripe.com/",
+  "robots": "",
+  "content_sha256": "f06c7c7d21add0134563f3ae3ff97287cb053ddfb754afcaab12c4efa10727ea",
+  "content_length": 2202389,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,8 +1,12 @@
 {
   "company_id": "mercury",
-  "company_name": "mercury",
-  "status": "failed",
-  "reason": "missing_website",
-  "message": "cannot scrape without a website URL",
-  "crawled_at": "2025-12-13T23:07:40Z"
+  "company_name": "Mercury",
+  "crawled_at": "2025-12-13T23:35:15Z",
+  "sections": {
+    "homepage": "https://mercury.com",
+    "about": "https://mercury.com/about",
+    "product": "https://mercury.com/personal-banking",
+    "careers": "https://mercury.com/jobs",
+    "blog": "https://mercury.com/blog"
+  }
 }

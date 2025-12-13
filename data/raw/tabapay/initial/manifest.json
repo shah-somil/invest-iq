@@ -1,8 +1,12 @@
 {
   "company_id": "tabapay",
-  "company_name": "tabapay",
-  "status": "failed",
-  "reason": "missing_website",
-  "message": "cannot scrape without a website URL",
-  "crawled_at": "2025-12-13T23:07:40Z"
+  "company_name": "TabaPay",
+  "crawled_at": "2025-12-13T23:36:13Z",
+  "sections": {
+    "homepage": "https://www.tabapay.com",
+    "about": "https://www.tabapay.com/about.html",
+    "product": "https://www.tabapay.com/features.html",
+    "careers": "https://www.tabapay.com/careers.html",
+    "blog": "https://www.tabapay.com/payout.html"
+  }
 }

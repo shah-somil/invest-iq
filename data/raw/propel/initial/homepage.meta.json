@@ -1,0 +1,13 @@
+{
+  "company_name": "Propel",
+  "source_url": "https://www.propel.app",
+  "crawled_at": "2025-12-13T23:35:39Z",
+  "http_status": 200,
+  "title": "Propel | Your benefits, made easier",
+  "canonical": "https://www.propel.app/",
+  "robots": "index, follow",
+  "content_sha256": "bc6b4170907f52b6b34d08ed38f6ed780769d810a809c83ddac51311f2c482ac",
+  "content_length": 140142,
+  "parser": "lxml",
+  "version": 1
+}

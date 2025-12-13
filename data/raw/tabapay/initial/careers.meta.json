@@ -1,0 +1,13 @@
+{
+  "company_name": "TabaPay",
+  "source_url": "https://www.tabapay.com/careers.html",
+  "crawled_at": "2025-12-13T23:36:19Z",
+  "http_status": 200,
+  "title": "Careers | TabaPay",
+  "canonical": "https://www.tabapay.com/careers.html",
+  "robots": "",
+  "content_sha256": "e38386d2c831ac45f2a09963bba0e136ac89d9ee1e2cca42dcb3531225cecc45",
+  "content_length": 18462,
+  "parser": "lxml",
+  "version": 1
+}

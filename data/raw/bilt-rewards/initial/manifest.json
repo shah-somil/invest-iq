@@ -1,8 +1,12 @@
 {
   "company_id": "bilt-rewards",
-  "company_name": "bilt-rewards",
-  "status": "failed",
-  "reason": "missing_website",
-  "message": "cannot scrape without a website URL",
-  "crawled_at": "2025-12-13T23:07:40Z"
+  "company_name": "Bilt Rewards",
+  "crawled_at": "2025-12-13T23:30:55Z",
+  "sections": {
+    "homepage": "https://www.biltrewards.com",
+    "about": "https://www.biltrewards.com/card",
+    "product": "https://www.biltrewards.com/card",
+    "careers": "https://www.biltrewards.com/careers",
+    "blog": "https://www.biltrewards.com/card"
+  }
 }

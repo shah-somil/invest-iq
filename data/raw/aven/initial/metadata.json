@@ -2,19 +2,24 @@
   "company_id": "aven",
   "company_name": "Aven",
   "source_homepage": "https://www.aven.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:30:54Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/aven/initial",
-  "content_sha256": "1f1e3f2e458737c77a8fca135a540c9b70a7cbf384aeca33aa5f263bccfd7f38",
-  "content_length": 197,
+  "content_sha256": "b029f0559a621268140c125eeb9086541f5db37a5ad49978136ed1f43bb73ac6",
+  "content_length": 135999,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "aven",
-    "company_name": "aven",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Aven",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/aven/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.aven.com",
+      "about": "https://www.aven.com/about",
+      "product": "https://www.aven.com/product",
+      "careers": "https://www.aven.com/careers",
+      "blog": "https://www.aven.com/blog"
+    },
+    "status": "success"
   }
 }

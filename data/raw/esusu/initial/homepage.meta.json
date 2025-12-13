@@ -1,0 +1,13 @@
+{
+  "company_name": "Esusu",
+  "source_url": "https://esusurent.com",
+  "crawled_at": "2025-12-13T23:32:00Z",
+  "http_status": 200,
+  "title": "Esusu | Pay Rent, Build Credit",
+  "canonical": "https://esusurent.com",
+  "robots": "",
+  "content_sha256": "d34fc6bf55e40f60c80819c77ddabb92537a0750e5d52dc069aae4a484ae88d2",
+  "content_length": 123991,
+  "parser": "lxml",
+  "version": 1
+}

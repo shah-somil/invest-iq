@@ -1,0 +1,13 @@
+{
+  "company_name": "Propel",
+  "source_url": "https://www.propel.app/careers",
+  "crawled_at": "2025-12-13T23:35:42Z",
+  "http_status": 200,
+  "title": "Careers",
+  "canonical": "https://www.propel.app/careers/",
+  "robots": "index, follow",
+  "content_sha256": "5fb19232d293f84c9ae70a25f66b62f3f77c6ad6540fd698fd7a9f62f27fc97b",
+  "content_length": 68204,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "Figure",
+  "source_url": "https://www.figure.com/home-equity-line",
+  "crawled_at": "2025-12-13T23:34:36Z",
+  "http_status": 200,
+  "title": "Home Equity Line of Credit (HELOC) - Apply Online in Minutes",
+  "canonical": "https://www.figure.com/home-equity-line/",
+  "robots": "",
+  "content_sha256": "231cca063ea89f5e241fb88ba10e237c8e779b68a6b5186ce633755acd96b15f",
+  "content_length": 216152,
+  "parser": "lxml",
+  "version": 1
+}

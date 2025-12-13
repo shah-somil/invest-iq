@@ -1,0 +1,5 @@
+{"company_name": "Relay", "section": "homepage", "source_url": "https://www.relayfi.com", "crawled_at": "2025-12-13T23:35:44Z", "status": 200, "bytes": 34330}
+{"company_name": "Relay", "section": "about", "source_url": "https://www.relayfi.com/about", "crawled_at": "2025-12-13T23:35:45Z", "status": 200, "bytes": 33273}
+{"company_name": "Relay", "section": "product", "source_url": "https://www.relayfi.com/product", "crawled_at": "2025-12-13T23:35:45Z", "status": 200, "bytes": 50284}
+{"company_name": "Relay", "section": "careers", "source_url": "https://www.relayfi.com/careers", "crawled_at": "2025-12-13T23:35:45Z", "status": 200, "bytes": 54486}
+{"company_name": "Relay", "section": "blog", "source_url": "https://www.relayfi.com/blog", "crawled_at": "2025-12-13T23:35:47Z", "status": 200, "bytes": 9217587}

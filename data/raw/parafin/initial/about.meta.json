@@ -1,0 +1,13 @@
+{
+  "company_name": "Parafin",
+  "source_url": "https://www.parafin.com/about",
+  "crawled_at": "2025-12-13T23:35:25Z",
+  "http_status": 200,
+  "title": "About Parafin | Learn about our vision",
+  "canonical": "https://www.parafin.com/about",
+  "robots": "",
+  "content_sha256": "40cda95adbc6c0e1b67711654650bae85ccb277bd0c8001d38cafeea4e7b74a4",
+  "content_length": 25068,
+  "parser": "lxml",
+  "version": 1
+}

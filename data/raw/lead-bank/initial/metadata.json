@@ -2,19 +2,24 @@
   "company_id": "lead-bank",
   "company_name": "Lead Bank",
   "source_homepage": "https://www.lead.bank",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:35:15Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/lead-bank/initial",
-  "content_sha256": "28ddd80a8492544e6142ff7baaa87accd23039bca3b1b01698626f1d20a4b28a",
-  "content_length": 207,
+  "content_sha256": "06fdcf7baba8308d662b5a6b33004bf7a19f58be7fdaa4d5d8cf3c41a85fec55",
+  "content_length": 471826,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "lead-bank",
-    "company_name": "lead-bank",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Lead Bank",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/lead-bank/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.lead.bank",
+      "about": "https://www.lead.bank/explore-lead",
+      "product": "https://www.lead.bank/baas-solutions",
+      "careers": "https://www.lead.bank/explore-lead#open-roles",
+      "blog": "https://www.lead.bank/blog"
+    },
+    "status": "success"
   }
 }

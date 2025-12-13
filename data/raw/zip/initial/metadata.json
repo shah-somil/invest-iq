@@ -2,19 +2,19 @@
   "company_id": "zip",
   "company_name": "Zip",
   "source_homepage": "https://www.zip.co",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:36:39Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/zip/initial",
-  "content_sha256": "4021824a63ec39ad7d2082d0ebefd52cbfd28bebfa7f19be0962115324c115ef",
-  "content_length": 195,
+  "content_sha256": "d5345b2a3436b57439e52feacd6e8f5fb1acedacea42eb0f07224f3e3ad7e1b5",
+  "content_length": 1013,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "zip",
-    "company_name": "zip",
+    "company_name": "Zip",
     "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://www.zip.co) -> robots.txt disallows fetching https://www.zip.co for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:36:39Z"
   }
 }

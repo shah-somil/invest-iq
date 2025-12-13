@@ -1,0 +1,13 @@
+{
+  "company_name": "Plaid",
+  "source_url": "https://plaid.com/careers",
+  "crawled_at": "2025-12-13T23:35:38Z",
+  "http_status": 200,
+  "title": "Plaid Careers: Explore jobs | Plaid",
+  "canonical": "https://plaid.com/careers/",
+  "robots": "",
+  "content_sha256": "f379f6a74e488ddb20b4cada7c785d936c15fdccad23ecea0293eea1112dd408",
+  "content_length": 652614,
+  "parser": "lxml",
+  "version": 1
+}

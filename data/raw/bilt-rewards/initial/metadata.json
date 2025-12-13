@@ -2,19 +2,24 @@
   "company_id": "bilt-rewards",
   "company_name": "Bilt Rewards",
   "source_homepage": "https://www.biltrewards.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:31:00Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/bilt-rewards/initial",
-  "content_sha256": "6a1e9a906b7d7af0eaafec18aa6850ddced43c0e99eb1eca545116307af8237e",
-  "content_length": 213,
+  "content_sha256": "72a3d1225a0df4e36f09a58d21b745ee3ca4f09c528ae7cdf87d15650e18fdfb",
+  "content_length": 7018327,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "bilt-rewards",
-    "company_name": "bilt-rewards",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Bilt Rewards",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/bilt-rewards/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.biltrewards.com",
+      "about": "https://www.biltrewards.com/card",
+      "product": "https://www.biltrewards.com/card",
+      "careers": "https://www.biltrewards.com/careers",
+      "blog": "https://www.biltrewards.com/card"
+    },
+    "status": "success"
   }
 }

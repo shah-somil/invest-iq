@@ -1,0 +1,13 @@
+{
+  "company_name": "Kin Insurance",
+  "source_url": "https://www.kin.com/about",
+  "crawled_at": "2025-12-13T23:34:57Z",
+  "http_status": 200,
+  "title": "About Us | Kin Insurance",
+  "canonical": "https://www.kin.com/about/",
+  "robots": "",
+  "content_sha256": "19eca1c4b6ae3d6a5fc267f0132ddeeea5853a4b829385052c04806bf92de4a7",
+  "content_length": 246007,
+  "parser": "lxml",
+  "version": 1
+}

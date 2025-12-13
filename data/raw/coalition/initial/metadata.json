@@ -2,19 +2,24 @@
   "company_id": "coalition",
   "company_name": "Coalition",
   "source_homepage": "https://www.coalitioninc.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:31:27Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/coalition/initial",
-  "content_sha256": "949dce7bce6b16af2eaedf4b7fe652e276c49c2530b77684dcb750d2f7270d07",
-  "content_length": 207,
+  "content_sha256": "7adceedcb4be2e18aca5a813246662a9600bf9da08516ca9598fb6c663dbe3b0",
+  "content_length": 3699474,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "coalition",
-    "company_name": "coalition",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Coalition",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/coalition/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.coalitioninc.com",
+      "about": "https://www.coalitioninc.com/about",
+      "product": "https://www.coalitioninc.com/technology-errors-and-omissions-insurance",
+      "careers": "https://www.coalitioninc.com/careers",
+      "blog": "https://www.coalitioninc.com/blog"
+    },
+    "status": "success"
   }
 }

@@ -1,0 +1,13 @@
+{
+  "company_name": "Coalition",
+  "source_url": "https://www.coalitioninc.com/about",
+  "crawled_at": "2025-12-13T23:31:16Z",
+  "http_status": 200,
+  "title": "About Us | Coalition",
+  "canonical": "https://www.coalitioninc.com/about",
+  "robots": "index,follow",
+  "content_sha256": "c783f5bd60748f1002cb147d745c593d4efd870f02f8c69be1bc3ffc364f5d6d",
+  "content_length": 704603,
+  "parser": "lxml",
+  "version": 1
+}

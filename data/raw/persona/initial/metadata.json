@@ -2,19 +2,24 @@
   "company_id": "persona",
   "company_name": "Persona",
   "source_homepage": "https://www.withpersona.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:35:33Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/persona/initial",
-  "content_sha256": "963b95dd27d6c3c1dc9368bc642b2fa7fa3a99ce29fc2f097f5ed43051282b31",
-  "content_length": 203,
+  "content_sha256": "c46d799ee2f07b00931160c1803b1487337b82c2ae54464606070541dd8c1826",
+  "content_length": 240159,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "persona",
-    "company_name": "persona",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Persona",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/persona/initial/manifest.json",
+    "sections": {
+      "homepage": "https://withpersona.com",
+      "about": null,
+      "product": null,
+      "careers": null,
+      "blog": "https://withpersona.com/blog/detect-more-ai-based-face-spoofs-persona"
+    },
+    "status": "success"
   }
 }

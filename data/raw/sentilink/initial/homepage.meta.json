@@ -1,0 +1,13 @@
+{
+  "company_name": "SentiLink",
+  "source_url": "https://www.sentilink.com",
+  "crawled_at": "2025-12-13T23:35:50Z",
+  "http_status": 200,
+  "title": "SentiLink: The fraud experts",
+  "canonical": "https://www.sentilink.com/",
+  "robots": "index,follow",
+  "content_sha256": "98a0e134dfdd5366661ac4400ea651b9591b1bb44b7b825f1d238738efe39db3",
+  "content_length": 91762,
+  "parser": "lxml",
+  "version": 1
+}

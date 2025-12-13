@@ -1,0 +1,13 @@
+{
+  "company_name": "Aven",
+  "source_url": "https://www.aven.com/blog",
+  "crawled_at": "2025-12-13T23:30:54Z",
+  "http_status": 200,
+  "title": "",
+  "canonical": "https://www.aven.com/blog",
+  "robots": "all",
+  "content_sha256": "a489d4569383f0ed2b90e9bfa7e1efd1e20fb21848c0da75ab8b2ed60ade5691",
+  "content_length": 2159,
+  "parser": "lxml",
+  "version": 1
+}

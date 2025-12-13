@@ -1,0 +1,13 @@
+{
+  "company_name": "Relay",
+  "source_url": "https://www.relayfi.com/blog",
+  "crawled_at": "2025-12-13T23:35:47Z",
+  "http_status": 200,
+  "title": "Keeping Business Owners On The Money | Relay Blog",
+  "canonical": "https://www.relayfi.com/blog",
+  "robots": "",
+  "content_sha256": "4b4a9301019918647ed781a342c5ec004e4bbaf1208ea9a4fc53aa3fb1997885",
+  "content_length": 9217587,
+  "parser": "lxml",
+  "version": 1
+}

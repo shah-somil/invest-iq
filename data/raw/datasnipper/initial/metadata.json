@@ -2,19 +2,24 @@
   "company_id": "datasnipper",
   "company_name": "DataSnipper",
   "source_homepage": "https://www.datasnipper.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:31:53Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/datasnipper/initial",
-  "content_sha256": "f5b016fe55891f90df78733c3d0c60db024ab7d7be64f07ced3f1c08bc949f58",
-  "content_length": 211,
+  "content_sha256": "107d1e6ec2bd4495b71b504045becdd22cce3561f6bf7f6661c67115fd665aa4",
+  "content_length": 959278,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "datasnipper",
-    "company_name": "datasnipper",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "DataSnipper",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/datasnipper/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.datasnipper.com",
+      "about": "https://www.datasnipper.com/about-us",
+      "product": "https://www.datasnipper.com/product/platform",
+      "careers": "https://www.datasnipper.com/customers",
+      "blog": "https://www.datasnipper.com/resources"
+    },
+    "status": "success"
   }
 }

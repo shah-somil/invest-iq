@@ -1,0 +1,13 @@
+{
+  "company_name": "Candex",
+  "source_url": "https://www.candex.com/HowItWorks",
+  "crawled_at": "2025-12-13T23:31:08Z",
+  "http_status": 200,
+  "title": "How Candex Works | Purchase-to-Payment Flow\"",
+  "canonical": "https://www.candex.com/HowItWorks",
+  "robots": "",
+  "content_sha256": "9f143afa964716b7ec44d029e34111d964d96ec745641846b469b5835d4e7c34",
+  "content_length": 30982,
+  "parser": "lxml",
+  "version": 1
+}

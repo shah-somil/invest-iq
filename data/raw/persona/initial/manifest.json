@@ -1,8 +1,12 @@
 {
   "company_id": "persona",
-  "company_name": "persona",
-  "status": "failed",
-  "reason": "missing_website",
-  "message": "cannot scrape without a website URL",
-  "crawled_at": "2025-12-13T23:07:40Z"
+  "company_name": "Persona",
+  "crawled_at": "2025-12-13T23:35:27Z",
+  "sections": {
+    "homepage": "https://withpersona.com",
+    "about": null,
+    "product": null,
+    "careers": null,
+    "blog": "https://withpersona.com/blog/detect-more-ai-based-face-spoofs-persona"
+  }
 }

@@ -2,19 +2,19 @@
   "company_id": "trumid",
   "company_name": "Trumid",
   "source_homepage": "https://www.trumid.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:36:33Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/trumid/initial",
-  "content_sha256": "9a4507de66ebf0435b6635fd0e83cc04d7cfa13d6f86cce3e664029699b28331",
-  "content_length": 201,
+  "content_sha256": "a3e06a4a97f4e9e22f5f2e43a7bc9beb7603812925f3ff43a12efaedf5d7bdd7",
+  "content_length": 1046,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "trumid",
-    "company_name": "trumid",
+    "company_name": "Trumid",
     "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "reason": "homepage_fetch_failed",
+    "message": "homepage fetch failed (https://www.trumid.com) -> robots.txt disallows fetching https://www.trumid.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+    "crawled_at": "2025-12-13T23:36:33Z"
   }
 }

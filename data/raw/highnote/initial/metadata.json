@@ -2,19 +2,24 @@
   "company_id": "highnote",
   "company_name": "Highnote",
   "source_homepage": "https://www.highnote.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:34:47Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/highnote/initial",
-  "content_sha256": "7602e64065f2c0823394341e575202115c75aa6d6c4512cb30dbf1e4583a3af8",
-  "content_length": 205,
+  "content_sha256": "826d55322f7a42c812f1e6a023f020590b8bd3adcd51650029157316bd9646d4",
+  "content_length": 185305,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "highnote",
-    "company_name": "highnote",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Highnote",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/highnote/initial/manifest.json",
+    "sections": {
+      "homepage": "https://highnote.com",
+      "about": "https://highnote.com/about",
+      "product": null,
+      "careers": "https://highnote.com/careers",
+      "blog": "https://highnote.com/blog"
+    },
+    "status": "success"
   }
 }

@@ -1,0 +1,13 @@
+{
+  "company_name": "Found",
+  "source_url": "https://found.com/about",
+  "crawled_at": "2025-12-13T23:34:40Z",
+  "http_status": 200,
+  "title": "About Found | Our Team & Mission",
+  "canonical": "https://found.com/about",
+  "robots": "index",
+  "content_sha256": "0577b3f1b8456b41c7e8939154f96dffdc0283c5f56e9167f92e4452f16f33c5",
+  "content_length": 467824,
+  "parser": "lxml",
+  "version": 1
+}

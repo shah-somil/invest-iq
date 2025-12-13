@@ -2,19 +2,24 @@
   "company_id": "candex",
   "company_name": "Candex",
   "source_homepage": "https://www.candex.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:31:11Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/candex/initial",
-  "content_sha256": "3bbf223b1ba3056aba645ca8dff0432addcfb4e6f741372bf36ebf71a1ca0f71",
-  "content_length": 201,
+  "content_sha256": "897b5002a9d533818dbddb19d149058a7dbf761f4335ae6850a01d84a5854171",
+  "content_length": 147049,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "candex",
-    "company_name": "candex",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Candex",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/candex/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.candex.com",
+      "about": "https://www.candex.com/AboutUs",
+      "product": "https://www.candex.com/HowItWorks",
+      "careers": "https://www.candex.com/careers",
+      "blog": "https://www.candex.com/HowItWorks"
+    },
+    "status": "success"
   }
 }

@@ -1,0 +1,13 @@
+{
+  "company_name": "Carry1st",
+  "source_url": "https://www.carry1st.com/games",
+  "crawled_at": "2025-12-13T23:31:15Z",
+  "http_status": 200,
+  "title": "Mobile Games | Online Games | Free-to-play | Carry1st",
+  "canonical": "https://www.carry1st.com/games",
+  "robots": "",
+  "content_sha256": "3a2b63930f1cd1352007b29bdd123a08cec1037e37f14845be833cd7b68a44c6",
+  "content_length": 48362,
+  "parser": "lxml",
+  "version": 1
+}

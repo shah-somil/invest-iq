@@ -1,0 +1,13 @@
+{
+  "company_name": "Highnote",
+  "source_url": "https://highnote.com/blog",
+  "crawled_at": "2025-12-13T23:34:47Z",
+  "http_status": 200,
+  "title": "Blog \u2013 Highnote",
+  "canonical": "https://highnote.com/blog",
+  "robots": "",
+  "content_sha256": "385256d97b4111929f1308507a7b33cecf9dde76e419ca6edf330077d45528c6",
+  "content_length": 72643,
+  "parser": "lxml",
+  "version": 1
+}

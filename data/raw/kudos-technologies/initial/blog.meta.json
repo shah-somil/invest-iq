@@ -1,0 +1,13 @@
+{
+  "company_name": "Kudos Technologies",
+  "source_url": "https://www.joinkudos.com/blog",
+  "crawled_at": "2025-12-13T23:35:12Z",
+  "http_status": 200,
+  "title": "Kudos Blog | Credit Cards, Travel Rewards, Shopping Tips",
+  "canonical": "https://www.joinkudos.com/blog",
+  "robots": "",
+  "content_sha256": "0c8099b3ad10dbe9b4dbccba323a27d47bd1f86f7ac6b5ce2803725112f04d7c",
+  "content_length": 143179,
+  "parser": "lxml",
+  "version": 1
+}

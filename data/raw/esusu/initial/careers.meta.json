@@ -1,0 +1,13 @@
+{
+  "company_name": "Esusu",
+  "source_url": "https://esusurent.com/careers",
+  "crawled_at": "2025-12-13T23:32:03Z",
+  "http_status": 200,
+  "title": "FinTech Careers | Mission-Driven Remote Jobs at Esusu",
+  "canonical": "https://esusurent.com/careers",
+  "robots": "",
+  "content_sha256": "8a402dbb93020b6a9f0547bf0d0696ca0eb5456e1b8d9d3c1825149799d72b56",
+  "content_length": 75667,
+  "parser": "lxml",
+  "version": 1
+}

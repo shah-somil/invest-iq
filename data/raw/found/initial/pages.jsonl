@@ -1,0 +1,5 @@
+{"company_name": "Found", "section": "homepage", "source_url": "https://found.com", "crawled_at": "2025-12-13T23:34:40Z", "status": 200, "bytes": 2488841}
+{"company_name": "Found", "section": "about", "source_url": "https://found.com/about", "crawled_at": "2025-12-13T23:34:40Z", "status": 200, "bytes": 467824}
+{"company_name": "Found", "section": "product", "source_url": "https://found.com/features", "crawled_at": "2025-12-13T23:34:42Z", "status": 200, "bytes": 470962}
+{"company_name": "Found", "section": "careers", "source_url": "https://found.com/careers", "crawled_at": "2025-12-13T23:34:43Z", "status": 200, "bytes": 102540}
+{"company_name": "Found", "section": "blog", "source_url": "https://found.com/press", "crawled_at": "2025-12-13T23:34:43Z", "status": 200, "bytes": 118271}

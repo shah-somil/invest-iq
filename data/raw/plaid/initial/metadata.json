@@ -2,19 +2,24 @@
   "company_id": "plaid",
   "company_name": "Plaid",
   "source_homepage": "https://www.plaid.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:35:38Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/plaid/initial",
-  "content_sha256": "781988b4fde38ed520b814132dd7f46eb7ab984e48f105fde2cf68a8223b4757",
-  "content_length": 199,
+  "content_sha256": "1f5680877915c256c612b37b79955f3fe19b1ec8b64f2d09a3ef0a3b3cfbe321",
+  "content_length": 1647939,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "plaid",
-    "company_name": "plaid",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Plaid",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/plaid/initial/manifest.json",
+    "sections": {
+      "homepage": "https://plaid.com",
+      "about": "https://plaid.com/company",
+      "product": "https://plaid.com",
+      "careers": "https://plaid.com/careers",
+      "blog": "https://plaid.com/blog"
+    },
+    "status": "success"
   }
 }

@@ -1,0 +1,13 @@
+{
+  "company_name": "Arc",
+  "source_url": "https://www.joinarc.com/blog",
+  "crawled_at": "2025-12-13T23:30:44Z",
+  "http_status": 200,
+  "title": "Arc | Blog \u2014 Insights, Tips & More",
+  "canonical": "https://www.joinarc.com/blog",
+  "robots": "",
+  "content_sha256": "52bae7ef0db115fdae659dce34e51c90a31850ab469aace6d1b7b52d30dc2b2c",
+  "content_length": 178677,
+  "parser": "lxml",
+  "version": 1
+}

@@ -2,19 +2,24 @@
   "company_id": "sentilink",
   "company_name": "SentiLink",
   "source_homepage": "https://www.sentilink.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:36:04Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/sentilink/initial",
-  "content_sha256": "785dcb9c84ab722bf41e55b2f7402a768f0a33172771d26b4d29462f6b8859a7",
-  "content_length": 207,
+  "content_sha256": "aa3baddb7cf6faffe7474606a0b3171d330f85ca1f48289130eef060786b21e7",
+  "content_length": 428045,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "sentilink",
-    "company_name": "sentilink",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "SentiLink",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/sentilink/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.sentilink.com",
+      "about": "https://www.sentilink.com/about",
+      "product": "https://www.sentilink.com/product-overview",
+      "careers": "https://www.sentilink.com/careers",
+      "blog": "https://www.sentilink.com/insights"
+    },
+    "status": "success"
   }
 }

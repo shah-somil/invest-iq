@@ -1,0 +1,13 @@
+{
+  "company_name": "Tala",
+  "source_url": "https://tala.co/gt",
+  "crawled_at": "2025-12-13T23:36:27Z",
+  "http_status": 200,
+  "title": "Tala Guatemala | Pr\u00e9stamos Personales R\u00e1pidos",
+  "canonical": "https://tala.co/gt/",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "content_sha256": "bd917b6100ead586bf78dc885560f1cb745b055f2d0aff69eb571f04fe2a651f",
+  "content_length": 84533,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,8 +1,12 @@
 {
   "company_id": "stripe",
-  "company_name": "stripe",
-  "status": "failed",
-  "reason": "missing_website",
-  "message": "cannot scrape without a website URL",
-  "crawled_at": "2025-12-13T23:07:40Z"
+  "company_name": "Stripe",
+  "crawled_at": "2025-12-13T23:36:06Z",
+  "sections": {
+    "homepage": "https://stripe.com",
+    "about": "https://stripe.com",
+    "product": "https://stripe.com/payments",
+    "careers": "https://stripe.com/jobs",
+    "blog": "https://stripe.com/blog"
+  }
 }

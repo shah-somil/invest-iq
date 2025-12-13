@@ -2,19 +2,24 @@
   "company_id": "relay",
   "company_name": "Relay",
   "source_homepage": "https://www.relayfi.com",
-  "crawled_at": "2025-12-13T23:07:40Z",
+  "crawled_at": "2025-12-13T23:35:47Z",
   "run_type": "full-load",
   "output_dir": "/Users/charmydarji/Desktop/invest-iq/data/raw/relay/initial",
-  "content_sha256": "29f3ac2255602badec8d1df4abab51b3af62947446ce57ace6b1b4dc005c32ef",
-  "content_length": 199,
+  "content_sha256": "d15f7a1dcef3957cf3f660587ce1a63340e2ff0bebf262e6ceceeaa94f13f218",
+  "content_length": 9416418,
   "parser": "lab1_scraper",
   "version": 1,
   "scraper_result": {
     "company_id": "relay",
-    "company_name": "relay",
-    "status": "failed",
-    "reason": "missing_website",
-    "message": "cannot scrape without a website URL",
-    "crawled_at": "2025-12-13T23:07:40Z"
+    "company_name": "Relay",
+    "manifest_path": "/Users/charmydarji/Desktop/invest-iq/data/raw/relay/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.relayfi.com",
+      "about": "https://www.relayfi.com/about",
+      "product": "https://www.relayfi.com/product",
+      "careers": "https://www.relayfi.com/careers",
+      "blog": "https://www.relayfi.com/blog"
+    },
+    "status": "success"
   }
 }

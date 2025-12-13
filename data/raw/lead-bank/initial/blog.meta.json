@@ -1,0 +1,13 @@
+{
+  "company_name": "Lead Bank",
+  "source_url": "https://www.lead.bank/blog",
+  "crawled_at": "2025-12-13T23:35:15Z",
+  "http_status": 200,
+  "title": "Blog",
+  "canonical": "https://www.lead.bank/blog",
+  "robots": "",
+  "content_sha256": "b9dc199b64c4b26741b69811198cea26608626560804f01f257c726d2eb6ec57",
+  "content_length": 114872,
+  "parser": "lxml",
+  "version": 1
+}

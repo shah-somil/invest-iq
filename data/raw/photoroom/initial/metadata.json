@@ -1,0 +1,25 @@
+{
+  "company_id": "photoroom",
+  "company_name": "Photoroom",
+  "source_homepage": "https://photoroom.com",
+  "crawled_at": "2025-12-13T21:04:21Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/photoroom/initial",
+  "content_sha256": "1746d2ae3380f8a5cf2736ef54f627fcbe99cb448fe9e38485a4ba4ea1f08b92",
+  "content_length": 2027612,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "photoroom",
+    "company_name": "Photoroom",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/photoroom/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.photoroom.com",
+      "about": "https://www.photoroom.com/about",
+      "product": "https://www.photoroom.com/solutions",
+      "careers": "https://www.photoroom.com/company",
+      "blog": "https://www.photoroom.com/blog"
+    },
+    "status": "success"
+  }
+}

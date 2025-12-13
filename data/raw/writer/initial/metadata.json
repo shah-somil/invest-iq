@@ -1,0 +1,25 @@
+{
+  "company_id": "writer",
+  "company_name": "Writer",
+  "source_homepage": "https://writer.com",
+  "crawled_at": "2025-12-13T21:05:31Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/writer/initial",
+  "content_sha256": "e72bba0b95d362a35dc47079f751eef10f26355f17121c78c135c8564b158197",
+  "content_length": 1347770,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "writer",
+    "company_name": "Writer",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/writer/initial/manifest.json",
+    "sections": {
+      "homepage": "https://writer.com",
+      "about": "https://writer.com/company/about",
+      "product": "https://writer.com",
+      "careers": "https://writer.com/company/careers",
+      "blog": "https://writer.com/blog"
+    },
+    "status": "success"
+  }
+}

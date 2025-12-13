@@ -1,0 +1,13 @@
+{
+  "company_name": "Runway",
+  "source_url": "https://runway.com/blog",
+  "crawled_at": "2025-12-13T21:04:27Z",
+  "http_status": 200,
+  "title": "The Runway Blog",
+  "canonical": "https://runway.com/blog",
+  "robots": "",
+  "content_sha256": "61b6a110a0ed7d5074b98b15a68295996a56939cf13c265a4f293ff1e65dddbf",
+  "content_length": 95396,
+  "parser": "lxml",
+  "version": 1
+}

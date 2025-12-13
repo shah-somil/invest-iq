@@ -1,0 +1,13 @@
+{
+  "company_name": "Snorkel AI",
+  "source_url": "https://snorkel.ai/blog",
+  "crawled_at": "2025-12-13T21:04:38Z",
+  "http_status": 200,
+  "title": "The Snorkel AI Blog | Home",
+  "canonical": "https://snorkel.ai/blog/",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "content_sha256": "5edb1e21004d6d003ebe179860e0dcbab1f634ce9c9609d349b7d1c58fa0fd28",
+  "content_length": 359156,
+  "parser": "lxml",
+  "version": 1
+}

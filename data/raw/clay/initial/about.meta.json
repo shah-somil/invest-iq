@@ -1,0 +1,13 @@
+{
+  "company_name": "Clay",
+  "source_url": "https://www.clay.com/about",
+  "crawled_at": "2025-12-13T21:03:11Z",
+  "http_status": 200,
+  "title": "About | Clay.com",
+  "canonical": "https://www.clay.com/about",
+  "robots": "",
+  "content_sha256": "77eb66054bf62832dfbeeba5b2685a1ffebdd80d02f27d54a5c072cd1ed2ea1a",
+  "content_length": 270460,
+  "parser": "lxml",
+  "version": 1
+}

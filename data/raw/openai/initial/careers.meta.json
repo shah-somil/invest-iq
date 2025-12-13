@@ -1,0 +1,13 @@
+{
+  "company_name": "OpenAI",
+  "source_url": "https://openai.com/careers",
+  "crawled_at": "2025-12-13T21:04:14Z",
+  "http_status": 200,
+  "title": "Careers | OpenAI",
+  "canonical": "https://openai.com/careers/",
+  "robots": "index, follow",
+  "content_sha256": "2e14ddd237ada70b1a4a9ffc63188c1477fd3c008a82623d51143086fd1511d2",
+  "content_length": 305213,
+  "parser": "lxml",
+  "version": 1
+}

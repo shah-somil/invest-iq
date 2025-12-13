@@ -1,0 +1,13 @@
+{
+  "company_name": "Harvey",
+  "source_url": "https://www.harvey.ai/product",
+  "crawled_at": "2025-12-13T21:03:57Z",
+  "http_status": 200,
+  "title": "",
+  "canonical": "https://www.harvey.ai/product",
+  "robots": "",
+  "content_sha256": "cf1c7e2ab2dccd0ed45196ebb88dd4eef41c37f516bb56a181ffdccad7d7080a",
+  "content_length": 94047,
+  "parser": "lxml",
+  "version": 1
+}

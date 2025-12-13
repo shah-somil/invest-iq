@@ -1,0 +1,25 @@
+{
+  "company_id": "synthesia",
+  "company_name": "Synthesia",
+  "source_homepage": "https://synthesia.com",
+  "crawled_at": "2025-12-13T21:05:14Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/synthesia/initial",
+  "content_sha256": "c170b9229c046a930a4b6026d64f3914a9c05fe802dbc7d8e24f2f943a8fa341",
+  "content_length": 658190,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "synthesia",
+    "company_name": "Synthesia",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/synthesia/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.synthesia.com",
+      "about": "https://www.synthesia.com/sobre-synthesia",
+      "product": "https://www.synthesia.com/productos",
+      "careers": "https://www.synthesia.com/en",
+      "blog": "https://www.synthesia.com/noticias"
+    },
+    "status": "success"
+  }
+}

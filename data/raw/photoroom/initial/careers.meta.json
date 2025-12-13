@@ -1,0 +1,13 @@
+{
+  "company_name": "Photoroom",
+  "source_url": "https://www.photoroom.com/company",
+  "crawled_at": "2025-12-13T21:04:21Z",
+  "http_status": 200,
+  "title": "Company and careers at Photoroom | Photoroom",
+  "canonical": "https://www.photoroom.com/company",
+  "robots": "index,follow",
+  "content_sha256": "c8cdf2c9c55485794f679b8630b9b55fde4cf224de8a877a436ac10076f196ce",
+  "content_length": 549478,
+  "parser": "lxml",
+  "version": 1
+}

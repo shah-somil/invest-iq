@@ -1,0 +1,13 @@
+{
+  "company_name": "Pika",
+  "source_url": "https://pollo.ai/ai-product-avatar",
+  "crawled_at": "2025-12-13T21:04:23Z",
+  "http_status": 200,
+  "title": "AI Product Avatar Free: Create Product Videos From Photos | Pollo AI",
+  "canonical": "https://pollo.ai/ai-product-avatar",
+  "robots": "index,follow",
+  "content_sha256": "1c69634474eec88e570d84f19475c350e6104307d774b1ed42d3d8eb657ba090",
+  "content_length": 301860,
+  "parser": "lxml",
+  "version": 1
+}

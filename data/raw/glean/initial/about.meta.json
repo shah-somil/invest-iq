@@ -1,0 +1,13 @@
+{
+  "company_name": "Glean",
+  "source_url": "https://www.glean.com/about",
+  "crawled_at": "2025-12-13T21:03:56Z",
+  "http_status": 200,
+  "title": "Glean Enterprise Search Platform | AI-Powered Workplace Search",
+  "canonical": "https://www.glean.com/about",
+  "robots": "",
+  "content_sha256": "d91ced91560fc17f314536e3732aeba68bf93d0a950f3bf71f5fa837788e1723",
+  "content_length": 245578,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "Crusoe",
+  "source_url": "https://www.crusoe.ai/about/careers",
+  "crawled_at": "2025-12-13T21:03:18Z",
+  "http_status": 200,
+  "title": "Crusoe Careers | Join AI innovation & renewable energy work",
+  "canonical": "https://www.crusoe.ai/about/careers",
+  "robots": "",
+  "content_sha256": "805e5caa6eb73b703c77c83e11512cff32a6de59043da833e1ac96aeaac9c13f",
+  "content_length": 155156,
+  "parser": "lxml",
+  "version": 1
+}

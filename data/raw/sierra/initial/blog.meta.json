@@ -1,0 +1,13 @@
+{
+  "company_name": "Sierra",
+  "source_url": "https://sierra.ai/blog",
+  "crawled_at": "2025-12-13T21:04:32Z",
+  "http_status": 200,
+  "title": "Blog | Sierra",
+  "canonical": "https://sierra.ai/blog",
+  "robots": "index",
+  "content_sha256": "e8a84f2be7587256f8c624dbe6cef6b5aaa775481b8bfd0e94fb6a495a05137e",
+  "content_length": 224568,
+  "parser": "lxml",
+  "version": 1
+}

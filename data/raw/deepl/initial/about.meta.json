@@ -1,0 +1,13 @@
+{
+  "company_name": "DeepL",
+  "source_url": "https://www.deepl.com/en/about-us",
+  "crawled_at": "2025-12-13T21:03:26Z",
+  "http_status": 200,
+  "title": "About Us: DeepL's mission to break down language barriers",
+  "canonical": "https://www.deepl.com/en/about-us",
+  "robots": "index",
+  "content_sha256": "bb6ef00b164897795ca49841d302b685a72fa4812730315d1db1994fc804affd",
+  "content_length": 489091,
+  "parser": "lxml",
+  "version": 1
+}

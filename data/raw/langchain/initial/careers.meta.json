@@ -1,0 +1,13 @@
+{
+  "company_name": "LangChain",
+  "source_url": "https://www.langchain.com/careers",
+  "crawled_at": "2025-12-13T21:04:03Z",
+  "http_status": 200,
+  "title": "Careers",
+  "canonical": "https://www.langchain.com/careers",
+  "robots": "",
+  "content_sha256": "7737a1a305356b98fcfee465fc832621eecd2130334f178bcfde5f7ab5841f6b",
+  "content_length": 45965,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "Snorkel AI",
+  "source_url": "https://snorkel.ai/join-us",
+  "crawled_at": "2025-12-13T21:04:38Z",
+  "http_status": 200,
+  "title": "Find Careers in AI | Snorkel AI Careers",
+  "canonical": "https://snorkel.ai/join-us/",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "content_sha256": "9cf934d5c9c4ef33b0948f09db80e3541ec3e0ea1f3dfed2bd9633e88b96186b",
+  "content_length": 220946,
+  "parser": "lxml",
+  "version": 1
+}

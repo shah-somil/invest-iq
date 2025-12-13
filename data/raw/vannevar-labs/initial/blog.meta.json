@@ -1,0 +1,13 @@
+{
+  "company_name": "Vannevar Labs",
+  "source_url": "https://vannevarlabs.com/blog",
+  "crawled_at": "2025-12-13T21:05:20Z",
+  "http_status": 200,
+  "title": "Vannevar Labs | Blog",
+  "canonical": "https://vannevarlabs.com/blog",
+  "robots": "",
+  "content_sha256": "51a3a4b415ff0dcdd31675e3efb70c0085d9790b75c5a3be851b62d0c8d6d63a",
+  "content_length": 17746,
+  "parser": "lxml",
+  "version": 1
+}

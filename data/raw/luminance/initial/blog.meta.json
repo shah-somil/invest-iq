@@ -1,0 +1,13 @@
+{
+  "company_name": "Luminance",
+  "source_url": "https://www.luminance.com/resources/blog",
+  "crawled_at": "2025-12-13T21:04:06Z",
+  "http_status": 200,
+  "title": "Blog",
+  "canonical": "https://www.luminance.com/resources/blog/",
+  "robots": "max-image-preview:large",
+  "content_sha256": "485945007b53ccaef2db18a91c4c49491f97901dc19f14104873ee6b7383e7c0",
+  "content_length": 119459,
+  "parser": "lxml",
+  "version": 1
+}

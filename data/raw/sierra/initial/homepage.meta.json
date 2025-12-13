@@ -1,0 +1,13 @@
+{
+  "company_name": "Sierra",
+  "source_url": "https://sierra.ai",
+  "crawled_at": "2025-12-13T21:04:30Z",
+  "http_status": 200,
+  "title": "Sierra | Better customer experiences | Sierra",
+  "canonical": "https://sierra.ai",
+  "robots": "index",
+  "content_sha256": "c30419ef7cd0810c850cc0e587cb8e00ad2fd4dcc8580599e0ef74adcc1391cd",
+  "content_length": 316632,
+  "parser": "lxml",
+  "version": 1
+}

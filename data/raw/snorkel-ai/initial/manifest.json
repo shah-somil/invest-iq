@@ -1,0 +1,12 @@
+{
+  "company_id": "snorkel-ai",
+  "company_name": "Snorkel AI",
+  "crawled_at": "2025-12-13T21:04:35Z",
+  "sections": {
+    "homepage": "https://snorkel.ai",
+    "about": "https://snorkel.ai/company",
+    "product": "https://snorkel.ai/webinar/productionizing-genai-for-healthcare-with-ai-data-development",
+    "careers": "https://snorkel.ai/join-us",
+    "blog": "https://snorkel.ai/blog"
+  }
+}

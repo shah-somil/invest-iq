@@ -1,0 +1,12 @@
+{
+  "company_id": "sakana-ai",
+  "company_name": "Sakana AI",
+  "crawled_at": "2025-12-13T21:04:27Z",
+  "sections": {
+    "homepage": "https://sakana.ai",
+    "about": "https://sakana.ai/company-info",
+    "product": "https://sakana.ai/blog",
+    "careers": "https://sakana.ai/careers",
+    "blog": "https://sakana.ai/blog"
+  }
+}

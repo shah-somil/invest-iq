@@ -1,0 +1,13 @@
+{
+  "company_name": "DeepL",
+  "source_url": "https://www.deepl.com/en/customer-stories",
+  "crawled_at": "2025-12-13T21:03:37Z",
+  "http_status": 200,
+  "title": "Customer Hub",
+  "canonical": "https://www.deepl.com/en/customer-stories",
+  "robots": "index",
+  "content_sha256": "befd541a4753d4f413e3d3d6168bef8d7ae2bb44599b5e311cf8475dcd38b046",
+  "content_length": 623250,
+  "parser": "lxml",
+  "version": 1
+}

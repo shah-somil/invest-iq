@@ -1,0 +1,13 @@
+{
+  "company_name": "Photoroom",
+  "source_url": "https://www.photoroom.com",
+  "crawled_at": "2025-12-13T21:04:19Z",
+  "http_status": 200,
+  "title": "AI-Powered Photo Editor and Listing Studio for Product Photography | Photoroom",
+  "canonical": "https://www.photoroom.com/",
+  "robots": "index,follow",
+  "content_sha256": "486847676ab806308659fb3b7ac6d3a7d55b605bd712be46fea07bcb488b564b",
+  "content_length": 350755,
+  "parser": "lxml",
+  "version": 1
+}

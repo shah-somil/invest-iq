@@ -1,0 +1,13 @@
+{
+  "company_name": "Speak",
+  "source_url": "https://www.speak.com",
+  "crawled_at": "2025-12-13T21:04:38Z",
+  "http_status": 200,
+  "title": "Speak - The language learning app that gets you speaking",
+  "canonical": "https://www.speak.com",
+  "robots": "",
+  "content_sha256": "b91980bad7485dd0b321e382333906596792cddf8085a4669420a094899a9cdc",
+  "content_length": 94245,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "ElevenLabs",
+  "source_url": "https://elevenlabs.io/technology",
+  "crawled_at": "2025-12-13T21:03:41Z",
+  "http_status": 200,
+  "title": "Drive Growth with AI Agents",
+  "canonical": "https://elevenlabs.io/technology",
+  "robots": "",
+  "content_sha256": "a4348f6717a8653d2bb695a3ed85d55ef3e416a3a4f0c016a91df5780ad95faf",
+  "content_length": 972674,
+  "parser": "lxml",
+  "version": 1
+}

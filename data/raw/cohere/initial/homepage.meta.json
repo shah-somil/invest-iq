@@ -1,0 +1,13 @@
+{
+  "company_name": "Cohere",
+  "source_url": "https://cohere.com",
+  "crawled_at": "2025-12-13T21:03:15Z",
+  "http_status": 200,
+  "title": "Enterprise AI: Private, Secure, Customizable | Cohere",
+  "canonical": "https://cohere.com/",
+  "robots": "index, follow",
+  "content_sha256": "fa3a2fbf1f38c7febf9f0472131d4a29b4b6c28ff32b8ce5e59a0585d74571a5",
+  "content_length": 606782,
+  "parser": "lxml",
+  "version": 1
+}

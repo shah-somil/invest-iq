@@ -1,0 +1,25 @@
+{
+  "company_id": "suno",
+  "company_name": "Suno",
+  "source_homepage": "https://suno.com",
+  "crawled_at": "2025-12-13T21:04:55Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/suno/initial",
+  "content_sha256": "5598033fe7fe02a7a6ae01a2a077383333a2bf867db72b182bef032cdc99cbb6",
+  "content_length": 71777,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "suno",
+    "company_name": "Suno",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/suno/initial/manifest.json",
+    "sections": {
+      "homepage": "https://suno.com/home",
+      "about": null,
+      "product": null,
+      "careers": null,
+      "blog": null
+    },
+    "status": "success"
+  }
+}

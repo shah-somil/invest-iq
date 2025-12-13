@@ -1,0 +1,25 @@
+{
+  "company_id": "baseten",
+  "company_name": "Baseten",
+  "source_homepage": "https://baseten.com",
+  "crawled_at": "2025-12-13T21:02:54Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/baseten/initial",
+  "content_sha256": "51ece496e4183faba9d8eba45c1bc6067f71e9fa23adbf276c72e1192432ed3b",
+  "content_length": 1799258,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "baseten",
+    "company_name": "Baseten",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/baseten/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.baseten.com",
+      "about": "https://www.baseten.com/resources/careers",
+      "product": "https://www.baseten.com/resources/customers/blandai",
+      "careers": "https://www.baseten.com/resources/careers",
+      "blog": "https://www.baseten.com/blog"
+    },
+    "status": "success"
+  }
+}

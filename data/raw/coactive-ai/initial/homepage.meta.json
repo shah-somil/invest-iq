@@ -1,0 +1,13 @@
+{
+  "company_name": "Coactive AI",
+  "source_url": "https://www.coactive.ai",
+  "crawled_at": "2025-12-13T21:03:13Z",
+  "http_status": 200,
+  "title": "Maximize video & images with AI search and automated metadata | Coactive",
+  "canonical": "https://www.coactive.ai",
+  "robots": "",
+  "content_sha256": "c54c4f666658a4af6e16ef2529e44df9cfc5500333c3aeb7add588a129bdfc99",
+  "content_length": 160647,
+  "parser": "lxml",
+  "version": 1
+}

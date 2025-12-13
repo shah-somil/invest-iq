@@ -1,0 +1,13 @@
+{
+  "company_name": "Thinking Machine Labs",
+  "source_url": "https://thinkingmachines.ai/tinker",
+  "crawled_at": "2025-12-13T21:05:16Z",
+  "http_status": 200,
+  "title": "Tinker - Thinking Machines Lab",
+  "canonical": "https://thinkingmachines.ai/tinker/",
+  "robots": "",
+  "content_sha256": "79d3eb69f3764f8104b68a699202351bb2d089bc86fec4a3f483be8602494260",
+  "content_length": 40243,
+  "parser": "lxml",
+  "version": 1
+}

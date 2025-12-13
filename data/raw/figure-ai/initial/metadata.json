@@ -1,0 +1,25 @@
+{
+  "company_id": "figure-ai",
+  "company_name": "Figure AI",
+  "source_homepage": "https://www.figure.ai",
+  "crawled_at": "2025-12-13T21:03:44Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/figure-ai/initial",
+  "content_sha256": "d004e97317cec74c700da083931df583d18cd065bfccfe769c7d00ba373373d2",
+  "content_length": 226374,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "figure-ai",
+    "company_name": "Figure AI",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/figure-ai/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.figure.ai",
+      "about": "https://www.figure.ai/company",
+      "product": "https://www.figure.ai/figure",
+      "careers": "https://www.figure.ai/careers",
+      "blog": "https://www.figure.ai/news"
+    },
+    "status": "success"
+  }
+}

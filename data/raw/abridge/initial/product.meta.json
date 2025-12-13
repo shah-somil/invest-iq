@@ -1,0 +1,13 @@
+{
+  "company_name": "Abridge",
+  "source_url": "https://www.abridge.com/product",
+  "crawled_at": "2025-12-13T21:02:42Z",
+  "http_status": 200,
+  "title": "Generative AI for Clinical Conversations",
+  "canonical": "https://www.abridge.com/product",
+  "robots": "",
+  "content_sha256": "99fd513c71856a5151d10935804be5d5966fc16a4e79d807ba3327d0b709d423",
+  "content_length": 121368,
+  "parser": "lxml",
+  "version": 1
+}

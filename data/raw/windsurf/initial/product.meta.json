@@ -1,0 +1,13 @@
+{
+  "company_name": "Windsurf",
+  "source_url": "https://windsurf.com/product",
+  "crawled_at": "2025-12-13T21:05:23Z",
+  "http_status": 200,
+  "title": "Page Not Found | Windsurf",
+  "canonical": "https://windsurf.com/not-found",
+  "robots": "",
+  "content_sha256": "0f68df288b5d67c0f71ae3686cc4cf1cdd4e3bafcc56523c048f3ef3da9f3b72",
+  "content_length": 64327,
+  "parser": "lxml",
+  "version": 1
+}

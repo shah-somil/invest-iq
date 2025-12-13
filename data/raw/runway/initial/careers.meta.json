@@ -1,0 +1,13 @@
+{
+  "company_name": "Runway",
+  "source_url": "https://runway.com/careers",
+  "crawled_at": "2025-12-13T21:04:27Z",
+  "http_status": 200,
+  "title": "Careers at Runway",
+  "canonical": "https://runway.com/careers",
+  "robots": "",
+  "content_sha256": "369ac733a46d599067b082ffc7193edd9e30274bbc0119844dad2d70aedb47b3",
+  "content_length": 91125,
+  "parser": "lxml",
+  "version": 1
+}

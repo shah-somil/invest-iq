@@ -1,0 +1,13 @@
+{
+  "company_name": "Pika",
+  "source_url": "https://pollo.ai/home",
+  "crawled_at": "2025-12-13T21:04:24Z",
+  "http_status": 200,
+  "title": "Home | Pollo AI",
+  "canonical": "https://pollo.ai/home",
+  "robots": "index,follow",
+  "content_sha256": "bc4e34e8716183338481da909c71cb4f41eb273ee8b99e4b6243dd161f59b2d3",
+  "content_length": 631400,
+  "parser": "lxml",
+  "version": 1
+}

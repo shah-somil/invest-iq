@@ -1,0 +1,25 @@
+{
+  "company_id": "world-labs",
+  "company_name": "World Labs",
+  "source_homepage": "https://worldlabs.ai",
+  "crawled_at": "2025-12-13T21:05:26Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/world-labs/initial",
+  "content_sha256": "fed9e423ca7416b6961ac1300720cd9235c549df4dc5d196e75ac719e23039ea",
+  "content_length": 767203,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "world-labs",
+    "company_name": "World Labs",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/world-labs/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.worldlabs.ai",
+      "about": "https://www.worldlabs.ai/about",
+      "product": "https://www.worldlabs.ai/labs#marble-labs-visualize",
+      "careers": "https://www.worldlabs.ai/about",
+      "blog": "https://www.worldlabs.ai/blog"
+    },
+    "status": "success"
+  }
+}

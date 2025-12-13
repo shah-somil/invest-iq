@@ -1,0 +1,13 @@
+{
+  "company_name": "Synthesia",
+  "source_url": "https://www.synthesia.com/productos",
+  "crawled_at": "2025-12-13T21:04:59Z",
+  "http_status": 200,
+  "title": "Productos - Synthesia",
+  "canonical": "https://www.synthesia.com/productos",
+  "robots": "noindex, nofollow",
+  "content_sha256": "ab474213074f032feb9de39db022bdf988025700ba1c3933ec77ff02f98deb6a",
+  "content_length": 109453,
+  "parser": "lxml",
+  "version": 1
+}

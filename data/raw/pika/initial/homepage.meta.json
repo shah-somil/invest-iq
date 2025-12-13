@@ -1,0 +1,13 @@
+{
+  "company_name": "Pika",
+  "source_url": "https://pollo.ai",
+  "crawled_at": "2025-12-13T21:04:21Z",
+  "http_status": 200,
+  "title": "Pollo AI: The Ultimate AI Video & Image Creation Platform",
+  "canonical": "https://pollo.ai/",
+  "robots": "index,follow",
+  "content_sha256": "a0e2d46ce2d77c34fdd3d68de7b2ad54ff091ce5e3de7bd24a6eda61c9d1dfaf",
+  "content_length": 596917,
+  "parser": "lxml",
+  "version": 1
+}

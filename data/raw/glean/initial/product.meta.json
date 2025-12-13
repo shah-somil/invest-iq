@@ -1,0 +1,13 @@
+{
+  "company_name": "Glean",
+  "source_url": "https://www.glean.com",
+  "crawled_at": "2025-12-13T21:03:56Z",
+  "http_status": 200,
+  "title": "Glean \u00e2\u0080\u0093 Work AI that Works | Agents, Assistant & Search",
+  "canonical": "https://www.glean.com",
+  "robots": "",
+  "content_sha256": "9b69f7631318f887ea0dfc9549cfff1ff9cfeb66990edbc4f10f67000079cf5e",
+  "content_length": 343753,
+  "parser": "lxml",
+  "version": 1
+}

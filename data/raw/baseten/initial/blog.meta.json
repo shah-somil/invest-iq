@@ -1,0 +1,13 @@
+{
+  "company_name": "Baseten",
+  "source_url": "https://www.baseten.com/blog",
+  "crawled_at": "2025-12-13T21:02:54Z",
+  "http_status": 200,
+  "title": "Blog",
+  "canonical": "https://www.baseten.co/blog/",
+  "robots": "",
+  "content_sha256": "5dc56d010eb80cd949c7bae1121ea7c6541dab3bad1d73b75d29ad1c2974c6ca",
+  "content_length": 350182,
+  "parser": "lxml",
+  "version": 1
+}

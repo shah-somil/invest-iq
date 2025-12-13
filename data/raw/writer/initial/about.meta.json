@@ -1,0 +1,13 @@
+{
+  "company_name": "Writer",
+  "source_url": "https://writer.com/company/about",
+  "crawled_at": "2025-12-13T21:05:26Z",
+  "http_status": 200,
+  "title": "About WRITER | Founders, leadership, and values",
+  "canonical": "https://writer.com/company/about/",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1, noarchive",
+  "content_sha256": "23a96a7e3b6517eb7d5010e47f47067497602feaa6611262695c4b920509d569",
+  "content_length": 341702,
+  "parser": "lxml",
+  "version": 1
+}

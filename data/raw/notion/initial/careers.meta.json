@@ -1,0 +1,13 @@
+{
+  "company_name": "Notion",
+  "source_url": "https://www.notion.com/careers",
+  "crawled_at": "2025-12-13T21:04:13Z",
+  "http_status": 200,
+  "title": "Careers at Notion | We're Hiring!",
+  "canonical": "https://www.notion.com/",
+  "robots": "",
+  "content_sha256": "20ddaca20e4c2d5a56734abc0b27f55a9d6ed8f96f72e86285a79927178e9552",
+  "content_length": 198330,
+  "parser": "lxml",
+  "version": 1
+}

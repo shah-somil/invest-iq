@@ -1,0 +1,13 @@
+{
+  "company_name": "Baseten",
+  "source_url": "https://www.baseten.com/resources/careers",
+  "crawled_at": "2025-12-13T21:02:54Z",
+  "http_status": 200,
+  "title": "Careers",
+  "canonical": "https://www.baseten.co/careers/",
+  "robots": "",
+  "content_sha256": "5ab79092053235150ac1c7a4d28be9a97c1d7e403097c95fa7f0b7da0435770c",
+  "content_length": 381010,
+  "parser": "lxml",
+  "version": 1
+}

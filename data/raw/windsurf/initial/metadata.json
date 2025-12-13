@@ -1,0 +1,25 @@
+{
+  "company_id": "windsurf",
+  "company_name": "Windsurf",
+  "source_homepage": "https://windsurf.com",
+  "crawled_at": "2025-12-13T21:05:23Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/windsurf/initial",
+  "content_sha256": "35881cd0664a9fe6bfdca25a6067567d731a8a48d1e1933fdf36b790d7afd404",
+  "content_length": 2175477,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "windsurf",
+    "company_name": "Windsurf",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/windsurf/initial/manifest.json",
+    "sections": {
+      "homepage": "https://windsurf.com",
+      "about": "https://windsurf.com/about",
+      "product": "https://windsurf.com/product",
+      "careers": "https://windsurf.com/career",
+      "blog": "https://windsurf.com/blog"
+    },
+    "status": "success"
+  }
+}

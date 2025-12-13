@@ -1,0 +1,13 @@
+{
+  "company_name": "Snorkel AI",
+  "source_url": "https://snorkel.ai",
+  "crawled_at": "2025-12-13T21:04:35Z",
+  "http_status": 200,
+  "title": "Snorkel AI \u2013 Expert Data",
+  "canonical": "https://snorkel.ai/",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "content_sha256": "2be028355c9348716e153e744755b90af323d82ec9e0be44b94283038d4b4f26",
+  "content_length": 231923,
+  "parser": "lxml",
+  "version": 1
+}

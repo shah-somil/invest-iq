@@ -1,0 +1,13 @@
+{
+  "company_name": "Writer",
+  "source_url": "https://writer.com",
+  "crawled_at": "2025-12-13T21:05:26Z",
+  "http_status": 200,
+  "title": "WRITER - The enterprise AI platform for agentic work",
+  "canonical": "https://writer.com/",
+  "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  "content_sha256": "08bf3c07fb448775db010918db418e3ca459a60aa080897529bbe7792298c889",
+  "content_length": 262909,
+  "parser": "lxml",
+  "version": 1
+}

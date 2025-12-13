@@ -1,0 +1,12 @@
+{
+  "company_id": "baseten",
+  "company_name": "Baseten",
+  "crawled_at": "2025-12-13T21:02:50Z",
+  "sections": {
+    "homepage": "https://www.baseten.com",
+    "about": "https://www.baseten.com/resources/careers",
+    "product": "https://www.baseten.com/resources/customers/blandai",
+    "careers": "https://www.baseten.com/resources/careers",
+    "blog": "https://www.baseten.com/blog"
+  }
+}

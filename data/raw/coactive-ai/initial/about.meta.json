@@ -1,0 +1,13 @@
+{
+  "company_name": "Coactive AI",
+  "source_url": "https://www.coactive.ai/company",
+  "crawled_at": "2025-12-13T21:03:13Z",
+  "http_status": 200,
+  "title": "Coactive | About Us",
+  "canonical": "https://www.coactive.ai/company",
+  "robots": "",
+  "content_sha256": "e48ccfa0bb8f1674fc1562876208e32fde40481e34f9ae3f7a100f9e9ee54d51",
+  "content_length": 146813,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "StackBlitz",
+  "source_url": "https://stackblitz.com",
+  "crawled_at": "2025-12-13T21:04:41Z",
+  "http_status": 200,
+  "title": "StackBlitz | Instant Dev Environments | Click. Code. Done.",
+  "canonical": "https://stackblitz.com/",
+  "robots": "",
+  "content_sha256": "d2698f8ed014ba359b02db1ec9af4b3f71dae4020d716a5c5863d19978a6addf",
+  "content_length": 35430,
+  "parser": "lxml",
+  "version": 1
+}

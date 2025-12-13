@@ -1,0 +1,13 @@
+{
+  "company_name": "Speak",
+  "source_url": "https://www.speak.com/blog",
+  "crawled_at": "2025-12-13T21:04:40Z",
+  "http_status": 200,
+  "title": "Blog - Speak",
+  "canonical": "https://www.speak.com/blog",
+  "robots": "",
+  "content_sha256": "2df0ec1802f4836eee9cf089d19ccf5bf99fb383eb0ddda66b389947ea4452a2",
+  "content_length": 63820,
+  "parser": "lxml",
+  "version": 1
+}

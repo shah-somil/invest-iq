@@ -1,0 +1,13 @@
+{
+  "company_name": "Lambda",
+  "source_url": "https://lambda.ai/1-click-clusters",
+  "crawled_at": "2025-12-13T21:04:02Z",
+  "http_status": 200,
+  "title": "1-Click Clusters | Lambda",
+  "canonical": "https://lambda.ai/1-click-clusters",
+  "robots": "",
+  "content_sha256": "60544b51ae7975d280302c691cad9e56a4e103ae2f118c17a98666d8e08d1f25",
+  "content_length": 85895,
+  "parser": "lxml",
+  "version": 1
+}

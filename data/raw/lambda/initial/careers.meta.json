@@ -1,0 +1,13 @@
+{
+  "company_name": "Lambda",
+  "source_url": "https://lambda.ai/careers",
+  "crawled_at": "2025-12-13T21:04:02Z",
+  "http_status": 200,
+  "title": "Careers at Lambda | Build the Future of AI Infrastructure",
+  "canonical": "https://lambda.ai/careers",
+  "robots": "",
+  "content_sha256": "c8477443ce137ffdf13d73db5c747b58f29e3e29e30265c252edbcbc4a45aee7",
+  "content_length": 84905,
+  "parser": "lxml",
+  "version": 1
+}

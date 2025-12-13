@@ -1,0 +1,25 @@
+{
+  "company_id": "clay",
+  "company_name": "Clay",
+  "source_homepage": "https://clay.com",
+  "crawled_at": "2025-12-13T21:03:13Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/clay/initial",
+  "content_sha256": "e3fc446ef67437745b4516ad976214bbdf0ed937c30ac1a98e7c391f0ca88acd",
+  "content_length": 1732820,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "clay",
+    "company_name": "Clay",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/clay/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.clay.com",
+      "about": "https://www.clay.com/about",
+      "product": "https://www.clay.com/partners/solutions",
+      "careers": "https://www.clay.com/careers",
+      "blog": "https://www.clay.com/blog"
+    },
+    "status": "success"
+  }
+}

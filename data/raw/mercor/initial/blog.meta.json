@@ -1,0 +1,13 @@
+{
+  "company_name": "Mercor",
+  "source_url": "https://www.mercor.com:443/blog",
+  "crawled_at": "2025-12-13T21:04:09Z",
+  "http_status": 200,
+  "title": "Mercor Blog | Insights on AI, Hiring, and Remote Work",
+  "canonical": "https://mercor.com/blog",
+  "robots": "index,follow",
+  "content_sha256": "b1bdcc6476c7f621143ecc5483ad6d64a9796fc5eab6c1620ec61d0f58d74ba0",
+  "content_length": 107475,
+  "parser": "lxml",
+  "version": 1
+}

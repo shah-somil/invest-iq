@@ -1,0 +1,12 @@
+{
+  "company_id": "photoroom",
+  "company_name": "Photoroom",
+  "crawled_at": "2025-12-13T21:04:19Z",
+  "sections": {
+    "homepage": "https://www.photoroom.com",
+    "about": "https://www.photoroom.com/about",
+    "product": "https://www.photoroom.com/solutions",
+    "careers": "https://www.photoroom.com/company",
+    "blog": "https://www.photoroom.com/blog"
+  }
+}

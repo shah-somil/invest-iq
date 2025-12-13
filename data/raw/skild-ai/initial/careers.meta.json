@@ -1,0 +1,13 @@
+{
+  "company_name": "Skild AI",
+  "source_url": "https://www.skild.ai/career",
+  "crawled_at": "2025-12-13T21:04:34Z",
+  "http_status": 200,
+  "title": "Skild.ai",
+  "canonical": "https://www.skild.ai/career",
+  "robots": "",
+  "content_sha256": "285d0760e91be6f6ff88c405e8a5af812bfa3dee6481225411564603fe91bd3c",
+  "content_length": 13951,
+  "parser": "lxml",
+  "version": 1
+}

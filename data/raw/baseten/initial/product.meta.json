@@ -1,0 +1,13 @@
+{
+  "company_name": "Baseten",
+  "source_url": "https://www.baseten.com/resources/customers/blandai",
+  "crawled_at": "2025-12-13T21:02:53Z",
+  "http_status": 200,
+  "title": "Bland AI breaks latency barriers with record-setting speed using Baseten",
+  "canonical": "https://www.baseten.co/resources/customers/blandai/",
+  "robots": "",
+  "content_sha256": "6582d39e7c05d04daaf71021cc6aa6f418491c25aa91d8c3351b867f2a9f976c",
+  "content_length": 221244,
+  "parser": "lxml",
+  "version": 1
+}

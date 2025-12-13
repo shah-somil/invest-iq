@@ -1,0 +1,25 @@
+{
+  "company_id": "sierra",
+  "company_name": "Sierra",
+  "source_homepage": "https://sierra.ai",
+  "crawled_at": "2025-12-13T21:04:32Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/sierra/initial",
+  "content_sha256": "fd39421c6d4dc4cae27f40de8bfae67ce523311e5650b6e1bd4131e3a44958a2",
+  "content_length": 3268993,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "sierra",
+    "company_name": "Sierra",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/sierra/initial/manifest.json",
+    "sections": {
+      "homepage": "https://sierra.ai",
+      "about": "https://sierra.ai/about",
+      "product": "https://sierra.ai/product",
+      "careers": "https://sierra.ai/careers",
+      "blog": "https://sierra.ai/blog"
+    },
+    "status": "success"
+  }
+}

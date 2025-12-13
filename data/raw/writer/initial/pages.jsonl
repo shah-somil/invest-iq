@@ -1,0 +1,5 @@
+{"company_name": "Writer", "section": "homepage", "source_url": "https://writer.com", "crawled_at": "2025-12-13T21:05:26Z", "status": 200, "bytes": 262909}
+{"company_name": "Writer", "section": "about", "source_url": "https://writer.com/company/about", "crawled_at": "2025-12-13T21:05:26Z", "status": 200, "bytes": 341702}
+{"company_name": "Writer", "section": "product", "source_url": "https://writer.com", "crawled_at": "2025-12-13T21:05:30Z", "status": 200, "bytes": 262909}
+{"company_name": "Writer", "section": "careers", "source_url": "https://writer.com/company/careers", "crawled_at": "2025-12-13T21:05:30Z", "status": 200, "bytes": 205101}
+{"company_name": "Writer", "section": "blog", "source_url": "https://writer.com/blog", "crawled_at": "2025-12-13T21:05:31Z", "status": 200, "bytes": 244356}

@@ -1,0 +1,13 @@
+{
+  "company_name": "Mercor",
+  "source_url": "https://www.mercor.com:443/careers",
+  "crawled_at": "2025-12-13T21:04:09Z",
+  "http_status": 200,
+  "title": "Careers at Mercor | Join Our Team",
+  "canonical": "https://mercor.com/careers",
+  "robots": "index,follow",
+  "content_sha256": "5614736ff66d98396497e5d2386c6c26de6e9ad3f26bc4914bea7427df996066",
+  "content_length": 313033,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "company_name": "Runway",
+  "source_url": "https://runway.com/about",
+  "crawled_at": "2025-12-13T21:04:26Z",
+  "http_status": 200,
+  "title": "About Runway / Simulate any business decision in seconds",
+  "canonical": "https://runway.com/about",
+  "robots": "",
+  "content_sha256": "8a4953bd4f4dd2fdd7ba1304dee8257d16018aa4df47e12643d6156738e1c249",
+  "content_length": 105198,
+  "parser": "lxml",
+  "version": 1
+}

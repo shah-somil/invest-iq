@@ -1,0 +1,25 @@
+{
+  "company_id": "anysphere",
+  "company_name": "Anysphere",
+  "source_homepage": "https://www.anysphere.inc",
+  "crawled_at": "2025-12-13T21:02:50Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/anysphere/initial",
+  "content_sha256": "7345c61b3c468e0968b5ff925aea87752a4d68f2914544b1cc4b7fd011afbd08",
+  "content_length": 13253,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "anysphere",
+    "company_name": "Anysphere",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/anysphere/initial/manifest.json",
+    "sections": {
+      "homepage": "https://anysphere.inc",
+      "about": null,
+      "product": null,
+      "careers": null,
+      "blog": null
+    },
+    "status": "success"
+  }
+}

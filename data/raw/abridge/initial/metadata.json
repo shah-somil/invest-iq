@@ -1,0 +1,25 @@
+{
+  "company_id": "abridge",
+  "company_name": "Abridge",
+  "source_homepage": "https://www.abridge.com",
+  "crawled_at": "2025-12-13T21:02:43Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/abridge/initial",
+  "content_sha256": "c06e00226be4e5aea4408bba013251613a5097aabbedda459c2608a71cd77f39",
+  "content_length": 470979,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "abridge",
+    "company_name": "Abridge",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/abridge/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.abridge.com",
+      "about": "https://www.abridge.com/about",
+      "product": "https://www.abridge.com/product",
+      "careers": "https://www.abridge.com/about#careers",
+      "blog": "https://www.abridge.com/blog"
+    },
+    "status": "success"
+  }
+}

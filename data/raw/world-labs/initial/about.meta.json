@@ -1,0 +1,13 @@
+{
+  "company_name": "World Labs",
+  "source_url": "https://www.worldlabs.ai/about",
+  "crawled_at": "2025-12-13T21:05:24Z",
+  "http_status": 200,
+  "title": "About | World Labs",
+  "canonical": "https://www.worldlabs.ai/about",
+  "robots": "",
+  "content_sha256": "b7120195e12fad2367d5b574715cf16ebce8af0d7efb27790fdbd2c3487df04a",
+  "content_length": 232731,
+  "parser": "lxml",
+  "version": 1
+}

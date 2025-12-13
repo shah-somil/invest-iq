@@ -1,0 +1,12 @@
+{
+  "company_id": "decagon",
+  "company_name": "Decagon",
+  "crawled_at": "2025-12-13T21:03:20Z",
+  "sections": {
+    "homepage": "https://decagon.ai",
+    "about": "https://decagon.ai/about",
+    "product": "https://decagon.ai/product",
+    "careers": "https://decagon.ai/careers",
+    "blog": "https://decagon.ai/resources"
+  }
+}

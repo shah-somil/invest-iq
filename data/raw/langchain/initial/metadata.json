@@ -1,0 +1,25 @@
+{
+  "company_id": "langchain",
+  "company_name": "LangChain",
+  "source_homepage": "https://langchain.com",
+  "crawled_at": "2025-12-13T21:04:04Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/langchain/initial",
+  "content_sha256": "22145965f738cb06726212dcbfc7166935a7c69078e4dbf1965fbb51f48e70da",
+  "content_length": 337355,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "langchain",
+    "company_name": "LangChain",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/langchain/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.langchain.com",
+      "about": "https://www.langchain.com/about",
+      "product": "https://www.langchain.com/langsmith/deployment",
+      "careers": "https://www.langchain.com/careers",
+      "blog": "https://www.langchain.com/resources"
+    },
+    "status": "success"
+  }
+}

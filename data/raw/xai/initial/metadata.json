@@ -1,0 +1,25 @@
+{
+  "company_id": "xai",
+  "company_name": "XAI",
+  "source_homepage": "https://x.ai",
+  "crawled_at": "2025-12-13T21:05:32Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/xai/initial",
+  "content_sha256": "2ba986ab95d4c2102d8799a9e49dabd1829d76871f9ca81d5464386ed453a6ce",
+  "content_length": 547436,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "xai",
+    "company_name": "XAI",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/xai/initial/manifest.json",
+    "sections": {
+      "homepage": "https://x.ai",
+      "about": "https://x.ai/company",
+      "product": "https://x.ai/grok",
+      "careers": "https://x.ai/careers",
+      "blog": "https://x.ai/news"
+    },
+    "status": "success"
+  }
+}

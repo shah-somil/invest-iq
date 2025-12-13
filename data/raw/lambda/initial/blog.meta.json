@@ -1,0 +1,13 @@
+{
+  "company_name": "Lambda",
+  "source_url": "https://lambda.ai/blog",
+  "crawled_at": "2025-12-13T21:04:02Z",
+  "http_status": 200,
+  "title": "The Lambda Deep Learning Blog",
+  "canonical": "https://lambda.ai/blog",
+  "robots": "",
+  "content_sha256": "4a29299706b3bd9eb75f540d7a7e86899d5adb8af42f760039a567877d118934",
+  "content_length": 62860,
+  "parser": "lxml",
+  "version": 1
+}

@@ -1,0 +1,25 @@
+{
+  "company_id": "skild-ai",
+  "company_name": "Skild AI",
+  "source_homepage": "https://www.skild.ai/",
+  "crawled_at": "2025-12-13T21:04:35Z",
+  "run_type": "full-load",
+  "output_dir": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/skild-ai/initial",
+  "content_sha256": "47f298d9c1f043e02b343329913b12bf1a0e2e9bde46288899bf8b88aaa77560",
+  "content_length": 118511,
+  "parser": "lab1_scraper",
+  "version": 1,
+  "scraper_result": {
+    "company_id": "skild-ai",
+    "company_name": "Skild AI",
+    "manifest_path": "/Users/somilshah/Desktop/Workspace/NU/PromptEngineering/invest-iq/data/raw/skild-ai/initial/manifest.json",
+    "sections": {
+      "homepage": "https://www.skild.ai",
+      "about": "https://www.skild.ai/blogs",
+      "product": "https://www.skild.ai/blogs",
+      "careers": "https://www.skild.ai/career",
+      "blog": "https://www.skild.ai/blogs"
+    },
+    "status": "success"
+  }
+}

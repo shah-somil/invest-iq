@@ -1,0 +1,13 @@
+{
+  "company_name": "Sakana AI",
+  "source_url": "https://sakana.ai",
+  "crawled_at": "2025-12-13T21:04:27Z",
+  "http_status": 200,
+  "title": "Sakana AI",
+  "canonical": "https://sakana.ai",
+  "robots": "noindex, noarchive",
+  "content_sha256": "cb303171e305f67051459bf7cbbc122731347048689fa1c55f43d7b90fb83aa2",
+  "content_length": 6696,
+  "parser": "lxml",
+  "version": 1
+}

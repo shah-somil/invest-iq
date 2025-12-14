@@ -10,3 +10,4 @@ This module provides vector storage and retrieval capabilities using:
 from .rag_pipeline import VectorStore, load_company_data_from_disk
 
 __all__ = ['VectorStore', 'load_company_data_from_disk']
+

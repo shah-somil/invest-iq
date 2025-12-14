@@ -20,6 +20,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from typing import List, Dict, Optional
 from openai import OpenAI
+import httpx
+from bs4 import BeautifulSoup
 
 # Import RAG pipeline
 from src.rag.rag_pipeline import VectorStore
@@ -195,14 +197,17 @@ class ChatRequest(BaseModel):
     company_name: Optional[str] = None  # Optional: pre-select company
     model: str = Field("gpt-4o")
     temperature: float = Field(0.7, ge=0.0, le=1.0)
+    enable_web_search: bool = Field(False)  # Enable web search fallback
 
 
 class ChatResponse(BaseModel):
     message: str
     used_retrieval: bool
+    used_web_search: bool = False
     company_name: Optional[str] = None
     chunks_retrieved: int = 0
     chunks: List[Dict] = []  # Add actual chunks
+    web_sources: List[Dict] = []  # Web search results
     metadata: Dict = {}
 
 
@@ -404,6 +409,62 @@ async def dashboard_get(
     return await dashboard_post(request)
 
 
+async def perform_web_search(query: str, max_results: int = 3) -> List[Dict]:
+    """
+    Perform web search using DuckDuckGo HTML search.
+    Returns list of search results with title, snippet, and URL.
+    """
+    try:
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            # Use DuckDuckGo HTML search
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+            response = await client.get(
+                'https://html.duckduckgo.com/html/',
+                params={'q': query},
+                headers=headers,
+                follow_redirects=True
+            )
+            
+            if response.status_code != 200:
+                return []
+            
+            soup = BeautifulSoup(response.text, 'html.parser')
+            results = []
+            
+            # Parse DuckDuckGo results
+            for result in soup.select('.result')[:max_results]:
+                title_elem = result.select_one('.result__title')
+                snippet_elem = result.select_one('.result__snippet')
+                url_elem = result.select_one('.result__url')
+                
+                if title_elem and snippet_elem:
+                    title = title_elem.get_text(strip=True)
+                    snippet = snippet_elem.get_text(strip=True)
+                    url = url_elem.get('href') if url_elem else ''
+                    
+                    # Clean up DuckDuckGo redirect URL
+                    if url and '//duckduckgo.com/l/' in url:
+                        # Extract actual URL from redirect
+                        import urllib.parse
+                        parsed = urllib.parse.urlparse(url)
+                        params = urllib.parse.parse_qs(parsed.query)
+                        url = params.get('uddg', [url])[0]
+                    
+                    results.append({
+                        'title': title,
+                        'snippet': snippet,
+                        'url': url,
+                        'source': 'web_search'
+                    })
+            
+            return results
+    except Exception as e:
+        print(f"Web search error: {e}")
+        return []
+
+
 def _empty_dashboard(company_name: str) -> str:
     """Empty dashboard."""
     return f"""# {company_name} - Investment Analysis Report
@@ -521,10 +582,37 @@ async def chat(request: ChatRequest):
                 print(f"Warning: Retrieval failed: {e}")
                 chunks = []
         
+        # Web search fallback
+        web_results = []
+        used_web_search = False
+        
+        if request.enable_web_search:
+            # Always perform web search when enabled to supplement RAG results
+            # This allows the LLM to use both internal knowledge and fresh web data
+            web_query = f"{company_name} {search_query}" if company_name else request.message
+            print(f"🌐 Performing web search for: '{web_query}'")
+            web_results = await perform_web_search(web_query, max_results=3)
+            used_web_search = len(web_results) > 0
+            
+            if used_web_search:
+                print(f"✓ Found {len(web_results)} web results")
+            else:
+                print(f"✗ No web results found")
+        
         # Build context for response
         context = ""
         if chunks:
             context = format_chat_context(company_name, chunks)
+        
+        # Add web search results to context
+        if web_results:
+            web_context = "\n\n--- ADDITIONAL WEB SEARCH RESULTS ---\n\n"
+            web_context += "Use these web results to supplement the knowledge base information:\n\n"
+            for idx, result in enumerate(web_results, 1):
+                web_context += f"{idx}. {result['title']}\n"
+                web_context += f"   {result['snippet']}\n"
+                web_context += f"   Source: {result['url']}\n\n"
+            context += web_context
         
         # Generate response
         system_prompt = get_chat_system_prompt()
@@ -558,13 +646,16 @@ async def chat(request: ChatRequest):
         return ChatResponse(
             message=assistant_message,
             used_retrieval=needs_retrieval and len(chunks) > 0,
+            used_web_search=used_web_search,
             company_name=company_name,
             chunks_retrieved=len(chunks),
             chunks=chunks,  # Include actual chunks
+            web_sources=web_results,  # Include web search results
             metadata={
                 "model": request.model,
                 "tokens_used": response.usage.total_tokens if response.usage else 0,
-                "search_query": search_query
+                "search_query": search_query,
+                "web_search_enabled": request.enable_web_search
             }
         )
         

@@ -8,3 +8,4 @@ Provides endpoints for semantic search and dashboard generation.
 from .api import app
 
 __all__ = ['app']
+

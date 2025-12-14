@@ -44,15 +44,7 @@ openai_client = None
 # System prompt (inline)
 DASHBOARD_SYSTEM_PROMPT = """You generate an investor-facing diligence dashboard for a private AI startup.
 
-Use ONLY data in the provided payload. If something is unknown or not disclosed, literally say "Not disclosed."
-
-If a claim is marketing, attribute it: "The company states ..."
-
-Never include personal emails or phone numbers.
-
-Always include the final section "## Disclosure Gaps".
-
-Required section order:
+Required template sections in order:
 
 ## Company Overview
 ## Business Model and GTM
@@ -343,7 +335,7 @@ async def dashboard_post(request: DashboardRequest):
         # Create prompt
         user_prompt = f"""Generate an investment analysis report for {request.company_name}.
 
-Use ONLY the data below. Use "Not disclosed." for missing info.
+Use ONLY the data below. If something is unknown or not disclosed, literally say "Not disclosed."
 
 {payload}
 

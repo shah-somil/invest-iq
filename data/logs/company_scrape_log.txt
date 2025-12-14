@@ -1,0 +1,212 @@
+======================================================================
+🚀 InvestIQ - Full Company Data Ingestion
+======================================================================
+Seed files to process: 1
+Data directory: /Users/charmydarji/Desktop/invest-iq/data
+
+
+======================================================================
+📄 Processing seed file 1/1: top_fintech50_seed.json
+======================================================================
+
+📖 Loading companies from /Users/charmydarji/Desktop/invest-iq/data/seed/top_fintech50_seed.json
+✓ Found 50 companies
+
+🎯 Will scrape 50 companies from top_fintech50_seed.json
+
+
+[1/50] 🔍 Scraping Alloy...
+  ⚠️  robots.txt disallows scraping for Alloy (https://www.alloy.com)
+[scrape_company] alloy: homepage_fetch_failed (homepage fetch failed (https://www.alloy.com) -> robots.txt disallows fetching https://www.alloy.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36)
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/alloy/initial/metadata.json
+
+[2/50] 🔍 Scraping Arc...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/arc/initial/metadata.json
+
+[3/50] 🔍 Scraping At-Bay...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/at-bay/initial/metadata.json
+
+[4/50] 🔍 Scraping Aven...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/aven/initial/metadata.json
+
+[5/50] 🔍 Scraping Bilt Rewards...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/bilt-rewards/initial/metadata.json
+
+[6/50] 🔍 Scraping Brico...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/brico/initial/metadata.json
+
+[7/50] 🔍 Scraping Candex...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/candex/initial/metadata.json
+
+[8/50] 🔍 Scraping Capitalize...
+  ⚠️  robots.txt disallows scraping for Capitalize (https://www.hicapitalize.com)
+[scrape_company] capitalize: homepage_fetch_failed (homepage fetch failed (https://www.hicapitalize.com) -> robots.txt disallows fetching https://www.hicapitalize.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36)
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/capitalize/initial/metadata.json
+
+[9/50] 🔍 Scraping Carry1st...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/carry1st/initial/metadata.json
+
+[10/50] 🔍 Scraping Chime...
+  ⚠️  robots.txt disallows scraping for Chime (https://www.chime.com)
+[scrape_company] chime: homepage_fetch_failed (homepage fetch failed (https://www.chime.com) -> robots.txt disallows fetching https://www.chime.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36)
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/chime/initial/metadata.json
+
+[11/50] 🔍 Scraping Coalition...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/coalition/initial/metadata.json
+
+[12/50] 🔍 Scraping Column...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/column/initial/metadata.json
+
+[13/50] 🔍 Scraping DailyPay...
+  ⚠️  robots.txt disallows scraping for DailyPay (https://www.dailypay.com)
+[scrape_company] dailypay: homepage_fetch_failed (homepage fetch failed (https://www.dailypay.com) -> robots.txt disallows fetching https://www.dailypay.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36)
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/dailypay/initial/metadata.json
+
+[14/50] 🔍 Scraping DataSnipper...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/datasnipper/initial/metadata.json
+
+[15/50] 🔍 Scraping DataVisor...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/datavisor/initial/metadata.json
+
+[16/50] 🔍 Scraping Esusu...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/esusu/initial/metadata.json
+
+[17/50] 🔍 Scraping Ethos...
+  ⚠️  robots.txt disallows scraping for Ethos (https://www.ethoslife.com)
+[scrape_company] ethos: homepage_fetch_failed (homepage fetch failed (https://www.ethoslife.com) -> robots.txt disallows fetching https://www.ethoslife.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36)
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/ethos/initial/metadata.json
+
+[18/50] 🔍 Scraping Figure...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/figure/initial/metadata.json
+
+[19/50] 🔍 Scraping Fireblocks...
+  ⚠️  robots.txt disallows scraping for Fireblocks (https://www.fireblocks.com)
+[scrape_company] fireblocks: homepage_fetch_failed (homepage fetch failed (https://www.fireblocks.com) -> robots.txt disallows fetching https://www.fireblocks.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36)
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/fireblocks/initial/metadata.json
+
+[20/50] 🔍 Scraping Found...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/found/initial/metadata.json
+
+[21/50] 🔍 Scraping Highnote...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/highnote/initial/metadata.json
+
+[22/50] 🔍 Scraping Imprint...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/imprint/initial/metadata.json
+
+[23/50] 🔍 Scraping Increase...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/increase/initial/metadata.json
+
+[24/50] 🔍 Scraping Kin Insurance...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/kin-insurance/initial/metadata.json
+
+[25/50] 🔍 Scraping Kudos Technologies...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/kudos-technologies/initial/metadata.json
+
+[26/50] 🔍 Scraping Lead Bank...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/lead-bank/initial/metadata.json
+
+[27/50] 🔍 Scraping Mercury...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/mercury/initial/metadata.json
+
+[28/50] 🔍 Scraping Nala...
+  ⚠️  robots.txt disallows scraping for Nala (https://www.nala.com)
+[scrape_company] nala: homepage_fetch_failed (homepage fetch failed (https://www.nala.com) -> robots.txt disallows fetching https://www.nala.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36)
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/nala/initial/metadata.json
+
+[29/50] 🔍 Scraping Navan...
+  ⚠️  robots.txt disallows scraping for Navan (https://www.navan.com)
+[scrape_company] navan: homepage_fetch_failed (homepage fetch failed (https://www.navan.com) -> robots.txt disallows fetching https://www.navan.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36)
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/navan/initial/metadata.json
+
+[30/50] 🔍 Scraping Nova Credit...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/nova-credit/initial/metadata.json
+
+[31/50] 🔍 Scraping Parafin...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/parafin/initial/metadata.json
+
+[32/50] 🔍 Scraping Persona...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/persona/initial/metadata.json
+
+[33/50] 🔍 Scraping Plaid...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/plaid/initial/metadata.json
+
+[34/50] 🔍 Scraping Propel...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/propel/initial/metadata.json
+
+[35/50] 🔍 Scraping Pulley...
+  ⚠️  Could not read robots.txt for https://pulley.com: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/pulley/initial/metadata.json
+
+[36/50] 🔍 Scraping Ramp...
+  ⚠️  robots.txt disallows scraping for Ramp (https://www.ramp.com)
+[scrape_company] ramp: homepage_fetch_failed (homepage fetch failed (https://www.ramp.com) -> robots.txt disallows fetching https://www.ramp.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36)
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/ramp/initial/metadata.json
+
+[37/50] 🔍 Scraping Relay...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/relay/initial/metadata.json
+
+[38/50] 🔍 Scraping Securitize...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/securitize/initial/metadata.json
+
+[39/50] 🔍 Scraping SentiLink...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/sentilink/initial/metadata.json
+
+[40/50] 🔍 Scraping Squire Technologies...
+  ⚠️  Could not read robots.txt for https://www.squirecard.com: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+  ⚠️  robots.txt disallows scraping for Squire Technologies (https://www.squirecard.com)
+[scrape_company] squire-technologies: homepage_fetch_failed (homepage fetch failed (https://www.squirecard.com) -> robots.txt disallows fetching https://www.squirecard.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36)
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/squire-technologies/initial/metadata.json
+
+[41/50] 🔍 Scraping Stripe...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/stripe/initial/metadata.json
+
+[42/50] 🔍 Scraping Sunbit...
+  ⚠️  robots.txt disallows scraping for Sunbit (https://www.sunbit.com)
+[scrape_company] sunbit: homepage_fetch_failed (homepage fetch failed (https://www.sunbit.com) -> robots.txt disallows fetching https://www.sunbit.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36)
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/sunbit/initial/metadata.json
+
+[43/50] 🔍 Scraping TabaPay...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/tabapay/initial/metadata.json
+
+[44/50] 🔍 Scraping Tala...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/tala/initial/metadata.json
+
+[45/50] 🔍 Scraping Tipalti...
+  ⚠️  robots.txt disallows scraping for Tipalti (https://www.tipalti.com)
+[scrape_company] tipalti: homepage_fetch_failed (homepage fetch failed (https://www.tipalti.com) -> robots.txt disallows fetching https://www.tipalti.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36)
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/tipalti/initial/metadata.json
+
+[46/50] 🔍 Scraping True Link...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/true-link/initial/metadata.json
+
+[47/50] 🔍 Scraping Trumid...
+  ⚠️  robots.txt disallows scraping for Trumid (https://www.trumid.com)
+[scrape_company] trumid: homepage_fetch_failed (homepage fetch failed (https://www.trumid.com) -> robots.txt disallows fetching https://www.trumid.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36)
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/trumid/initial/metadata.json
+
+[48/50] 🔍 Scraping Valon...
+  ⚠️  robots.txt disallows scraping for Valon (https://www.valon.com)
+[scrape_company] valon: homepage_fetch_failed (homepage fetch failed (https://www.valon.com) -> robots.txt disallows fetching https://www.valon.com for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36)
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/valon/initial/metadata.json
+
+[49/50] 🔍 Scraping Wealthfront...
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/wealthfront/initial/metadata.json
+
+[50/50] 🔍 Scraping Zip...
+  ⚠️  robots.txt disallows scraping for Zip (https://www.zip.co)
+[scrape_company] zip: homepage_fetch_failed (homepage fetch failed (https://www.zip.co) -> robots.txt disallows fetching https://www.zip.co for user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36)
+  ✓ Success: /Users/charmydarji/Desktop/invest-iq/data/raw/zip/initial/metadata.json
+/Users/charmydarji/Desktop/invest-iq/src/scripts/run_full_ingest.py:85: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.utcnow().isoformat(),
+
+📊 Summary saved to: /Users/charmydarji/Desktop/invest-iq/data/logs/full_ingest_summary_20251213_183040.json
+
+📋 Robots.txt decisions log saved to: /Users/charmydarji/Desktop/invest-iq/data/logs/robots_txt_decisions_20251213_183639.json
+
+======================================================================
+📊 FINAL SUMMARY
+======================================================================
+Total companies: 50
+✓ Successful: 50
+✗ Failed: 0
+======================================================================

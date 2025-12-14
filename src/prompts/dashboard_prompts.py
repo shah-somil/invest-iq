@@ -246,3 +246,103 @@ Analyze the provided context data and create an 8-section investment diligence d
 
 Begin generating the dashboard now."""
 
+
+# ========== CHAT INTERFACE PROMPTS ==========
+
+def get_chat_system_prompt() -> str:
+    """System prompt for the chat interface."""
+    return """You are an expert investment analyst assistant specializing in private AI and Fintech startups. You help users understand companies in the InvestIQ database by answering questions and providing insights.
+
+## Your Capabilities
+
+1. **General Knowledge**: You can answer general questions about startups, investment analysis, and business concepts using your training data.
+
+2. **Company-Specific Data**: When users ask about specific companies, you can retrieve relevant information from the InvestIQ knowledge base. The system will automatically retrieve relevant chunks when needed.
+
+3. **Analysis**: You can synthesize information, provide insights, and help users understand investment opportunities and risks.
+
+## Guidelines
+
+- Be conversational, helpful, and professional
+- When discussing companies, base your answers on retrieved context when available
+- If you don't have specific information, say so clearly
+- Cite sources when referencing retrieved data
+- Help users understand complex investment concepts
+- Ask clarifying questions if needed
+
+## Available Companies
+
+The system has data on 50+ AI and Fintech startups. When users mention a company name, the system will retrieve relevant information automatically."""
+
+
+def format_chat_context(company_name: str, chunks: List[Dict]) -> str:
+    """Format retrieved chunks for chat context."""
+    if not chunks:
+        return f"**No data available** for {company_name} in the knowledge base."
+    
+    context_parts = [
+        f"## Retrieved Information for {company_name}",
+        f"**{len(chunks)} relevant chunks found:**",
+        f"",
+    ]
+    
+    for idx, chunk in enumerate(chunks[:10], 1):
+        source_type = chunk.get('source_type', 'unknown')
+        source_url = chunk.get('source_url', 'N/A')
+        text = chunk.get('text', '').strip()
+        
+        if text:
+            context_parts.append(f"### Chunk {idx} ({source_type})")
+            context_parts.append(f"Source: {source_url}")
+            context_parts.append("")
+            if len(text) > 500:
+                text = text[:500] + "..."
+            context_parts.append(text)
+            context_parts.append("")
+    
+    if len(chunks) > 10:
+        context_parts.append(f"*... and {len(chunks) - 10} more chunks*")
+    
+    return "\n".join(context_parts)
+
+
+def get_retrieval_decision_prompt(user_message: str, conversation_history: List[Dict], available_companies: List[str]) -> str:
+    """Prompt for LLM to decide if retrieval is needed."""
+    companies_str = ", ".join(available_companies[:20])
+    
+    return f"""Analyze this question to determine if it needs company-specific data from the knowledge base.
+
+Available Companies: {companies_str}{f" ... and {len(available_companies) - 20} more" if len(available_companies) > 20 else ""}
+
+User Question: {user_message}
+
+Conversation History:
+{_format_conversation_history(conversation_history[-5:]) if conversation_history else "No previous messages"}
+
+Respond in JSON format:
+{{
+    "needs_retrieval": true/false,
+    "company_name": "company-name" or null,
+    "search_query": "query string" or null,
+    "reasoning": "brief explanation"
+}}
+
+Guidelines:
+- Set needs_retrieval=true if asking about specific company details (funding, business model, products, team, etc.)
+- Set needs_retrieval=false for general knowledge questions
+- If needs_retrieval=true, extract company name (lowercase with hyphens) and create a search query (3-10 words)
+
+Respond ONLY with valid JSON."""
+
+
+def _format_conversation_history(history: List[Dict]) -> str:
+    """Format conversation history for prompts."""
+    if not history:
+        return ""
+    formatted = []
+    for msg in history:
+        role = msg.get('role', 'user')
+        content = msg.get('content', '')
+        formatted.append(f"{role.upper()}: {content}")
+    return "\n".join(formatted)
+

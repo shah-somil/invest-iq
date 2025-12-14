@@ -28,7 +28,10 @@ from src.rag.rag_pipeline import VectorStore
 from src.prompts.dashboard_prompts import (
     get_dashboard_system_prompt,
     get_dashboard_user_prompt,
-    format_context_for_prompt
+    format_context_for_prompt,
+    get_chat_system_prompt,
+    format_chat_context,
+    get_retrieval_decision_prompt
 )
 
 app = FastAPI(
@@ -181,6 +184,27 @@ class DashboardResponse(BaseModel):
     context_sources: List[str]
 
 
+class ChatMessage(BaseModel):
+    role: str  # "user" or "assistant"
+    content: str
+
+
+class ChatRequest(BaseModel):
+    message: str
+    conversation_history: List[ChatMessage] = []
+    company_name: Optional[str] = None  # Optional: pre-select company
+    model: str = Field("gpt-4o")
+    temperature: float = Field(0.7, ge=0.0, le=1.0)
+
+
+class ChatResponse(BaseModel):
+    message: str
+    used_retrieval: bool
+    company_name: Optional[str] = None
+    chunks_retrieved: int = 0
+    metadata: Dict = {}
+
+
 # ========== ENDPOINTS ==========
 
 @app.get("/")
@@ -194,7 +218,8 @@ def root():
             "companies": "GET /companies - List all indexed companies",
             "stats": "GET /stats - Vector store statistics",
             "rag_search": "GET/POST /rag/search - Semantic search through company data",
-            "dashboard_rag": "GET/POST /dashboard/rag - Generate investment analysis"
+            "dashboard_rag": "GET/POST /dashboard/rag - Generate investment analysis",
+            "chat": "POST /chat - Chat interface with agentic RAG (LLM decides when to retrieve)"
         },
         "docs": "http://localhost:8000/docs",
         "test_urls": {
@@ -417,6 +442,134 @@ def get_stats():
         return stats
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to get stats: {str(e)}")
+
+
+# ========== CHAT INTERFACE ==========
+
+@app.post("/chat", response_model=ChatResponse)
+async def chat(request: ChatRequest):
+    """
+    Chat endpoint with agentic RAG - LLM decides when to retrieve from vector DB.
+    
+    Flow:
+    1. If company_name is provided, use it directly
+    2. Otherwise, use GPT to decide if retrieval is needed
+    3. If retrieval needed, search vector DB
+    4. Generate response with context
+    """
+    try:
+        client = get_openai_client()
+        vs = get_vector_store()
+        
+        # Get available companies for retrieval decision
+        available_companies = vs.get_company_list()
+        
+        # Determine if retrieval is needed
+        needs_retrieval = False
+        company_name = request.company_name
+        search_query = None
+        chunks = []
+        
+        # If company is pre-selected, use it
+        if company_name:
+            needs_retrieval = True
+            search_query = request.message
+        else:
+            # Use GPT to decide if retrieval is needed
+            decision_prompt = get_retrieval_decision_prompt(
+                user_message=request.message,
+                conversation_history=[{"role": m.role, "content": m.content} for m in request.conversation_history],
+                available_companies=available_companies
+            )
+            
+            decision_response = client.chat.completions.create(
+                model="gpt-4o-mini",  # Use cheaper model for decision
+                messages=[
+                    {"role": "system", "content": "You are a retrieval decision assistant. Respond only with valid JSON."},
+                    {"role": "user", "content": decision_prompt}
+                ],
+                temperature=0.1,
+                max_tokens=200
+            )
+            
+            try:
+                import json
+                decision = json.loads(decision_response.choices[0].message.content)
+                needs_retrieval = decision.get("needs_retrieval", False)
+                company_name = decision.get("company_name")
+                search_query = decision.get("search_query")
+            except:
+                # Fallback: check if message mentions a company
+                message_lower = request.message.lower()
+                for comp in available_companies:
+                    if comp.replace("-", " ") in message_lower or comp in message_lower:
+                        needs_retrieval = True
+                        company_name = comp
+                        search_query = request.message
+                        break
+        
+        # Retrieve context if needed
+        if needs_retrieval and company_name and search_query:
+            try:
+                chunks = vs.search(
+                    company_name=company_name,
+                    query=search_query,
+                    top_k=5
+                )
+            except Exception as e:
+                print(f"Warning: Retrieval failed: {e}")
+                chunks = []
+        
+        # Build context for response
+        context = ""
+        if chunks:
+            context = format_chat_context(company_name, chunks)
+        
+        # Generate response
+        system_prompt = get_chat_system_prompt()
+        
+        # Build conversation messages
+        messages = [{"role": "system", "content": system_prompt}]
+        
+        # Add conversation history
+        for msg in request.conversation_history[-10:]:  # Last 10 messages
+            messages.append({"role": msg.role, "content": msg.content})
+        
+        # Add context if retrieved
+        if context:
+            messages.append({
+                "role": "user",
+                "content": f"Context from knowledge base:\n\n{context}\n\nUser question: {request.message}"
+            })
+        else:
+            messages.append({"role": "user", "content": request.message})
+        
+        # Generate response
+        response = client.chat.completions.create(
+            model=request.model,
+            messages=messages,
+            temperature=request.temperature,
+            max_tokens=2000
+        )
+        
+        assistant_message = response.choices[0].message.content
+        
+        return ChatResponse(
+            message=assistant_message,
+            used_retrieval=needs_retrieval and len(chunks) > 0,
+            company_name=company_name,
+            chunks_retrieved=len(chunks),
+            metadata={
+                "model": request.model,
+                "tokens_used": response.usage.total_tokens if response.usage else 0,
+                "search_query": search_query
+            }
+        )
+        
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 if __name__ == "__main__":

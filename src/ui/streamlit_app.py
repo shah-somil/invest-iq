@@ -59,11 +59,138 @@ st.divider()
 
 # ========== MAIN TABS ==========
 
-tab1, tab2, tab3 = st.tabs(["📊 Dashboard Generation", "🔍 RAG Search", "ℹ️ About"])
+tab1, tab2, tab3, tab4 = st.tabs(["💬 Chat", "📊 Dashboard Generation", "🔍 RAG Search", "ℹ️ About"])
 
-# ========== TAB 1: DASHBOARD GENERATION ==========
+# ========== TAB 1: CHAT INTERFACE ==========
 
 with tab1:
+    st.header("💬 Chat with InvestIQ Assistant")
+    
+    st.markdown("""
+    Select a company and ask questions! The AI assistant will automatically retrieve 
+    relevant information from the vector database when needed.
+    """)
+    
+    # Get companies
+    try:
+        companies_resp = requests.get(f"{API_BASE}/companies", timeout=5).json()
+        if isinstance(companies_resp, list):
+            chat_companies = companies_resp
+        elif isinstance(companies_resp, dict):
+            chat_companies = companies_resp.get('companies', [])
+        else:
+            chat_companies = []
+            
+        if not chat_companies:
+            st.warning("No companies found in vector DB.")
+            chat_companies = ["abridge"]
+    except:
+        chat_companies = ["abridge"]
+    
+    # Initialize session state for chat
+    if "chat_history" not in st.session_state:
+        st.session_state.chat_history = []
+    
+    # Company selection (required/prominent)
+    selected_company = st.selectbox(
+        "🏢 Select Company to Chat About",
+        options=sorted(chat_companies),
+        key="chat_company_select",
+        help="Choose a company to ask questions about"
+    )
+    
+    st.divider()
+    
+    # Clear chat button
+    if st.button("🗑️ Clear Chat", use_container_width=True):
+        st.session_state.chat_history = []
+        st.rerun()
+    
+    # Display chat history
+    chat_container = st.container()
+    with chat_container:
+        for msg in st.session_state.chat_history:
+            if msg["role"] == "user":
+                with st.chat_message("user"):
+                    st.write(msg["content"])
+            else:
+                with st.chat_message("assistant"):
+                    st.write(msg["content"])
+                    if msg.get("used_retrieval"):
+                        st.caption(f"🔍 Used RAG retrieval: {msg.get('company_name', 'N/A')} ({msg.get('chunks_retrieved', 0)} chunks)")
+    
+    # Chat input
+    user_input = st.chat_input(f"Ask about {selected_company}...")
+    
+    if user_input:
+        # Add user message to history
+        st.session_state.chat_history.append({
+            "role": "user",
+            "content": user_input
+        })
+        
+        # Show user message immediately
+        with st.chat_message("user"):
+            st.write(user_input)
+        
+        # Generate response
+        with st.chat_message("assistant"):
+            with st.spinner("Thinking..."):
+                try:
+                    # Prepare conversation history
+                    history = [
+                        {"role": m["role"], "content": m["content"]}
+                        for m in st.session_state.chat_history[:-1]  # Exclude current message
+                    ]
+                    
+                    # Call chat API with selected company
+                    resp = requests.post(
+                        f"{API_BASE}/chat",
+                        json={
+                            "message": user_input,
+                            "conversation_history": history,
+                            "company_name": selected_company,  # Use selected company
+                            "model": "gpt-4o",
+                            "temperature": 0.7
+                        },
+                        timeout=60
+                    )
+                    
+                    resp.raise_for_status()
+                    data = resp.json()
+                    
+                    # Display response
+                    st.write(data["message"])
+                    
+                    # Show retrieval info
+                    if data.get("used_retrieval"):
+                        st.caption(f"🔍 Retrieved {data.get('chunks_retrieved', 0)} chunks from {data.get('company_name', 'N/A')}")
+                    
+                    # Add assistant response to history
+                    st.session_state.chat_history.append({
+                        "role": "assistant",
+                        "content": data["message"],
+                        "used_retrieval": data.get("used_retrieval", False),
+                        "company_name": data.get("company_name"),
+                        "chunks_retrieved": data.get("chunks_retrieved", 0)
+                    })
+                    
+                except requests.exceptions.Timeout:
+                    st.error("⏱️ Request timed out. Please try again.")
+                except requests.exceptions.RequestException as e:
+                    st.error(f"❌ Error: {str(e)}")
+                    if hasattr(e, 'response') and e.response is not None:
+                        try:
+                            st.json(e.response.json())
+                        except:
+                            st.text(e.response.text)
+        
+        st.rerun()
+
+
+# ========== TAB 2: DASHBOARD GENERATION ==========
+
+with tab2:
     st.header("📊 Generate Investment Dashboard")
     
     st.markdown("---")
@@ -239,9 +366,9 @@ with tab1:
                         st.text(e.response.text)
 
 
-# ========== TAB 2: RAG SEARCH (LAB 4) ==========
+# ========== TAB 3: RAG SEARCH (LAB 4) ==========
 
-with tab2:
+with tab3:
     st.header("🔍 RAG Search - Semantic Chunk Retrieval")
     
     st.markdown("""
@@ -398,9 +525,9 @@ with tab2:
                         st.text(e.response.text)
 
 
-# ========== TAB 3: ABOUT ==========
+# ========== TAB 4: ABOUT ==========
 
-with tab3:
+with tab4:
     st.header("ℹ️ About This Dashboard")
     
     st.markdown("""
@@ -412,6 +539,12 @@ with tab3:
         - Chunks text (500-1000 tokens)
         - Stores in ChromaDB with OpenAI embeddings
         - Semantic search via `/rag/search` endpoint
+    
+    - ✅ **Chat Interface with Agentic RAG**
+        - Natural language chat about companies
+        - LLM automatically decides when to retrieve from vector DB
+        - Retrieves relevant chunks when company-specific questions are asked
+        - Supports general questions and company-specific queries
     
     - ✅ **RAG Pipeline Dashboard**
         - Retrieves context from vector DB
@@ -458,6 +591,7 @@ GET  /companies           - List all companies
 GET  /stats               - Vector store statistics
 GET  /rag/search          - Semantic search (GET)
 POST /rag/search          - Semantic search (POST)
+POST /chat                - Chat interface with agentic RAG
 GET  /dashboard/rag/{{company}} - Generate dashboard (GET)
 POST /dashboard/rag       - Generate dashboard (POST)
         """)

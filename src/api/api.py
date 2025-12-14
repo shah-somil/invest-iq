@@ -24,6 +24,13 @@ from openai import OpenAI
 # Import RAG pipeline
 from src.rag.rag_pipeline import VectorStore
 
+# Import prompt engineering module
+from src.prompts.dashboard_prompts import (
+    get_dashboard_system_prompt,
+    get_dashboard_user_prompt,
+    format_context_for_prompt
+)
+
 app = FastAPI(
     title="InvestIQ API - RAG-Powered Investment Analysis",
     description="Semantic search and AI-generated investment analysis using RAG",
@@ -40,20 +47,6 @@ app.add_middleware(
 # Global instances
 vector_store = None
 openai_client = None
-
-# System prompt (inline)
-DASHBOARD_SYSTEM_PROMPT = """You generate an investor-facing diligence dashboard for a private AI startup.
-
-Required template sections in order:
-
-## Company Overview
-## Business Model and GTM
-## Funding & Investor Profile
-## Growth Momentum
-## Visibility & Market Sentiment
-## Risks and Challenges
-## Outlook
-## Disclosure Gaps"""
 
 
 # ========== UTILITY FUNCTIONS ==========
@@ -139,31 +132,13 @@ def retrieve_context_for_dashboard(company_name: str, top_k: int = 15) -> List[D
 
 
 def format_payload(company_name: str, chunks: List[Dict]) -> str:
-    """Format chunks as payload for GPT."""
-    if not chunks:
-        return f"No data for {company_name}. Use 'Not disclosed.' for all sections."
+    """
+    Format chunks as payload for GPT.
     
-    payload = f"# Company Data: {company_name}\n\n**Retrieved Chunks**: {len(chunks)}\n\n"
-    
-    # Group by source
-    by_source = {}
-    for chunk in chunks:
-        source = chunk['source_type']
-        if source not in by_source:
-            by_source[source] = []
-        by_source[source].append(chunk)
-    
-    # Format
-    for source_type, source_chunks in sorted(by_source.items()):
-        payload += f"## {source_type.upper()} PAGE\n\n"
-        
-        for chunk in sorted(source_chunks, key=lambda x: x.get('chunk_index', 0)):
-            payload += f"**Chunk {chunk.get('chunk_index', 0) + 1}:**\n"
-            payload += f"{chunk['text']}\n\n"
-        
-        payload += "---\n\n"
-    
-    return payload
+    DEPRECATED: This function is kept for backward compatibility.
+    New code should use format_context_for_prompt() from prompts module.
+    """
+    return format_context_for_prompt(company_name, chunks)
 
 
 # ========== PYDANTIC MODELS ==========
@@ -329,18 +304,12 @@ async def dashboard_post(request: DashboardRequest):
         
         print(f"✓ Retrieved {len(chunks)} chunks")
         
-        # Format payload
-        payload = format_payload(request.company_name, chunks)
+        # Format context using prompt engineering module
+        formatted_context = format_context_for_prompt(request.company_name, chunks)
         
-        # Create prompt
-        user_prompt = f"""Generate an investment analysis report for {request.company_name}.
-
-Use ONLY the data below. If something is unknown or not disclosed, literally say "Not disclosed."
-
-{payload}
-
-Generate all 8 sections.
-"""
+        # Generate prompts using prompt engineering module
+        system_prompt = get_dashboard_system_prompt()
+        user_prompt = get_dashboard_user_prompt(request.company_name, formatted_context)
         
         # Call GPT
         client = get_openai_client()
@@ -348,7 +317,7 @@ Generate all 8 sections.
         response = client.chat.completions.create(
             model=request.model,
             messages=[
-                {"role": "system", "content": DASHBOARD_SYSTEM_PROMPT},
+                {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
             ],
             max_tokens=request.max_tokens,

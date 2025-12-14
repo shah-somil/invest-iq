@@ -52,7 +52,7 @@ What it does
 Guardrails & extras
 -------------------
 • Checks robots.txt before scraping any URL (respects website crawling policies)
-• Never crawls blocked hosts (forbes.com, buysub.com). If homepage resolves there → skip with warning.
+• Never crawls blocked hosts. If homepage resolves there → skip with warning.
 • Checks robots.txt before scraping to respect website crawling policies.
 • Optional per-company domain overrides: --overrides data/domain_overrides.json
   Format: { "cohere": "https://cohere.com", "baseten": "https://www.baseten.co", ... }

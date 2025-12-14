@@ -267,3 +267,4 @@ web-build/
 # Optional: Ignore test coverage from Jest
 coverage/
 
+!frontend/lib/

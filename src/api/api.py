@@ -202,6 +202,7 @@ class ChatResponse(BaseModel):
     used_retrieval: bool
     company_name: Optional[str] = None
     chunks_retrieved: int = 0
+    chunks: List[Dict] = []  # Add actual chunks
     metadata: Dict = {}
 
 
@@ -559,6 +560,7 @@ async def chat(request: ChatRequest):
             used_retrieval=needs_retrieval and len(chunks) > 0,
             company_name=company_name,
             chunks_retrieved=len(chunks),
+            chunks=chunks,  # Include actual chunks
             metadata={
                 "model": request.model,
                 "tokens_used": response.usage.total_tokens if response.usage else 0,

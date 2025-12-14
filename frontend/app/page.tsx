@@ -12,6 +12,7 @@ import { Badge } from "@/components/ui/badge"
 import { Slider } from "@/components/ui/slider"
 import { Progress } from "@/components/ui/progress"
 import { ScrollArea } from "@/components/ui/scroll-area"
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
 import {
   MessageSquare,
   BarChart3,
@@ -28,6 +29,8 @@ import {
   Building2,
   FileText,
   Activity,
+  ChevronDown,
+  ChevronUp,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import ReactMarkdown from "react-markdown"
@@ -223,6 +226,7 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
           used_retrieval: data.used_retrieval,
           chunks_retrieved: data.chunks_retrieved,
           company_name: data.company_name,
+          chunks: data.chunks || [],
         },
       ])
     } catch (error) {
@@ -295,7 +299,49 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
                   )}
                 >
                   <p className="text-sm leading-relaxed whitespace-pre-wrap">{msg.content}</p>
-                  {msg.used_retrieval && (
+                  {msg.used_retrieval && msg.chunks && msg.chunks.length > 0 && (
+                    <Collapsible className="mt-3">
+                      <CollapsibleTrigger className="flex items-center gap-2 text-xs opacity-70 hover:opacity-100 transition-opacity">
+                        <Database className="h-3 w-3" />
+                        <span>Retrieved {msg.chunks_retrieved} chunks from {msg.company_name}</span>
+                        <ChevronDown className="h-3 w-3" />
+                      </CollapsibleTrigger>
+                      <CollapsibleContent className="mt-2 space-y-2">
+                        {msg.chunks.map((chunk: any, chunkIdx: number) => (
+                          <div key={chunkIdx} className="rounded-lg border border-border bg-card p-3 text-xs">
+                            <div className="flex items-center justify-between mb-2">
+                              <div className="flex items-center gap-2">
+                                <FileText className="h-3 w-3 text-muted-foreground" />
+                                <span className="font-medium text-foreground">{chunk.source_type}</span>
+                                <Badge variant="outline" className="text-xs">
+                                  Chunk {chunk.chunk_index + 1}
+                                </Badge>
+                              </div>
+                              {chunk.distance && (
+                                <span className="text-muted-foreground">
+                                  Distance: {chunk.distance.toFixed(3)}
+                                </span>
+                              )}
+                            </div>
+                            {chunk.source_url && (
+                              <a
+                                href={chunk.source_url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block mb-2 text-primary hover:underline truncate"
+                              >
+                                {chunk.source_url}
+                              </a>
+                            )}
+                            <div className="text-muted-foreground leading-relaxed max-h-32 overflow-y-auto">
+                              {chunk.text}
+                            </div>
+                          </div>
+                        ))}
+                      </CollapsibleContent>
+                    </Collapsible>
+                  )}
+                  {msg.used_retrieval && (!msg.chunks || msg.chunks.length === 0) && (
                     <div className="mt-2 flex items-center gap-2 text-xs opacity-70">
                       <Database className="h-3 w-3" />
                       Retrieved {msg.chunks_retrieved} chunks from {msg.company_name}

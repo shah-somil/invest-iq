@@ -15,6 +15,115 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
 from langchain_core.documents import Document
 
+# ========== COMPANY REGISTRY MANAGEMENT ==========
+
+def get_registry_path(project_root: Optional[Path] = None) -> Path:
+    """Get path to company registry file."""
+    if project_root is None:
+        # Default to data/rag/companies_registry.json relative to this file
+        current_file = Path(__file__).resolve()
+        project_root = current_file.parent.parent.parent
+    
+    registry_dir = project_root / "data" / "rag"
+    registry_dir.mkdir(parents=True, exist_ok=True)
+    return registry_dir / "companies_registry.json"
+
+
+def load_company_registry(project_root: Optional[Path] = None) -> Dict[str, Dict]:
+    """
+    Load company registry from file.
+    
+    Returns:
+        Dict mapping company_name to metadata dict with 'ingested_at', 'chunks_count', etc.
+    """
+    registry_path = get_registry_path(project_root)
+    
+    if not registry_path.exists():
+        return {}
+    
+    try:
+        with open(registry_path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        print(f"Warning: Could not load company registry: {e}")
+        return {}
+
+
+def save_company_registry(registry: Dict[str, Dict], project_root: Optional[Path] = None):
+    """Save company registry to file."""
+    registry_path = get_registry_path(project_root)
+    
+    try:
+        with open(registry_path, 'w', encoding='utf-8') as f:
+            json.dump(registry, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        print(f"Error saving company registry: {e}")
+
+
+def register_company(
+    company_name: str,
+    chunks_count: int,
+    sources_count: int = 0,
+    project_root: Optional[Path] = None
+):
+    """
+    Register a successfully ingested company in the registry.
+    Only registers if chunks_count > 0 (actually has data).
+    
+    Args:
+        company_name: Name of the company
+        chunks_count: Number of chunks stored
+        sources_count: Number of sources processed
+        project_root: Optional project root path
+    """
+    # Only register if we actually have chunks
+    if chunks_count <= 0:
+        return
+    
+    registry = load_company_registry(project_root)
+    
+    registry[company_name] = {
+        'ingested_at': datetime.now(timezone.utc).isoformat(),
+        'chunks_count': chunks_count,
+        'sources_count': sources_count,
+        'last_updated': datetime.now(timezone.utc).isoformat()
+    }
+    
+    save_company_registry(registry, project_root)
+
+
+def unregister_company(company_name: str, project_root: Optional[Path] = None):
+    """Remove a company from the registry (e.g., when force_refresh deletes data)."""
+    registry = load_company_registry(project_root)
+    
+    if company_name in registry:
+        del registry[company_name]
+        save_company_registry(registry, project_root)
+
+
+def cleanup_registry(project_root: Optional[Path] = None) -> int:
+    """
+    Remove companies with 0 chunks from the registry.
+    Returns number of companies removed.
+    """
+    registry = load_company_registry(project_root)
+    
+    removed = 0
+    to_remove = []
+    
+    for company_name, data in registry.items():
+        if data.get('chunks_count', 0) == 0:
+            to_remove.append(company_name)
+    
+    for company_name in to_remove:
+        del registry[company_name]
+        removed += 1
+    
+    if removed > 0:
+        save_company_registry(registry, project_root)
+    
+    return removed
+
 def load_company_data_from_disk(company_name: str, base_path: str) -> List[Dict]:
     """
     Load all scraped data for a company from disk.
@@ -328,6 +437,20 @@ class VectorStore:
                     stats['chunks_stored'] = len(all_chunks_text)
                     print(f"✓ Ingested {stats['chunks_stored']} chunks for {company_name}")
                     
+                    # Register successful ingestion in company registry
+                    if stats['chunks_stored'] > 0:
+                        try:
+                            # Get project root (3 levels up from this file)
+                            project_root = Path(__file__).resolve().parent.parent.parent
+                            register_company(
+                                company_name=company_name,
+                                chunks_count=stats['chunks_stored'],
+                                sources_count=stats['sources_processed'],
+                                project_root=project_root
+                            )
+                        except Exception as e:
+                            print(f"Warning: Could not register company in registry: {e}")
+                    
                 except Exception as e:
                     stats['errors'].append(f"ChromaDB/Embedding error: {str(e)}")
                     print(f"❌ Error details: {str(e)}")
@@ -344,6 +467,13 @@ class VectorStore:
             if results['ids']:
                 self.collection.delete(ids=results['ids'])
                 print(f"✓ Deleted {len(results['ids'])} existing chunks for {company_name}")
+                
+                # Also remove from registry when force refreshing
+                try:
+                    project_root = Path(__file__).resolve().parent.parent.parent
+                    unregister_company(company_name, project_root)
+                except Exception as e:
+                    print(f"Warning: Could not unregister company: {e}")
         except Exception as e:
             print(f"Warning: Could not delete existing data: {str(e)}")
     
@@ -436,10 +566,30 @@ class VectorStore:
             return []
     
     def get_company_list(self) -> List[str]:
-        """Get list of all companies in the vector store."""
+        """
+        Get list of all companies from the registry file (source of truth).
+        Only returns companies with chunks_count > 0 (actually have data).
+        Falls back to ChromaDB if registry doesn't exist.
+        """
         try:
+            # Try to load from registry file first (source of truth)
+            project_root = Path(__file__).resolve().parent.parent.parent
+            registry = load_company_registry(project_root)
+            
+            if registry:
+                # Filter out companies with 0 chunks
+                companies = [
+                    name for name, data in registry.items()
+                    if data.get('chunks_count', 0) > 0
+                ]
+                companies = sorted(companies)
+                print(f"✓ Loaded {len(companies)} companies from registry (with data)")
+                return companies
+            
+            # Fallback to ChromaDB if registry is empty (for backward compatibility)
+            print("Registry empty, falling back to ChromaDB...")
             results = self.collection.get()
-            if not results['metadatas']:
+            if not results.get('metadatas'):
                 return []
             
             companies = set()
@@ -447,7 +597,10 @@ class VectorStore:
                 if 'company_name' in metadata:
                     companies.add(metadata['company_name'])
             
-            return sorted(list(companies))
+            companies_list = sorted(list(companies))
+            print(f"✓ Loaded {len(companies_list)} companies from ChromaDB (fallback)")
+            return companies_list
+            
         except Exception as e:
             print(f"Error getting company list: {str(e)}")
             return []

@@ -1,0 +1,416 @@
+{
+  "abridge": {
+    "ingested_at": "2025-12-14T01:36:46.676001+00:00",
+    "chunks_count": 21,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:36:46.676025+00:00"
+  },
+  "anysphere": {
+    "ingested_at": "2025-12-14T01:36:48.926968+00:00",
+    "chunks_count": 1,
+    "sources_count": 1,
+    "last_updated": "2025-12-14T01:36:48.926979+00:00"
+  },
+  "arc": {
+    "ingested_at": "2025-12-14T01:36:50.934042+00:00",
+    "chunks_count": 32,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:36:50.934067+00:00"
+  },
+  "at-bay": {
+    "ingested_at": "2025-12-14T01:36:52.445795+00:00",
+    "chunks_count": 25,
+    "sources_count": 4,
+    "last_updated": "2025-12-14T01:36:52.445819+00:00"
+  },
+  "aven": {
+    "ingested_at": "2025-12-14T01:36:54.081538+00:00",
+    "chunks_count": 10,
+    "sources_count": 2,
+    "last_updated": "2025-12-14T01:36:54.081588+00:00"
+  },
+  "baseten": {
+    "ingested_at": "2025-12-14T01:36:55.708099+00:00",
+    "chunks_count": 34,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:36:55.708143+00:00"
+  },
+  "bilt-rewards": {
+    "ingested_at": "2025-12-14T01:36:57.601431+00:00",
+    "chunks_count": 79,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:36:57.601460+00:00"
+  },
+  "candex": {
+    "ingested_at": "2025-12-14T01:36:59.717895+00:00",
+    "chunks_count": 11,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:36:59.717913+00:00"
+  },
+  "captions": {
+    "ingested_at": "2025-12-14T01:37:01.688201+00:00",
+    "chunks_count": 15,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:01.688231+00:00"
+  },
+  "carry1st": {
+    "ingested_at": "2025-12-14T01:37:03.346207+00:00",
+    "chunks_count": 43,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:03.346225+00:00"
+  },
+  "clay": {
+    "ingested_at": "2025-12-14T01:37:06.459562+00:00",
+    "chunks_count": 170,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:06.459601+00:00"
+  },
+  "coactive-ai": {
+    "ingested_at": "2025-12-14T01:37:08.249153+00:00",
+    "chunks_count": 33,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:08.249162+00:00"
+  },
+  "coalition": {
+    "ingested_at": "2025-12-14T01:37:09.714918+00:00",
+    "chunks_count": 47,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:09.714940+00:00"
+  },
+  "cohere": {
+    "ingested_at": "2025-12-14T01:37:11.028847+00:00",
+    "chunks_count": 19,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:11.028909+00:00"
+  },
+  "column": {
+    "ingested_at": "2025-12-14T01:37:12.640910+00:00",
+    "chunks_count": 59,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:12.640965+00:00"
+  },
+  "crusoe": {
+    "ingested_at": "2025-12-14T01:37:14.210502+00:00",
+    "chunks_count": 45,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:14.210561+00:00"
+  },
+  "databricks": {
+    "ingested_at": "2025-12-14T01:37:16.141489+00:00",
+    "chunks_count": 18,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:16.141524+00:00"
+  },
+  "datasnipper": {
+    "ingested_at": "2025-12-14T01:37:17.580406+00:00",
+    "chunks_count": 27,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:17.580431+00:00"
+  },
+  "datavisor": {
+    "ingested_at": "2025-12-14T01:37:20.018564+00:00",
+    "chunks_count": 49,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:20.018588+00:00"
+  },
+  "decagon": {
+    "ingested_at": "2025-12-14T01:37:22.077997+00:00",
+    "chunks_count": 35,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:22.078037+00:00"
+  },
+  "elevenlabs": {
+    "ingested_at": "2025-12-14T01:37:24.056014+00:00",
+    "chunks_count": 37,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:24.056038+00:00"
+  },
+  "esusu": {
+    "ingested_at": "2025-12-14T01:37:25.467504+00:00",
+    "chunks_count": 23,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:25.467549+00:00"
+  },
+  "figure": {
+    "ingested_at": "2025-12-14T01:37:27.274581+00:00",
+    "chunks_count": 19,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:27.274607+00:00"
+  },
+  "figure-ai": {
+    "ingested_at": "2025-12-14T01:37:28.563939+00:00",
+    "chunks_count": 7,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:28.563950+00:00"
+  },
+  "fireworks-ai": {
+    "ingested_at": "2025-12-14T01:37:30.868619+00:00",
+    "chunks_count": 34,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:30.868662+00:00"
+  },
+  "found": {
+    "ingested_at": "2025-12-14T01:37:32.447576+00:00",
+    "chunks_count": 39,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:32.447624+00:00"
+  },
+  "glean": {
+    "ingested_at": "2025-12-14T01:37:34.145179+00:00",
+    "chunks_count": 114,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:34.145311+00:00"
+  },
+  "harvey": {
+    "ingested_at": "2025-12-14T01:37:36.035999+00:00",
+    "chunks_count": 29,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:36.036041+00:00"
+  },
+  "highnote": {
+    "ingested_at": "2025-12-14T01:37:37.371100+00:00",
+    "chunks_count": 1,
+    "sources_count": 1,
+    "last_updated": "2025-12-14T01:37:37.371138+00:00"
+  },
+  "imprint": {
+    "ingested_at": "2025-12-14T01:37:39.211411+00:00",
+    "chunks_count": 36,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:39.211440+00:00"
+  },
+  "increase": {
+    "ingested_at": "2025-12-14T01:37:40.950593+00:00",
+    "chunks_count": 48,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:40.950636+00:00"
+  },
+  "kin-insurance": {
+    "ingested_at": "2025-12-14T01:37:42.506060+00:00",
+    "chunks_count": 26,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:42.506089+00:00"
+  },
+  "kudos-technologies": {
+    "ingested_at": "2025-12-14T01:37:43.801157+00:00",
+    "chunks_count": 4,
+    "sources_count": 1,
+    "last_updated": "2025-12-14T01:37:43.801178+00:00"
+  },
+  "lambda": {
+    "ingested_at": "2025-12-14T01:37:45.444918+00:00",
+    "chunks_count": 48,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:45.444937+00:00"
+  },
+  "langchain": {
+    "ingested_at": "2025-12-14T01:37:47.002777+00:00",
+    "chunks_count": 20,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:47.002827+00:00"
+  },
+  "lead-bank": {
+    "ingested_at": "2025-12-14T01:37:48.785462+00:00",
+    "chunks_count": 33,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:48.785502+00:00"
+  },
+  "mercury": {
+    "ingested_at": "2025-12-14T01:37:51.685662+00:00",
+    "chunks_count": 39,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:51.685701+00:00"
+  },
+  "mistral-ai": {
+    "ingested_at": "2025-12-14T01:37:53.742802+00:00",
+    "chunks_count": 28,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:53.742835+00:00"
+  },
+  "nova-credit": {
+    "ingested_at": "2025-12-14T01:37:56.934495+00:00",
+    "chunks_count": 64,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:56.934533+00:00"
+  },
+  "openevidence": {
+    "ingested_at": "2025-12-14T01:37:59.219016+00:00",
+    "chunks_count": 35,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:37:59.219061+00:00"
+  },
+  "parafin": {
+    "ingested_at": "2025-12-14T01:38:00.584687+00:00",
+    "chunks_count": 21,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:00.584697+00:00"
+  },
+  "persona": {
+    "ingested_at": "2025-12-14T01:38:02.803527+00:00",
+    "chunks_count": 23,
+    "sources_count": 2,
+    "last_updated": "2025-12-14T01:38:02.803571+00:00"
+  },
+  "photoroom": {
+    "ingested_at": "2025-12-14T01:38:04.209370+00:00",
+    "chunks_count": 27,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:04.209421+00:00"
+  },
+  "pika": {
+    "ingested_at": "2025-12-14T01:38:05.714940+00:00",
+    "chunks_count": 47,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:05.714964+00:00"
+  },
+  "plaid": {
+    "ingested_at": "2025-12-14T01:38:07.268720+00:00",
+    "chunks_count": 35,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:07.268761+00:00"
+  },
+  "propel": {
+    "ingested_at": "2025-12-14T01:38:08.796925+00:00",
+    "chunks_count": 21,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:08.796966+00:00"
+  },
+  "pulley": {
+    "ingested_at": "2025-12-14T01:38:10.167645+00:00",
+    "chunks_count": 10,
+    "sources_count": 1,
+    "last_updated": "2025-12-14T01:38:10.167681+00:00"
+  },
+  "relay": {
+    "ingested_at": "2025-12-14T01:38:12.162257+00:00",
+    "chunks_count": 29,
+    "sources_count": 4,
+    "last_updated": "2025-12-14T01:38:12.162363+00:00"
+  },
+  "runway": {
+    "ingested_at": "2025-12-14T01:38:13.694759+00:00",
+    "chunks_count": 36,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:13.694786+00:00"
+  },
+  "sakana-ai": {
+    "ingested_at": "2025-12-14T01:38:15.403576+00:00",
+    "chunks_count": 50,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:15.403585+00:00"
+  },
+  "sambanova": {
+    "ingested_at": "2025-12-14T01:38:16.889885+00:00",
+    "chunks_count": 27,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:16.889929+00:00"
+  },
+  "sentilink": {
+    "ingested_at": "2025-12-14T01:38:18.908458+00:00",
+    "chunks_count": 20,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:18.908505+00:00"
+  },
+  "sierra": {
+    "ingested_at": "2025-12-14T01:38:20.321003+00:00",
+    "chunks_count": 28,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:20.321050+00:00"
+  },
+  "skild-ai": {
+    "ingested_at": "2025-12-14T01:38:21.866896+00:00",
+    "chunks_count": 6,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:21.866937+00:00"
+  },
+  "snorkel-ai": {
+    "ingested_at": "2025-12-14T01:38:23.738712+00:00",
+    "chunks_count": 31,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:23.738756+00:00"
+  },
+  "speak": {
+    "ingested_at": "2025-12-14T01:38:25.495402+00:00",
+    "chunks_count": 25,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:25.495411+00:00"
+  },
+  "stackblitz": {
+    "ingested_at": "2025-12-14T01:38:27.473258+00:00",
+    "chunks_count": 22,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:27.473310+00:00"
+  },
+  "stripe": {
+    "ingested_at": "2025-12-14T01:38:29.527224+00:00",
+    "chunks_count": 115,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:29.527252+00:00"
+  },
+  "synthesia": {
+    "ingested_at": "2025-12-14T01:38:32.254555+00:00",
+    "chunks_count": 18,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:32.254598+00:00"
+  },
+  "tabapay": {
+    "ingested_at": "2025-12-14T01:38:33.726705+00:00",
+    "chunks_count": 35,
+    "sources_count": 4,
+    "last_updated": "2025-12-14T01:38:33.726729+00:00"
+  },
+  "tala": {
+    "ingested_at": "2025-12-14T01:38:35.161149+00:00",
+    "chunks_count": 20,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:35.161176+00:00"
+  },
+  "together-ai": {
+    "ingested_at": "2025-12-14T01:38:37.683331+00:00",
+    "chunks_count": 30,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:37.683361+00:00"
+  },
+  "true-link": {
+    "ingested_at": "2025-12-14T01:38:39.228003+00:00",
+    "chunks_count": 33,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:39.228055+00:00"
+  },
+  "vannevar-labs": {
+    "ingested_at": "2025-12-14T01:38:41.648176+00:00",
+    "chunks_count": 14,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:41.648198+00:00"
+  },
+  "vast-data": {
+    "ingested_at": "2025-12-14T01:38:43.027243+00:00",
+    "chunks_count": 18,
+    "sources_count": 4,
+    "last_updated": "2025-12-14T01:38:43.027285+00:00"
+  },
+  "wealthfront": {
+    "ingested_at": "2025-12-14T01:38:44.460550+00:00",
+    "chunks_count": 32,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:44.460571+00:00"
+  },
+  "windsurf": {
+    "ingested_at": "2025-12-14T01:38:45.882346+00:00",
+    "chunks_count": 18,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:45.882357+00:00"
+  },
+  "world-labs": {
+    "ingested_at": "2025-12-14T01:38:47.345443+00:00",
+    "chunks_count": 16,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:47.345475+00:00"
+  },
+  "writer": {
+    "ingested_at": "2025-12-14T01:38:48.867636+00:00",
+    "chunks_count": 42,
+    "sources_count": 5,
+    "last_updated": "2025-12-14T01:38:48.867679+00:00"
+  }
+}

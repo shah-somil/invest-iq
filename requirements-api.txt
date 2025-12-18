@@ -4,3 +4,4 @@ openai>=1.35.0,<2
 httpx
 beautifulsoup4
 dotenv
+chromadb

@@ -137,6 +137,8 @@ graph TB
     style H1 fill:#ffebee
     style H2 fill:#ffebee
 
+```
+
 ### 2.2 Component Architecture
 
 **Presentation Layer:**

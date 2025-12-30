@@ -6,6 +6,14 @@
 // Get API URL from environment variable or default to localhost
 export const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
+// Debug logging (remove in production if needed)
+if (typeof window !== 'undefined') {
+  console.log('🔧 API Configuration:');
+  console.log('  - NEXT_PUBLIC_API_URL:', process.env.NEXT_PUBLIC_API_URL);
+  console.log('  - API_URL (resolved):', API_URL);
+  console.log('  - NODE_ENV:', process.env.NODE_ENV);
+}
+
 // API Client with error handling
 export class APIClient {
   private baseURL: string;
@@ -16,19 +24,25 @@ export class APIClient {
 
   private async handleResponse(response: Response) {
     if (!response.ok) {
+      console.error(`❌ API Error: ${response.status} ${response.statusText}`);
       const error = await response.json().catch(() => ({ detail: 'Unknown error' }));
       throw new Error(error.detail || `HTTP ${response.status}: ${response.statusText}`);
     }
+    console.log(`✅ API Success: ${response.status}`);
     return response.json();
   }
 
   async get(endpoint: string) {
-    const response = await fetch(`${this.baseURL}${endpoint}`);
+    const url = `${this.baseURL}${endpoint}`;
+    console.log(`🌐 API GET: ${url}`);
+    const response = await fetch(url);
     return this.handleResponse(response);
   }
 
   async post(endpoint: string, data: any) {
-    const response = await fetch(`${this.baseURL}${endpoint}`, {
+    const url = `${this.baseURL}${endpoint}`;
+    console.log(`🌐 API POST: ${url}`, data);
+    const response = await fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -87,5 +101,6 @@ export const getEnvironment = () => ({
   isProduction: process.env.NODE_ENV === 'production',
   isDevelopment: process.env.NODE_ENV === 'development',
 });
+
 
 

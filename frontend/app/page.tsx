@@ -37,8 +37,9 @@ import {
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import ReactMarkdown from "react-markdown"
+import { API_URL } from "@/lib/api-config"
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000"
+const API_BASE = API_URL // Use the same API_URL from api-config.ts
 
 export default function InvestIQDashboard() {
   const [apiStatus, setApiStatus] = useState<{
@@ -54,9 +55,12 @@ export default function InvestIQDashboard() {
   }, [])
 
   async function checkAPIStatus() {
+    console.log('🔍 Checking API status at:', `${API_BASE}/health`);
     try {
       const response = await fetch(`${API_BASE}/health`, { signal: AbortSignal.timeout(3000) })
+      console.log('📡 Health check response:', response.status, response.statusText);
       const data = await response.json()
+      console.log('📊 Health check data:', data);
 
       if (data.status === "ok") {
         setApiStatus({
@@ -64,10 +68,13 @@ export default function InvestIQDashboard() {
           companies: data.companies_indexed || 0,
           message: "Connected",
         })
+        console.log('✅ API Connected! Companies:', data.companies_indexed);
       } else {
         setApiStatus({ connected: false, companies: 0, message: "API Error" })
+        console.error('❌ API Error - unexpected status');
       }
     } catch (error) {
+      console.error('❌ API Connection failed:', error);
       setApiStatus({ connected: false, companies: 0, message: "Disconnected" })
     }
   }

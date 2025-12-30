@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 import { Card } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
@@ -37,9 +37,8 @@ import {
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import ReactMarkdown from "react-markdown"
-import { API_URL } from "@/lib/api-config"
 
-const API_BASE = API_URL // Use the same API_URL from api-config.ts
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000"
 
 export default function InvestIQDashboard() {
   const [apiStatus, setApiStatus] = useState<{
@@ -55,12 +54,9 @@ export default function InvestIQDashboard() {
   }, [])
 
   async function checkAPIStatus() {
-    console.log('🔍 Checking API status at:', `${API_BASE}/health`);
     try {
       const response = await fetch(`${API_BASE}/health`, { signal: AbortSignal.timeout(3000) })
-      console.log('📡 Health check response:', response.status, response.statusText);
       const data = await response.json()
-      console.log('📊 Health check data:', data);
 
       if (data.status === "ok") {
         setApiStatus({
@@ -68,13 +64,10 @@ export default function InvestIQDashboard() {
           companies: data.companies_indexed || 0,
           message: "Connected",
         })
-        console.log('✅ API Connected! Companies:', data.companies_indexed);
       } else {
         setApiStatus({ connected: false, companies: 0, message: "API Error" })
-        console.error('❌ API Error - unexpected status');
       }
     } catch (error) {
-      console.error('❌ API Connection failed:', error);
       setApiStatus({ connected: false, companies: 0, message: "Disconnected" })
     }
   }
@@ -188,16 +181,10 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
   const [inputMessage, setInputMessage] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [enableWebSearch, setEnableWebSearch] = useState(false)
-  const chatEndRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     fetchCompanies()
   }, [])
-
-  // Auto-scroll to bottom when chat history changes
-  useEffect(() => {
-    chatEndRef.current?.scrollIntoView({ behavior: "smooth" })
-  }, [chatHistory])
 
   async function fetchCompanies() {
     try {
@@ -259,8 +246,8 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
 
   return (
     <div className="grid gap-6 lg:grid-cols-3">
-      <Card className="lg:col-span-3 flex flex-col max-h-[calc(100vh-200px)]">
-        <div className="border-b border-border p-6 flex-shrink-0">
+      <div className="lg:col-span-3 flex flex-col" style={{ height: "calc(100vh - 280px)" }}>
+        <div className="p-6 flex-shrink-0">
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-2xl font-bold tracking-tight text-foreground">AI Assistant</h2>
@@ -315,10 +302,10 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
           </div>
         </div>
 
-        <ScrollArea className="flex-1 overflow-y-auto min-h-[400px]">
-          <div className="p-6 space-y-4 min-h-full">
+        <ScrollArea className="flex-1 p-6">
+          <div className="space-y-4">
             {chatHistory.length === 0 && (
-              <div className="flex min-h-[300px] flex-col items-center justify-center text-center">
+              <div className="flex min-h-[200px] flex-col items-center justify-center text-center">
                 <div className="rounded-full bg-primary/10 p-4">
                   <MessageSquare className="h-8 w-8 text-primary" />
                 </div>
@@ -330,14 +317,14 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
             )}
 
             {chatHistory.map((msg, idx) => (
-              <div key={idx} className={cn("flex gap-3 w-full", msg.role === "user" ? "justify-end" : "justify-start")}>
+              <div key={idx} className={cn("flex gap-3", msg.role === "user" ? "justify-end" : "justify-start")}>
                 <div
                   className={cn(
-                    "max-w-[85%] rounded-2xl px-4 py-3 break-words",
+                    "max-w-[80%] rounded-2xl px-4 py-3",
                     msg.role === "user" ? "bg-primary text-primary-foreground" : "bg-muted text-foreground",
                   )}
                 >
-                  <div className="text-sm leading-relaxed whitespace-pre-wrap break-words">{msg.content}</div>
+                  <p className="text-sm leading-relaxed whitespace-pre-wrap">{msg.content}</p>
                   {msg.used_retrieval && msg.chunks && msg.chunks.length > 0 && (
                     <Collapsible className="mt-3">
                       <CollapsibleTrigger className="flex items-center gap-2 text-xs opacity-70 hover:opacity-100 transition-opacity">
@@ -441,13 +428,10 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
                 </div>
               </div>
             )}
-            
-            {/* Invisible div for auto-scroll anchor */}
-            <div ref={chatEndRef} />
           </div>
         </ScrollArea>
 
-        <div className="border-t border-border p-6 flex-shrink-0">
+        <div className="p-6 flex-shrink-0">
           <div className="flex gap-3">
             <Input
               placeholder={`Ask about ${selectedCompany}...`}
@@ -462,7 +446,7 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
             </Button>
           </div>
         </div>
-      </Card>
+      </div>
     </div>
   )
 }

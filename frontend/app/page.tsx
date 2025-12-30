@@ -13,6 +13,7 @@ import { Slider } from "@/components/ui/slider"
 import { Progress } from "@/components/ui/progress"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
+import { Switch } from "@/components/ui/switch"
 import {
   MessageSquare,
   BarChart3,
@@ -31,6 +32,8 @@ import {
   Activity,
   ChevronDown,
   ChevronUp,
+  Globe,
+  ExternalLink,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import ReactMarkdown from "react-markdown"
@@ -177,6 +180,7 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
   const [chatHistory, setChatHistory] = useState<any[]>([])
   const [inputMessage, setInputMessage] = useState("")
   const [isLoading, setIsLoading] = useState(false)
+  const [enableWebSearch, setEnableWebSearch] = useState(false)
 
   useEffect(() => {
     fetchCompanies()
@@ -214,6 +218,7 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
           company_name: selectedCompany,
           model: "gpt-4o",
           temperature: 0.7,
+          enable_web_search: enableWebSearch,
         }),
       })
 
@@ -224,9 +229,11 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
           role: "assistant",
           content: data.message,
           used_retrieval: data.used_retrieval,
+          used_web_search: data.used_web_search,
           chunks_retrieved: data.chunks_retrieved,
           company_name: data.company_name,
           chunks: data.chunks || [],
+          web_sources: data.web_sources || [],
         },
       ])
     } catch (error) {
@@ -254,25 +261,44 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
             </Button>
           </div>
 
-          <div className="mt-4">
-            <Label htmlFor="company-select" className="text-sm font-medium">
-              Select Company
-            </Label>
-            <Select value={selectedCompany} onValueChange={setSelectedCompany}>
-              <SelectTrigger id="company-select" className="mt-2">
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent>
-                {companies.map((company) => (
-                  <SelectItem key={company} value={company}>
-                    <div className="flex items-center gap-2">
-                      <Building2 className="h-4 w-4 text-muted-foreground" />
-                      {company}
-                    </div>
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+          <div className="mt-4 grid gap-4">
+            <div>
+              <Label htmlFor="company-select" className="text-sm font-medium">
+                Select Company
+              </Label>
+              <Select value={selectedCompany} onValueChange={setSelectedCompany}>
+                <SelectTrigger id="company-select" className="mt-2">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  {companies.map((company) => (
+                    <SelectItem key={company} value={company}>
+                      <div className="flex items-center gap-2">
+                        <Building2 className="h-4 w-4 text-muted-foreground" />
+                        {company}
+                      </div>
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div className="flex items-center justify-between rounded-lg border border-border bg-card/50 p-3">
+              <div className="flex items-center gap-2">
+                <Globe className="h-4 w-4 text-muted-foreground" />
+                <div>
+                  <Label htmlFor="web-search-toggle" className="text-sm font-medium cursor-pointer">
+                    Enable Web Search
+                  </Label>
+                  <p className="text-xs text-muted-foreground">Fallback to web if RAG finds no results</p>
+                </div>
+              </div>
+              <Switch
+                id="web-search-toggle"
+                checked={enableWebSearch}
+                onCheckedChange={setEnableWebSearch}
+              />
+            </div>
           </div>
         </div>
 
@@ -346,6 +372,47 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
                       <Database className="h-3 w-3" />
                       Retrieved {msg.chunks_retrieved} chunks from {msg.company_name}
                     </div>
+                  )}
+                  
+                  {msg.used_web_search && msg.web_sources && msg.web_sources.length > 0 && (
+                    <Collapsible className="mt-3">
+                      <CollapsibleTrigger className="flex items-center gap-2 text-xs opacity-70 hover:opacity-100 transition-opacity">
+                        <Globe className="h-3 w-3" />
+                        <span>Found {msg.web_sources.length} web results</span>
+                        <ChevronDown className="h-3 w-3" />
+                      </CollapsibleTrigger>
+                      <CollapsibleContent className="mt-2 space-y-2">
+                        {msg.web_sources.map((source: any, sourceIdx: number) => (
+                          <div key={sourceIdx} className="rounded-lg border border-green-500/20 bg-green-500/5 p-3 text-xs">
+                            <div className="flex items-start gap-2 mb-2">
+                              <Globe className="h-3 w-3 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
+                              <div className="flex-1 min-w-0">
+                                <div className="font-medium text-foreground mb-1 flex items-center gap-2">
+                                  {source.title}
+                                  <Badge variant="outline" className="bg-green-500/10 text-green-700 dark:text-green-300 border-green-500/30">
+                                    Web
+                                  </Badge>
+                                </div>
+                                {source.url && (
+                                  <a
+                                    href={source.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-1 text-green-600 dark:text-green-400 hover:underline mb-2 truncate"
+                                  >
+                                    {source.url}
+                                    <ExternalLink className="h-3 w-3 flex-shrink-0" />
+                                  </a>
+                                )}
+                                <div className="text-muted-foreground leading-relaxed">
+                                  {source.snippet}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </CollapsibleContent>
+                    </Collapsible>
                   )}
                 </div>
               </div>

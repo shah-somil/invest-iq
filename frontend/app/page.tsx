@@ -45,17 +45,30 @@ export default function InvestIQDashboard() {
     connected: boolean
     companies: number
     message: string
-  }>({ connected: false, companies: 0, message: "Checking..." })
+  }>({ connected: false, companies: 0, message: "Connecting..." })
 
   const [activeTab, setActiveTab] = useState("chat")
 
   useEffect(() => {
-    checkAPIStatus()
+    checkAPIStatusWithRetry()
+    
+    // Periodic health check every 30 seconds
+    const healthCheckInterval = setInterval(() => {
+      checkAPIStatus(false)
+    }, 30000)
+    
+    return () => clearInterval(healthCheckInterval)
   }, [])
 
-  async function checkAPIStatus() {
+  async function checkAPIStatus(showRetrying = false) {
+    if (showRetrying) {
+      setApiStatus(prev => ({ ...prev, message: "Retrying..." }))
+    }
+    
     try {
-      const response = await fetch(`${API_BASE}/health`, { signal: AbortSignal.timeout(3000) })
+      const response = await fetch(`${API_BASE}/health`, { 
+        signal: AbortSignal.timeout(10000) // Increased timeout to 10s
+      })
       const data = await response.json()
 
       if (data.status === "ok") {
@@ -64,12 +77,40 @@ export default function InvestIQDashboard() {
           companies: data.companies_indexed || 0,
           message: "Connected",
         })
+        return true
       } else {
         setApiStatus({ connected: false, companies: 0, message: "API Error" })
+        return false
       }
     } catch (error) {
-      setApiStatus({ connected: false, companies: 0, message: "Disconnected" })
+      setApiStatus(prev => ({ 
+        ...prev, 
+        connected: false, 
+        message: prev.message === "Retrying..." ? "Retrying..." : "Disconnected" 
+      }))
+      return false
     }
+  }
+
+  async function checkAPIStatusWithRetry() {
+    const maxRetries = 3
+    const retryDelays = [1000, 2000, 5000] // 1s, 2s, 5s
+    
+    for (let i = 0; i < maxRetries; i++) {
+      const success = await checkAPIStatus(i > 0)
+      
+      if (success) {
+        return
+      }
+      
+      // Wait before retrying (except on last attempt)
+      if (i < maxRetries - 1) {
+        await new Promise(resolve => setTimeout(resolve, retryDelays[i]))
+      }
+    }
+    
+    // All retries failed
+    setApiStatus({ connected: false, companies: 0, message: "Disconnected" })
   }
 
   return (
@@ -91,17 +132,40 @@ export default function InvestIQDashboard() {
             {/* API Status */}
             <div className="flex items-center gap-3">
               <div className="flex items-center gap-2 rounded-lg border border-border bg-card px-3 py-2">
-                <CircleDot
-                  className={cn(
-                    "h-2 w-2",
-                    apiStatus.connected ? "fill-green-500 text-green-500" : "fill-red-500 text-red-500",
-                  )}
-                />
-                <span className="text-sm font-medium text-foreground">{apiStatus.message}</span>
+                {apiStatus.message === "Connecting..." || apiStatus.message === "Retrying..." ? (
+                  <Loader2 className="h-3 w-3 animate-spin text-yellow-500" />
+                ) : (
+                  <CircleDot
+                    className={cn(
+                      "h-2 w-2",
+                      apiStatus.connected 
+                        ? "fill-green-500 text-green-500" 
+                        : "fill-red-500 text-red-500",
+                    )}
+                  />
+                )}
+                <span className={cn(
+                  "text-sm font-medium",
+                  apiStatus.connected ? "text-green-600 dark:text-green-400" : 
+                  (apiStatus.message === "Connecting..." || apiStatus.message === "Retrying...") ? "text-yellow-600 dark:text-yellow-400" :
+                  "text-red-600 dark:text-red-400"
+                )}>
+                  {apiStatus.message}
+                </span>
                 {apiStatus.companies > 0 && (
                   <Badge variant="secondary" className="ml-2">
                     {apiStatus.companies} companies
                   </Badge>
+                )}
+                {!apiStatus.connected && apiStatus.message === "Disconnected" && (
+                  <Button 
+                    variant="ghost" 
+                    size="sm" 
+                    onClick={() => checkAPIStatusWithRetry()} 
+                    className="ml-2 h-6 px-2 text-xs"
+                  >
+                    Retry
+                  </Button>
                 )}
               </div>
             </div>
@@ -111,23 +175,6 @@ export default function InvestIQDashboard() {
 
       {/* Main Content */}
       <main className="container mx-auto px-6 py-8">
-        {!apiStatus.connected && (
-          <Card className="mb-6 border-destructive bg-destructive/10 p-6">
-            <div className="flex items-start gap-4">
-              <div className="rounded-lg bg-destructive/20 p-2">
-                <Activity className="h-5 w-5 text-destructive" />
-              </div>
-              <div className="flex-1">
-                <h3 className="font-semibold text-destructive">API Connection Required</h3>
-                <p className="mt-1 text-sm text-muted-foreground">
-                  Cannot connect to API at {API_BASE}. Start your FastAPI server:
-                </p>
-                <code className="mt-2 block rounded bg-muted px-3 py-2 text-sm font-mono">python src/api/api.py</code>
-              </div>
-            </div>
-          </Card>
-        )}
-
         <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
           <TabsList className="grid w-full grid-cols-4 lg:w-auto lg:inline-grid">
             <TabsTrigger value="chat" className="gap-2">

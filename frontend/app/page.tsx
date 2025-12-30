@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Card } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
@@ -188,10 +188,16 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
   const [inputMessage, setInputMessage] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [enableWebSearch, setEnableWebSearch] = useState(false)
+  const chatEndRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     fetchCompanies()
   }, [])
+
+  // Auto-scroll to bottom when chat history changes
+  useEffect(() => {
+    chatEndRef.current?.scrollIntoView({ behavior: "smooth" })
+  }, [chatHistory])
 
   async function fetchCompanies() {
     try {
@@ -253,7 +259,7 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
 
   return (
     <div className="grid gap-6 lg:grid-cols-3">
-      <Card className="lg:col-span-3 flex flex-col" style={{ height: "calc(100vh - 280px)" }}>
+      <Card className="lg:col-span-3 flex flex-col h-[calc(100vh-280px)]">
         <div className="border-b border-border p-6 flex-shrink-0">
           <div className="flex items-center justify-between">
             <div>
@@ -309,8 +315,9 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
           </div>
         </div>
 
-        <ScrollArea className="flex-1 p-6">
-          <div className="space-y-4">
+        <div className="flex-1 overflow-hidden">
+          <ScrollArea className="h-full">
+            <div className="p-6 space-y-4">
             {chatHistory.length === 0 && (
               <div className="flex min-h-[200px] flex-col items-center justify-center text-center">
                 <div className="rounded-full bg-primary/10 p-4">
@@ -435,8 +442,12 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
                 </div>
               </div>
             )}
+            
+            {/* Invisible div for auto-scroll anchor */}
+            <div ref={chatEndRef} />
           </div>
-        </ScrollArea>
+          </ScrollArea>
+        </div>
 
         <div className="border-t border-border p-6 flex-shrink-0">
           <div className="flex gap-3">

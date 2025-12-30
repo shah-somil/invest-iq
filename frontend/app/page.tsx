@@ -259,7 +259,7 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
 
   return (
     <div className="grid gap-6 lg:grid-cols-3">
-      <Card className="lg:col-span-3 flex flex-col h-[calc(100vh-280px)]">
+      <Card className="lg:col-span-3 flex flex-col max-h-[calc(100vh-200px)]">
         <div className="border-b border-border p-6 flex-shrink-0">
           <div className="flex items-center justify-between">
             <div>
@@ -315,11 +315,10 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
           </div>
         </div>
 
-        <div className="flex-1 overflow-hidden">
-          <ScrollArea className="h-full">
-            <div className="p-6 space-y-4">
+        <ScrollArea className="flex-1 overflow-y-auto min-h-[400px]">
+          <div className="p-6 space-y-4 min-h-full">
             {chatHistory.length === 0 && (
-              <div className="flex min-h-[200px] flex-col items-center justify-center text-center">
+              <div className="flex min-h-[300px] flex-col items-center justify-center text-center">
                 <div className="rounded-full bg-primary/10 p-4">
                   <MessageSquare className="h-8 w-8 text-primary" />
                 </div>
@@ -331,14 +330,14 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
             )}
 
             {chatHistory.map((msg, idx) => (
-              <div key={idx} className={cn("flex gap-3", msg.role === "user" ? "justify-end" : "justify-start")}>
+              <div key={idx} className={cn("flex gap-3 w-full", msg.role === "user" ? "justify-end" : "justify-start")}>
                 <div
                   className={cn(
-                    "max-w-[80%] rounded-2xl px-4 py-3",
+                    "max-w-[85%] rounded-2xl px-4 py-3 break-words",
                     msg.role === "user" ? "bg-primary text-primary-foreground" : "bg-muted text-foreground",
                   )}
                 >
-                  <p className="text-sm leading-relaxed whitespace-pre-wrap">{msg.content}</p>
+                  <div className="text-sm leading-relaxed whitespace-pre-wrap break-words">{msg.content}</div>
                   {msg.used_retrieval && msg.chunks && msg.chunks.length > 0 && (
                     <Collapsible className="mt-3">
                       <CollapsibleTrigger className="flex items-center gap-2 text-xs opacity-70 hover:opacity-100 transition-opacity">
@@ -446,8 +445,7 @@ function ChatInterface({ apiBase }: { apiBase: string }) {
             {/* Invisible div for auto-scroll anchor */}
             <div ref={chatEndRef} />
           </div>
-          </ScrollArea>
-        </div>
+        </ScrollArea>
 
         <div className="border-t border-border p-6 flex-shrink-0">
           <div className="flex gap-3">

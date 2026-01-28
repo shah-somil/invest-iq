@@ -14,6 +14,8 @@ import { Progress } from "@/components/ui/progress"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
 import { Switch } from "@/components/ui/switch"
+import CompanyComparisonChart from "@/components/charts/CompanyComparisonChart";
+import { api } from "../lib/api-config"
 import {
   MessageSquare,
   BarChart3,
@@ -509,10 +511,24 @@ function DashboardGenerator({ apiBase }: { apiBase: string }) {
   const [isGenerating, setIsGenerating] = useState(false)
   const [progress, setProgress] = useState(0)
   const [result, setResult] = useState<any>(null)
+  const [ragAnalytics, setRagAnalytics] = useState<{ source: string; count: number }[]>([]);
 
   useEffect(() => {
     fetchCompanies()
   }, [])
+
+useEffect(() => {
+  if (!selectedCompany) return;
+
+  api.getRagAnalytics({ company_name: selectedCompany })
+    .then((res: any) => {
+      // ✅ IMPORTANT: use res.sources
+      setRagAnalytics(res.sources ?? []);
+    })
+    .catch(() => setRagAnalytics([]));
+}, [selectedCompany]);
+
+
 
   async function fetchCompanies() {
     try {
@@ -743,6 +759,18 @@ function DashboardGenerator({ apiBase }: { apiBase: string }) {
                 </div>
               )}
             </div>
+            {/* ✅ ADD THIS CHARTS SECTION */}
+    {ragAnalytics.length > 0 ? (
+  <div className="p-6 border-b border-border">
+    <Card className="p-4">
+      <div className="mb-2 text-sm font-semibold">
+        Data Sources Distribution (Vector DB)
+      </div>
+      <CompanyComparisonChart data={ragAnalytics} />
+    </Card>
+  </div>
+) : null}
+
 
             <ScrollArea className="h-[600px] p-6">
               <div className="markdown-content">

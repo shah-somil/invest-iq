@@ -4,15 +4,17 @@
  */
 
 // Get API URL from environment variable or default to localhost
-export const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+export const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 // Debug logging (remove in production if needed)
-if (typeof window !== 'undefined') {
-  console.log('🔧 API Configuration:');
-  console.log('  - NEXT_PUBLIC_API_URL:', process.env.NEXT_PUBLIC_API_URL);
-  console.log('  - API_URL (resolved):', API_URL);
-  console.log('  - NODE_ENV:', process.env.NODE_ENV);
+if (typeof window !== "undefined") {
+  console.log("🔧 API Configuration:");
+  console.log("  - NEXT_PUBLIC_API_URL:", process.env.NEXT_PUBLIC_API_URL);
+  console.log("  - API_URL (resolved):", API_URL);
+  console.log("  - NODE_ENV:", process.env.NODE_ENV);
 }
+
+type QueryParams = Record<string, string | number | boolean | null | undefined>;
 
 // API Client with error handling
 export class APIClient {
@@ -22,30 +24,47 @@ export class APIClient {
     this.baseURL = baseURL;
   }
 
+  private buildUrl(endpoint: string, params?: QueryParams) {
+    // Support passing absolute URLs too (optional)
+    const url = endpoint.startsWith("http")
+      ? new URL(endpoint)
+      : new URL(endpoint, this.baseURL);
+
+    if (params) {
+      Object.entries(params).forEach(([k, v]) => {
+        if (v !== undefined && v !== null && v !== "") {
+          url.searchParams.set(k, String(v));
+        }
+      });
+    }
+
+    return url.toString();
+  }
+
   private async handleResponse(response: Response) {
     if (!response.ok) {
       console.error(`❌ API Error: ${response.status} ${response.statusText}`);
-      const error = await response.json().catch(() => ({ detail: 'Unknown error' }));
+      const error = await response.json().catch(() => ({ detail: "Unknown error" }));
       throw new Error(error.detail || `HTTP ${response.status}: ${response.statusText}`);
     }
     console.log(`✅ API Success: ${response.status}`);
-    return response.json();
+    return response.json().catch(() => ({}));
   }
 
-  async get(endpoint: string) {
-    const url = `${this.baseURL}${endpoint}`;
+  async get(endpoint: string, params?: QueryParams) {
+    const url = this.buildUrl(endpoint, params);
     console.log(`🌐 API GET: ${url}`);
     const response = await fetch(url);
     return this.handleResponse(response);
   }
 
-  async post(endpoint: string, data: any) {
-    const url = `${this.baseURL}${endpoint}`;
+  async post(endpoint: string, data: any, params?: QueryParams) {
+    const url = this.buildUrl(endpoint, params);
     console.log(`🌐 API POST: ${url}`, data);
     const response = await fetch(url, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
     });
@@ -59,13 +78,13 @@ export const apiClient = new APIClient();
 // Helper functions for common API calls
 export const api = {
   // Health check
-  health: () => apiClient.get('/health'),
+  health: () => apiClient.get("/health"),
 
   // Companies
-  getCompanies: () => apiClient.get('/companies'),
+  getCompanies: () => apiClient.get("/companies"),
 
   // Stats
-  getStats: () => apiClient.get('/stats'),
+  getStats: () => apiClient.get("/stats"),
 
   // RAG Search
   search: (params: {
@@ -73,7 +92,17 @@ export const api = {
     query: string;
     top_k?: number;
     filter_source?: string;
-  }) => apiClient.post('/rag/search', params),
+  }) => apiClient.post("/rag/search", params),
+
+  /**
+   * RAG Analytics
+   * ✅ Your backend currently does NOT have /rag/analytics
+   * So use /stats (works today).
+   *
+   * If you later add /rag/analytics in backend, change this method accordingly.
+   */
+  getRagAnalytics: (params: { company_name: string }) =>
+  apiClient.get(`/rag/analytics?company_name=${encodeURIComponent(params.company_name)}`),
 
   // Dashboard Generation
   generateDashboard: (params: {
@@ -82,7 +111,7 @@ export const api = {
     max_tokens?: number;
     temperature?: number;
     model?: string;
-  }) => apiClient.post('/dashboard/rag', params),
+  }) => apiClient.post("/dashboard/rag", params),
 
   // Chat
   chat: (params: {
@@ -92,15 +121,12 @@ export const api = {
     model?: string;
     temperature?: number;
     enable_web_search?: boolean;
-  }) => apiClient.post('/chat', params),
+  }) => apiClient.post("/chat", params),
 };
 
 // Environment info
 export const getEnvironment = () => ({
   apiUrl: API_URL,
-  isProduction: process.env.NODE_ENV === 'production',
-  isDevelopment: process.env.NODE_ENV === 'development',
+  isProduction: process.env.NODE_ENV === "production",
+  isDevelopment: process.env.NODE_ENV === "development",
 });
-
-
-

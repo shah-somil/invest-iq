@@ -5,6 +5,8 @@ Startup Investment Evaluation System - RAG Search & Analysis Generation
 
 import os
 import sys
+from collections import Counter
+
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -144,6 +146,7 @@ def format_payload(company_name: str, chunks: List[Dict]) -> str:
     New code should use format_context_for_prompt() from prompts module.
     """
     return format_context_for_prompt(company_name, chunks)
+    
 
 
 # ========== PYDANTIC MODELS ==========
@@ -209,6 +212,14 @@ class ChatResponse(BaseModel):
     chunks: List[Dict] = []  # Add actual chunks
     web_sources: List[Dict] = []  # Web search results
     metadata: Dict = {}
+
+class RagAnalyticsItem(BaseModel):
+    source: str
+    count: int
+
+class RagAnalyticsResponse(BaseModel):
+    company_name: str
+    sources: List[RagAnalyticsItem]
 
 
 # ========== ENDPOINTS ==========
@@ -504,8 +515,24 @@ def get_stats():
         return stats
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to get stats: {str(e)}")
+    
 
+@app.get("/rag/analytics")
+def rag_analytics(company_name: str):
+    try:
+        chunks = retrieve_context_for_dashboard(company_name, top_k=30)
 
+        counter = Counter([c.get("source_type", "unknown") for c in chunks])
+        sources = [{"source": k, "count": v} for k, v in counter.items()]
+        sources.sort(key=lambda x: x["count"], reverse=True)
+
+        return {
+            "company_name": company_name,
+            "sources": sources,
+            "total_chunks_sampled": len(chunks),
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 # ========== CHAT INTERFACE ==========
 
 @app.post("/chat", response_model=ChatResponse)
